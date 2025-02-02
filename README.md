@@ -1,41 +1,37 @@
-# Website
+# EarthPol Website  
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This is the official website for **EarthPol**, built using [Docusaurus](https://docusaurus.io/), a modern static site generator.  
 
-### Installation
+## 🚀 Getting Started  
 
-```
-$ yarn
-```
-
-### Local Development
+### 1. Clone the Repository  
+First, clone the repository to your local machine:  
 
 ```
-$ yarn start
+git clone https://github.com/EarthPol/earthpol.com.git
+cd earthpol.com
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## 💻 Local Development  
 
-### Build
-
+To start the Docusaurus development server:  
 ```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+npm run start
 ```
 
-Not using SSH:
+This will launch a local server at **http://localhost:3000/**, automatically opening a browser window. Most changes will be reflected live without restarting the server.  
+
+## 🔧 Building the Website  
+
+To generate the static files:  
 
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
+npm run build
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This will create a `build` directory containing the static files, which can be hosted using any static file hosting service.  
+
+## 📌 Additional Notes  
+- If you encounter issues with dependencies, try running `npm cache clean --force` and reinstalling (`npm install`).  
+- For more details, check out the [Docusaurus documentation](https://docusaurus.io/docs).  
+
