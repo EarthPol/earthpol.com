@@ -1,23 +1,88 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-  page: true
+mrtytanic:
+  name: MrTytanic
+  title: Owner
+  image_url: https://github.com/mrtytanic.png
   socials:
-    x: yangshunz
-    github: yangshun
+    github: mrtytanic
+    youtube: 'mrtytanic7587'
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+bustun:
+  name: Bustun
+  title: Lead Developer
+  image_url: https://github.com/bustun01.png
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    github: bustun01
+
+quantura:
+  name: Quantura
+  title: Developer
+  image_url: https://github.com/quantura.png
+  socials:
+    github: quantura
+
+kauntar:
+  name: Kauntar
+  title: Developer
+  image_url: https://github.com/kauntar.png
+  socials:
+    github: kauntar
+    x: 'KauntarDev'
+
+0xBit:
+  name: 0xBit
+  title: Founder (2020-2024)
+  url: https://goodrich.dev
+  image_url: https://github.com/GoodrichDev.png
+  socials:
+    github: GoodrichDev
+    youtube: 'CascadianX'
+    x: 'DevGoodrich'
+
+pmkcanadian:
+  name: pmkcanadian
+  title: Developer (2023-2024)
+  image_url: https://github.com/pmkcanadian.png
+
+deltadeveloper:
+  name: DeltaDeveloper
+  title: Developer (2021)
+  image_url: https://github.com/Fraserbc.png
+  socials:
+    github: Fraserbc
+
+ludwig7959:
+  name: ludwig_h
+  title: Community Developer (2021)
+  image_url: https://github.com/ludwig7959.png
+  socials:
+    github: ludwig7959
+
+smartfrigde:
+  name: smartfrigde
+  title: Developer (2021-2022)
+  image_url: https://github.com/smartfrigde.png
+  socials:
+    github: smartfrigde
+
+kzn:
+  name: kz-n
+  title: Developer (2021-2022)
+  image_url: https://github.com/kz-n.png
+  socials:
+    github: kz-n
+
+flintsh:
+  name: FlintSH
+  title: Co-Owner (2021-2022)
+  image_url: https://github.com/flintsh.png
+  url: https://fl1nt.dev
+  socials:
+    github: flintsh
+    x: 'xflintshx'
+
+glowie:
+  name: Gl0W1E
+  title: Developer (2023-2024)
+  image_url: https://github.com/Gl0W1E.png
+  socials:
+    github: Gl0W1E

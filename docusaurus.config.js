@@ -3,7 +3,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'EarthPol',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'The Geopolitical Minecraft Server',
   favicon: 'img/favicon/favicon.ico',
   url: 'https://earthpol.com',
   baseUrl: '/',
