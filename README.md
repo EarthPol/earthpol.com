@@ -1,5 +1,6 @@
-# EarthPol Website  
+# EarthPol Website
 
+If you do not have prior experience, please see the Wiki page for prerequisites.
 This is the official website for **EarthPol**, built using [Docusaurus](https://docusaurus.io/), a modern static site generator.  
 
 ## 🚀 Getting Started  
