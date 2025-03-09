@@ -1,11 +1,12 @@
-# EarthPol Website  
+# EarthPol Website
 
+If you do not have prior experience, please see the Wiki page for prerequisites.
 This is the official website for **EarthPol**, built using [Docusaurus](https://docusaurus.io/), a modern static site generator.  
 
 ## 🚀 Getting Started  
 
 ### 1. Clone the Repository  
-First, clone the repository to your local machine:  
+First, clone the repository to your local machine. Then, use the `cd` command to navigate into the directory where it was cloned.
 
 ```
 git clone https://github.com/EarthPol/earthpol.com.git
