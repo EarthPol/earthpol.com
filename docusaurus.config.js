@@ -61,8 +61,10 @@ const config = {
           items: [
             { label: 'Discord', href: '#' },
             { label: 'Wiki', href: '#' },
-            { label: 'X', href: '#' },
             { label: 'YouTube', href: '#' },
+            { label: 'Instagram', href: '#' },
+            { label: 'TikTok', href: '#' },
+            { label: 'X', href: '#' },
           ],
         },
         { to: '/docs', label: 'Guide', position: 'left' },
@@ -86,8 +88,10 @@ const config = {
           items: [
             { label: 'Discord', href: '#' },
             { label: 'Wiki', href: '#' },
-            { label: 'X', href: '#' },
             { label: 'YouTube', href: '#' },
+            { label: 'Instagram', href: '#' },
+            { label: 'TikTok', href: '#' },
+            { label: 'X', href: '#' },
           ],
         },
         {

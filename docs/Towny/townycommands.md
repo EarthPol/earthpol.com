@@ -1,11 +1,19 @@
 ---
 title: Towny Commands
+sidebar_position: 1
 ---
 
 # All Towny Commands
 
 Below is a list of all current towny commands, their formatting, and the actions they preform. 
 
+:::tip
+
+Use Ctrl+F (Windows) or Command + F (Mac) to search for a specific command.
+
+:::
+
+---
 
 ### 🏡 Town Commands
 
