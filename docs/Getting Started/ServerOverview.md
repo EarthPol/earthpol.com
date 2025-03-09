@@ -16,10 +16,10 @@ For nearly five years, EarthPol has continued to set the standard for immersive 
 * **Player-Drived World:** EarthPol has no defined or predetermined storyline; its history is shaped entirely by its players. While we may simulate events, the responses and actions of players are individually unique.
 
 * **Map:** Our custom Earth map is handcrafted, using real-world data to simulate ore generation while maintaining vanilla underground features like caves, mineshafts, and ancient cities. At **1:326 scale**, there is a significant level of detail that makes geopolitics and geography important factors in nation-building and overall strategy. 
+
 * **Innovation:** Thanks to the implementation of **Folia**, our server is efficiently divided into separate regions, which significantly reduces lag. Whether you're building, exploring, or engaging in server activities, the seamless experience is guaranteed without any disruptions to your enjoyment.
 
-* **Hardware:** Using the latest technology on the market, our server ensures stability and peak performance. Our **hourly backup system** guarantees that no significant progress is lost in the event of an unexpected catastrophe, preserving the integrity of the EarthPol world. Additionally, the implementation of Folia has efficiently divded our server into seperate regions, significanly reducing lag.
-
+* **Hardware:** Using the latest technology on the market, our server ensures stability and peak performance. Our **hourly backup system** guarantees that no significant progress is lost in the event of an unexpected catastrophe, preserving the integrity of the EarthPol world.
 ---
 
 ### Why EarthPol?
