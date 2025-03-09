@@ -20,6 +20,7 @@ For nearly five years, EarthPol has continued to set the standard for immersive 
 * **Innovation:** Thanks to the implementation of **Folia**, our server is efficiently divided into separate regions, which significantly reduces lag. Whether you're building, exploring, or engaging in server activities, the seamless experience is guaranteed without any disruptions to your enjoyment.
 
 * **Hardware:** Using the latest technology on the market, our server ensures stability and peak performance. Our **hourly backup system** guarantees that no significant progress is lost in the event of an unexpected catastrophe, preserving the integrity of the EarthPol world.
+
 ---
 
 ### Why EarthPol?
