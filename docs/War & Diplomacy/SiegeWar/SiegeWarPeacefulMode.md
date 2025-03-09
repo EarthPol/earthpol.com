@@ -1,8 +1,8 @@
 ---
-title: Become a Peaceful Town (War Opt-Out)
+title: Peaceful Towns
 ---
 
-# Opt Out of Wars
+# Peaceful Towns
 - `/sw towntoggle peaceful` 
 
 ## Tradeoffs to Becoming a Peaceful Town

@@ -63,7 +63,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 :::warning
 
-If you believe you were falsely punished by our staff team, please reach out to us on our support server (https://discord.gg/tUK3npxkDA).
+If you need to report a violation of these rules, witnessed any staff abuse, or believe you were falsely punished by our staff team, please reach out to us on our support server (https://discord.gg/tUK3npxkDA).
 
 :::
 
