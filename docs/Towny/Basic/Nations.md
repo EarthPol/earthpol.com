@@ -34,7 +34,7 @@ Once the nation is established, you can further expand by adding new towns to yo
 
 Growing a nation in Towny is about fostering cooperation, expanding your territory, and making your nation an attractive place for towns to join. One of the most effective ways to grow your nation is by inviting towns to join, either by directly contacting their leaders or advertising your nation’s benefits. If you already control multiple towns, you can extend invitations to other towns to join your nation and contribute to its growth.
 
-To invite a new town to your nation, perform the `/n add [townname]` or `/n invite [townname] commands, and a list of available towns will be displayed. Don’t hesitate to reach out to towns that may be looking for a nation.
+To invite a new town to your nation, perform the `/n add [townname]` or `/n invite [townname]` commands, and a list of available towns will be displayed. Don’t hesitate to reach out to towns that may be looking for a nation. When towns join your nation, they will be given additional bonus claimblocks to expand their town.
 
 It’s best to have a clear vision for your nation’s values and goals, so when inviting towns, you can ensure they align with your nation’s principles. Having a unified vision will keep your nation organized and ensure its long-term success.
 

@@ -13,6 +13,8 @@ Towns come with many benefits, including protection from PvP and griefing within
 
 The success of a town relies on both management and community involvement. Regular activity, cooperation, and effective use of the town’s resources are key to maintaining and growing the settlement.
 
+---
+
 ## Joining a Town
 
 There are a couple of ways to join a town. If you wish to join a town that’s accepting new members, you can either:
@@ -22,6 +24,8 @@ There are a couple of ways to join a town. If you wish to join a town that’s a
 Once invited, you can accept the invitation by typing /accept in chat or simply clicking the prompt that appears in the chat window. After joining, you’ll be able to claim plots, use town amenities, and participate in town governance, depending on the permissions set by the town's leadership.
 Creating a Town
 
+---
+
 ## Creating a Town
 
 To create your own town, you will need 512 gold and an unclaimed area where you can establish your town's boundaries. You can then issue the command `/t new [Town Name]`, replacing `[Town Name]` with your desired town name. It’s important to ensure that your town name adheres to the server’s naming rules.
@@ -29,6 +33,8 @@ To create your own town, you will need 512 gold and an unclaimed area where you 
 After issuing the command, you will be asked to confirm the creation of the town. You can do so by typing `/confirm` in chat or clicking the confirmation button that appears. Once your town is created, you’ll be the mayor and have full control over the town's land, governance, and permissions. From here, you can start managing the town, inviting new members, and claiming land to grow your settlement.
 
 Once the town is established, you’ll be able to further expand by claiming more land using the `/t claim command`, setting up shops, building infrastructure, and even establishing town-based ranks or roles. It’s important to note that creating a town also requires paying regular upkeep to maintain its status, so keeping the town’s economy active is essential for long-term success.
+
+---
 
 ## Growing Your Town
 
@@ -44,8 +50,24 @@ It is best to give players an empty plot for them to create their own home withi
 
 Activity is another big factor. When the mayor, comayors, and assistants are online regularly and working on new builds or infrastructure like roads, farms, shops, or public areas, it helps your town feel alive and gives people something to contribute to. A well-built town naturally draws more attention and makes it easier to grow.
 
-It's also a good idea to have shops in your town where residents can trade with each other. Having a shop at your /t spawn where players can buy and sell goods helps you get the resources you need without grinding for them while also giving players a chance to make money and build wealth.
+It's also a good idea to have shops in your town where residents can trade with each other. Having a shop at your /t spawn where players can buy and sell goods helps you get the resources you need without grinding for them while also giving players a chance to make money and build wealth. Furthermore, having dedicated farms where citizens can harvest resources for themselves can help build your community and help new players get started.
 
 Having a town Discord server helps a lot too. It gives residents a place to chat, ask questions, get updates, and suggest ideas. The more connected your community is, the more likely people are to stay and invite their friends.
 
 At the end of the day, if your town is organized, active, welcoming, and has many activities going on, people will want to join and help it grow. If you get enough people, you can create mutliple towns or even an entire nation!
+
+---
+
+## Expanding Town Borders
+
+To expand your town's borders and claim more land, simply use the `/t claim` command in an unclaimed wild area. As long as your town has enough funds in its bank, you will be able to claim a new chunk of land. Keep in mind that towns are given a limited number of claim blocks, which determines the size of your town. Adding new players to your town will increase your claim block limit, and joining a nation will grant you bonus claim blocks. This is a great way to create more space for you and your residents to build and grow your town.
+
+:::tip
+
+Towny uses chunks to manage land. To see chunk borders when expanding, press F3 + G.
+
+:::
+
+If you need to remove a chunk from your town, you can use the `/t unclaim` command.
+
+---
