@@ -11,6 +11,8 @@ EarthPol is a geopolitical Minecraft server where players can simulate diplomacy
 
 For nearly five years, EarthPol has continued to set the standard for immersive and innovative gameplay. Our team of developers have built upon sucessful features and mechanics that provide a unique experience for every player.
 
+![EarthPol Banner](/img/banner.png)
+
 #### Key Features:
 
 * **Player-Drived World:** EarthPol has no defined or predetermined storyline; its history is shaped entirely by its players. While we may simulate events, the responses and actions of players are individually unique.
