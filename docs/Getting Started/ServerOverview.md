@@ -41,3 +41,13 @@ To support our philosophy of player-driven gameplay, we’ve carefully selected 
 * **QuickShop:** To simulate a real-world economy, QuickShop offers an accessible and interactive way for players to set up shops, buy and sell items, and create a dynamic global market. This plugin encourages trade and entrepreneurship, making the in-game economy a vital part of players' choices.
 
 ---
+
+### Why a 1:326 Scale Map?
+
+EarthPol’s current version utilizes a 1:326 scale map, a decision made to balance realism, gameplay, and strategic depth. This scale ensures that the world is neither too large nor too small, striking the right balance where territorial claims feel meaningful. In larger maps, nations may sprawl unrealistically with little player interaction, while smaller maps create overcrowding and disputes over space. The 1:326 scale allows nations to establish themselves with reasonable borders while still maintaining opportunities for diplomacy and conflict.
+
+Additionally, this map size allows for the preservation of geographical features, making mountains, rivers, and coastlines clearly visible. Players can appreciate natural terrain formations and use them to their advantage in both city planning and strategic positioning. With geography playing a key role, transportation becomes a crucial element of the game. Moving resources, establishing new nations, and maintaining supply lines require careful planning.
+
+At this scale, geopolitics becomes more dynamic, as geography directly impacts warfare and diplomacy. Nations must consider the terrain when defending their borders, planning invasions, or forming alliances. A well-placed river or mountain range can be the difference between victory and defeat in battle. By using a 1:326 scale, EarthPol ensures that both strategic depth and realism play a central role in shaping the player-driven world.
+
+---
