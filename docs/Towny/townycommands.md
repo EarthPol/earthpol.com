@@ -15,6 +15,8 @@ Use Ctrl+F (Windows) or Command + F (Mac) to search for a specific command.
 
 ---
 
+<div align="center">
+
 ### 🏡 Town Commands
 
 | Command | Description |
@@ -115,3 +117,7 @@ Use Ctrl+F (Windows) or Command + F (Mac) to search for a specific command.
 | `/plot toggle explosion` | Enables/disables explosions. |
 | `/plot toggle fire` | Enables/disables fire spread. |
 | `/plot toggle mob` | Enables/disables hostile mob spawning. |
+
+</div>
+
+---
