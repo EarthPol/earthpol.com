@@ -14,7 +14,7 @@ function HomepageHeader() {
   return (
     <header className={clsx(
         styles.heroBanner,
-        colorMode === 'dark' ? styles.heroBannerLight : styles.heroBannerDark
+        colorMode === 'dark' ? styles.heroBannerDark : styles.heroBannerLight
     )}
     >
       <div className="container">

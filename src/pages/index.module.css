@@ -4,11 +4,60 @@
  */
 
 .heroBannerLight {
-  background-image: url('/img/5_night_16k.jpg'); /* Image Path */
+  background-image: url('/img/day_ultra.webp');
 }
 
+@media (max-width: 2560px) {
+  .heroBannerLight {
+    background-image: url('/img/day_large.webp');
+  }
+}
+
+@media (max-width: 1920px) {
+  .heroBannerLight {
+    background-image: url('/img/day_desktop.webp');
+  }
+}
+
+@media (max-width: 1280px) {
+  .heroBannerLight {
+    background-image: url('/img/day_tablet.webp');
+  }
+}
+
+@media (max-width: 768px) {
+  .heroBannerLight {
+    background-image: url('/img/day_mobile.webp');
+  }
+}
+
+/* Dark Mode */
 .heroBannerDark {
-  background-image: url('/img/2_no_clouds_16k.jpg'); /* Image Path */
+  background-image: url('/img/night_ultra.webp');
+}
+
+@media (max-width: 2560px) {
+  .heroBannerDark {
+    background-image: url('/img/night_large.webp');
+  }
+}
+
+@media (max-width: 1920px) {
+  .heroBannerDark {
+    background-image: url('/img/night_desktop.webp');
+  }
+}
+
+@media (max-width: 1280px) {
+  .heroBannerDark {
+    background-image: url('/img/night_tablet.webp');
+  }
+}
+
+@media (max-width: 768px) {
+  .heroBannerDark {
+    background-image: url('/img/night_mobile.webp');
+  }
 }
 
 .heroBanner {
