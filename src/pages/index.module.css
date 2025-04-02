@@ -4,6 +4,16 @@
  */
 
 .heroBanner {
+  background-image: url('/img/5_night_16k.jpg'); /* Image Path */
+  background-size: cover;  /* Ensures the image fully covers the element */
+  background-position: center -20px; 
+  background-repeat: no-repeat; /* Prevents repetition */
+  width: 100vw;  /* Full viewport width */
+  height: 50vh; /* Full viewport height */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  text-align: center;
   padding: 4rem 0;
   text-align: center;
   position: relative;

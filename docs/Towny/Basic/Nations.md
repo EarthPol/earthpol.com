@@ -45,3 +45,8 @@ A strong economy is essential for growing your nation. Having a trade network be
 Communication is critical for a successful nation, so having a nation Discord server can help keep everyone connected. A Discord server allows members to chat, share ideas, ask questions, and stay updated on important events. It also helps foster a sense of community, which is crucial to the long-term success of your nation.
 
 At the end of the day, if your nation is well-organized, active, and provides meaningful benefits to its towns, other players will want to join, and your nation will grow. By creating a cohesive, dynamic nation, you can unite players under a common cause, achieve great things, and even challenge other nations for dominance in the world!
+
+---
+
+## Nation Roles
+
