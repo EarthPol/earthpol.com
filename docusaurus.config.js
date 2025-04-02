@@ -42,7 +42,7 @@ const config = {
   themeConfig: {
     colorMode: {
       defaultMode: 'dark', // Forces dark mode
-      disableSwitch: true,  // Prevents users from changing it
+      disableSwitch: false,  // Prevents users from changing it
       respectPrefersColorScheme: false, // Ignores system preference
     },
     image: 'img/docusaurus-social-card.jpg',

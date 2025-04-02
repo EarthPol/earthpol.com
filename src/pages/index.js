@@ -5,12 +5,18 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
+import { useColorMode } from '@docusaurus/theme-common';
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  const { colorMode } = useColorMode();
   return (
-    <header className={clsx(styles.heroBanner)}>
+    <header className={clsx(
+        styles.heroBanner,
+        colorMode === 'dark' ? styles.heroBannerLight : styles.heroBannerDark
+    )}
+    >
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
