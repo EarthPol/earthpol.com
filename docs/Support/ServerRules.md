@@ -9,8 +9,8 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 ---
 
-### 1. General Conduct and Interactions
-1.1 - **Theft and Raiding**: Stealing and raiding are permitted, except for town leaders and trusted positions (mayors, co-mayors, assistants, builders) who must not steal from town residents. Town leaders decide the consequences for internal theft. Town Trusted must not steal from residents private plots owned by the resident.
+### Section 1. General Conduct and Interactions
+1.1 - **Theft and Raiding**: Stealing and raiding are permitted, except for town leaders and trusted positions (co-kings, mayors, co-mayors, assistants, builders) who must not steal from town residents. Town leaders decide the consequences for internal theft. Town Trusted must not steal from residents private plots owned by the resident.
 
 1.2 - **Prohibited Behaviors**: Bullying, harassment, promoting self-harm, discriminatory language (racist, homophobic, etc.), inciting violence, hate speech, and sexual actions or speech towards minors are forbidden. Spam and explicit discussions on sensitive topics (sex, drugs, etc.) are not allowed.
 
@@ -27,7 +27,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 1.8 - **Impersonation**: Impersonating staff, other players, or positions of authority is prohibited and subject to penalties.
 
 1.9 - **Harassment**: Targeted harassment, in-game or on associated platforms, is banned. This includes spamming, claim camping, and disruptive behaviors.
-### 2. Game Integrity
+### Section 2. Game Integrity
 2.1 - **Exploits and Cheating**: Benefiting from or engaging in exploits, bugs, or hacks is punishable. This includes server bugs, game glitches (duping, block-glitching, etc.), and the use of cheat clients. 
 
 2.2 - **Alternative Accounts**: Only one account per player is allowed. Sibling accounts on the same IP must be verified. Account sharing is not permitted.
@@ -37,7 +37,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 2.4 - **Server Disruption**: Intentional harm to server operations (DDoS, spamming) will result in a permanent ban and legal action.
 
 2.5 - **Farming and Construction Limits**: Adhere to specific limits for mob farms, spawners, and construction to prevent server lag.
-### 3. Griefing and Land Use
+### Section 3. Griefing and Land Use
 3.1 - **Town and Wilderness Griefing**: Griefing claimed towns or wilderness areas, including lava casting and mass burning, is prohibited. Constructive destruction for new towns requires admin discretion.
 
 3.2 - **Land Claims**: Properly fill town claims without "spaghetti claiming." Claim blocking and starting "Anchor Towns" for disruptive purposes are not allowed.
@@ -45,13 +45,13 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 3.3 - **Environmental Preservation**: Major alterations to natural landscapes and water bodies are restricted to maintain geographical accuracy.
 
 3.4 - **Map Art**: Only allowed in specific areas, following content guidelines that exclude violence, discrimination, and NSFW themes.
-### 4. Combat and PvP
+### Section 4. Combat and PvP
 4.1 - **Combat Engagement**: Combat is permitted. Post-defeat engagement rules apply. Spawn camping is banned. Nation Spawn or Town Spawn camping/killing is banned.
 
 4.2 - **Claim Hopping**: Using claims to avoid combat or gain an advantage is prohibited.
-### 5. Naming and Representation
+### Section 5. Naming and Representation
 5.1 - **Names and Representation**: Town and nation names must adhere to guidelines around appropriateness, uniqueness, and relevance to geopolitics. Inappropriate player skins, usernames, and nicknames are not allowed.
-### 6. Towny and SiegeWar Specifics
+### Section 6. Towny and SiegeWar Specifics
 6.1 - **Siege Conduct**: Kill feeding, town-claim surrounding strategies, and digging pits under siege banners to disrupt sieges are prohibited.
 
 6.2 - **Siege Outposts**:
@@ -60,6 +60,11 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
     - If the outpost is there for longer than two weeks without any siege on the town being conducted, the outpost is eligible for removal upon the town mayor making a ticket. The outpost owner need not be notified, and will not be reimbursed for any materials or items left at their siege outpost.
 
 ---
+
+## Punishments
+To ensure transparency, EarthPol has created an interactive catalog of all punishments. The website is divided into sections for bans, mutes, warnings, and kicks. Each entry includes the player’s name, the staff member who issued the punishment, the date, and the reason. A search function is also available to facilitate efficient navigation and documentation.
+
+To view bans, visit our site here: https://bans.earthpol.com/bans.
 
 :::warning
 
