@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # How to Join
 
-earthpol lobby photo
+![EarthPol Lobby](/img/earthpol-lobby.png)
 
 :::warning
 EarthPol is currently supported for Java Edition only. Bedrock players cannot join at this time, but crossplay integration is a potential feature we wish to explore.
@@ -17,8 +17,8 @@ EarthPol is currently supported for Java Edition only. Bedrock players cannot jo
 2. Click 'Multiplayer'.
 3. Click 'Add Server'.
 4. Change 'Server Name' to 'EarthPol'.
-5. Enter IP play.earthpol.com in the "Server Address" field; no port needed.
-6. EarthPol is now in your server list, click to join.
+5. Enter IP `play.earthpol.com` in the "Server Address" field; no port needed.
+6. EarthPol is now in your server list, click to join!
 
 ### Video Guide
 
