@@ -12,6 +12,8 @@ Each town plot has specific permissions that determine who can build, destroy, a
 
 ## Plot Types
 
+<div align="center">
+
 | **Plot Type** | **Description**                                                                 | **How to Set**                                                       | **How to Use**                                                                                   |
 |----------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | **default**    | The default plot type. All plots are default when first claimed. Non-default plots can be reset to default. | `/plot set reset`                                                   | Used as the standard plot. Can be changed back to default using `/plot set reset`.               |
@@ -23,6 +25,7 @@ Each town plot has specific permissions that determine who can build, destroy, a
 | **farm**       | Designates a farm, where the only blocks that can be placed and destroyed are crops. | `/plot set farm`                                                    | Dedicated farming areas for growing crops. Only crop-related blocks can be placed or destroyed.  |
 | **wilds**      | Designates a semi-protected wilderness plot where trees, flowers, mushrooms, etc. can be broken, but all other blocks cannot. | `/plot set wilds`                                                   | A semi-protected plot for nature. Only certain types of blocks (trees, flowers, etc.) can be broken. |
 
+</div>
 ---
 
 :::tip
@@ -41,6 +44,8 @@ In Towny, you can control who has access to different actions on your plots usin
 
 Plot permissions are controlled by **groups** that define the players' access to your plot. Here’s a quick overview of the available groups:
 
+<div align="center">
+
 | **Group**   | **Description**                                                      |
 |-------------|----------------------------------------------------------------------|
 | **friend**  | Players on your friend list. Manage your friend list with `/res friend`. |
@@ -48,11 +53,24 @@ Plot permissions are controlled by **groups** that define the players' access to
 | **ally**    | Players from your town, nation, and allied nations.                   |
 | **outsider**| Players who are not from your town, nation, or allied nations.         |
 
+</div>
+---
+
+### Plot Districts
+
+Plots can be grouped together into *districts*, which are similar to Plot Groups though they come with less restrictions. Townblocks in a district must be adjacent to one another. A district includes the following benefits:
+
+- Not required to have the same plot permissions, plot type, owner, or plot name.
+- Can help with naming sections of a town, creating neighborhoods, or zoning areas for builds.
+- Show their name in the chunk notifications, map hud, and in the `/towny map` hover text.
+
 ---
 
 ### Plot Permissions
 
 There are several **permissions** you can control for each group. These permissions allow you to manage what players can do on your plots.
+
+<div align="center">
 
 | **Permission** | **Description**                                                |
 |----------------|----------------------------------------------------------------|
@@ -61,4 +79,5 @@ There are several **permissions** you can control for each group. These permissi
 | **switch**     | Allows a group to interact with containers like chests, hoppers, furnaces, doors, etc. |
 | **itemuse**    | Allows a group to use items like minecarts, bone meal, and buckets. |
 
+</div>
 ---
