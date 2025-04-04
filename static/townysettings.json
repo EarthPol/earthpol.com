@@ -1,0 +1,1050 @@
+{
+  "version": {
+    "version": "0.101.1.0",
+    "last_run_version": "0.101.1.0"
+  },
+  "language": {
+    "language": "en-US.yml",
+    "enabled_languages": "*"
+  },
+  "permissions": "",
+  "levels": {
+    "town_level": [
+      {
+        "numResidents": 0,
+        "debtCapModifier": 1.0,
+        "namePostfix": " Ruins",
+        "mayorPrefix": "Spirit ",
+        "townBlockBuyBonusLimit": 0,
+        "namePrefix": "",
+        "mayorPostfix": "",
+        "townBlockTypeLimits": {},
+        "townBlockLimit": 1,
+        "upkeepModifier": 1.0,
+        "townOutpostLimit": 0,
+        "resourceProductionModifier": "1.0",
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0"
+      },
+      {
+        "numResidents": 1,
+        "debtCapModifier": 1.0,
+        "namePostfix": " (Settlement)",
+        "mayorPrefix": "Hermit ",
+        "townBlockBuyBonusLimit": 0,
+        "namePrefix": "",
+        "mayorPostfix": "",
+        "townBlockTypeLimits": {},
+        "townBlockLimit": 16,
+        "upkeepModifier": 1.0,
+        "townOutpostLimit": 0,
+        "resourceProductionModifier": "1.0",
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0"
+      },
+      {
+        "numResidents": 2,
+        "debtCapModifier": 1.0,
+        "namePostfix": " (Hamlet)",
+        "mayorPrefix": "Chief ",
+        "townBlockBuyBonusLimit": 0,
+        "namePrefix": "",
+        "mayorPostfix": "",
+        "townBlockTypeLimits": {},
+        "townBlockLimit": 32,
+        "upkeepModifier": 1.0,
+        "townOutpostLimit": 0,
+        "resourceProductionModifier": "1.0",
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0"
+      },
+      {
+        "numResidents": 5,
+        "debtCapModifier": 1.0,
+        "namePostfix": " (Village)",
+        "mayorPrefix": "Baron Von ",
+        "townBlockBuyBonusLimit": 0,
+        "namePrefix": "",
+        "mayorPostfix": "",
+        "townBlockTypeLimits": {},
+        "townBlockLimit": 96,
+        "upkeepModifier": 1.0,
+        "townOutpostLimit": 1,
+        "resourceProductionModifier": "1.0",
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0"
+      },
+      {
+        "numResidents": 10,
+        "debtCapModifier": 1.0,
+        "namePostfix": " (Town)",
+        "mayorPrefix": "Viscount ",
+        "townBlockBuyBonusLimit": 0,
+        "namePrefix": "",
+        "mayorPostfix": "",
+        "townBlockTypeLimits": {},
+        "townBlockLimit": 160,
+        "upkeepModifier": 1.0,
+        "townOutpostLimit": 2,
+        "resourceProductionModifier": "1.0",
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0"
+      },
+      {
+        "numResidents": 15,
+        "debtCapModifier": 1.0,
+        "namePostfix": " (Large Town)",
+        "mayorPrefix": "Count Von ",
+        "townBlockBuyBonusLimit": 0,
+        "namePrefix": "",
+        "mayorPostfix": "",
+        "townBlockTypeLimits": {},
+        "townBlockLimit": 224,
+        "upkeepModifier": 1.0,
+        "townOutpostLimit": 2,
+        "resourceProductionModifier": "1.0",
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0"
+      },
+      {
+        "numResidents": 20,
+        "debtCapModifier": 1.0,
+        "namePostfix": " (City)",
+        "mayorPrefix": "Earl ",
+        "townBlockBuyBonusLimit": 0,
+        "namePrefix": "",
+        "mayorPostfix": "",
+        "townBlockTypeLimits": {},
+        "townBlockLimit": 320,
+        "upkeepModifier": 1.0,
+        "townOutpostLimit": 2,
+        "resourceProductionModifier": "1.0",
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0"
+      },
+      {
+        "numResidents": 30,
+        "debtCapModifier": 1.0,
+        "namePostfix": " (Large City)",
+        "mayorPrefix": "Duke ",
+        "townBlockBuyBonusLimit": 0,
+        "namePrefix": "",
+        "mayorPostfix": "",
+        "townBlockTypeLimits": {},
+        "townBlockLimit": 384,
+        "upkeepModifier": 1.0,
+        "townOutpostLimit": 2,
+        "resourceProductionModifier": "1.0",
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0"
+      },
+      {
+        "numResidents": 50,
+        "debtCapModifier": 1.0,
+        "namePostfix": " (City State)",
+        "mayorPrefix": "Lord ",
+        "townBlockBuyBonusLimit": 0,
+        "namePrefix": "",
+        "mayorPostfix": "",
+        "townBlockTypeLimits": {},
+        "townBlockLimit": 448,
+        "upkeepModifier": 1.0,
+        "townOutpostLimit": 2,
+        "resourceProductionModifier": "1.0",
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0"
+      }
+    ],
+    "nation_level": [
+      {
+        "kingPostfix": "",
+        "capitalPostfix": "",
+        "upkeepModifier": 1.0,
+        "kingPrefix": "Leader ",
+        "capitalPrefix": "",
+        "numResidents": 0,
+        "nationBonusOutpostLimit": 0,
+        "namePostfix": " (Nation)",
+        "townBlockLimitBonus": 50,
+        "namePrefix": "Land of ",
+        "nationZonesSize": 1,
+        "nationTownUpkeepModifier": 1.0,
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0",
+        "nationCapitalBonusOutpostLimit": "0"
+      },
+      {
+        "kingPostfix": "",
+        "capitalPostfix": "",
+        "upkeepModifier": 1.0,
+        "kingPrefix": "Count ",
+        "capitalPrefix": "",
+        "numResidents": 10,
+        "nationBonusOutpostLimit": 0,
+        "namePostfix": " (Nation)",
+        "townBlockLimitBonus": 75,
+        "namePrefix": "Federation of ",
+        "nationZonesSize": 1,
+        "nationTownUpkeepModifier": 1.0,
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0",
+        "nationCapitalBonusOutpostLimit": "0"
+      },
+      {
+        "kingPostfix": "",
+        "capitalPostfix": "",
+        "upkeepModifier": 1.0,
+        "kingPrefix": "Duke ",
+        "capitalPrefix": "",
+        "numResidents": 20,
+        "nationBonusOutpostLimit": 0,
+        "namePostfix": " (Nation)",
+        "townBlockLimitBonus": 100,
+        "namePrefix": "Dominion of ",
+        "nationZonesSize": 1,
+        "nationTownUpkeepModifier": 1.0,
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0",
+        "nationCapitalBonusOutpostLimit": "0"
+      },
+      {
+        "kingPostfix": "",
+        "capitalPostfix": "",
+        "upkeepModifier": 1.0,
+        "kingPrefix": "King ",
+        "capitalPrefix": "",
+        "numResidents": 30,
+        "nationBonusOutpostLimit": 0,
+        "namePostfix": " (Nation)",
+        "townBlockLimitBonus": 150,
+        "namePrefix": "Kingdom of ",
+        "nationZonesSize": 2,
+        "nationTownUpkeepModifier": 1.0,
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0",
+        "nationCapitalBonusOutpostLimit": "0"
+      },
+      {
+        "kingPostfix": "",
+        "capitalPostfix": "",
+        "upkeepModifier": 1.0,
+        "kingPrefix": "Emperor ",
+        "capitalPrefix": "",
+        "numResidents": 40,
+        "nationBonusOutpostLimit": 0,
+        "namePostfix": " Empire",
+        "townBlockLimitBonus": 200,
+        "namePrefix": "The ",
+        "nationZonesSize": 2,
+        "nationTownUpkeepModifier": 1.0,
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0",
+        "nationCapitalBonusOutpostLimit": "0"
+      },
+      {
+        "kingPostfix": "",
+        "capitalPostfix": "",
+        "upkeepModifier": 1.0,
+        "kingPrefix": "God Emperor ",
+        "capitalPrefix": "",
+        "numResidents": 60,
+        "nationBonusOutpostLimit": 0,
+        "namePostfix": " Realm",
+        "townBlockLimitBonus": 300,
+        "namePrefix": "The ",
+        "nationZonesSize": 3,
+        "nationTownUpkeepModifier": 1.0,
+        "peacefulCostMultiplier": "1.0",
+        "bankCapModifier": "1.0",
+        "nationCapitalBonusOutpostLimit": "0"
+      }
+    ]
+  },
+  "town": {
+    "default_public": "true",
+    "default_open": "false",
+    "default_neutral": "true",
+    "default_allowed_to_war": "true",
+    "default_board": "/town set board [msg]",
+    "set_tag_automatically": "false",
+    "default_map_color": "",
+    "default_taxes": {
+      "tax": "0.0",
+      "shop_tax": "0.0",
+      "embassy_tax": "0.0",
+      "plot_tax": "0.0",
+      "does_non-payment_place_plot_for_sale": "false",
+      "taxpercentage": "true",
+      "minimumtax": "0.0"
+    }
+  },
+  "nation": {
+    "default_public": "true",
+    "default_open": "false",
+    "default_board": "/nation set board [msg]",
+    "default_map_color": "",
+    "set_tag_automatically": "false",
+    "default_taxes": {
+      "tax": "0.0",
+      "taxpercentage": "false",
+      "minimumtax": "0.0",
+      "default_nation_conquered_tax": "0",
+      "max_nation_conquered_tax": "100"
+    }
+  },
+  "new_world_settings": {
+    "using_towny": "true",
+    "are_new_world_claimable": "true",
+    "pvp": {
+      "world_pvp": "true",
+      "force_pvp_on": "false",
+      "friendly_fire_enabled": "false",
+      "war_allowed": "true"
+    },
+    "mobs": {
+      "world_monsters_on": "true",
+      "wilderness_monsters_on": "true",
+      "force_town_monsters_on": "false"
+    },
+    "explosions": {
+      "world_explosions_enabled": "true",
+      "force_explosions_on": "false"
+    },
+    "fire": {
+      "world_firespread_enabled": "false",
+      "force_fire_on": "false"
+    },
+    "enderman_protect": "true",
+    "disable_creature_crop_trampling": "true",
+    "plot_management": {
+      "block_delete": {
+        "enabled": "true",
+        "unclaim_delete": "BEDS,TORCHES,REDSTONE_WIRE,SIGNS,DOORS,PRESSURE_PLATES"
+      },
+      "entity_delete": {
+        "enabled": "false",
+        "unclaim_delete": "end_crystal"
+      },
+      "mayor_plotblock_delete": {
+        "enabled": "true",
+        "mayor_plot_delete": "SIGNS"
+      },
+      "revert_on_unclaim": {
+        "enabled": "false",
+        "speed": "1s",
+        "block_ignore": "ORES,LAPIS_BLOCK,GOLD_BLOCK,IRON_BLOCK,DIAMOND_BLOCK,EMERALD_BLOCK,NETHERITE_BLOCK,MOSSY_COBBLESTONE,TORCHES,SPAWNER,SIGNS,SHULKER_BOXES,BEACON,LODESTONE,RESPAWN_ANCHOR,NETHER_PORTAL,FURNACE,BLAST_FURNACE,SMOKER,BREWING_STAND,TNT,AIR,FIRE,SKULLS,DRAGON_EGG,CRYING_OBSIDIAN,MOVING_PISTON",
+        "block_whitelist": ""
+      },
+      "wild_revert_on_mob_explosion": {
+        "enabled": "true",
+        "entities": "CREEPER,END_CRYSTAL,ENDER_DRAGON,FIREBALL,SMALL_FIREBALL,FIREBALL,TNT,WITHER,WITHER_SKULL,CREEPER",
+        "delay": "20s"
+      },
+      "wild_revert_on_block_explosion": {
+        "enabled": "false",
+        "blocks": "BEDS,RESPAWN_ANCHOR"
+      },
+      "wild_revert_on_explosion_block_whitelist": "",
+      "wild_revert_explosions_blocks_to_not_replace": ""
+    }
+  },
+  "global_town_settings": {
+    "town_limit": "3000",
+    "max_distance_for_merge": "150",
+    "health_regen": {
+      "speed": "3s",
+      "enable": "false"
+    },
+    "saturation_regen": {
+      "also_prevent_saturation_loss": "false"
+    },
+    "beacons": {
+      "beacons_for_allies_only": "false",
+      "exclude_conquered_towns": "false"
+    },
+    "pvp_cooldown_time": "60",
+    "peaceful_cooldown_time": "30",
+    "town_delete_cooldown_time": "0",
+    "town_unclaim_cooldown_time": "0",
+    "homeblock_movement_cooldown_hours": "0",
+    "homeblock_movement_distance_limit": "1000",
+    "show_town_notifications": "true",
+    "allow_outlaws_to_enter_town": "true",
+    "allow_outlaws_to_teleport_out_of_town": "false",
+    "allow_outlaws_use_teleport_items": "true",
+    "warn_town_on_outlaw": "false",
+    "warn_town_on_outlaw_message_cooldown_in_seconds": "60",
+    "outlaw_teleport_away_on_becoming_outlawed": "false",
+    "outlaw_teleport_warmup": "60",
+    "outlaw_teleport_world": "",
+    "outlaw_blacklisted_commands": "sethome, delhome, home, tpahere, tpa, tpaccept",
+    "war_blacklisted_commands": "somecommandhere,othercommandhere",
+    "maximum_number_residents_without_nation": "0",
+    "required_number_residents_join_nation": "1",
+    "required_number_residents_create_nation": "1",
+    "refund_disband_low_residents": "true",
+    "farm_animals": "PIG,COW,CHICKEN,SHEEP,MOOSHROOM",
+    "max_residents_per_town": "50",
+    "max_residents_capital_override": "100",
+    "display_board_onlogin": "false",
+    "outsiders_prevent_unclaim_townblock": "true",
+    "outsiders_prevent_pvp_toggle": "true",
+    "homeblocks_prevent_forcepvp": "false",
+    "admins_can_always_pvp": "false",
+    "keep_inventory_on_death_in_town": "false",
+    "keep_inventory_on_death_in_own_town": "false",
+    "keep_inventory_on_death_in_allied_town": "false",
+    "keep_inventory_on_death_in_arena": "true",
+    "keep_experience_on_death_in_town": "false",
+    "keep_experience_on_death_in_arena": "true",
+    "prevent_item_degrading_in_arenas": "false",
+    "max_buytown_price": "999999999",
+    "maximum_plot_price_cost": "10000.0",
+    "max_plots_per_resident": "100",
+    "display_xyz_instead_of_towny_coords": "true",
+    "display_town_list_randomly": "false",
+    "order_of_mayoral_succession": "assistant",
+    "prevent_fluid_griefing": "true",
+    "town_command_blacklisting": {
+      "enabled": "false",
+      "town_blacklisted_commands": "somecommandhere,othercommandhere",
+      "player_owned_plot_limited_commands": "sethome,home",
+      "own_town_and_wilderness_limited_commands": "sethome,home",
+      "own_town_and_wilderness_limited_commands_allow_trusted_residents": "true",
+      "own_town_and_wilderness_limited_commands_allow_allies": "false"
+    },
+    "automatic_capitalisation": "true",
+    "allow_numbers_in_town_name": "false",
+    "allowed_map_colors": "aqua:00ffff, azure:f0ffff, beige:f5f5dc, black:000000, blue:0000ff, brown:a52a2a, cyan:00ffff, darkblue:00008b, darkcyan:008b8b, darkgrey:a9a9a9, darkgreen:006400, darkkhaki:bdb76b, darkmagenta:8b008b, darkolivegreen:556b2f, darkorange:ff8c00, darkorchid:9932cc, darkred:8b0000, darksalmon:e9967a, darkviolet:9400d3, fuchsia:ff00ff, gold:ffd700, green:008000, indigo:4b0082, khaki:f0e68c, lightblue:add8e6, lightcyan:e0ffff, lightgreen:90ee90, lightgrey:d3d3d3, lightpink:ffb6c1, lightyellow:ffffe0, lime:00ff00, magenta:ff00ff, maroon:800000, navy:000080, olive:808000, orange:ffa500, pink:ffc0cb, purple:800080, violet:800080, red:ff0000, silver:c0c0c0, white:ffffff, yellow:ffff00",
+    "unkickable_ranks": "assistant",
+    "do_trusted_players_get_full_perms_in_personally_owned_land": "true"
+  },
+  "global_nation_settings": {
+    "nationzone": {
+      "enable": "false",
+      "only_capitals": "true",
+      "capital_bonus_size": "0",
+      "not_for_conquered_towns": "false",
+      "protect_conquered_towns": "false",
+      "war_disables": "true",
+      "show_notifications": "false"
+    },
+    "display_board_onlogin": "false",
+    "capitals_cannot_be_neutral": "false",
+    "nation_level_is_determined_by_town_count_instead_of_resident_count": "false",
+    "max_towns_per_nation": "0",
+    "max_residents_per_nation": "0",
+    "allowed_map_colors": "aqua:00ffff, azure:f0ffff, beige:f5f5dc, black:000000, blue:0000ff, brown:a52a2a, cyan:00ffff, darkblue:00008b, darkcyan:008b8b, darkgrey:a9a9a9, darkgreen:006400, darkkhaki:bdb76b, darkmagenta:8b008b, darkolivegreen:556b2f, darkorange:ff8c00, darkorchid:9932cc, darkred:8b0000, darksalmon:e9967a, darkviolet:9400d3, fuchsia:ff00ff, gold:ffd700, green:008000, indigo:4b0082, khaki:f0e68c, lightblue:add8e6, lightcyan:e0ffff, lightgreen:90ee90, lightgrey:d3d3d3, lightpink:ffb6c1, lightyellow:ffffe0, lime:00ff00, magenta:ff00ff, maroon:800000, navy:000080, olive:808000, orange:ffa500, pink:ffc0cb, purple:800080, violet:800080, red:ff0000, silver:c0c0c0, white:ffffff, yellow:ffff00",
+    "max_allies": "-1",
+    "are_conquered_towns_considered_allies": "true",
+    "proximity": {
+      "nation_proximity_to_capital_city": "0.0",
+      "nation_proximity_to_other_nation_towns": "0.0",
+      "absolute_distance_from_capital": "0.0"
+    },
+    "allow_numbers_in_nation_name": "true"
+  },
+  "plugin": {
+    "database": {
+      "daily_backups": "true",
+      "backups_are_deleted_after": "90d",
+      "flatfile_backup_type": "tar"
+    },
+    "interfacing": {
+      "tekkit": {
+        "fake_residents": "[IndustrialCraft],[BuildCraft],[Redpower],[Forestry],[Turtle]"
+      },
+      "luckperms": {
+        "contexts": "false",
+        "enabled_contexts": "*"
+      },
+      "coreprotect_support": "true",
+      "web_map": {
+        "enabled": "true",
+        "world_name_uses_world_key": "false",
+        "url": "https://map.earthpol.com/#{world}:{x}:65:{z}:5:0:0:0:0:perspective"
+      }
+    },
+    "day_timer": {
+      "day_interval": "1d",
+      "new_day_time": "1d",
+      "delete_0_plot_towns": "false"
+    },
+    "hour_timer": {
+      "hour_interval": "60m",
+      "new_hour_time": "30m",
+      "short_interval": "20s"
+    },
+    "debug_mode": "false",
+    "info_tool": "BRICK",
+    "dev_mode": {
+      "enable": "false",
+      "dev_name": "Bustun"
+    },
+    "reset_log_on_boot": "true",
+    "towny_top_size": "10",
+    "name_blacklist": "xbit,pmkcanadian,bustun,catgirljodie,oxbit,robin,mrtytanic,kauntar",
+    "update_notifications": {
+      "alerts": "true",
+      "major_only": "true"
+    }
+  },
+  "filters_colour_chat": {
+    "npc_prefix": "BigBrother",
+    "regex": {
+      "name_filter_regex": "[\\\\\\/]",
+      "name_check_regex": "^[a-zA-Z0-9._\\[\\]-]*$",
+      "string_check_regex": "^[a-zA-Z0-9 \\s._\\[\\]\\#\\?\\!\\@\\$\\%\\^\\&\\*\\-\\,\\*\\(\\)\\{\\}]*$",
+      "name_remove_regex": "[^a-zA-Z0-9._\\[\\]-]"
+    },
+    "modify_chat": {
+      "max_name_length": "20",
+      "max_name_capital_letters": "-1",
+      "max_tag_length": "4",
+      "max_title_length": "32",
+      "does_adding_colour_codes_require_permission_node": "true"
+    },
+    "papi_chat_formatting": {
+      "both": "&f[&6%n&f|&b%t&f] ",
+      "town": "&f[&b%s&f] ",
+      "nation": "&f[&6%s&f] ",
+      "ranks": {
+        "nomad": "&f",
+        "resident": "&f",
+        "mayor": "&b",
+        "king": "&6"
+      }
+    },
+    "papi_leaderboard_formatting": {
+      "format": "%s - %s"
+    },
+    "papi_relational_formatting": {
+      "none": "&f",
+      "no_town": "&f",
+      "same_town": "&2",
+      "same_nation": "&2",
+      "conquered_town": "&e",
+      "ally": "&b",
+      "enemy": "&c"
+    }
+  },
+  "protection": {
+    "item_use_ids": "MINECARTS,BOATS,ENDER_PEARL,FIREBALL,CHORUS_FRUIT,LEAD,EGG",
+    "switch_ids": "CHEST,SHULKER_BOXES,TRAPPED_CHEST,FURNACE,BLAST_FURNACE,DISPENSER,HOPPER,DROPPER,JUKEBOX,SMOKER,COMPOSTER,BELL,BARREL,BREWING_STAND,LEVER,PRESSURE_PLATES,BUTTONS,WOOD_DOORS,FENCE_GATES,TRAPDOORS,MINECARTS,LODESTONE,RESPAWN_ANCHOR,TARGET,OAK_CHEST_BOAT,DECORATED_POT,CRAFTER",
+    "fire_spread_bypass_materials": "NETHERRACK,SOUL_SAND,SOUL_SOIL",
+    "town_mob_removal_entities": "Monster,Flying,Slime,Shulker",
+    "town_mob_removal_killer_bunny": "true",
+    "town_prevent_villager_breeding": "true",
+    "town_mob_removal_ignored_spawn_causes": ",TRIAL_SPAWNER",
+    "disable_creature_pressureplate_stone": "true",
+    "wilderness_mob_removal_entities": "Monster,Flying,Slime,Shulker,SkeletonHorse,ZombieHorse",
+    "world_mob_removal_entities": "Monster,Flying,Slime,Shulker,SkeletonHorse,ZombieHorse",
+    "world_prevent_villager_breeding": "true",
+    "mob_removal_skips_named_mobs": "true",
+    "mob_removal_speed": "5s",
+    "mob_types": "Animals,WaterMob,NPC,Snowman,ArmorStand,Villager,Hanging",
+    "mob_types_protected_from_boat_theft": "false",
+    "are_mob_types_protected_against_mobs": "true",
+    "potion_types": "BLINDNESS,CONFUSION,HARM,HUNGER,POISON,SLOW,SLOW_DIGGING,WEAKNESS,WITHER",
+    "prevent_frost_walker_freezing": "true",
+    "prevent_player_crop_trample": "true"
+  },
+  "unclaimed": {
+    "unclaimed_zone_build": "true",
+    "unclaimed_zone_destroy": "true",
+    "unclaimed_zone_item_use": "true",
+    "unclaimed_zone_switch": "true",
+    "unclaimed_zone_ignore": "TORCH,LADDER,ORES,PLANTS,TREES,SAPLINGS"
+  },
+  "notification": {
+    "format": "&6 ~ %s",
+    "splitter": "&7 - ",
+    "area_wilderness": "&2%s",
+    "area_wilderness_pvp": "%s",
+    "area_town": "&6%s",
+    "area_town_pvp": "%s",
+    "owner": "&a%s",
+    "no_owner": "&a%s",
+    "plot": {
+      "splitter": " ",
+      "format": "%s",
+      "homeblock": "&b[Home]",
+      "outpostblock": "&b[Outpost]",
+      "forsaleby": "&e[For Sale by %s: %s]",
+      "notforsale": "&e[Not For Sale]",
+      "type": "&6[%s]"
+    },
+    "group": "&f[%s]",
+    "district": "&2[%s]",
+    "town_names_are_verbose": "true",
+    "using_titles": "true",
+    "titles": {
+      "town_title": "&fEntering",
+      "town_subtitle": "&b{townname}",
+      "wilderness_title": "",
+      "wilderness_subtitle": "&2{wilderness}",
+      "nationname_format": "&6Nation of %s",
+      "nationcapital_format": "&6Entering %s, Capital City of %s",
+      "duration": "30"
+    },
+    "owner_shows_verbose_name": "true",
+    "notifications_appear_as": "action_bar",
+    "notification_actionbar_duration": "5",
+    "bossbars": {
+      "color": "white",
+      "overlay": "progress",
+      "progress": "0"
+    }
+  },
+  "default_perm_flags": {
+    "resident": {
+      "friend": {
+        "build": "true",
+        "destroy": "true",
+        "item_use": "true",
+        "switch": "true"
+      },
+      "town": {
+        "build": "false",
+        "destroy": "false",
+        "item_use": "false",
+        "switch": "false"
+      },
+      "ally": {
+        "build": "false",
+        "destroy": "false",
+        "item_use": "false",
+        "switch": "false"
+      },
+      "outsider": {
+        "build": "false",
+        "destroy": "false",
+        "item_use": "false",
+        "switch": "false"
+      }
+    },
+    "town": {
+      "default": {
+        "pvp": "false",
+        "fire": "false",
+        "explosion": "false",
+        "mobs": "false"
+      },
+      "resident": {
+        "build": "false",
+        "destroy": "false",
+        "item_use": "false",
+        "switch": "false"
+      },
+      "nation": {
+        "build": "false",
+        "destroy": "false",
+        "item_use": "false",
+        "switch": "false"
+      },
+      "ally": {
+        "build": "false",
+        "destroy": "false",
+        "item_use": "false",
+        "switch": "false"
+      },
+      "outsider": {
+        "build": "false",
+        "destroy": "false",
+        "item_use": "false",
+        "switch": "false"
+      }
+    }
+  },
+  "invite_system": {
+    "accept_command": "accept",
+    "deny_command": "deny",
+    "confirm_command": "confirm",
+    "cancel_command": "cancel",
+    "confirmation_timeout": "20",
+    "cooldowntime": "15m",
+    "expirationtime": "1h",
+    "maximum_invites_sent": {
+      "town_toplayer": "35",
+      "nation_totown": "35",
+      "nation_tonation": "35"
+    },
+    "maximum_invites_received": {
+      "player": "10",
+      "town": "10",
+      "nation": "10"
+    },
+    "maximum_distance_from_town_spawn": "0"
+  },
+  "resident_settings": {
+    "delete_old_residents": {
+      "enable": "false",
+      "deleted_after_time": "60d",
+      "delete_economy_account": "true",
+      "delete_only_townless": "false",
+      "only_remove_town": "false"
+    },
+    "default_town_name": "",
+    "deny_bed_use": "false",
+    "default_about": "/res set about [msg]",
+    "min_time_to_join_town": "0m"
+  },
+  "economy": {
+    "using_economy": "true",
+    "use_async": "true",
+    "bank_account_cache_timeout": "600s",
+    "town_prefix": "town-",
+    "nation_prefix": "nation-",
+    "town_rename_cost": "16",
+    "nation_rename_cost": "32",
+    "town_set_mapcolour_cost": "64",
+    "nation_set_mapcolour_cost": "128",
+    "spawn_travel": {
+      "price_town_spawn_travel": "0.0",
+      "price_town_nation_spawn_travel": "0.0",
+      "price_town_ally_spawn_travel": "0.0",
+      "price_town_public_spawn_travel": "0.0",
+      "is_public_spawn_cost_affected_by_town_spawncost": "true",
+      "town_spawn_cost_paid_to_town": "true"
+    },
+    "price_nation_neutrality": "4.0",
+    "price_nation_neutrality_charges_per_town": "false",
+    "price_town_neutrality": "8.0",
+    "price_town_neutrality_charges_per_plot": "false",
+    "new_expand": {
+      "price_new_nation": "5000.0",
+      "price_new_town": "512.0",
+      "price_town_merge": "128",
+      "price_town_merge_per_plot_percentage": "50",
+      "price_reclaim_ruined_town": "128.0",
+      "price_outpost": "256.0",
+      "price_claim_townblock": "8.0",
+      "price_claim_townblock_increase": "1.0",
+      "max_price_claim_townblock": "-1.0",
+      "price_claim_townblock_refund": "6.0",
+      "price_purchased_bonus_townblock": "25.0",
+      "price_purchased_bonus_townblock_increase": "1.0",
+      "price_purchased_bonus_townblock_max_price": "-1.0"
+    },
+    "takeoverclaim": {
+      "price": "100.0"
+    },
+    "death": {
+      "price_death_type": "fixed",
+      "percentage_cap": "0.0",
+      "price_death_pvp_only": "false",
+      "price_death": "0.0",
+      "price_death_town": "0.0",
+      "price_death_nation": "0.0"
+    },
+    "banks": {
+      "town_bank_cap": "0.0",
+      "town_allow_withdrawals": "true",
+      "town_min_deposit": "0",
+      "town_min_withdraw": "0",
+      "nation_bank_cap": "0.0",
+      "nation_allow_withdrawals": "true",
+      "nation_min_deposit": "0",
+      "nation_min_withdraw": "0",
+      "disallow_bank_actions_outside_town": "false",
+      "is_deleted_town_and_nation_bank_balances_paid_to_owner": "true"
+    },
+    "closed_economy": {
+      "server_account": "towny-server",
+      "server_account_uuid": "a73f39b0-1b7c-2930-b4a3-ce101812d926",
+      "enabled": "true"
+    },
+    "daily_taxes": {
+      "enabled": "true",
+      "do_mayors_pay_town_tax": "false",
+      "max_plot_tax_amount": "8.0",
+      "max_town_tax_amount": "8.0",
+      "max_nation_tax_amount": "8.0",
+      "max_town_tax_percent": "25",
+      "max_town_tax_percent_amount": "10000",
+      "max_nation_tax_percent": "25",
+      "max_nation_tax_percent_amount": "10000",
+      "do_nation_capitals_pay_nation_tax": "false",
+      "price_nation_upkeep": "0.0",
+      "nation_perplot_upkeep": "false",
+      "nation_pertown_upkeep": "true",
+      "nation_pertown_upkeep_affected_by_nation_level_modifier": "false",
+      "price_town_upkeep": "1.00",
+      "town_plotbased_upkeep": "true",
+      "town_plotbased_upkeep_affected_by_town_level_modifier": "false",
+      "town_plotbased_upkeep_minimum_amount": "0.0",
+      "town_plotbased_upkeep_maximum_amount": "0.0",
+      "price_town_overclaimed_upkeep_penalty": "1.0",
+      "price_town_overclaimed_upkeep_penalty_plotbased": "false",
+      "per_outpost_cost": "0.0",
+      "use_plot_payments": "true",
+      "allow_negative_plot_tax": "false",
+      "allow_negative_town_tax": "true",
+      "allow_negative_nation_tax": "true"
+    },
+    "bankruptcy": {
+      "enabled": "true",
+      "debt_cap": {
+        "maximum": "0.0",
+        "override": "0.0",
+        "debt_cap_uses_town_levels": "false",
+        "debt_cap_uses_fixed_days": "true",
+        "allowed_days": "7"
+      },
+      "upkeep": {
+        "delete_towns_that_reach_debt_cap": "true"
+      },
+      "neutrality": {
+        "can_bankrupt_towns_pay_for_neutrality": "true"
+      },
+      "nation_tax": {
+        "do_bankrupt_towns_pay_nation_tax": "false",
+        "kick_towns_that_reach_debt_cap": "false",
+        "does_nation_tax_delete_conquered_towns_that_cannot_pay": "false"
+      }
+    },
+    "advanced": {
+      "modern": "true",
+      "npc_uuid_version": "-1"
+    }
+  },
+  "bank_history": {
+    "book": "{time}\n{type} of {amount} {to-from} {name}\nReason: {reason}\nBalance: {balance}"
+  },
+  "townblocktypes": {
+    "types": [
+      {
+        "name": "default",
+        "cost": 0.0,
+        "tax": 0.0,
+        "mapKey": "+",
+        "itemUseIds": "",
+        "switchIds": "",
+        "allowedBlocks": ""
+      },
+      {
+        "name": "shop",
+        "cost": 0.0,
+        "tax": 0.0,
+        "mapKey": "C",
+        "itemUseIds": "",
+        "switchIds": "",
+        "allowedBlocks": ""
+      },
+      {
+        "name": "arena",
+        "cost": 0.0,
+        "tax": 0.0,
+        "mapKey": "A",
+        "itemUseIds": "",
+        "switchIds": "",
+        "allowedBlocks": ""
+      },
+      {
+        "name": "embassy",
+        "cost": 0.0,
+        "tax": 0.0,
+        "mapKey": "E",
+        "itemUseIds": "",
+        "switchIds": "",
+        "allowedBlocks": ""
+      },
+      {
+        "name": "wilds",
+        "cost": 0.0,
+        "tax": 0.0,
+        "mapKey": "W",
+        "itemUseIds": "",
+        "switchIds": "",
+        "allowedBlocks": "GOLD_ORE,IRON_ORE,COAL_ORE,COPPER_ORE,REDSTONE_ORE,EMERALD_ORE,LAPIS_ORE,DIAMOND_ORE,DEEPSLATE_COAL_ORE,DEEPSLATE_IRON_ORE,DEEPSLATE_COPPER_ORE,DEEPSLATE_GOLD_ORE,DEEPSLATE_EMERALD_ORE,DEEPSLATE_REDSTONE_ORE,DEEPSLATE_LAPIS_ORE,DEEPSLATE_DIAMOND_ORE,NETHER_GOLD_ORE,NETHER_QUARTZ_ORE,ANCIENT_DEBRIS,OAK_LOG,SPRUCE_LOG,BIRCH_LOG,JUNGLE_LOG,ACACIA_LOG,DARK_OAK_LOG,CRIMSON_STEM,WARPED_STEM,ACACIA_LEAVES,OAK_LEAVES,DARK_OAK_LEAVES,JUNGLE_LEAVES,BIRCH_LEAVES,SPRUCE_LEAVES,CRIMSON_HYPHAE,WARPED_HYPHAE,ACACIA_SAPLING,BAMBOO_SAPLING,BIRCH_SAPLING,DARK_OAK_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,SPRUCE_SAPLING,TALL_GRASS,BROWN_MUSHROOM,RED_MUSHROOM,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,CRIMSON_FUNGUS,LARGE_FERN,TORCH,LADDER,CLAY,PUMPKIN,GLOWSTONE,VINE,NETHER_WART_BLOCK,COCOA"
+      },
+      {
+        "name": "inn",
+        "cost": 0.0,
+        "tax": 0.0,
+        "mapKey": "I",
+        "itemUseIds": "",
+        "switchIds": "",
+        "allowedBlocks": ""
+      },
+      {
+        "name": "jail",
+        "cost": 0.0,
+        "tax": 0.0,
+        "mapKey": "J",
+        "itemUseIds": "",
+        "switchIds": "",
+        "allowedBlocks": ""
+      },
+      {
+        "name": "farm",
+        "cost": 0.0,
+        "tax": 0.0,
+        "mapKey": "F",
+        "itemUseIds": "",
+        "switchIds": "",
+        "allowedBlocks": "COW_SPAWN_EGG,GOAT_SPAWN_EGG,MOOSHROOM_SPAWN_EGG,BAMBOO,BAMBOO_SAPLING,JUNGLE_LOG,JUNGLE_SAPLING,JUNGLE_LEAVES,OAK_LOG,OAK_SAPLING,OAK_LEAVES,BIRCH_LOG,BIRCH_SAPLING,BIRCH_LEAVES,ACACIA_LOG,ACACIA_SAPLING,ACACIA_LEAVES,DARK_OAK_LOG,DARK_OAK_SAPLING,DARK_OAK_LEAVES,SPRUCE_LOG,SPRUCE_SAPLING,SPRUCE_LEAVES,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,CRIMSON_FUNGUS,CRIMSON_STEM,CRIMSON_HYPHAE,CRIMSON_ROOTS,MUSHROOM_STEM,NETHER_WART_BLOCK,BROWN_MUSHROOM,BROWN_MUSHROOM_BLOCK,RED_MUSHROOM,RED_MUSHROOM_BLOCK,SHROOMLIGHT,WARPED_FUNGUS,WARPED_HYPHAE,WARPED_ROOTS,WARPED_STEM,WARPED_WART_BLOCK,WEEPING_VINES_PLANT,WEEPING_VINES,NETHER_SPROUTS,SHEARS,MELON_SEEDS,MANGROVE_LEAVES,POTTED_ACACIA_SAPLING,CHERRY_SAPLING,TWISTING_VINES_PLANT,TORCHFLOWER,OAK_WOOD,SPRUCE_WOOD,FLOWERING_AZALEA_LEAVES,PINK_PETALS,AZALEA,SMALL_DRIPLEAF,PITCHER_POD,POTTED_BIRCH_SAPLING,POTTED_OAK_SAPLING,BAMBOO_BLOCK,TORCHFLOWER_SEEDS,PITCHER_PLANT,COCOA_BEANS,DARK_OAK_WOOD,POTTED_JUNGLE_SAPLING,POTTED_SPRUCE_SAPLING,CHERRY_WOOD,CHERRY_LOG,MANGROVE_LOG,PITCHER_CROP,CHERRY_LEAVES,JUNGLE_WOOD,PUMPKIN_SEEDS,SPORE_BLOSSOM,POTTED_CHERRY_SAPLING,FLOWERING_AZALEA,AZALEA_LEAVES,ACACIA_WOOD,MANGROVE_WOOD,WHEAT_SEEDS,BIG_DRIPLEAF,BIRCH_WOOD,POTTED_DARK_OAK_SAPLING,SEA_PICKLE,BEETROOT_SEEDS,CHORUS_FRUIT,MANGROVE_PROPAGULE"
+      },
+      {
+        "name": "bank",
+        "cost": 0.0,
+        "tax": 0.0,
+        "mapKey": "B",
+        "itemUseIds": "",
+        "switchIds": "",
+        "allowedBlocks": ""
+      }
+    ]
+  },
+  "jail": {
+    "is_jailing_attacking_enemies": "false",
+    "is_jailing_attacking_outlaws": "false",
+    "outlaw_jail_hours": "0.5",
+    "pow_jail_hours": "1",
+    "maximum_jail_hours": "1",
+    "fee_initial_amount": "-1",
+    "fee_hourly_amount": "-1",
+    "jail_allows_teleport_items": "true",
+    "jail_denies_town_leave": "true",
+    "bail": {
+      "is_allowing_bail": "true",
+      "bail_amount": "100",
+      "bailmax_amount": "100",
+      "bail_amount_mayor": "100",
+      "bail_amount_king": "100"
+    },
+    "max_jailed_count": "-1",
+    "max_jailed_newjail_behavior": "0",
+    "is_jailbook_enabled": "true",
+    "blacklisted_commands": "home,spawn,teleport,tp,tpa,tphere,tpahere,back,dback,ptp,jump,kill,warp,suicide",
+    "do_jail_plots_deny_pvp": "false",
+    "prevent_newly_jailed_players_logging_out": "false",
+    "new_player_immunity": "1h",
+    "unjailed_players_get_teleported": "true",
+    "show_bail_command_in_title_message": "false"
+  },
+  "bank": {
+    "is_banking_limited_to_bank_plots": "false",
+    "do_homeblocks_not_work_when_a_town_has_bank_plots": "false"
+  },
+  "town_ruining": {
+    "town_ruins": {
+      "enabled": "true",
+      "max_duration_hours": "72",
+      "min_duration_hours": "24",
+      "reclaim_enabled": "true",
+      "ruins_become_public": "false",
+      "ruins_become_open": "false",
+      "town_bank_is_sent_to_nation": "false",
+      "do_plots_permissions_change_to_allow_all": "true"
+    }
+  },
+  "ascii_map_symbols": {
+    "home": "H",
+    "outpost": "O",
+    "forsale": "$",
+    "wilderness": "-",
+    "map_height": "7",
+    "map_width": "27"
+  },
+  "claiming": {
+    "town_block_ratio": "65",
+    "new_town_bonus_claims": "0",
+    "town_block_limit": "0",
+    "town_block_size": "16",
+    "show_claiming_particles": "true",
+    "min_adjacent_blocks": "2",
+    "max_claim_radius_value": "4",
+    "biome_rules": {
+      "unwanted_biomes": {
+        "enabled": "false",
+        "biomes": "the_end,end_barrens,end_highlands,end_midlands,small_end_islands",
+        "threshold": "55"
+      },
+      "ocean_blocking": {
+        "enabled": "false",
+        "threshold": "55"
+      }
+    },
+    "distance_rules": {
+      "min_distances_ignored_for_towns_in_same_nation": "true",
+      "min_distances_ignored_for_towns_in_allied_nation": "false",
+      "min_plot_distance_from_town_plot": "6",
+      "min_distance_from_town_homeblock": "8",
+      "min_distance_for_outpost_from_plot": "12",
+      "max_distance_for_outpost_from_town_plot": "0",
+      "min_distance_between_homeblocks": "0",
+      "max_distance_between_homeblocks": "0",
+      "new_town_min_distance_from_town_plot": "-1",
+      "new_town_min_distance_from_town_homeblock": "-1"
+    },
+    "outposts": {
+      "allow_outposts": "true",
+      "limit_outposts_using_town_and_nation_levels": "false",
+      "over_outpost_limits_stops_teleports": "true",
+      "minimum_amount_of_residents_in_town_for_outpost": "5"
+    },
+    "overclaiming": {
+      "being_overclaimed_allows_other_towns_to_steal_land": "false",
+      "overclaiming_prevented_by_homeblock_radius": "true",
+      "town_age_requirement": "7d",
+      "command_cooldown": "0m",
+      "nations_required_to_be_enemies": "true"
+    },
+    "purchased_bonus_blocks": {
+      "max_purchased_blocks": "0",
+      "max_purchased_blocks_uses_town_levels": "true"
+    }
+  },
+  "spawning": {
+    "safe_teleport": "true",
+    "spawn_cost_warnings": "true",
+    "visualized_spawn_points_enabled": "true",
+    "spawning_warmups": {
+      "teleport_warmup_time": "6",
+      "movement_cancels_spawn_warmup": "true",
+      "damage_cancels_spawn_warmup": "true",
+      "uses_title_message": "true",
+      "uses_particle_effect": "true"
+    },
+    "town_spawn": {
+      "allow_town_spawn": "true",
+      "allow_town_spawn_travel": "true",
+      "allow_town_spawn_travel_nation": "true",
+      "allow_town_spawn_travel_ally": "false",
+      "is_nation_ally_spawning_to_town_requiring_public_status": "false",
+      "do_trusted_residents_count_as_residents": "false",
+      "are_new_residents_prompted_to_town_spawn": "true",
+      "prevent_town_spawn_in": "enemy,outlaw",
+      "allow_enemies_spawn_to_peaceful_towns": "false",
+      "spawning_cooldowns": {
+        "town_spawn_cooldown_time": "30",
+        "outpost_cooldown_time": "120",
+        "nation_member_town_spawn_cooldown_time": "30",
+        "nation_ally_town_spawn_cooldown_time": "60",
+        "unaffiliated_town_spawn_cooldown_time": "60"
+      }
+    },
+    "nation_spawn": {
+      "force_nation_spawn_in_capital": "true",
+      "allow_nation_spawn": "true",
+      "allow_nation_spawn_travel": "false",
+      "allow_nation_spawn_travel_ally": "true",
+      "deny_conquered_towns_use_of_nation_spawn": "false",
+      "spawning_cooldowns": {
+        "nation_member_nation_spawn_cooldown_time": "30",
+        "nation_ally_nation_spawn_cooldown_time": "30",
+        "unaffiliated_nation_spawn_cooldown_time": "30"
+      }
+    },
+    "respawning": {
+      "town_respawn": "true",
+      "town_respawn_same_world_only": "false",
+      "respawn_anchor_higher_precendence": "false",
+      "respawn_protection": {
+        "time": "10s",
+        "allow_pickup": "true"
+      }
+    }
+  }
+}
