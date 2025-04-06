@@ -47,17 +47,24 @@ const config = {
     },
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'EarthPol',
       logo: {
         alt: 'EarthPol Logo',
         src: 'img/logo-200x200.webp',
         width: 32,
         height: 32,
+        href: '/', // optional
       },
       items: [
+        // LEFT SIDE
+        { to: '#', label: 'Map', position: 'left' },
+        { to: '#', label: 'Store', position: 'left' },
+        { to: '/docs', label: 'Guide', position: 'left' },
+    
+        // RIGHT SIDE
+        { to: '/blog', label: 'Blog', position: 'right' },
         {
           label: 'Community',
-          position: 'left',
+          position: 'right',
           items: [
             { label: 'Discord', href: 'https://discord.gg/bURuFxYqkD' },
             { label: 'Wiki', href: 'https://earthpol.fandom.com/wiki/EarthPol_Wiki' },
@@ -67,11 +74,7 @@ const config = {
             { label: 'X', href: 'https://x.com/earth_pol' },
           ],
         },
-        { to: '/docs', label: 'Guide', position: 'left' },
-        { to: '/blog', label: 'Blog', position: 'left' },
-        { to: '#', label: 'Store', position: 'left' },
-        { to: '#', label: 'Map', position: 'left' },
-        { to: '#', label: 'Play Now', position: 'right', className: 'button button--primary' },
+        { to: '#', label: 'Events', position: 'right' },
       ],
     },
     footer: {
@@ -112,7 +115,7 @@ const config = {
     },
     stylesheets: [
       {
-        href: '/path/to/custom/theme.css',
+        href: 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap',
         type: 'text/css',
       },
     ],
