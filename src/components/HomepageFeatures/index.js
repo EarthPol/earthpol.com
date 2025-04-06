@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        With Towny, players can create their own towns, nations, and simualte diplomacy.
+        With Towny, players can create their own towns, nations, and simulate diplomacy.
       </>
     ),
   },
@@ -41,6 +41,27 @@ const FeatureList = [
   },
 ];
 
+const ScreenshotList = [
+  {
+    title: '1:326 Map',
+    image: require('@site/static/img/banner.png').default,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    imageFirst: true,  // Image first
+  },
+  {
+    title: 'PVP AND WARS',
+    image: require('@site/static/img/banner.png').default,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    imageFirst: false, // Text first
+  },
+  {
+    title: 'INTERACTIVE',
+    image: require('@site/static/img/banner.png').default,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    imageFirst: true,  // Image first
+  },
+];
+
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--3')}>
@@ -55,17 +76,58 @@ function Feature({Svg, title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+function Screenshot({image, title, description, imageFirst}) {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
+    <div className="row">
+      {imageFirst ? (
+        <>
+          <div className="col col--6">
+            <img src={image} alt={title} className={styles.screenshotImage} />
+          </div>
+          <div className="col col--6">
+            <Heading as="h3" className={styles.screenshotTitle}>{title}</Heading>
+            <p>{description}</p>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="col col--6">
+            <Heading as="h3" className={styles.screenshotTitle}>{title}</Heading>
+            <p>{description}</p>
+          </div>
+          <div className="col col--6">
+            <img src={image} alt={title} className={styles.screenshotImage} />
+          </div>
+        </>
+      )}
+    </div>
   );
 }
 
+export default function HomepageFeatures() {
+  return (
+    <>
+      {/* Feature Section */}
+      <section className={styles.features}>
+        <div className="container">
+          <div className="row">
+            {FeatureList.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+ {/* Screenshot Section */}
+ <section className={styles.screenshots} style={{ marginBottom: '50px' }}>
+        <div className="container">
+          <div className="row">
+            {ScreenshotList.map((props, idx) => (
+              <Screenshot key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

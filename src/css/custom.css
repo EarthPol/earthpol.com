@@ -62,19 +62,21 @@
   text-transform: uppercase;
 }
 
-/* Use Noto Serif for footer links and small text */
-.footer__link-item,
-.footer__copyright {
-  font-family: 'Noto Serif', serif;
-  font-size: 0.9rem;
-}
-
 /* Center logo absolutely */
 .navbar__logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10; /* keep it above other items if needed */
+  z-index: 10;
+}
+
+/* Apply pop-out animation ONLY to the image inside */
+.navbar__logo img {
+  transition: transform 0.2s ease;
+}
+
+.navbar__logo:hover img {
+  transform: scale(1.25);
 }
 
 /* Force the navbar items on each side to take up equal space */
