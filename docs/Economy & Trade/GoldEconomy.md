@@ -2,7 +2,7 @@
 title: Economy
 ---
 
-# Econmomy
+# Economy
 
 ## Overview
 
