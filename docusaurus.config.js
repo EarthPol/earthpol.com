@@ -74,7 +74,7 @@ const config = {
             { label: 'X', href: 'https://x.com/earth_pol' },
           ],
         },
-        { to: '#', label: 'Events', position: 'right' },
+        { to: '/docs/events', label: 'Events', position: 'right' },
       ],
     },
     footer: {
