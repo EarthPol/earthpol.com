@@ -49,16 +49,22 @@ const ScreenshotList = [
     imageFirst: true,  // Image first
   },
   {
-    title: 'PVP AND WARS',
+    title: 'Building',
     image: require('@site/static/img/banner.png').default,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     imageFirst: false, // Text first
   },
   {
-    title: 'INTERACTIVE',
-    image: require('@site/static/img/banner.png').default,
+    title: 'War',
+    image: require('@site/static/img/SiegeCover.png').default,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     imageFirst: true,  // Image first
+  },
+  {
+    title: 'Test',
+    image: require('@site/static/img/SiegeCover.png').default,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    imageFirst: false,  // Image first
   },
 ];
 
@@ -78,25 +84,35 @@ function Feature({Svg, title, description}) {
 
 function Screenshot({image, title, description, imageFirst}) {
   return (
-    <div className="row">
+    <div className="row" style={{ marginBottom: '30px' }}>
       {imageFirst ? (
         <>
           <div className="col col--6">
-            <img src={image} alt={title} className={styles.screenshotImage} />
+            <img
+              src={image}
+              alt={title}
+              className={styles.screenshotImage}
+              style={{ borderRadius: '25px' }} // Add borderRadius here
+            />
           </div>
           <div className="col col--6">
-            <Heading as="h3" className={styles.screenshotTitle}>{title}</Heading>
+          <Heading as="h3" style={{ fontSize: '2.5em' }} className={styles.screenshotTitle}>{title}</Heading> {/* Increased font-size */}
             <p>{description}</p>
           </div>
         </>
       ) : (
         <>
           <div className="col col--6">
-            <Heading as="h3" className={styles.screenshotTitle}>{title}</Heading>
+            <Heading as="h3" style={{ fontSize: '2.5em' }} className={styles.screenshotTitle}>{title}</Heading> {/* Increased font-size */}
             <p>{description}</p>
           </div>
           <div className="col col--6">
-            <img src={image} alt={title} className={styles.screenshotImage} />
+            <img
+              src={image}
+              alt={title}
+              className={styles.screenshotImage}
+              style={{ borderRadius: '25px' }} // Add borderRadius here
+            />
           </div>
         </>
       )}
