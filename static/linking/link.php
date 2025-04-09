@@ -92,9 +92,9 @@ if (!isset($_GET['state'])) {
         die("Failed to retrieve Discord user information.");
     }
 
-    // Extract the Discord user ID and the username#discriminator.
+    // Extract the Discord user ID and the username.
     $discordID = $userData['id'];
-    $discordUsername = $userData['username'] . "#" . $userData['discriminator'];
+    $discordUsername = $userData['username'];
 
     // Retrieve the Minecraft info from the session.
     $minecraftUUID = $_SESSION['minecraft_uuid'];
@@ -137,9 +137,6 @@ if (!isset($_GET['state'])) {
     try {
         $stmt = $pdo->prepare("INSERT INTO discord_accounts (discord, uuid) VALUES (?, ?)");
         $stmt->execute([$discordID, $minecraftUUID]);
-																							
-																						  
-												 
     } catch (PDOException $e) {
         die("Failed to insert linking data into the database: " . $e->getMessage());
     }
