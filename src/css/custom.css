@@ -153,3 +153,27 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.08);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
 }
+
+/* Targeting links inside .col with more specificity */
+.feature-item a.featureLink {
+  text-decoration: none !important;  /* Remove underline */
+  color: inherit !important;  /* Inherit text color */
+}
+
+.feature-item a.featureLink h3,
+.feature-item a.featureLink p {
+  color: inherit !important;  /* Ensure text inside the link inherits color */
+  text-decoration: none !important;  /* Remove any potential link styling */
+}
+
+/* Hover effects */
+.feature-item a.featureLink:hover {
+  text-decoration: none !important; /* Remove underline on hover */
+  color: inherit !important;  /* Ensure hover color is inherited */
+}
+
+.feature-item a.featureLink:focus,
+.feature-item a.featureLink:active {
+  text-decoration: none !important;
+  color: inherit !important;
+}
