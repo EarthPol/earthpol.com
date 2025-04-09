@@ -143,3 +143,13 @@ h1, h2, h3, h4, h5, h6 {
 .navbar__item:hover {
   transform: scale(1.10); /* Slight pop effect */
 }
+
+.feature-item {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Subtle default shadow */
+}
+
+.feature-item:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
