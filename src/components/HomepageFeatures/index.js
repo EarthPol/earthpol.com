@@ -145,6 +145,10 @@ function Screenshot({image, title, description, imageFirst}) {
 export default function HomepageFeatures() {
   return (
     <>
+
+          {/* Horizontal Line */}
+          <hr className="horizontalLine" />
+          
       {/* Feature Section */}
       <section className={styles.features}>
         <div className="container">
