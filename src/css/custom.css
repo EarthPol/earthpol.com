@@ -177,3 +177,23 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none !important;
   color: inherit !important;
 }
+
+.horizontalLine {
+  border: none;
+  border-top: 2px solid var(--line-color, #3a51b3); /* Default to primary color */
+  margin: 50px 0; /* Space before and after the line */
+  width: 100%; /* Ensure it spans the entire width of the parent */
+  max-width: 1200px; /* Adjust this to the container's max-width if needed */
+  margin-left: auto; /* Center align */
+  margin-right: auto; /* Center align */
+}
+
+/* Light mode color */
+[data-theme='light'] {
+  --line-color: #000000; /* Primary color for light mode */
+}
+
+/* Dark mode color */
+[data-theme='dark'] {
+  --line-color: #ffffff; /* Primary color for dark mode */
+}

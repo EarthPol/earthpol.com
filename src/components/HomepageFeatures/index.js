@@ -3,8 +3,6 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 
-
-
 const FeatureList = [
   {
     title: 'QuickShop',
@@ -157,6 +155,9 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </section>
+
+      {/* Horizontal Line */}
+      <hr className="horizontalLine" />
 
       {/* Screenshot Section */}
       <section className={styles.screenshots} style={{ marginBottom: '50px' }}>
