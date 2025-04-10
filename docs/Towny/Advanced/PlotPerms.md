@@ -12,17 +12,20 @@ Each town plot has specific permissions that determine who can build, destroy, a
 
 ## Plot Types
 
+<div align="center">
+
 | **Plot Type** | **Description**                                                                 | **How to Set**                                                       | **How to Use**                                                                                   |
 |----------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | **default**    | The default plot type. All plots are default when first claimed. Non-default plots can be reset to default. | `/plot set reset`                                                   | Used as the standard plot. Can be changed back to default using `/plot set reset`.               |
 | **shop**       | Designates a player shop area. The plot will appear red on the map.              | `/plot set shop`                                                    | Ideal for creating trade areas or stores within the town. The plot will show as red on the map.  |
-| **arena**      | Arena plots have PvP and friendly fire enabled at all times.                     | `/plot set arena`                                                   | Used for combat or PvP events. Friendly fire is enabled.                                          |
+| **arena**      | Arena plots have PvP and friendly fire enabled at all times. Keep inventory is always enabled.                    | `/plot set arena`                                                   | Used for combat or PvP events. Friendly fire is enabled.                                          |
 | **embassy**    | If for sale, embassy plots can be bought by any player, even if they’re not a resident of the town. | `/plot set embassy`                                                 | Useful for foreign diplomacy and foreign shops. Players can buy embassy plots even if they're not town residents. Combined with a shop plot, they can create foreign shops and trade goods with your town  |
 | **bank**       | Designates a bank, which allows you to deposit and withdraw from your town and nation banks. | `/plot set bank`                                                    | Create a secure banking area where players can manage town or nation funds.                      |
 | **jail**       | Designates a jail where players will be sent if imprisoned (refer to the section on ranks). | `/plot set jail`                                                    | Used for punishing players who break the rules. Players are imprisoned in the designated jail.    |
 | **farm**       | Designates a farm, where the only blocks that can be placed and destroyed are crops. | `/plot set farm`                                                    | Dedicated farming areas for growing crops. Only crop-related blocks can be placed or destroyed.  |
 | **wilds**      | Designates a semi-protected wilderness plot where trees, flowers, mushrooms, etc. can be broken, but all other blocks cannot. | `/plot set wilds`                                                   | A semi-protected plot for nature. Only certain types of blocks (trees, flowers, etc.) can be broken. |
 
+</div>
 ---
 
 :::tip
@@ -41,6 +44,8 @@ In Towny, you can control who has access to different actions on your plots usin
 
 Plot permissions are controlled by **groups** that define the players' access to your plot. Here’s a quick overview of the available groups:
 
+<div align="center">
+
 | **Group**   | **Description**                                                      |
 |-------------|----------------------------------------------------------------------|
 | **friend**  | Players on your friend list. Manage your friend list with `/res friend`. |
@@ -48,11 +53,24 @@ Plot permissions are controlled by **groups** that define the players' access to
 | **ally**    | Players from your town, nation, and allied nations.                   |
 | **outsider**| Players who are not from your town, nation, or allied nations.         |
 
+</div>
+---
+
+### Plot Districts
+
+Plots can be grouped together into *districts*, which are similar to Plot Groups though they come with less restrictions. Townblocks in a district must be adjacent to one another. A district includes the following benefits:
+
+- Not required to have the same plot permissions, plot type, owner, or plot name.
+- Can help with naming sections of a town, creating neighborhoods, or zoning areas for builds.
+- Show their name in the chunk notifications, map hud, and in the `/towny map` hover text.
+
 ---
 
 ### Plot Permissions
 
 There are several **permissions** you can control for each group. These permissions allow you to manage what players can do on your plots.
+
+<div align="center">
 
 | **Permission** | **Description**                                                |
 |----------------|----------------------------------------------------------------|
@@ -61,4 +79,5 @@ There are several **permissions** you can control for each group. These permissi
 | **switch**     | Allows a group to interact with containers like chests, hoppers, furnaces, doors, etc. |
 | **itemuse**    | Allows a group to use items like minecarts, bone meal, and buckets. |
 
+</div>
 ---

@@ -1,0 +1,76 @@
+---
+title: Towny Overview
+sidebar_position: 1
+---
+
+import townySettings from '@site/static/townysettings.json';
+
+# Towny Overview
+
+Official towny docs for nerds: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works
+
+The information below is automatically updated every hour from the live Towny configuration. What you see here reflects the current state of the server's actual settings.
+
+## Towny Prices
+
+| Description                     | Value |
+|---------------------------------|-------|
+| Price to Create a New Nation    | {townySettings.economy.new_expand.price_new_nation} |
+| Price to Create a New Town      | {townySettings.economy.new_expand.price_new_town} |
+| Price to Merge Towns            | {townySettings.economy.new_expand.price_town_merge} |
+| Merge Cost Per Plot (%)         | {townySettings.economy.new_expand.price_town_merge_per_plot_percentage} |
+| Price of an Outpost             | {townySettings.economy.new_expand.price_outpost} |
+| Price to Claim a Town Block     | {townySettings.economy.new_expand.price_claim_townblock} |
+
+
+## Town Levels
+
+| Town Level | Required Residents | Town Block Limit | Name Postfix        | Mayor Prefix   |
+|------------|--------------------|------------------|---------------------|----------------|
+| 1          | {townySettings.levels.town_level[1].numResidents}  | {townySettings.levels.town_level[1].townBlockLimit}  | {townySettings.levels.town_level[1].namePostfix}  | {townySettings.levels.town_level[1].mayorPrefix}  |
+| 2          | {townySettings.levels.town_level[2].numResidents}  | {townySettings.levels.town_level[2].townBlockLimit}  | {townySettings.levels.town_level[2].namePostfix}  | {townySettings.levels.town_level[2].mayorPrefix}  |
+| 3          | {townySettings.levels.town_level[3].numResidents}  | {townySettings.levels.town_level[3].townBlockLimit}  | {townySettings.levels.town_level[3].namePostfix}  | {townySettings.levels.town_level[3].mayorPrefix}  |
+| 4          | {townySettings.levels.town_level[4].numResidents}  | {townySettings.levels.town_level[4].townBlockLimit}  | {townySettings.levels.town_level[4].namePostfix}  | {townySettings.levels.town_level[4].mayorPrefix}  |
+| 5          | {townySettings.levels.town_level[5].numResidents}  | {townySettings.levels.town_level[5].townBlockLimit}  | {townySettings.levels.town_level[5].namePostfix}  | {townySettings.levels.town_level[5].mayorPrefix}  |
+| 6          | {townySettings.levels.town_level[6].numResidents}  | {townySettings.levels.town_level[6].townBlockLimit}  | {townySettings.levels.town_level[6].namePostfix}  | {townySettings.levels.town_level[6].mayorPrefix}  |
+| 7          | {townySettings.levels.town_level[7].numResidents}  | {townySettings.levels.town_level[7].townBlockLimit}  | {townySettings.levels.town_level[7].namePostfix}  | {townySettings.levels.town_level[7].mayorPrefix}  |
+| 8          | {townySettings.levels.town_level[8].numResidents}  | {townySettings.levels.town_level[8].townBlockLimit}  | {townySettings.levels.town_level[8].namePostfix}  | {townySettings.levels.town_level[8].mayorPrefix}  |
+
+## Nation Levels
+
+| Nation Level | Required Residents | Name Prefix         | Name Postfix       | King Prefix     | Town Block Bonus | Nation Bonus Outposts |
+|--------------|--------------------|----------------------|---------------------|------------------|------------------|------------------------|
+| 1            | {townySettings.levels.nation_level[0].numResidents} | {townySettings.levels.nation_level[0].namePrefix} | {townySettings.levels.nation_level[0].namePostfix} | {townySettings.levels.nation_level[0].kingPrefix} | {townySettings.levels.nation_level[0].townBlockLimitBonus} | {townySettings.levels.nation_level[0].nationBonusOutpostLimit} |
+| 2            | {townySettings.levels.nation_level[1].numResidents} | {townySettings.levels.nation_level[1].namePrefix} | {townySettings.levels.nation_level[1].namePostfix} | {townySettings.levels.nation_level[1].kingPrefix} | {townySettings.levels.nation_level[1].townBlockLimitBonus} | {townySettings.levels.nation_level[1].nationBonusOutpostLimit} |
+| 3            | {townySettings.levels.nation_level[2].numResidents} | {townySettings.levels.nation_level[2].namePrefix} | {townySettings.levels.nation_level[2].namePostfix} | {townySettings.levels.nation_level[2].kingPrefix} | {townySettings.levels.nation_level[2].townBlockLimitBonus} | {townySettings.levels.nation_level[2].nationBonusOutpostLimit} |
+| 4            | {townySettings.levels.nation_level[3].numResidents} | {townySettings.levels.nation_level[3].namePrefix} | {townySettings.levels.nation_level[3].namePostfix} | {townySettings.levels.nation_level[3].kingPrefix} | {townySettings.levels.nation_level[3].townBlockLimitBonus} | {townySettings.levels.nation_level[3].nationBonusOutpostLimit} |
+| 5            | {townySettings.levels.nation_level[4].numResidents} | {townySettings.levels.nation_level[4].namePrefix} | {townySettings.levels.nation_level[4].namePostfix} | {townySettings.levels.nation_level[4].kingPrefix} | {townySettings.levels.nation_level[4].townBlockLimitBonus} | {townySettings.levels.nation_level[4].nationBonusOutpostLimit} |
+| 6            | {townySettings.levels.nation_level[5].numResidents} | {townySettings.levels.nation_level[5].namePrefix} | {townySettings.levels.nation_level[5].namePostfix} | {townySettings.levels.nation_level[5].kingPrefix} | {townySettings.levels.nation_level[5].townBlockLimitBonus} | {townySettings.levels.nation_level[5].nationBonusOutpostLimit} |
+
+## Town Ruins Configuration
+
+### ⏳ Max Duration (Hours)
+
+**Value:** {townySettings.town_ruining.town_ruins.max_duration_hours}
+
+**Explanation:**
+This is the maximum number of hours a town will stay in the *ruined* state before it is permanently deleted. During this time, the town can still be reclaimed by its former mayor.
+
+---
+
+### ⏱ Min Duration (Hours)
+
+**Value:** {townySettings.town_ruining.town_ruins.min_duration_hours}
+
+**Explanation:**
+This is the minimum number of hours a town must remain in the *ruined* state before it becomes reclaimable. This creates a delay to prevent immediate reclaims.
+
+---
+
+### 🏦 Town Bank Sent to Nation
+
+**Value:** {townySettings.town_ruining.town_ruins.town_bank_is_sent_to_nation}
+
+**Explanation:**
+If set to `true`, when a town is ruined and eventually deleted, its remaining bank balance is transferred to the nation it belonged to.
+If set to `false`, the money is not preserved and is effectively lost.

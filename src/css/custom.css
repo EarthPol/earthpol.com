@@ -4,27 +4,196 @@
  * work well for content-centric websites.
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #3a51b3;
+  --ifm-color-primary-dark: #3a51b3;
+  --ifm-color-primary-darker: #3a51b3;
+  --ifm-color-primary-darkest: #3a51b3;
+  --ifm-color-primary-light: #3a51b3;
+  --ifm-color-primary-lighter: #3a51b3;
+  --ifm-color-primary-lightest: #3a51b3;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #4aad4a;
+  --ifm-color-primary-dark: #4aad4a;
+  --ifm-color-primary-darker: #4aad4a;
+  --ifm-color-primary-darkest: #4aad4a;
+  --ifm-color-primary-light: #4aad4a;
+  --ifm-color-primary-lighter: #4aad4a;
+  --ifm-color-primary-lightest: #4aad4a;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.navbar__item {
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center;
+  height: 100%; /* Take full height of navbar */
+  padding: 0 10px; /* Horizontal padding only */
+  font-size: 30px;
+  line-height: 1; /* Prevent stretching downward */
+}
+
+/* Ensure navbar container is aligned properly */
+.navbar__items {
+  display: flex;
+  align-items: center; /* This aligns children vertically */
+  height: 100%;
+}
+
+/* Navbar font */
+.navbar__item {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Use Bebas Neue for footer section titles */
+.footer__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Center logo absolutely */
+.navbar__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* Apply pop-out animation ONLY to the image inside */
+.navbar__logo img {
+  transition: transform 0.2s ease;
+}
+
+.navbar__logo:hover img {
+  transform: scale(1.25);
+}
+
+/* Force the navbar items on each side to take up equal space */
+.navbar__items--left,
+.navbar__items--right {
+  flex: 1;
+  justify-content: center;
+}
+
+/* Optional: Add spacing between items for better symmetry */
+.navbar__item {
+  margin: 0 3px; /* Further reduce the gap between items */
+  font-size: 30px
+}
+
+/* In your custom.css file */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Ensure navbar is a flex container */
+.navbar__items {
+  display: flex;
+  align-items: center; /* Vertically center everything */
+  justify-content: space-evenly; /* Distribute items evenly across the navbar */
+  width: 100%; /* Ensure items take up the full width of the navbar */
+}
+
+/* Adjust logo so it doesn't push other items */
+.navbar__logo {
+  margin-right: 0; /* No margin so it doesn't push items */
+}
+
+/* Ensure logo stays in line but doesn't break the layout */
+.navbar__logo-centered {
+  display: inline-block;
+  padding: 0 5px; /* Reduce padding between logo and buttons */
+  margin-left: auto; /* Center it */
+}
+
+/* Optional: Add specific margins to the buttons for spacing */
+.navbar__items--left,
+.navbar__items--right {
+  display: flex;
+  gap: 5px; /* Further reduce gap between navbar items */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 996px) {
+  .navbar__logo {
+    margin: 0 auto;
+  }
+  .navbar__items {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Navbar button pop-out animation */
+.navbar__item {
+  transition: transform 0.2s ease;
+}
+
+.navbar__item:hover {
+  transform: scale(1.10); /* Slight pop effect */
+}
+
+.feature-item {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Subtle default shadow */
+}
+
+.feature-item:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+/* Targeting links inside .col with more specificity */
+.feature-item a.featureLink {
+  text-decoration: none !important;  /* Remove underline */
+  color: inherit !important;  /* Inherit text color */
+}
+
+.feature-item a.featureLink h3,
+.feature-item a.featureLink p {
+  color: inherit !important;  /* Ensure text inside the link inherits color */
+  text-decoration: none !important;  /* Remove any potential link styling */
+}
+
+/* Hover effects */
+.feature-item a.featureLink:hover {
+  text-decoration: none !important; /* Remove underline on hover */
+  color: inherit !important;  /* Ensure hover color is inherited */
+}
+
+.feature-item a.featureLink:focus,
+.feature-item a.featureLink:active {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.horizontalLine {
+  border: none;
+  border-top: 2px solid var(--line-color, #3a51b3); /* Default to primary color */
+  margin: 50px 0; /* Space before and after the line */
+  width: 100%; /* Ensure it spans the entire width of the parent */
+  max-width: 1200px; /* Adjust this to the container's max-width if needed */
+  margin-left: auto; /* Center align */
+  margin-right: auto; /* Center align */
+}
+
+/* Light mode color */
+[data-theme='light'] {
+  --line-color: #000000; /* Primary color for light mode */
+}
+
+/* Dark mode color */
+[data-theme='dark'] {
+  --line-color: #ffffff; /* Primary color for dark mode */
+}

@@ -157,7 +157,7 @@ The Fishing skill enhances your ability to fish faster and discover unique treas
 | Rare         | Iron Sword, Iron Shovel, Iron Pickaxe, Iron Axe, Iron Hoe, Bow, Ender Pearl, Blaze Rod, Name Tag |
 | Epic         | Iron Boots, Iron Helmet, Iron Leggings, Iron Chestplate, Ghast Tear, Diamond |
 | Legendary    | Nautilus Shell, Diamond Sword, Diamond Shovel, Diamond Pickaxe, Diamond Axe, Diamond Hoe, Diamond Boots, Diamond Helmet, Diamond Leggings, Diamond Chestplate, Enchanted Book |
-| Mythic       | Netherite Sword, Netherite Shovel, Netherite Pickaxe, Netherite Axe, Netherite Hoe, Netherite Boots, Netherite Helmet, Netherite Leggings, Netherite Chestplate, Netherite Scrap |
+| Mythic       | Netherite Hoe, Netherite Scrap |
 
 ### Herbalism
 

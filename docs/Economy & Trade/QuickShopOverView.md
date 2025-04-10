@@ -1,5 +1,5 @@
 ---
-title: QuickShop Overview
+title: QuickShop
 ---
 
 # QuickShop Guide
@@ -48,6 +48,10 @@ To review, below is a step-by-step guide to creating a shop:
 If you instead wish to buy items from players rather than sell to players, simply open the QuickShop GUI by left-clicking and press the `[Change]` button next to "Shop Mode: Selling." This will convert the chest into a "buying" chests where players can sell you items and receive money from your gold balance.
 
 If you wish to change the price of the item(s) you are selling/buying, open the QuickShop GUI by left-click and press the `[Change]` button next to "Price:", this will allow you to input a new buy/sell price. 
+
+### Adding Employees to a Shop
+
+Premium players are able to add friends and town members to their ChestShop(s). To add an employee, use the `/qs staff` command. Employees are able to manage your inventory, prices, and toggle the buying/selling mode of the shop.
 
 ### Removing a Shop
 

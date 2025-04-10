@@ -71,3 +71,6 @@ Towny uses chunks to manage land. To see chunk borders when expanding, press F3 
 If you need to remove a chunk from your town, you can use the `/t unclaim` command.
 
 ---
+
+## Town Roles
+
