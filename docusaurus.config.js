@@ -67,7 +67,7 @@ const config = {
           position: 'right',
           items: [
             { label: 'Discord', href: 'https://discord.gg/bURuFxYqkD' },
-            { label: 'Wiki', href: 'https://earthpol.fandom.com/wiki/EarthPol_Wiki' },
+            { label: 'Wiki', href: 'https://wiki.earthpol.com/' },
             { label: 'YouTube', href: 'https://www.youtube.com/@EarthPol?sub_confirmation=1' },
             { label: 'Instagram', href: 'https://www.instagram.com/earthpolmc/' },
             { label: 'TikTok', href: 'https://www.tiktok.com/@play.earthpol.com' },
@@ -90,7 +90,7 @@ const config = {
           title: 'Community',
           items: [
             { label: 'Discord', href: 'https://discord.gg/bURuFxYqkD' },
-            { label: 'Wiki', href: 'https://earthpol.fandom.com/wiki/EarthPol_Wiki' },
+            { label: 'Wiki', href: 'https://wiki.earthpol.com/' },
             { label: 'YouTube', href: 'https://www.youtube.com/@EarthPol?sub_confirmation=1' },
             { label: 'Instagram', href: 'https://www.instagram.com/earthpolmc/' },
             { label: 'TikTok', href: 'https://www.tiktok.com/@play.earthpol.com' },
