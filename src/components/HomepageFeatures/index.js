@@ -7,7 +7,7 @@ const FeatureList = [
   {
     title: 'QuickShop',
     link: '/docs/Economy & Trade/QuickShopOverView',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: () => <img src="/img/chest.webp" alt="Chest" style={{ height: 100 }} />,
     description: (
       <>
         QuickShop allows for players to create their own shops to sell and buy items, creating a player-driven economy.
@@ -17,7 +17,7 @@ const FeatureList = [
   {
     title: 'Towny',
     link: '/docs/Towny/Basic/TownyOverview',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: () => <img src="/img/mapitem.webp" alt="Map" style={{ height: 100 }} />,
     description: (
       <>
         With Towny, players can create their own towns, nations, and simulate diplomacy.
@@ -27,7 +27,7 @@ const FeatureList = [
   {
     title: 'BlueMap',
     link: '/features/bluemap',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: () => <img src="/img/compassitem.webp" alt="Compass" style={{ height: 100 }} />,
     description: (
       <>
         A 3D-fully interactive map that allows players to view their town from above.
@@ -37,7 +37,7 @@ const FeatureList = [
   {
     title: 'Custom Plugins',
     link: 'docs/War & Diplomacy/TradeWar',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: () => <img src="/img/goldingotitem.webp" alt="Gold Ingot" style={{ height: 100 }} />,
     description: (
       <>
         With custom innovative plugins like TradeWar, our server is setting higher standards with new gameplay mechanics.
