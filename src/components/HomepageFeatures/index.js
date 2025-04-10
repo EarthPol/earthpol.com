@@ -17,7 +17,7 @@ const FeatureList = [
   {
     title: 'Towny',
     link: '/docs/Towny/Basic/TownyOverview',
-    Svg: () => <img src="/img/mapitem.webp" alt="Map" style={{ height: 100 }} />,
+    Svg: () => <img src="/img/compassitem.webp" alt="Map" style={{ height: 100 }} />,
     description: (
       <>
         With Towny, players can create their own towns, nations, and simulate diplomacy.
@@ -27,7 +27,7 @@ const FeatureList = [
   {
     title: 'BlueMap',
     link: '/features/bluemap',
-    Svg: () => <img src="/img/compassitem.webp" alt="Compass" style={{ height: 100 }} />,
+    Svg: () => <img src="/img/mapitem.webp" alt="Compass" style={{ height: 100 }} />,
     description: (
       <>
         A 3D-fully interactive map that allows players to view their town from above.
@@ -61,12 +61,12 @@ const ScreenshotList = [
   },
   {
     title: 'Diplomacy',
-    image: require('@site/static/img/banner.png').default,
+    image: require('@site/static/img/diplomacy.png').default,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     imageFirst: true,  // Image first
   },
   {
-    title: 'War',
+    title: 'Combat',
     image: require('@site/static/img/SiegeCover.png').default,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     imageFirst: false,  // Image first
