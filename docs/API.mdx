@@ -25,6 +25,19 @@ Example:
 The current server version is `Astra`, all of our production API will be located at https://api.earthpol.com/astra. All documentation will use this version.
 :::
 
+## Request Payloads
+
+The EarthPol API uses a unified `POST` structure across most endpoints. To retrieve detailed data for a specific object (such as a town, nation, player, etc.), send a `POST` request with a `query` array in the body. Each item can be either a UUID or a name, depending on the endpoint.
+```JSON
+{
+  "query": [
+    "search_term_1",
+    "search_term_2"
+  ]
+}
+
+```
+
 ## Endpoints
 
 ### Root
