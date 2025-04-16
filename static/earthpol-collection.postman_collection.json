@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "505acd81-7b01-44b8-a4bd-5d5e793ccaa8",
+		"name": "EarthPol Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44033760",
+		"_collection_link": "https://austingoodrich-5452700.postman.co/workspace/Austin-Goodrich's-Workspace~398fe811-0799-4215-83d1-1cbbc0be266b/collection/44033760-505acd81-7b01-44b8-a4bd-5d5e793ccaa8?action=share&source=collection_link&creator=44033760"
+	},
+	"item": [
+		{
+			"name": "Ecliptica (Legacy)",
+			"item": [
+				{
+					"name": "Root Endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/ecliptica/"
+					},
+					"response": []
+				},
+				{
+					"name": "Towns",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/ecliptica/towns"
+					},
+					"response": []
+				},
+				{
+					"name": "Towns",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": [\r\n        \"Havana\",\r\n        \"ff50d039-669d-413e-84e0-18c3fd370ea3\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/ecliptica/towns"
+					},
+					"response": []
+				},
+				{
+					"name": "Nations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/ecliptica/nations"
+					},
+					"response": []
+				},
+				{
+					"name": "Nations",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": [\r\n        \"Cuba\",\r\n        \"5eda99c0-e430-4552-abae-4e7604579483\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/ecliptica/nations"
+					},
+					"response": []
+				},
+				{
+					"name": "Players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/ecliptica/players"
+					},
+					"response": []
+				},
+				{
+					"name": "Players",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": [\r\n        \"d904bb76-412d-4f6a-af9f-13853b5fc614\",\r\n        \"MrTytanic\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/ecliptica/players"
+					},
+					"response": []
+				},
+				{
+					"name": "Location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/ecliptica/location"
+					},
+					"response": []
+				},
+				{
+					"name": "Location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"query\": [\r\n    [-27720, -7744]\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/ecliptica/location"
+					},
+					"response": []
+				},
+				{
+					"name": "Quarters",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Quarters",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": [\r\n        \"c5b1e4d7-e618-44b2-8c70-495f380b0d6e\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/ecliptica/quarters"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Astra",
+			"item": [
+				{
+					"name": "Root Endpoint",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Towns",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/astra/towns"
+					},
+					"response": []
+				},
+				{
+					"name": "Towns",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": [\r\n        \"Havana\",\r\n        \"ff50d039-669d-413e-84e0-18c3fd370ea3\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/astra/towns"
+					},
+					"response": []
+				},
+				{
+					"name": "Nations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/astra/nations"
+					},
+					"response": []
+				},
+				{
+					"name": "Nations",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": [\r\n        \"Cuba\",\r\n        \"5eda99c0-e430-4552-abae-4e7604579483\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/astra/nations"
+					},
+					"response": []
+				},
+				{
+					"name": "Players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/astra/players"
+					},
+					"response": []
+				},
+				{
+					"name": "Players",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": [\r\n        \"d904bb76-412d-4f6a-af9f-13853b5fc614\",\r\n        \"MrTytanic\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/astra/players"
+					},
+					"response": []
+				},
+				{
+					"name": "Location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/astra/location"
+					},
+					"response": []
+				},
+				{
+					"name": "Location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"query\": [\r\n    [-27720, -7744]\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/astra/location"
+					},
+					"response": []
+				},
+				{
+					"name": "Quarters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/astra/quarters"
+					},
+					"response": []
+				},
+				{
+					"name": "Quarters",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": [\r\n        \"c5b1e4d7-e618-44b2-8c70-495f380b0d6e\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/astra/quarters"
+					},
+					"response": []
+				},
+				{
+					"name": "Shops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.earthpol.com/astra/shops"
+					},
+					"response": []
+				},
+				{
+					"name": "Shops",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": [\r\n        \"d550441b-5fcf-448c-a756-5fa391b89a46\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/astra/shops"
+					},
+					"response": []
+				},
+				{
+					"name": "Discord",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"query\": [\r\n    \"325465801710764033\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.earthpol.com/astra/discord"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
