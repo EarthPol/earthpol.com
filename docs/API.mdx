@@ -702,10 +702,20 @@ This endpoint only supports `POST` requests with the following payloads. We do n
 `POST`: `https://api.earthpol.com/astra/discord`
 Payload:
 ```JSON
+{
+  "query": [
+    //You can query with a Discord ID or a Minecraft UUID, not both at the same time
+    "325465801710764033", //Discord ID
+    "d904bb76-412d-4f6a-af9f-13853b5fc614" //Minecraft ID
+  ]
+}
 
 ```
 
 Response:
 ```JSON
-
+{
+    "discord": "325465801710764033",
+    "uuid": "d904bb76-412d-4f6a-af9f-13853b5fc614"
+}
 ```
