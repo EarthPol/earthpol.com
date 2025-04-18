@@ -5,7 +5,6 @@ mrtytanic:
   socials:
     github: mrtytanic
     youtube: 'mrtytanic7587'
-
 bustun:
   name: Bustun
   title: Lead Developer
@@ -27,6 +26,12 @@ kauntar:
   socials:
     github: kauntar
     x: 'KauntarDev'
+jhjhjh098k:
+  name: jhjhjh098k
+  title: Developer
+  image_url: https://github.com/jhjhjh098k.png
+  socials:
+    github: jhjhjh098k
 
 0xBit:
   name: 0xBit
