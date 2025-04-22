@@ -39,6 +39,16 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-R4GEM4H142',
+        // Optional: anonymize IPs for GDPR
+        anonymizeIP: true,
+      },
+    ],
+  ],
   themeConfig: {
     colorMode: {
       defaultMode: 'dark', // Forces dark mode
