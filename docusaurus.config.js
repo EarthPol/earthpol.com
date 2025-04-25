@@ -16,6 +16,11 @@ const config = {
       async: true,
       crossorigin: 'anonymous',
     },
+    {
+      src: 'https://umami.cascadiainteractive.net/script.js',
+      defer: true,
+      'data-website-id': 'd293e0ae-dcc5-4af8-adee-aa437c652be2',
+    },
   ],
 
   onBrokenLinks: 'warn',
