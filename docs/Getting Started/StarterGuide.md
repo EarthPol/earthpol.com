@@ -9,7 +9,7 @@ Congratulations, you have officially joined EarthPol! Welcome to a world unlike 
 
 ## Spawning
 
-When you first join EarthPol, you will be teleported to a random location on our 1:326 scale map of the Earth, which is divided into regions including Africa, Asia, Europe, the Middle East, North America, Oceania, and South America.
+When you first join EarthPol, you will be teleported to a random location on our 1:326 scale map of the Earth, which is divided into regions including Africa, Asia, Europe, the Middle East, North America, Oceania, and South America. **Visit our map [here](https://earthpol.com/map/).**
 
 ![EarthPol Map](/img/servermap.png)
 
@@ -93,6 +93,8 @@ Once you're ready to settle permanently, you can join or create a **Town**!
 
 ▷ *For more detailed information, check our [Town Guide](Towny/Basic/Towns.md).*
 
+![Town](/img/town.png)
+
 ---
 
 ### 🏛️ Nations
@@ -113,11 +115,13 @@ Towns can band together to form **Nations**, which offer even greater power and 
 
 ▷ *For more detailed information, check our [Nation Guide](Towny/Basic/Nations.md).*
 
+![Nation](/img/nation.png)
+
 ---
 
-### Get Connected
+### 🌐 Get Connected
 
-Joining EarthPol is just the beginning — the community is what truly brings the server to life!
+Joining EarthPol is just the beginning, the community is what truly brings the server to life!
 
 💬 **Join our Discord server** to meet new players, find allies, organize events, and get real-time help from staff and veterans:
 
@@ -129,4 +133,6 @@ Joining EarthPol is just the beginning — the community is what truly brings th
 
 Whether you’re looking for a town to join, want to discuss politics, or just chat about your latest builds, the Discord is the best place to stay connected and be part of the vibrant EarthPol community.
 
-See you there! 🌍✨
+See you there! 🌍
+
+---
