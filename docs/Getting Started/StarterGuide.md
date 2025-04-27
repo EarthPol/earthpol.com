@@ -91,7 +91,7 @@ Once you're ready to settle permanently, you can join or create a **Town**!
 - `/t invite <player>` — Invite a player to your town.
 - `/t leave` — Leave your current town (you cannot leave if you're the mayor).
 
-▷ *For more detailed information, check our [Town Guide](./Towns.md).*
+▷ *For more detailed information, check our [Town Guide](Towny/Basic/Towns.md).*
 
 ---
 
@@ -111,7 +111,7 @@ Towns can band together to form **Nations**, which offer even greater power and 
 - Command: `/n new [Nation Name]`
 - Confirm by clicking or typing `/confirm`.
 
-▷ *For more detailed information, check our [Nation Guide](./Nations.md).*
+▷ *For more detailed information, check our [Nation Guide](Towny/Basic/Nations.md).*
 
 ---
 
