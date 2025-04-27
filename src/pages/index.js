@@ -26,7 +26,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://www.youtube.com/watch?v=YiVB_cBMZ8g">
+            to="https://www.youtube.com/watch?v=AdMpIVTJ1fU">
             Watch Trailer 🎥
           </Link>
         </div>

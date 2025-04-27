@@ -3,7 +3,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'EarthPol',
-  tagline: 'The Geopolitical Minecraft Server -- Coming Summer 2025',
+  tagline: 'The Geopolitical Minecraft Server',
   favicon: 'img/favicon/favicon.ico',
   url: 'https://earthpol.com',
   baseUrl: '/',
@@ -80,7 +80,7 @@ const config = {
       },
       items: [
         // LEFT SIDE
-        { to: '#', label: 'Map', position: 'left' },
+        { to: 'https://earthpol.com/map/', label: 'Map', position: 'left' },
         { to: 'https://earthpol.craftingstore.net/category/445275', label: 'Store', position: 'left' },
         { to: '/docs', label: 'Guide', position: 'left' },
     

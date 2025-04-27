@@ -5,60 +5,125 @@ sidebar_position: 3
 
 # Starter Guide
 
-Congratulations, you have officialy joined EarthPol!
+Congratulations, you have officially joined EarthPol! Welcome to a world unlike any other — a dynamic, player-driven Earth server where history, politics, economy, and exploration come alive on a 1:326 scale map of the real world. Whether you dream of building a mighty empire, founding a peaceful town, exploring uncharted wilderness, or shaping global events, EarthPol offers you a canvas limited only by your imagination.
 
 ## Spawning
 
+When you first join EarthPol, you will be teleported to a random location on our 1:326 scale Earth map.
+
+![EarthPol Map](/img/servermap.png)
+
+Upon spawning:
+
+- 🗺️ You can use `/map` to find your location on our **interactive 3D map**.
+- 🛡️ You are **immune from mob damage** for your **first 24 hours** — giving you time to settle in safely.  
+  (⚠️ **Note:** Players in the wild can still attack you!)
+- ✈️ Want to teleport to a different random location?  
+  Use `/rtp` to teleport randomly, or `/rtp [continent]` if you want to teleport to a **specific continent**.
+
 ## Starter Kit
 
-:::tip
+When you spawn, you'll also receive a helpful starter kit:
 
-In addition to your starter kit, you can receive additional items by voting for us on NameMC!
+- 🪓 Stone Pickaxe
+- 🪓 Stone Axe
+- 🍞 16 Bread
+- 🛡️ Shield + Armor
+- 🔥 Campfire
+
+:::tip Bonus Items
+
+In addition to your starter kit, you can get even more free items by liking us on NameMC!  
+👉 [Like us here!](https://namemc.com/server/play.earthpol.com)
 
 :::
 
-## Basic Overview
+
+## Basic Gameplay Overview
+
 ---
+
 ### 🏕️ Towny Camps
 
-Included in your starter kit is a campfire, which can be used to create a Towny Camp. A Towny Camp is a temporary, one-chunk claimed area where the owner can store items that are protected from PvP and griefing. This area is accessible only to the owner, providing temporary safety and privacy for new players. Towny Camps only exist for 48 hours but de-activated camps can be re-lit to reset their time. Additionally, Towny Camps have a 24 hour cooldown before a new one can be placed. 
+Included in your starter kit is a **campfire**, which can be used to create a **Towny Camp**.
+
+A **Towny Camp** is a temporary, one-chunk protected claim where:
+
+- Only you can access the area.
+- PvP and griefing are disabled inside the camp.
+- Camps last **48 hours** (but you can **re-light** your campfire to reset the timer).
+- You can only place a new camp **once every 24 hours**.
 
 **Creating a Towny Camp**
 
-When you place your campfire, you will be prompted with the following question: "Would you like to make a Towny Camp?" To create a Towny Camp, either click the /confirm button or type `/confirm` in chat. 
+When you place your campfire, you'll see a prompt:  
+*"Would you like to make a Towny Camp?"*  
+Simply **click** the `/confirm` button or type `/confirm` in chat to claim the area.
 
 ---
 
 ### 🏙️ Towns
 
-A town is a player-created settlement that provides more permanent land claims than a Towny Camp. Towns do not expire in a specific timeframe but do disband if the town is unable to pay its upkeep. Once created, towns can expand over time, with the mayor (and any comayors/assistants) having control over the town’s territory, including who can join, manage, and access it. Towns also offer protection from PvP and griefing within their claimed areas, making them ideal for players who want to build and collaborate in a secure environment. 
+Once you're ready to settle permanently, you can join or create a **Town**!
+
+**Towns** provide:
+
+- Permanent land claims (no expiration as long as upkeep is paid).
+- Full protection from PvP and griefing inside town land.
+- A community where you can build and collaborate.
 
 **Joining a Town**
 
-To join a town, you may either request invitation or join an open town. Once invited, type `/accept` or click the prompt in chat. You can join open towns via `/t join <town>`.
+- You can be **invited** to a town by another player.
+- Or, join an **open town** using `/t join <town>`.
 
 **Creating a Town**
 
-To create a town, you will need 512 gold and an unclaimed area. Simply issue the command `/t new [Town Name]`, replacing `[Town Name]` with the name of your town. Make sure to verify that your town's name is appropriate and complies with our rules. You can then confirm the creation by either clicking the /confirm button or typing `/confirm` in chat.
+- Requires **512 gold** and an **unclaimed area**.
+- Command: `/t new [Town Name]`
+- Confirm the creation by clicking `/confirm` or typing it manually.
 
-**Basic Town-Related Commands**
-* `/t spawn` teleports you to town's spawn.
-* `/t invite <player>` invites a player to your town.
-* `/t leave` lets you leave town. It must not be owned by you.
+**Useful Town Commands**
+- `/t spawn` — Teleport to your town's spawn.
+- `/t invite <player>` — Invite a player to your town.
+- `/t leave` — Leave your current town (you cannot leave if you're the mayor).
 
-▷ *For futher information regarding towns, visit our Town Guide (include towns.md)*
+▷ *For more detailed information, check our [Town Guide](./towns.md).*
 
 ---
 
 ### 🏛️ Nations
 
-A nation is a larger political entity composed of multiple towns brought together under a unified government. Nations cost 5,000 gold to create, making them a long-term goal for any growing town. In addition to the benefits of a town, nations include additional benefits such as the ability to engage in diplomacy, form alliances, and declare wars. By joining a nation, towns gain additional protection, resources, and a stronger voice in the broader political landscape of EarthPol.
+Towns can band together to form **Nations**, which offer even greater power and influence.
+
+**Nations** include:
+
+- Larger alliances between towns.
+- Access to diplomacy (allies, wars, truces).
+- Extra protection and global influence.
 
 **Creating a Nation**
 
-Similar to creating a town, To create a town, you will need 5,000 gold and an existing town. Simply issue the command `/n new [Nation Name]`, replacing `[Nation Name]` with the name of your nation. Make sure to verify that your nation's name is appropriate and complies with our rules. You can then confirm the creation by either clicking the /confirm button or typing `/confirm` in chat.
+- Requires **5,000 gold** and at least **one existing town**.
+- Command: `/n new [Nation Name]`
+- Confirm by clicking or typing `/confirm`.
 
-▷ *For futher information regarding nations, visit our Nation Guide (include nations.md)*
-
+▷ *For more detailed information, check our [Nation Guide](./nations.md).*
 
 ---
+
+### Get Connected
+
+Joining EarthPol is just the beginning — the community is what truly brings the server to life!
+
+💬 **Join our Discord server** to meet new players, find allies, organize events, and get real-time help from staff and veterans:
+
+<div style={{ textAlign: "center", margin: "20px 0" }}>
+  <a href="https://discord.gg/bURuFxYqkD" target="_blank" rel="noopener noreferrer" style={{ fontSize: "1.5em", fontWeight: "bold", textDecoration: "none", color: "#5865F2" }}>
+    Join EarthPol Discord
+  </a>
+</div>
+
+Whether you’re looking for a town to join, want to discuss politics, or just chat about your latest builds, the Discord is the best place to stay connected and be part of the vibrant EarthPol community.
+
+See you there! 🌍✨
