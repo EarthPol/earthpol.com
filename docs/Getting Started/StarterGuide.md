@@ -9,7 +9,7 @@ Congratulations, you have officially joined EarthPol! Welcome to a world unlike 
 
 ## Spawning
 
-When you first join EarthPol, you will be teleported to a random location on our 1:326 scale Earth map.
+When you first join EarthPol, you will be teleported to a random location on our 1:326 scale map of the Earth, which is divided into regions including Africa, Asia, Europe, the Middle East, North America, Oceania, and South America.
 
 ![EarthPol Map](/img/servermap.png)
 
@@ -25,7 +25,7 @@ Upon spawning:
 
 When you spawn, you'll also receive a helpful starter kit:
 
-- 🪓 Stone Pickaxe
+- ⛏️ Stone Pickaxe
 - 🪓 Stone Axe
 - 🍞 16 Bread
 - 🛡️ Shield + Armor
@@ -34,6 +34,7 @@ When you spawn, you'll also receive a helpful starter kit:
 :::tip Bonus Items
 
 In addition to your starter kit, you can get even more free items by liking us on NameMC!  
+
 👉 [Like us here!](https://namemc.com/server/play.earthpol.com)
 
 :::
@@ -59,6 +60,8 @@ A **Towny Camp** is a temporary, one-chunk protected claim where:
 When you place your campfire, you'll see a prompt:  
 *"Would you like to make a Towny Camp?"*  
 Simply **click** the `/confirm` button or type `/confirm` in chat to claim the area.
+
+![Towny Camps](/img/campfire.png)
 
 ---
 
@@ -88,7 +91,7 @@ Once you're ready to settle permanently, you can join or create a **Town**!
 - `/t invite <player>` — Invite a player to your town.
 - `/t leave` — Leave your current town (you cannot leave if you're the mayor).
 
-▷ *For more detailed information, check our [Town Guide](./towns.md).*
+▷ *For more detailed information, check our [Town Guide](./Towns.md).*
 
 ---
 
@@ -108,7 +111,7 @@ Towns can band together to form **Nations**, which offer even greater power and 
 - Command: `/n new [Nation Name]`
 - Confirm by clicking or typing `/confirm`.
 
-▷ *For more detailed information, check our [Nation Guide](./nations.md).*
+▷ *For more detailed information, check our [Nation Guide](./Nations.md).*
 
 ---
 
