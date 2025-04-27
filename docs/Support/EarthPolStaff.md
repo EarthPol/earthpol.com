@@ -15,11 +15,11 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 ### Developers
 - **Kauntar**
 - **Quantara**
+- **jhjhjh098k**
 
 ### Administrators
 - **Irochi**
 - **Ethnzz**
-- **jhjhjh098k**
 - **R0WLAND**
 - **ConnorIsVlad**
 
