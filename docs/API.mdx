@@ -1,0 +1,724 @@
+---
+id: api
+title: API Documentation
+description: Documentation on the official EarthPol API.
+slug: /api
+sidebar_label: API
+sidebar_position: 9
+---
+
+## Connecting to the API
+
+Our API can be accessed by making requests to https://api.earthpol.com/. This will refer you to all active server root endpoints in a JSON format.
+
+Example:
+```JSON
+{
+    "roots": [
+      "https://api.earthpol.com/ecliptica/",
+      "https://api.earthpol.com/astra"
+    ]
+}
+```
+
+:::tip
+The current server version is `Astra`, all of our production API will be located at https://api.earthpol.com/astra. All documentation will use this version.
+
+In addition, you can download our [Postman Collection (Click Here)](/earthpol-collection.postman_collection.json) which has all endpoints and query examples setup! [Learn more about Postman.](https://www.postman.com/)
+
+:::
+
+## Request Payloads
+
+The EarthPol API uses a unified `POST` structure across most endpoints. To retrieve detailed data for a specific object (such as a town, nation, player, etc.), send a `POST` request with a `query` array in the body. Each item can be either a UUID or a name, depending on the endpoint.
+```JSON
+{
+  "query": [
+    "search_term_1",
+    "search_term_2"
+  ]
+}
+
+```
+
+## Endpoints
+
+### Root
+This is the primary endpoint which provides basic server information. The "endpoints" section will outline all **active** endpoints.
+
+`GET`: `https://api.earthpol.com/astra`
+```JSON
+{
+  "version": "1.21.4",
+  "moonPhase": "LAST_QUARTER",
+  "time": {
+    "newDayTime": 86400,
+    "serverTimeOfDay": 40453,
+    "stormDuration": 12847,
+    "thunderDuration": 3592,
+    "time": 0,
+    "fullTime": 48000
+  },
+  "status": {
+    "hasStorm": true,
+    "isThundering": true,
+    "daylightCycle": false,
+    "mobSpawning": false,
+    "keepInventory": false,
+    "randomTickSpeed": 3,
+    "viewDistance": 24,
+    "simulationDistance": 4
+  },
+  "stats": {
+    "maxPlayers": 500,
+    "numOnlinePlayers": 0,
+    "numOnlineNomads": 0,
+    "numResidents": 3328,
+    "numNomads": 3237,
+    "numTowns": 29,
+    "numTownBlocks": 4845,
+    "numNations": 13,
+    "numQuarters": 21
+  },
+  "endpoints": {
+    "towns": "https://api.earthpol.com/astra/towns",
+    "nations": "https://api.earthpol.com/astra/nations",
+    "players": "https://api.earthpol.com/astra/players",
+    "shops": "https://api.earthpol.com/astra/shops",
+    "location": "https://api.earthpol.com/astra/location",
+    "discord": "https://api.earthpol.com/astra/discord",
+    "quarters": "https://api.earthpol.com/astra/quarters"
+  }
+}
+```
+
+### Towns
+**Endpoint:** `https://api.earthpol.com/astra/towns`
+
+Below is a shortened example of the GET response returned from the URL above, listing all currently registered Towny Towns in a JSON array.
+
+`GET`: `https://api.earthpol.com/astra/towns`
+```JSON
+[
+  {
+    "name": "Havana",
+    "uuid": "ff50d039-669d-413e-84e0-18c3fd370ea3"
+  },
+  {
+    "name": "Astoria",
+    "uuid": "834b37c4-ea3b-4faf-b8f0-1a5b8254c574"
+  },
+  {
+    "name": "Anchorage",
+    "uuid": "a10ceae2-21a9-42a4-8489-dcadc9146cd3"
+  },
+  {
+    "name": "Seattle",
+    "uuid": "ca3b3504-41e4-4c79-a8bc-3e9f5f465d92"
+  }
+]
+```
+
+You can also `POST` to this endpoint using the example payload below. You can use either the Town name or the Town UUID
+
+`POST`: `https://api.earthpol.com/astra/towns`
+Payload:
+```JSON
+{
+    "query": [
+        //You can query by Town Name or Town UUID, doing both will return double results.
+        "Havana", //Town Name
+        "ff50d039-669d-413e-84e0-18c3fd370ea3" //Town UUID
+    ]
+}
+```
+
+An example response from the Towns endpoint after a `POST` request with the above payload would be like this.
+
+Response:
+```JSON
+[
+    {
+        "name": "Havana",
+        "uuid": "ff50d039-669d-413e-84e0-18c3fd370ea3",
+        "board": "VIVA LA LIBERTAD CARAJO",
+        "founder": "5u5u",
+        "mayor": {
+            "name": "jhjhjh098k",
+            "uuid": "9a2657ea-e15c-4469-8886-6c101151eff0"
+        },
+        "nation": {
+            "name": "Cuba",
+            "uuid": "5eda99c0-e430-4552-abae-4e7604579483"
+        },
+        "timestamps": {
+            "registered": 1719014016273,
+            "joinedNationAt": 1719176120296,
+            "ruinedAt": null
+        },
+        "status": {
+            "isPublic": true,
+            "isOpen": false,
+            "isNeutral": false,
+            "isCapital": true,
+            "isOverClaimed": true,
+            "isRuined": false,
+            "isForSale": false,
+            "hasNation": true
+        },
+        "stats": {
+            "numTownBlocks": 1020,
+            "maxTownBlocks": 985,
+            "bonusBlocks": 0,
+            "numResidents": 14,
+            "numTrusted": 9,
+            "numOutlaws": 1,
+            "balance": 81.8
+        },
+        "perms": {
+            "build": [false, false, false, false],
+            "destroy": [false, false, false, false],
+            "switch": [false, false, false, false],
+            "itemUse": [false, false, false, false],
+            "flags": {
+                "pvp": false,
+                "explosion": false,
+                "fire": false,
+                "mobs": false
+            }
+        },
+        "coordinates": {
+            "spawn": {
+                "world": "world",
+                "x": -27417.029697659815,
+                "y": 88.75061076465869,
+                "z": -7704.748858546749,
+                "pitch": 41.038494,
+                "yaw": -97.12445
+            },
+            "homeBlock": [
+                -1714,
+                -482
+            ],
+            "townBlocks": [
+                [
+                    -1745,
+                    -479
+                ]
+            ]
+        },
+        "residents": [
+            {
+                "name": "MrTytanic",
+                "uuid": "d904bb76-412d-4f6a-af9f-13853b5fc614"
+            },
+
+            {
+                "name": "jhjhjh098k",
+                "uuid": "9a2657ea-e15c-4469-8886-6c101151eff0"
+            }
+        ],
+        "trusted": [
+            {
+                "name": "jhjhjh098k",
+                "uuid": "9a2657ea-e15c-4469-8886-6c101151eff0"
+            },
+            {
+                "name": "Kauntar",
+                "uuid": "67dbe22c-f9f8-4f27-a372-3ec9cf7c8ea8"
+            }
+        ],
+        "outlaws": [
+            {
+                "name": "kreepsta",
+                "uuid": "dc013ac2-23b9-4a56-84f2-74b6e559ffe1"
+            }
+        ],
+        "quarters": [],
+        "ranks": {
+            "assistant": [
+                {
+                    "name": "Ethnzz",
+                    "uuid": "bb045b6c-df6a-4f83-be01-5eb745273f72"
+                }
+            ],
+            "trusted": [],
+            "recruiter": [],
+            "sheriff": [],
+            "guard": []
+        }
+    }
+]
+```
+
+### Nations
+**Endpoint:** `https://api.earthpol.com/astra/nations`
+
+Below is a shortened example of the GET response returned from the URL above, listing all currently registered Towny Nations in a JSON array.
+
+`GET`: `https://api.earthpol.com/astra/nations`
+```JSON
+[
+    {
+        "name": "Japan",
+        "uuid": "93f28b00-51ba-43b2-930f-a63e496317a2"
+    },
+    {
+        "name": "Cascadia",
+        "uuid": "e38c9fbc-78d9-4e9b-a90f-870fba949693"
+    },
+    {
+        "name": "Portugal",
+        "uuid": "617f990b-1f21-4e8a-9791-05c07ccbb431"
+    },
+    {
+        "name": "Cuba",
+        "uuid": "5eda99c0-e430-4552-abae-4e7604579483"
+	}
+]
+```
+
+`POST`: `https://api.earthpol.com/astra/nations`
+Payload:
+```JSON
+{
+    "query": [
+        //You can query by Nation Name or Nation UUID, doing both will return double results.
+        "Cuba", //Nation Name
+        "5eda99c0-e430-4552-abae-4e7604579483" //Nation UUID
+    ]
+}
+```
+
+Response
+```JSON
+[
+    {
+        "name": "Cuba",
+        "uuid": "5eda99c0-e430-4552-abae-4e7604579483",
+        "board": "Welcome to the Empire of Cuba",
+        "king": {
+            "name": "jhjhjh098k",
+            "uuid": "9a2657ea-e15c-4469-8886-6c101151eff0"
+        },
+        "capital": {
+            "name": "Havana",
+            "uuid": "ff50d039-669d-413e-84e0-18c3fd370ea3"
+        },
+        "timestamps": {
+            "registered": 1719176120296
+        },
+        "status": {
+            "isPublic": true,
+            "isOpen": false,
+            "isNeutral": false
+        },
+        "stats": {
+            "numTownBlocks": 1021,
+            "numResidents": 15,
+            "numTowns": 2,
+            "numAllies": 9,
+            "numEnemies": 0,
+            "balance": 0.0
+        },
+        "coordinates": {
+            "spawn": {
+                "world": "world",
+                "x": -27720.00379749501,
+                "y": 64.0,
+                "z": -7744.0120470932,
+                "pitch": -1.3423146,
+                "yaw": 0.06389673
+            }
+        },
+        "residents": [
+            {
+                "name": "MrTytanic",
+                "uuid": "d904bb76-412d-4f6a-af9f-13853b5fc614"
+            },
+            {
+                "name": "jhjhjh098k",
+                "uuid": "9a2657ea-e15c-4469-8886-6c101151eff0"
+            }
+        ],
+        "towns": [
+            {
+                "name": "Havana",
+                "uuid": "ff50d039-669d-413e-84e0-18c3fd370ea3"
+            },
+            {
+                "name": "Skibidi",
+                "uuid": "0b86c2db-da31-4ac2-84f3-de3e4166164c"
+            }
+        ],
+        "allies": [
+            {
+                "name": "Japan",
+                "uuid": "93f28b00-51ba-43b2-930f-a63e496317a2"
+            },
+            {
+                "name": "Cascadia",
+                "uuid": "e38c9fbc-78d9-4e9b-a90f-870fba949693"
+            }
+        ],
+        "enemies": [],
+        "sanctioned": [],
+        "ranks": {
+            "co-leader": [],
+            "minister": [],
+            "recruiter": [],
+            "soldier": [],
+            "general": [
+                {
+                    "name": "NimbKied",
+                    "uuid": "f0256093-23b5-4fdd-96f0-451ef4acb63c"
+                }
+            ]
+        }
+    }
+]
+```
+
+### Players
+**Endpoint:** `https://api.earthpol.com/astra/players`
+
+Below is a shortened example of the GET response returned from the URL above, listing all currently registered Towny Residents in a JSON array.
+
+`GET`: `https://api.earthpol.com/astra/players`
+```JSON
+[
+	{
+        "name": "MrTytanic",
+        "uuid": "d904bb76-412d-4f6a-af9f-13853b5fc614"
+    },
+    {
+        "name": "Kauntar",
+        "uuid": "67dbe22c-f9f8-4f27-a372-3ec9cf7c8ea8"
+    },
+	{
+        "name": "jhjhjh098k",
+        "uuid": "9a2657ea-e15c-4469-8886-6c101151eff0"
+    },
+	{
+        "name": "Bustun",
+        "uuid": "9e47a89a-c251-4df6-9da2-792f2e3f74d0"
+    }
+]
+```
+
+A POST to this endpoint returns information about the player
+
+`POST`: `https://api.earthpol.com/astra/players`
+
+Payload:
+```JSON
+{
+    "query": [
+        //You can query with Player Name or Player UUID
+        "d904bb76-412d-4f6a-af9f-13853b5fc614", //Player UUID
+        "MrTytanic" //Player Name
+    ]
+}
+```
+
+Response:
+```JSON
+[
+    {
+        "name": "MrTytanic",
+        "uuid": "d904bb76-412d-4f6a-af9f-13853b5fc614",
+        "title": "&6&lKing",
+        "surname": null,
+        "formattedName": "§6§lKing MrTytanic",
+        "about": "Kobenge clear",
+        "town": {
+            "name": "Havana",
+            "uuid": "ff50d039-669d-413e-84e0-18c3fd370ea3"
+        },
+        "nation": {
+            "name": "Cuba",
+            "uuid": "5eda99c0-e430-4552-abae-4e7604579483"
+        },
+        "timestamps": {
+            "registered": 1718426928686,
+            "joinedTownAt": 1719014190767,
+            "lastOnline": 1744735653973
+        },
+        "status": {
+            "isOnline": false,
+            "isNPC": false,
+            "isMayor": false,
+            "isKing": false,
+            "hasTown": true,
+            "hasNation": true
+        },
+        "stats": {
+            "balance": 67.0,
+            "numFriends": 2
+        },
+        "perms": {
+            "build": [true, false, false, false],
+            "destroy": [true, false, false, false],
+            "switch": [true, false, false, false],
+            "itemUse": [true, false, false, false],
+            "flags": {
+                "pvp": false,
+                "explosion": false,
+                "fire": false,
+                "mobs": false
+            }
+        },
+        "ranks": {
+            "townRanks": [],
+            "nationRanks": []
+        },
+        "friends": [
+            {
+                "name": "0xBit",
+                "uuid": "d550441b-5fcf-448c-a756-5fa391b89a46"
+            },
+            {
+                "name": "Bustun",
+                "uuid": "9e47a89a-c251-4df6-9da2-792f2e3f74d0"
+            }
+        ]
+    }
+]
+```
+
+### Location
+**Endpoint:** `https://api.earthpol.com/astra/location`
+
+This endpoint only supports `POST` requests with the following payloads.
+
+`POST`: `https://api.earthpol.com/astra/location`
+Payload:
+```JSON
+{
+  "query": [
+    [
+    -27720, // x Coordinate
+    -7744 // y Coordinate
+    ]
+  ]
+}
+```
+
+Response:
+```JSON
+[
+    {
+        "location": {
+            "x": -27720,
+            "z": -7744
+        },
+        "isWilderness": false,
+        "town": {
+            "name": "Havana",
+            "uuid": "ff50d039-669d-413e-84e0-18c3fd370ea3"
+        },
+        "nation": {
+            "name": "Cuba",
+            "uuid": "5eda99c0-e430-4552-abae-4e7604579483"
+        }
+    }
+]
+```
+
+### Shops
+**Endpoint:** `https://api.earthpol.com/astra/shops`
+
+`GET`: `https://api.earthpol.com/astra/shops`
+```JSON
+[
+    {
+        "id": 2,
+        "owner": "d904bb76-412d-4f6a-af9f-13853b5fc614",
+        "item": "ItemStack{NETHERITE_INGOT x 1}",
+        "price": 1.0
+    },
+    {
+        "id": 3,
+        "owner": "d904bb76-412d-4f6a-af9f-13853b5fc614",
+        "item": "ItemStack{NETHERITE_BLOCK x 1}",
+        "price": 9.0
+    },
+    {
+        "id": 4,
+        "owner": "d904bb76-412d-4f6a-af9f-13853b5fc614",
+        "item": "ItemStack{DIAMOND x 1}",
+        "price": 13.0
+    }
+]
+```
+
+`POST`: `https://api.earthpol.com/astra/shops`
+Payload:
+```JSON
+{
+    "query": [
+        //You can get ALL Shops by searching the players UUID or you can get a specific shop by searching by shop ID
+        "d904bb76-412d-4f6a-af9f-13853b5fc614", //Player UUID to search for all shops they own
+        "2" //Shop ID to find information about a specific shop
+    ]
+}
+```
+
+Response:
+```JSON
+[
+    [
+        {
+            "id": 2,
+            "owner": "d904bb76-412d-4f6a-af9f-13853b5fc614",
+            "item": "ItemStack{NETHERITE_INGOT x 1}",
+            "price": 1.0,
+            "type": "SELLING",
+            "space": -1,
+            "stock": -1,
+            "location": {
+                "world": "world",
+                "x": -42004.0,
+                "y": 53.0,
+                "z": -15520.0
+            }
+        },
+        {
+            "id": 3,
+            "owner": "d904bb76-412d-4f6a-af9f-13853b5fc614",
+            "item": "ItemStack{NETHERITE_BLOCK x 1}",
+            "price": 9.0,
+            "type": "SELLING",
+            "space": -1,
+            "stock": -1,
+            "location": {
+                "world": "world",
+                "x": -42004.0,
+                "y": 53.0,
+                "z": -15518.0
+            }
+        },
+        {
+            "id": 4,
+            "owner": "d904bb76-412d-4f6a-af9f-13853b5fc614",
+            "item": "ItemStack{DIAMOND x 1}",
+            "price": 13.0,
+            "type": "SELLING",
+            "space": -1,
+            "stock": -1,
+            "location": {
+                "world": "world",
+                "x": -42012.0,
+                "y": 53.0,
+                "z": -15521.0
+            }
+        }
+    ]
+]
+```
+
+### Quarters
+**Endpoint:** `https://api.earthpol.com/astra/quarters`
+`GET`: `https://api.earthpol.com/astra/quarters`
+```JSON
+[
+    {
+        "name": "Lovely Residence",
+        "uuid": "9b88b771-c6df-4219-b67d-6b8a01a3f24e"
+    },
+    {
+        "name": "Cascadia Shop",
+        "uuid": "e478eb62-6467-4f9b-a167-9d122583e1fa"
+    },
+    {
+        "name": "Drug Store",
+        "uuid": "8bf32d69-0e66-4ab3-92af-faf7c03f17a9"
+    },
+    {
+        "name": "Perturbing Property",
+        "uuid": "d5e4cbe0-e8b9-43c0-8af1-6dbef237e129"
+    }
+]
+```
+
+`POST`: `https://api.earthpol.com/astra/quarters`
+Payload:
+```JSON
+{
+    "query": [
+        "9b88b771-c6df-4219-b67d-6b8a01a3f24e"
+    ]
+}
+```
+
+Response:
+```JSON
+[
+    {
+        "name": "Lovely Residence",
+        "uuid": "9b88b771-c6df-4219-b67d-6b8a01a3f24e",
+        "type": "APARTMENT",
+        "creator": "9337b63c-8b9f-4690-a369-b7760521699a",
+        "owner": {
+            "name": null,
+            "uuid": null
+        },
+        "town": {
+            "name": "Lisbon",
+            "uuid": "1924b818-c2a2-46a3-b8be-beb043b76bf0"
+        },
+        "nation": {
+            "name": "Portugal",
+            "uuid": "617f990b-1f21-4e8a-9791-05c07ccbb431"
+        },
+        "timestamps": {
+            "registered": 1725837773050,
+            "claimedAt": null
+        },
+        "status": {
+            "isEmbassy": false,
+            "isForSale": false
+        },
+        "stats": {
+            "price": null,
+            "volume": 1152,
+            "numCuboids": 1,
+            "particleSize": null
+        },
+        "colour": [26, 21, 80, 255],
+        "trusted": [],
+        "cuboids": [
+            {
+                "cornerOne": [-3184, 63, -13332],
+                "cornerTwo": [-3177, 74, -13321]
+            }
+        ]
+    }
+]
+```
+
+### Discord
+**Endpoint:** `https://api.earthpol.com/astra/discord`
+
+This endpoint only supports `POST` requests with the following payloads. We do not use DiscordSRV and instead use an in-house solution. This endpoint is subject to change.
+
+`POST`: `https://api.earthpol.com/astra/discord`
+Payload:
+```JSON
+{
+  "query": [
+    //You can query with a Discord ID or a Minecraft UUID, not both at the same time
+    "325465801710764033", //Discord ID
+    "d904bb76-412d-4f6a-af9f-13853b5fc614" //Minecraft ID
+  ]
+}
+
+```
+
+Response:
+```JSON
+{
+    "discord": "325465801710764033",
+    "uuid": "d904bb76-412d-4f6a-af9f-13853b5fc614"
+}
+```
