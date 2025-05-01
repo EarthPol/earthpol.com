@@ -23,7 +23,7 @@ For example, if Nation A applies a 10% tariff on all goods in their shops, any p
 
 **Commands for Tariffs:**
 
-- `/nation tariff add <item> <percentage> [time]`: Add a tariff on an item with a specified percentage increase.
+- `/nation tariff add <import/export> <town/nation> <town/nation name> <item> <percentage> [time]`: Add a tariff on an item against another town or nation with a specified percentage increase.
 - `/nation tariff remove <item>`: Remove a tariff from a specific item.
 - `/nation tariff remove all`: Remove all tariffs imposed by your nation.
 - `/nation tariff <target> list`: List all active tariffs on a specific target.
