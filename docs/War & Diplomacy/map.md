@@ -14,41 +14,53 @@ Geopolitics and geography are not just aesthetic elements; they play a pivotal r
 
 To view the map, click [here](https://earthpol.com/map).
 
-## Ore Distribution
+## Ore Hotspot Distribution
 
-### Clay Clumps
-![Clay Clumps](../../static/img/clay_clumps.png)
-- Primarily located at **Y 48 to Y 319**
-
-### Coal Ore
-![Coal Ore](../../static/img/coal_ore.png)
-- Found between **Y 0 and Y 319**
-
-### Copper Ore
-![Copper Ore](../../static/img/copper_ore.png)
-- Generates between **Y 0 and Y 112**
-
-### Diamond Ore
-![Diamond Ore](../../static/img/diamond_ore.png)
-- Spawns between **Y 0 and Y 16**
-
-### Gold Ore
-![Gold Ore](../../static/img/gold_ore.png)
-- Spawns between **Y 0 and Y 112**
-
-### Iron Ore
-![Iron Ore](../../static/img/iron_ore.png)
-- Spawns between **Y 0 and Y 64**
-
-### Netherite (Ancient Debris)
-![Netherite Ore](../../static/img/netherite_ore.png)
-- Generates between **Y 0 and Y 16**
-- Found mainly in South Africa
-
-### Quartz Ore
-![Quartz Ore](../../static/img/quartz_ore.png)
-- Spawns between **Y 0 and Y 32**
-
-### Redstone Ore
-![Redstone Ore](../../static/img/redstone_ore.png)
-- Spawns between **Y 0 and Y 16**
+<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '40px' }}>
+  <div style={{ textAlign: 'center', width: '450px' }}>
+    <img src="/img/clay_clumps.png" width="450" /><br />
+    <strong>Clay Clumps</strong><br />
+    Y 48 to Y 319
+  </div>
+  <div style={{ textAlign: 'center', width: '450px' }}>
+    <img src="/img/coal_ore.png" width="450" /><br />
+    <strong>Coal Ore</strong><br />
+    Y 0 to Y 319
+  </div>
+  <div style={{ textAlign: 'center', width: '450px' }}>
+    <img src="/img/copper_ore.png" width="450" /><br />
+    <strong>Copper Ore</strong><br />
+    Y 0 to Y 112
+  </div>
+  <div style={{ textAlign: 'center', width: '450px' }}>
+    <img src="/img/diamond_ore.png" width="450" /><br />
+    <strong>Diamond Ore</strong><br />
+    Y 0 to Y 16
+  </div>
+  <div style={{ textAlign: 'center', width: '450px' }}>
+    <img src="/img/gold_ore.png" width="450" /><br />
+    <strong>Gold Ore</strong><br />
+    Y 0 to Y 112
+  </div>
+  <div style={{ textAlign: 'center', width: '450px' }}>
+    <img src="/img/iron_ore.png" width="450" /><br />
+    <strong>Iron Ore</strong><br />
+    Y 0 to Y 64
+  </div>
+  <div style={{ textAlign: 'center', width: '450px' }}>
+    <img src="/img/netherite_ore.png" width="450" /><br />
+    <strong>Netherite Ore</strong><br />
+    Y 0 to Y 16<br />
+    Mostly in South Africa
+  </div>
+  <div style={{ textAlign: 'center', width: '450px' }}>
+    <img src="/img/quartz_ore.png" width="450" /><br />
+    <strong>Quartz Ore</strong><br />
+    Y 0 to Y 32
+  </div>
+  <div style={{ textAlign: 'center', width: '450px' }}>
+    <img src="/img/redstone_ore.png" width="450" /><br />
+    <strong>Redstone Ore</strong><br />
+    Y 0 to Y 16
+  </div>
+</div>

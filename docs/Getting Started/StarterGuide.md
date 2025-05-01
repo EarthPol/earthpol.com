@@ -16,7 +16,7 @@ When you first join EarthPol, you will be teleported to a random location on our
 Upon spawning:
 
 - 🗺️ You can use `/map` to find your location on our **interactive 3D map**.
-- 🛡️ You are **immune from mob damage** for your **first 24 hours** — giving you time to settle in safely.  
+- 🛡️ You are **immune from mob damage** for your **first hour**, giving you time to settle in safely.  
   (⚠️ **Note:** Players in the wild can still attack you!)
 - ✈️ Want to teleport to a different random location?  
   Use `/rtp` to teleport randomly, or `/rtp [continent]` if you want to teleport to a **specific continent**.
@@ -28,7 +28,7 @@ When you spawn, you'll also receive a helpful starter kit:
 - ⛏️ Stone Pickaxe
 - 🪓 Stone Axe
 - 🍞 16 Bread
-- 🛡️ Shield + Armor
+- 🛡️ Shield + Leather Armor
 - 🔥 Campfire
 
 :::tip Bonus Items
