@@ -21,13 +21,16 @@ There are several ways to obtain gold in the game, below are a few recommendatio
 
 On EarthPol your gold is tracked automatically. You can store it in your inventory or Ender Chest, and it will be added to your gold balance. When you make a purchase, the cost is automatically deducted from that balance. Make sure you have gold in your inventory or Ender Chest when shopping, or the transaction will not go through. Managing where you keep your gold is essential for smooth trading and purchases on the server.
 
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/goldbal.png" alt="Gold in Balance" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>Example of gold in one's balance based on items in their hotbars</em></p>
+</div>
+
 ## Building Wealth
 
 Here are some effective strategies to help you earn gold for yourself or your town/nation:
 
 - Creating a shop: Some items are in high demand and can fetch you more gold. Look for popular materials like diamonds, enchanted books, rare blocks, and ores to sell. Keep an eye on what other players are looking for and target those items for the best profits.
-
-- Use Fortune for Mining: When mining, use a Fortune-enchanted pickaxe. This enchantment increases the drop rate of gold, which can significantly boost your gold intake.
 
 - Join Our Discord: Join our Discord to stay updated on upcoming events. Many events provide large gold rewards, and being active in the community will help you discover opportunities to earn big.
 
