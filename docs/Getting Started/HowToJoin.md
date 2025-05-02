@@ -23,7 +23,19 @@ EarthPol is currently supported for Java Edition only. Bedrock players cannot jo
 ### Video Guide
 
 Below is our video guide to joining EarthPol:
-youtube link
+
+<div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
+  <iframe 
+    width="700" 
+    height="394" 
+    src="https://www.youtube.com/embed/eTTNoybXN5g?si=cfoe8ZBcQVzGrIL-" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen
+  ></iframe>
+</div>
 
 ### Troubleshooting
 
