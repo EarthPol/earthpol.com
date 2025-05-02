@@ -17,7 +17,7 @@ const config = {
       crossorigin: 'anonymous',
     },
     {
-      src: 'https://umami.cascadiainteractive.net/script.js',
+      src: 'https://umami.earthpol.com/script.js',
       defer: true,
       'data-website-id': 'd293e0ae-dcc5-4af8-adee-aa437c652be2',
     },
