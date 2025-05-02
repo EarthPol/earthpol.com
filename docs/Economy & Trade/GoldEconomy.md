@@ -17,21 +17,9 @@ There are several ways to obtain gold in the game, below are a few recommendatio
 3. Selling Items – You can sell items to other players by using player shops (*See our guide on QuickShop*).
 4. Events – Participate in various server events that offer gold rewards as part of the prize pool.
 
-## Converting and Using Gold
+## Using Gold
 
-Once you’ve acquired gold, you have can add it to your balance by doing the following:
-
-- /sell Hand: To convert gold ingots or blocks into your balance, simply use the `/sell hand` command while holding gold in your hand. This is an easy way to liquidate any excess gold you have into your account balance.
-
-You are only able to add gold ingots or gold blocks to your balance, raw ore or ore blocks do not count.
-
----
-
-To take gold out of your balance, do the following:
-
-- Gold Exchange: Head over to `/warp GoldExchange`, where you can access the admin shop. This allows you to withdraw physical gold from your balance and use it for crafting.
-
-Once gold has been added to your balance, you can use it to buy items from shops, create towns, or deposite funds into towns and nations.
+On EarthPol your gold is tracked automatically. You can store it in your inventory or Ender Chest, and it will be added to your gold balance. When you make a purchase, the cost is automatically deducted from that balance. Make sure you have gold in your inventory or Ender Chest when shopping, or the transaction will not go through. Managing where you keep your gold is essential for smooth trading and purchases on the server.
 
 ## Building Wealth
 
