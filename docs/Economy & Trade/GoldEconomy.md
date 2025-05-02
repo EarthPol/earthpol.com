@@ -8,6 +8,8 @@ title: Economy
 
 In our economy, gold serves as the primary currency. It is essential for transactions, and players can earn, spend, and trade gold throughout the game. The system is designed to make gold the backbone of your in-game wealth and economy, ensuring a rich and immersive experience for all players.
 
+---
+
 ## Earning Gold
 
 There are several ways to obtain gold in the game, below are a few recommendations:
@@ -17,14 +19,23 @@ There are several ways to obtain gold in the game, below are a few recommendatio
 3. Selling Items – You can sell items to other players by using player shops (*See our guide on QuickShop*).
 4. Events – Participate in various server events that offer gold rewards as part of the prize pool.
 
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/goldmining.png" alt="Mining Gold" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>A player mining gold.</em></p>
+</div>
+
+---
+
 ## Using Gold
 
-On EarthPol your gold is tracked automatically. You can store it in your inventory or Ender Chest, and it will be added to your gold balance. When you make a purchase, the cost is automatically deducted from that balance. Make sure you have gold in your inventory or Ender Chest when shopping, or the transaction will not go through. Managing where you keep your gold is essential for smooth trading and purchases on the server.
+On EarthPol your gold is tracked automatically. You can store it in your inventory or Ender Chest, and it will be added to your gold balance. When you make a purchase, the cost is automatically deducted from that balance. Make sure you have gold in your inventory or Ender Chest when shopping, or the transaction will not go through. Managing where you keep your gold is important and should be a high priority for all players.
 
 <div style={{ textAlign: 'center' }}>
   <img src="/img/goldbal.png" alt="Gold in Balance" style={{ maxWidth: '100%', height: 'auto' }} />
-  <p><em>Example of gold in one's balance based on items in their hotbars</em></p>
+  <p><em>Example of gold in one's balance based on items in their hotbars.</em></p>
 </div>
+
+---
 
 ## Building Wealth
 
@@ -39,3 +50,10 @@ Here are some effective strategies to help you earn gold for yourself or your to
 - Trading with Other Players: If you're good at crafting or gathering resources, you can trade with other players for gold. Set up a shop or offer services like custom builds or mapart for a gold fee.
 
 With these strategies, you can quickly build up your wealth and take full advantage of the gold-based economy!
+
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/playershop.png" alt="A Shop" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>Example of a shop where items can be sold.</em></p>
+</div>
+
+---

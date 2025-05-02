@@ -2,38 +2,156 @@
 title: EarthPol Staff
 ---
 
-# Our Team
+## Our Team
 
 Our staff team is dedicated to fostering a safe environment, growing the server, and creating engaging content to attract new players. They organize events, work closely with the community, and have a deep love for EarthPol and its players.
 
-### Owner
-- **MrTytanic**
+### Owner and Developers
 
-### Lead Developer
-- **Bustun** 
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
 
-### Developers
-- **Kauntar**
-- **Quantara**
-- **jhjhjh098k**
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/MrTytanic/80" /><br/>
+  <strong><a href="https://wiki.earthpol.com/MrTytanic">MrTytanic</a></strong><br/>
+  <em>Owner</em><br/>
+  <a href="https://github.com/mrtytanic"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" style={{ marginRight: '8px' }} /></a>
+  <a href="https://www.youtube.com/@mrtytanic7587"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="16" height="16" /></a>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Bustun/80" /><br/>
+  <strong><a href="#">Bustun</a></strong><br/>
+  <em>Lead Developer</em><br/>
+  <a href="https://github.com/bustun01"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Quantura/80" /><br/>
+  <strong><a href="#">Quantura</a></strong><br/>
+  <em>Developer</em><br/>
+  <a href="https://github.com/quantura"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Kauntar/80" /><br/>
+  <strong><a href="https://wiki.earthpol.com/Kauntar">Kauntar</a></strong><br/>
+  <em>Developer</em><br/>
+  <a href="https://github.com/kauntar"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/jhjhjh098k/80" /><br/>
+  <strong><a href="#">jhjhjh098k</a></strong><br/>
+  <em>Developer</em><br/>
+  <a href="https://github.com/jhjhjh098k"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
+</div>
+
+</div>
+
+</div>
 
 ### Administrators
-- **Irochi**
-- **Ethnzz**
-- **R0WLAND**
-- **ConnorIsVlad**
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Irochi_/80" /><br/>
+  <strong><a href="#">Irochi_</a></strong><br/>
+  <em>Administrator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Ethnzz/80" /><br/>
+  <strong><a href="#">Ethnzz</a></strong><br/>
+  <em>Administrator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/R0wland/80" /><br/>
+  <strong><a href="#">R0WLAND</a></strong><br/>
+  <em>Administrator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/ConorVlad/80" /><br/>
+  <strong><a href="#">ConorVlad</a></strong><br/>
+  <em>Administrator</em>
+</div>
+
+</div>
 
 ### Moderators
-- **AkselTheBoi**
-- **superb1aze**
-- **Dannyboy314**
-- **GrayIsBalls**
-- **Hyp3r**
-- **K1nda**
-- **ellied64**
 
-### Helpers
-- **None**
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
 
-### Builders
-- **CrazyCoolCas**
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/AkselV/80" /><br/>
+  <strong><a href="#">AkselV</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/superb1aze/80" /><br/>
+  <strong><a href="#">superb1aze</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Dannyboy/80" /><br/>
+  <strong><a href="#">Dannyboy</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/GrayIsBalls/80" /><br/>
+  <strong><a href="#">GrayIsBalls</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Hyp3r/80" /><br/>
+  <strong><a href="#">Hyp3r</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/K1nda/80" /><br/>
+  <strong><a href="#">K1nda</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/ellied64/80" /><br/>
+  <strong><a href="#">ellied64</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+</div>
+
+### Helpers and Builders
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/CrazyCoolCas/80" /><br/>
+  <strong><a href="#">CrazyCoolCas</a></strong><br/>
+  <em>Builder</em>
+</div>
+
+</div>
+
+---
+
+## We want YOU!
+
+![EarthPol Staff](/img/staffphoto.png)
+
+We are always seeking dedicated and motivated individuals to join our staff team. New players are welcome, and we encourage anyone with a passion for community building and server development to get involved. To be considered, simply join our Discord server and remain active within the community. When the time comes, we will announce the next round of staff applications there. We look forward to welcoming new members who are eager to contribute to the continued success of EarthPol.
+
+<div style={{ textAlign: "center", margin: "20px 0" }}>
+  <a href="https://discord.gg/bURuFxYqkD" target="_blank" rel="noopener noreferrer" style={{ fontSize: "1.5em", fontWeight: "bold", textDecoration: "none", color: "#5865F2" }}>
+    Join The EarthPol Discord
+  </a>
+</div>
