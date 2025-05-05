@@ -35,4 +35,3 @@ Because Minecraft wasn't originally built for this kind of speed, derailing can 
 - Accelerate gradually – Place multiple high-speed rails at the start.
 - Place regular rails before turns/slopes to slow down.
 - Resume high-speed rails after turns/slopes to regain speed.
-- Maintenance tip: Add 1 powered rail every 30 blocks to keep up momentum.

@@ -35,8 +35,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl:
-              'https://github.com/EarthPol/earthpol.com',
         },
         blog: {
           showReadingTime: true,
@@ -44,8 +42,6 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-              'https://github.com/EarthPol/earthpol.com',
         },
         theme: {
           customCss: './src/css/custom.css',

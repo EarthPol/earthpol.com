@@ -2,11 +2,14 @@
 title: Nomad Guide
 sidebar_position: 4
 ---
-
 # Nomad Guide
-
 ## Overview
-Nomads are independent players who choose to live without joining a town. This playstyle offers freedom and flexibility but comes with its own unique challenges. Whether you're a new player exploring your options or a veteran seeking a fresh experience, becoming a nomad can be a rewarding alternative.
+While unconventional, Nomads are independent players who choose to live without joining a town. This playstyle offers freedom and flexibility but comes with its own unique challenges. Whether you're a new player exploring your options or a veteran seeking a fresh experience, becoming a nomad can be a rewarding alternative.
+
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/Nomadic.png" alt="Nomadic Hut" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>Example of a Nomadic Tribe's temporary yurt in Nebula (V4)</em></p>
+</div>
 
 ## Gameplay
 As a nomad, you rely on your own skills and wits to survive. You won't have access to town protections or spawns, so careful planning and mobility are key. Nomads often set up temporary camps, travel between areas for trade, or support larger factions through mercenary work, logistics, or resource gathering.
@@ -25,6 +28,8 @@ To create a Towny Camp, either click the `/confirm` button or type `/confirm` in
 ### Animal Companions
 Like any other player, Nomads can tame animals such as horses, dogs, and other companions. You can bring them along your journey by using leads. This adds both utility and flavor to your travels—horses provide faster transportation, while pets can assist in combat or provide company on the road. 
 
+---
+
 ## Benefits
 - Full independence and freedom of movement.
 - No taxes or obligations to town/nation governments.
@@ -37,3 +42,5 @@ Like any other player, Nomads can tame animals such as horses, dogs, and other c
 - No permanent town spawn or protected area to call home.  
 - Limited access to town/nation infrastructure (e.g., hospitals, storage, buffs).
 - Harder to participate in some aspects of diplomacy or large-scale warfare.
+
+---

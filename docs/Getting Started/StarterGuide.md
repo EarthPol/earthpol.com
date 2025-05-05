@@ -16,10 +16,8 @@ When you first join EarthPol, you will be teleported to a random location on our
 Upon spawning:
 
 - 🗺️ You can use `/map` to find your location on our **interactive 3D map**.
-- 🛡️ You are **immune from mob damage** for your **first hour**, giving you time to settle in safely.  
-  (⚠️ **Note:** Players in the wild can still attack you!)
-- ✈️ Want to teleport to a different random location?  
-  Use `/rtp` to teleport randomly, or `/rtp [continent]` if you want to teleport to a **specific continent**.
+- 🛡️ You are **immune from mob damage** for your **first hour**, giving you time to settle in safely. **Note:** Players in the wild can still attack you!
+- ✈️ Want to teleport to a different random location? Use `/rtp` to teleport randomly, or `/rtp [continent]` if you want to teleport to a **specific continent**.
 
 ## Starter Kit
 
@@ -39,6 +37,12 @@ In addition to your starter kit, you can get even more free items by liking us o
 
 :::
 
+### 🏠 Homes
+
+Homes are teleport locations you set, either in protected claims or the wilderness. Below are the following commands related to homes. 
+``/sethome [name]``:  to save your current location as a home. 
+``/home [name]``:  to teleport to the home you set.
+``/homelist``: List all homes that you own.
 
 ## Basic Gameplay Overview
 
