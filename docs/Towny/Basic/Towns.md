@@ -71,3 +71,28 @@ Towny uses chunks to manage land. To see chunk borders when expanding, press F3 
 If you need to remove a chunk from your town, you can use the `/t unclaim` command.
 
 ---
+## Taxes in Towny
+
+Taxes are a key mechanic in Towny that allow mayors and nations to fund public services, infrastructure, and governance. On EarthPol, understanding how taxes work—both at the town and national level—is essential to building a stable, self-sustaining state.
+
+Towny allows for two main types of taxes:
+- **Town Taxes**: Charged to all residents of a town daily. Set by the mayor.
+- **Plot Taxes**: Charged on individual plots owned by residents. Can be used to incentivize land use or penalize hoarding.
+
+Both taxes are collected automatically and deposited into the town bank, which pays for daily upkeep, nation fees, and other expenses.
+
+Towns can set taxes to zero, impose high taxes on wealthier players, or use creative tax strategies to shape their internal economy.
+
+## Negative Town Taxes: Universal Basic Income in Towny
+
+Under advanced Towny settings, towns can implement a universal basic income (UBI) system using negative town taxes. By setting the daily town tax to a negative value (e.g., -2g), the server will pay each resident that amount daily from the town bank. This creates a form of automatic wealth redistribution, allowing leaders to support new players, reward loyalty, or encourage town growth.
+
+:::tip
+
+⚠️ Note: This only applies to town taxes, not plot taxes. Plot taxes are landowner-based and cannot be negative.
+
+:::
+
+This feature is ideal for towns looking to create a socialist, communal, or egalitarian economic model on EarthPol, and can be a great tool for player retention and morale.
+
+---
