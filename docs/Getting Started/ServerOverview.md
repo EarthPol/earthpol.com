@@ -31,6 +31,19 @@ EarthPol is truly unique because of its five years of history and development, g
 
 Furthermore, our approach sets us apart from other geopolitical servers. The EarthPol Development Team has expertise in both computer science and international relations, providing a more well-rounded and balanced experience rather than just focusing solely on server development. In addition, our staff is fully dedicated to maintaining and growing the community, always listening to player feedback and prioritizing their concerns with transparency and care.
 
+<div style={{ display: 'flex', justifyContent: 'center', margin: '2rem 0' }}>
+  <iframe
+    width="840"
+    height="472"
+    src="https://www.youtube.com/embed/AdMpIVTJ1fU?si=7X-HostU0xQBlk9q"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  />
+</div>
+
 #### Notable Plugins
 
 To support our philosophy of player-driven gameplay, we’ve carefully selected a set of plugins that enhance interaction, strategy, and creativity within the game:
