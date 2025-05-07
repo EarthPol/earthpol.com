@@ -5,7 +5,13 @@ title: EarthPol Premium
 
 EarthPol Premium is our subscription-based service designed to give players exclusive in-game perks while supporting the long-term sustainability of our server. As EarthPol continues to grow, so do the costs of maintaining our infrastructure, plugins, and community resources. EarthPol Premium helps offset these costs while giving back to the players who support us.
 
-For only `$9.99/month`, you can have access to the following EarthPol Premium perks:
+👉 You can purchase Premium here: **[Premium Store](https://earthpol.craftingstore.net/category/445275)**
+
+![Premium](/img/premium.png)
+
+---
+
+For only `$6.99/month`, you can have access to the following EarthPol Premium perks:
 
 - **Priority Queue** – Premium users are prioritized when the server queue is full.
 - **Add Staff to Your Shops:** Add friends and members of your town to have restock and manage items in your ChestShops.  
@@ -38,8 +44,6 @@ Additionally, EarthPol Premium gives access to the following commands:
 
 
 </div>
-
-
 
 Your subscription doesn’t just come with perks, it helps make EarthPol better for everyone. The revenue generated from EarthPol Premium goes directly toward server hosting fees and plugin development.
 Thank you for helping us build something special. 💚

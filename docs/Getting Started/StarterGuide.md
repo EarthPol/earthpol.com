@@ -7,18 +7,18 @@ sidebar_position: 3
 
 Congratulations, you have officially joined EarthPol! Welcome to a world unlike any other — a dynamic, player-driven Earth server where history, politics, economy, and exploration come alive on a 1:326 scale map of the real world. Whether you dream of building a mighty empire, founding a peaceful town, exploring uncharted wilderness, or shaping global events, EarthPol offers you a canvas limited only by your imagination.
 
-Below is our video starer guide for new EarthPol players:
+Below is our video starter guide for new EarthPol players:
 
 <div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
   <iframe 
-    width="700" 
-    height="394" 
+    width="840"
+    height="472" 
     src="https://www.youtube.com/embed/p0vT7763j4E?si=wlCrjyyBSsAw2nZC" 
     title="YouTube video player" 
-    frameborder="0" 
+    frameBorder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen
+    referrerPolicy="strict-origin-when-cross-origin" 
+    allowFullScreen
   ></iframe>
 </div>
 

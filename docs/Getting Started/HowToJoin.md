@@ -26,8 +26,8 @@ Below is our video guide to joining EarthPol:
 
 <div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
   <iframe 
-    width="700" 
-    height="394" 
+    width="840"
+    height="472"
     src="https://www.youtube.com/embed/eTTNoybXN5g?si=cfoe8ZBcQVzGrIL-" 
     title="YouTube video player" 
     frameborder="0" 
