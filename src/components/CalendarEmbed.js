@@ -9,7 +9,7 @@ export default function CalendarEmbed() {
     setTz(localTimeZone);
   }, []);
 
-  const calendarSrc = `https://calendar.google.com/calendar/embed?src=9e757efd976342914fc87eba2a49821648b7d6d30d2ba6515b1d05ff835eb084%40group.calendar.google.com&ctz=${encodeURIComponent(tz)}`;
+  const calendarSrc = `https://calendar.google.com/calendar/embed?src=77b56aef66c9b46990e75cec9f086c23c403f6c1c1ca38dfd2ef810111d49da7%40group.calendar.google.com&ctz=${encodeURIComponent(tz)}`;
 
   return (
     <div style={{ textAlign: 'center', marginTop: '1rem' }}>
