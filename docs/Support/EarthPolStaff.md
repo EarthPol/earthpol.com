@@ -80,6 +80,12 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <em>Administrator</em>
 </div>
 
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Appqle/80" /><br/>
+  <strong><a href="#">Appqle</a></strong><br/>
+  <em>Administrator</em>
+</div>
+
 </div>
 
 ### Moderators
@@ -128,11 +134,41 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <em>Moderator</em>
 </div>
 
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/EnnEiro/80" /><br/>
+  <strong><a href="#">EnnEiro</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Zamings/80" /><br/>
+  <strong><a href="#">Zamings</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Raddus_/80" /><br/>
+  <strong><a href="#">Raddus_</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
 </div>
 
 ### Helpers and Builders
 
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/FisshStick/80" /><br/>
+  <strong><a href="#">FisshStick</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Stilka/80" /><br/>
+  <strong><a href="#">Stilka</a></strong><br/>
+  <em>Helper</em>
+</div>
 
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/CrazyCoolCas/80" /><br/>
