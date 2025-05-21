@@ -84,3 +84,11 @@ title: FAQ
 
 21. **Q: Who are the staff and how do I contact them?**  
    A: You can contact us through in-game chat or on Discord.
+
+---
+
+:::info
+
+Any questions? Feel free to ask them on our support discord: https://discord.gg/tUK3npxkDA
+
+:::

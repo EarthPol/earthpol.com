@@ -6,7 +6,7 @@ title: Downloads
 
 ## Overview
 
-EarthPol has always been rooted in storytelling and player-driven history — a world where empires rise and fall, alliances shift, and each version leaves behind its own distinct legacy. Now, you can explore these eras firsthand.
+EarthPol has always been rooted in storytelling and player-driven history. It is a world where empires rise and fall, alliances shift, and each version leaves behind its own distinct legacy. Now, you can explore these eras firsthand.
 
 We’ve made our archived server maps available for direct download, giving players the opportunity to experience the world of EarthPol on their own terms. Whether you're retracing your footsteps through an old capital, examining the borders of long-gone superpowers, or simply exploring the terrain of past versions, these maps allow you to reconnect with the rich history of the server.
 
@@ -20,6 +20,17 @@ There are no restrictions on how these maps may be used. Once downloaded, you’
 
 Whether you're a veteran reminiscing about EarthPol’s golden days or a newer player curious about what came before, these downloads make the world’s legacy available to all.
 
+---
+
+### Version 3 (Aether) Map
+*🗓 March 13th, 2021  – July 2021*
+
+A 1:326 scale Earth map used in Version 3 of EarthPol, a time in which the server was defined by a surge of new players, intense geopolitical maneuvering, and a wave of wars and diplomatic showdowns. It was a time of rapid expansion, nation-building, and historic battles that shaped the foundation of EarthPol’s evolving political landscape.
+
+👉 **Download**: https://cdn.earthmc.org/downloads/world-v3.zip
+
+---
+
 ### Version 4 (Nebula) Map
 *🗓 July 17, 2021 – March 9, 2022*
 
@@ -28,6 +39,8 @@ A 1:217 scale Earth map used in Version 4 of EarthPol. This version saw the rise
 ![V4 Map](/img/v4image.png)
 
 👉 **Download**: https://cdn.earthmc.org/downloads/world-v4.zip
+
+---
 
 ### Version 6 (Ecliptica) Map
 *🗓 June 21, 2024 – December 2, 2024*
