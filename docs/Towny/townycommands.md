@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # All Towny Commands
 
-Below is a list of all current towny commands, their formatting, and the actions they preform. 
+Below is a list of all current towny commands, their formatting, and the actions they preform. Link to Towny wiki: https://github.com/TownyAdvanced/Towny/wiki/Towny-Commands
 
 :::tip
 
