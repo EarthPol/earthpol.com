@@ -35,3 +35,14 @@ Because Minecraft wasn't originally built for this kind of speed, derailing can 
 - Accelerate gradually – Place multiple high-speed rails at the start.
 - Place regular rails before turns/slopes to slow down.
 - Resume high-speed rails after turns/slopes to regain speed.
+
+## Ice Roads
+
+Boat ice roads are another extremely fast option for travel, offering 40 m/s for roads with packed ice and up to 72 m/s with blue ice. Build ice roads easily using our custom recipes for ice, which significantly reduce the amount of ice required to craft blue and packed ice.
+
+Stand on an ice block and run the ```/boat``` command to spawn a boat and get driving straight away. Use efficient ice road designs to make every ice block count and stretch your roads further!
+
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/iceroad1.png" alt="Rails" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>Example of an ice road in Nether.</em></p>
+</div>

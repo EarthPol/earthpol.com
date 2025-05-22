@@ -9,18 +9,16 @@ import townySettings from '@site/static/townysettings.json';
 
 Official towny docs for nerds: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works
 
-The information below is automatically updated every hour from the live Towny configuration. What you see here reflects the current state of the server's actual settings.
 
 ## Towny Prices
 
 | Description                     | Value |
 |---------------------------------|-------|
-| Price to Create a New Nation    | {townySettings.economy.new_expand.price_new_nation} |
-| Price to Create a New Town      | {townySettings.economy.new_expand.price_new_town} |
-| Price to Merge Towns            | {townySettings.economy.new_expand.price_town_merge} |
-| Merge Cost Per Plot (%)         | {townySettings.economy.new_expand.price_town_merge_per_plot_percentage} |
-| Price of an Outpost             | {townySettings.economy.new_expand.price_outpost} |
-| Price to Claim a Town Block     | {townySettings.economy.new_expand.price_claim_townblock} |
+| Price to Create a New Nation    | 2000 |
+| Price to Create a New Town      | 256 |
+| Price to Merge Towns            | 64 |
+| Price of an Outpost             | 128 |
+| Price to Claim a Town Block     | 8 |
 
 
 ## Town Levels
@@ -67,15 +65,7 @@ This is the minimum number of hours a town must remain in the *ruined* state bef
 
 ---
 
-### 🏦 Town Bank Sent to Nation
-
-**Value:** {townySettings.town_ruining.town_ruins.town_bank_is_sent_to_nation}
-
-**Explanation:**
-If set to `true`, when a town is ruined and eventually deleted, its remaining bank balance is transferred to the nation it belonged to.
-If set to `false`, the money is not preserved and is effectively lost.
-
-## Town Religion
+## Towny Religions
 
 With Pantheon, an EarthPol-exclusive plugin, players, towns, and nations can reflect the religious beliefs of their residents. Players can declare their faith using:
 
@@ -87,4 +77,4 @@ With Pantheon, an EarthPol-exclusive plugin, players, towns, and nations can ref
 
     ``/n [nation name]`` – Displays the nation’s “Religion breakdown” on the Status Screen.
 
-As more residents select a religion, town and nation statistics update automatically, giving a live view of the community's spiritual makeup.
+As more residents select a religion, town and nation statistics update automatically, giving a live view of the community's spiritual makeup. 

@@ -46,7 +46,10 @@ Communication is critical for a successful nation, so having a nation Discord se
 
 At the end of the day, if your nation is well-organized, active, and provides meaningful benefits to its towns, other players will want to join, and your nation will grow. By creating a cohesive, dynamic nation, you can unite players under a common cause, achieve great things, and even challenge other nations for dominance in the world!
 
----
+### Town proximity requirements
+- 400 chunks
+  
+- The maximum number of townblocks a town's homeblock can be away from other towns's homeblocks in the nation. When used, and a town is out of range of their capital city, the remaining towns in the nation will be parsed, if one of those towns' homeblocks is close enough to the town's homeblock, the town can remain in the nation. Through careful planning, Nations can "chain" together their towns and fill in their claims.
 
-## Nation Roles
+---
 

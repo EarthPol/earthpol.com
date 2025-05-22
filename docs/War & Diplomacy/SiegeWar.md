@@ -19,11 +19,11 @@ This structured environment encourages tactical thinking, resource management, a
 
 Sieges occur during battle sessions. These battle session only occur on certain days of the week which are listed below:
 
-- Friday: 10:00, 12:45, 15:30, 18:15, 21:00, 23:45
-- Saturday: 02:30, 05:15, 08:00, 10:45, 13:30, 16:15, 19:00, 21:45
-- Sunday: 00:30, 03:15, 06:00, 08:45, 11:30, 14:15, 17:00, 19:45, 22:30
+  - Saturday: 01:45, 04:30, 07:15, 10:00, 12:45, 15:30, 18:15, 21:00, 23:45
+  - Sunday: 02:30,05:15, 08:00, 10:45, 13:30, 16:15, 19:00, 21:45
+  - Friday: 14:45, 17:30, 20:15, 23:00
 
-The server operates in the Central European Time (CET) and Central European Summer Time (CEST) zones, as it is located in Germany. All times displayed on the server, including siege timings and other in-game events, are in 24-hour format to ensure clarity and standardization across different time zones. Please take note of this when planning your in-game activities to avoid any confusion.
+The server operates in the Pacific Time (PST) time zone. All times displayed on the server, including siege timings and other in-game events, are in 24-hour format to ensure clarity and standardization across different time zones. Please take note of this when planning your in-game activities to avoid any confusion.
 
 ### Starting a Siege
 
@@ -66,7 +66,7 @@ There are two primary outcomes following a siege: **Plunder** and **Invasion**.
 
 - **Plunder:** If the attackers win, the losing town is open for plunder. After the siege ends, place a chest outside the losing town to begin looting. The winning side can take gold from the losing town’s bank, with the specific amount detailed in SiegeWar Details. The plunder is distributed over six days, with a value of 4g per chunk of land owned by the besieged town.
   
-- **Invasion:** Invasions allow a nation to "capture" a town. This changes nothing about Towny permissions, and griefing is not allowed. To invade a town, place a non-white banner outside the town after a siege. Once the town is invaded, the victorious nation can set an **occupation tax** using `/n set occupationtax`. This tax is up to 0.01g per chunk and is charged daily. Note that **nation capitals cannot be invaded**.
+- **Invasion (Currently not enabled):** Invasions allow a nation to "capture" a town. This changes nothing about Towny permissions, and griefing is not allowed. To invade a town, place a non-white banner outside the town after a siege. Once the town is invaded, the victorious nation can set an **occupation tax** using `/n set occupationtax`. This tax is up to 0.01g per chunk and is charged daily. Note that **nation capitals cannot be invaded**.
 
 ---
 

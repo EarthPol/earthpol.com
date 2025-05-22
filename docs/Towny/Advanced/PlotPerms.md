@@ -24,6 +24,8 @@ Each town plot has specific permissions that determine who can build, destroy, a
 | **jail**       | Designates a jail where players will be sent if imprisoned (refer to the section on ranks). | `/plot set jail`                                                    | Used for punishing players who break the rules. Players are imprisoned in the designated jail.    |
 | **farm**       | Designates a farm, where the only blocks that can be placed and destroyed are crops. | `/plot set farm`                                                    | Dedicated farming areas for growing crops. Only crop-related blocks can be placed or destroyed.  |
 | **wilds**      | Designates a semi-protected wilderness plot where trees, flowers, mushrooms, etc. can be broken, but all other blocks cannot. | `/plot set wilds`                                                   | A semi-protected plot for nature. Only certain types of blocks (trees, flowers, etc.) can be broken. |
+**port**      |Designates a plot to be used with TownyPorts. | `/plot set port` | Players will arrive at this plot when teleporting here using `/port townname` |
+
 
 </div>
 ---

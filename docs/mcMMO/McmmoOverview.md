@@ -4,25 +4,17 @@ title: McMMO Guide
 
 # What is mcMMO?
 
-McMMO adds an RPG-like experience to EarthPol, featuring skill leveling, special abilities, and rare loot. With skill leveling, players in towns and nations are incentivized to specialize in skills that benefit their community the most. More importantly, bonuses and special abilities add new gameplay elements to vanilla mechanics, such as double drops or fast breaker.
+McMMO adds an RPG-like experience to EarthPol, featuring skill leveling, special abilities, and rare loot. With skill leveling, players in towns and nations are incentivized to specialize in skills that benefit their community the most. More importantly, bonuses and special abilities add new gameplay elements to vanilla mechanics, such as double drops or super breaker.
+
+In EarthPol's implementation of mcMMO, combat-related skills apply to PvE only, not PvP. The only exception is the Crossbows skill.
 
 ---
 
 ## Parties
 
-The Party system allows players to form private groups for communication and gameplay, enabling chat that is exclusive to party members. As the party levels up over time and through XP gains, different features are unlocked, enhancing the party experience. Party leaders have the ability to choose the games their party will play. There are several commands available to manage parties, such as joining, inviting, kicking, and teleporting party members. 
+The Party system allows players to form private groups for communication and gameplay, enabling chat that is exclusive to party members and disabling friendly fire among party members.
 
 The table below outlines the features that unlock as the party levels up, along with the corresponding level requirement. Additionally, the XP share system grants bonuses based on proximity to other party members, rewarding players for staying close to one another.
-
-| **Party Feature**    | **Unlock Level** |  
-|----------------------|------------------|
-| Party Chat           | 1                |
-| Party Teleport       | 2                |
-| Alliances            | 5                |
-| Item Share           | 8                |
-| XP Share             | 10               |
-
-The Party XP Share Bonus is determined by the number of party members near you. The closer you are to other party members, the higher your XP share bonus. If you're near one party member, you receive a 10% bonus. With two party members, the bonus increases to 15%, and with three, it goes up to 20%. If you're near nine party members, the bonus is 45%, and at ten or more party members, the bonus reaches the maximum of 50%.
 
 ---
 
@@ -35,7 +27,6 @@ The Party XP Share Bonus is determined by the number of party members near you. 
 | `/party quit`                        | Leaves the current party.                          |
 | `/pc`                                | Toggles party chat.                                |
 | `/party invite <player name>`        | Invites the named player to the current party.      |
-| `/ptp <party member name>`           | Teleports the player to the designated party member.|
 | `/party <lock;unlock>`               | Locks or unlocks the party you are in.              |
 | `/party password (password)`         | Sets a password to your party (only works if party is locked). |
 | `/party create <party name> [password]`| Creates a party with a name, password is optional.  |
@@ -64,29 +55,8 @@ Feather Falling enchantment doubles the amount of XP earned from falling, regard
 
 ### Alchemy
 
-Alchemy is a miscellaneous skill focused on brewing potions, and it is leveled through the creation and modification of potions in a brewing stand. Additionally, some effects that are typically unobtainable through vanilla potions are made available through custom recipes. As you level up in Alchemy, the process of brewing ingredients into potions becomes faster, especially beyond level 100, thanks to a feature called Catalysis.
+Alchemy is a miscellaneous skill focused on brewing potions, and it is leveled through the creation and modification of potions in a brewing stand. Additionally, some effects that are typically unobtainable through vanilla potions are made available through custom recipes. As you level up in Alchemy, the process of brewing ingredients into potions becomes faster, with the passive skill **Catalysis**. At max Alchemy level, potions can be brewed up to 4x faster when brewed manually by the player.
 
-Experience for Alchemy is gained by brewing potions through several stages. The first brew, which involves turning a water bottle into an awkward potion, grants 15 XP per potion, or 45 XP for a full brewing stand. The second stage, brewing an awkward potion into any other potion, rewards 30 XP per potion (90 XP for a full stand, and 135 XP if brewed from First to Second Brew). The third stage, which involves using redstone or glowstone to modify potions, yields 60 XP per potion, or 180 XP for a full stand (315 XP when brewed from First to Third Brew). The fourth brew, using gunpowder to create splash potions, grants 120 XP per potion (360 XP for a full stand, 675 XP if brewed from First to Fourth Brew).
-
-However, there are some exceptions to these XP rules. For example, brewing potions of Weakness with fermented spider eyes grants 30 XP per potion because the recipe doesn't begin with Nether Wart. There are also no XP rewards for converting Potions of Healing into Potions of Harming with fermented spider eyes, nor for brewing Harming II potions via glowstone. Nevertheless, gunpowder still provides the expected 120 XP per splash potion. Additionally, older versions of the game do not grant experience for creating Lingering potions, but this has been corrected in the current version.
-
-For efficient potion brewing, it is important to note that speed potions are simple to make with common materials, and alternating between redstone and glowstone does not change XP amounts. Players can hold up to 36 potions at a time and can use multiple brewing stands and hoppers controlled with levers to streamline the brewing process. This allows for efficient XP grinding, though players still need to manually open the brewing stand and insert ingredients for each brew to gain experience.
-
-**Concoctions**
-At certain Alchemy levels, new recipes are unlocked for potions, as follows: 
-
-| **Potion Name**               | **Potion Effect**   | **Ingredient**        | **Unlock Level** | **Type** | **Information**                                                                |
-|-------------------------------|---------------------|-----------------------|------------------|----------|--------------------------------------------------------------------------------|
-| Potion of Haste                | Haste               | Carrot                | 100              | Buff     | Increases Mining and Attack Speed                                              |
-| Potion of Absorption           | Absorption          | Nether Quartz         | 200              | Buff     | Applies 2 additional hearts (per level) that disappear upon damage.            |
-| Potion of Mining Fatigue       | Mining Fatigue      | Slime Ball            | 200              | Debuff   | Decreases Mining and Attack Speed                                              |
-| Potion of Health Boost         | Health Boost        | Apple                 | 350              | Buff     | Applies 2 refillable hearts per level                                           |
-| Potion of Hunger               | Hunger              | Rotten Flesh          | 350              | Debuff   | Depletes the hunger bar at a faster rate                                        |
-| Potion of Nausea               | Nausea              | Brown Mushroom        | 500              | Debuff   | Makes the user's vision swirl (like entering a Nether portal)                   |
-| Potion of Blindness            | Blindness           | Ink Sack              | 500              | Debuff   | Decreases the user's range of vision and prevents sprinting                     |
-| Potion of Saturation           | Saturation          | Fern                  | 750              | Buff     | Causes the user's hunger bar to increase without the consumption of food.      |
-| Potion of Decay                | Wither              | Poisonous Potato      | 900              | Debuff   | Damage over time, much like burning or poison.                                  |
-| Potion of Resistance           | Resistance          | Golden Apple (regular)| 1000             | Buff     | Applies a 20% damage reduction per level                                        |
 
 ### Archery
 
@@ -104,7 +74,7 @@ Experience in Axes is gained by attacking mobs with an axe. One of the key abili
 
 The Crossbows skill focuses on the effective use of crossbows in combat, allowing players to gain experience by shooting mobs with their crossbow. As players level up in this skill, they become more proficient in utilizing crossbows for ranged attacks.
 
-A key feature of the Crossbows skill is Trickshot, a passive ability that enables players to shoot bolts at a shallow angle, causing them to ricochet off blocks. The effectiveness of Trickshot increases with skill rank, allowing for more bounces and providing players with additional opportunities to hit targets from unexpected angles. This skill is ideal for those looking to incorporate precision and strategy into their ranged combat.
+A key feature of the Crossbows skill is Trickshot, a passive ability that enables players to shoot bolts at a shallow angle, causing them to ricochet off blocks. **Trickshots will work in PvP.** The effectiveness of Trickshot increases with skill rank, allowing for more bounces and providing players with additional opportunities to hit targets from unexpected angles. This skill is ideal for those looking to incorporate precision and strategy into their ranged combat.
 
 ### Excavation
 
@@ -183,9 +153,6 @@ Mining focuses on excavating stone and ores, offering powerful bonuses that enha
 
 **Special Ability: Super Breaker:**
 The primary active ability in this skill is Super Breaker. When you right-click with a pickaxe to prepare your tool, you’ll have a few seconds to activate the ability by striking a compatible block. Once triggered, Super Breaker enables you to instantly mine blocks and significantly increases your chance of receiving extra drops.
-
-**Special Ability: Blast Mining:** 
-For a more explosive approach, Blast Mining allows players to harness TNT as a mining tool. By crouching and right-clicking on TNT with a pickaxe, you can remotely detonate it, triggering the ability. Blast Mining offers three unique perks: Bigger Bombs expands the blast radius, Demolitions Expert reduces TNT damage taken, and the final perk increases ore yield while reducing debris. 
 
 Together, these abilities make Mining a powerful and efficient skill for resource gathering.
 
