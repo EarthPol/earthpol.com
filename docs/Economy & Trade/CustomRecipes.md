@@ -7,7 +7,7 @@ title: Custom Recipes
 ## 🪓 Item & Block Recipes
 
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center' }}>
-  {Array.from({ length: 31 }).map((_, i) => (
+  {Array.from({ length: 32 }).map((_, i) => (
     <img
       key={i}
       src={`/img/Recipes/crafting-grid${i === 0 ? '' : `-${i}`}.png`}
