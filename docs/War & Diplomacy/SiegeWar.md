@@ -42,7 +42,7 @@ If you do not have enough resources, it is crucial to gather them before engagin
 
 :::tip
 
-Non PvP-focused players can still be of help at the Si PvP to focus on logistics and supplying your army, allowing them to support your best fighters and maintain the flow of essential resources.
+Non PvP-focused players can still be of help at the siege banner! They can focus on logistics and supplying your army, allowing them to support your best fighters and maintain the flow of essential resources. They can also play a critical defensive role, by taking up positions as archers from within the gank, or conduct airstrikes by dropping TNT minecarts on top of the banner.
 
 :::
 
@@ -72,23 +72,36 @@ There are two primary outcomes following a siege: **Plunder** and **Invasion**.
 
 ## Siege Strategy
 
-### Defenders
+### Fortifications
 
-Defenders must employ effective strategies to maintain control over their town and prevent the siege from succeeding. Key tactics include:
+#### What is a "Gank"?
+Ganks are strategic, defensive fortresses built within Towny claims used to trap attackers and gain easy kills; on EarthPol, this is the colloquial term for this type of fortification.  They are typically set up on the edges of your outpost or town. They are typically erected on the fly in the expected battle area as soon as the defending town discovers that a siege is being planned against them. Well-planned, defensively fortified towns will often pre-emptively build this defensive fortification around the border of their town, and combine this with walls surrounding the town. They come in several designs, depending on the time and resources available to create them.
 
-#### Ganks:
-Ganks are strategic ambushes used to trap attackers and gain easy kills. They are typically set up on the edges of your outpost or town, ideally in wilderness. The optimal size for a gank is 2 blocks long, 20 blocks wide, and reasonably deep. Ganks should have an elevator system for easy access and escape. The goal is to trap attackers, making it harder for them to retaliate, while allowing you to land hits from a secure position. This strategy can significantly disrupt the attackers' rhythm and force them to waste valuable resources.
+#### Building your fortifications
+The optimal width for a gank is 2 blocks wide, stretching along the border of your town facing the siege banner. The deeper, the better, however the tradeoff is the amount of time and effort required to build one. Ganks should have an elevator system for easy access and escape. The goal is to trap attackers, making it harder for them to retaliate, while allowing you to land hits from a secure position. This strategy can significantly disrupt the attackers' rhythm and force them to waste valuable resources.
 
-#### Grouping Together:
-Avoid feeding the enemy team by grouping together and staying alive as long as possible. Dying repeatedly gives the enemy team valuable points and resources. Work with your teammates to coordinate defense, supplies, and healing, ensuring that you can stay in the battle as long as possible. Having multiple defenders on the banner can help delay control and counteract enemy efforts to seize it.
+#### Gank Example
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/gank1.png" alt="Basic gank design" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>Basic gank design</em></p>
+</div>
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/gank2.png" alt="Basic gank design" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>Basic gank design</em></p>
+</div>
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/gank3.png" alt="Basic gank design" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>Basic gank design</em></p>
+</div>
 
-### Attackers
+### Grouping Together:
+Avoid feeding the enemy team by grouping together and staying alive as long as possible. Dying repeatedly gives the enemy team valuable points and drains your own resources. Work with your teammates to coordinate strategies, supplies, and healing, ensuring that you can stay in the battle as long as possible. Having multiple players on the banner can help delay control and counteract enemy efforts to seize it.
 
-#### Coordinating Attacks:
-Successful sieges require effective coordination between attackers. Work together to control key points of the map, including the banner and the airspace above the siegezone. Use voice communication and ally chat to ensure that all attackers, including your allies, are aware of objectives and timings. You may need to rotate players in and out of the banner control area to maintain the pressure on defenders.
+### Coordinating Attacks:
+Successful sieges require effective coordination between players. Work together to control key points of the map, including the banner and the airspace above the siegezone. Use voice communication and ally chat to ensure that all attackers, including your allies, are aware of objectives and timings. You may need to rotate players in and out of the banner control area to maintain the pressure on defenders.
 
-#### Building Banner Forts:
-As an attacker, you will need to build **banner forts** to keep control of the banner. Constructing a fortified area around the banner can prevent defenders from easily disrupting your control. Ensure that the fort is secure but also provides escape routes in case of a counterattack.
+### Building Banner Forts:
+**Banner forts** can be used to keep control of the banner. Constructing a fortified area around the banner can prevent other players from easily disrupting your control. Ensure that the fort is secure but also provides escape routes in case of a counterattack.
 
 ---
 
@@ -127,7 +140,7 @@ While peaceful towns may avoid the stress of constant sieges, they also lose out
     - Town cannot move homeblock.
     - Residents cannot receive nation-military ranks.
     - Town becomes vulnerable to being Subverted by nearby nations.
-  - **How Subverting Works:**
+  - **How Subverting Works (currently disabled):**
     - The largest (by num-townblocks), non-sieged, non-peaceful town within 1,200 blocks of your peaceful town is your Guardian Town. Whichever nation owns that Guardian Town can instantly subvert and capture your peaceful town by placing a non-white banner on your town border.
 
 ### Additional Commands:
@@ -160,15 +173,13 @@ While peaceful towns may avoid the stress of constant sieges, they also lose out
 - Keep inventory is **enabled** when a death occurs **inside the siege zone radius**.
 - Weapon and armor durability will degrade by **5%** upon death.
 
-
-
-
 ---
 
 ## EarthPol SiegeWar Kit
 
 <div style={{ textAlign: 'center' }}>
   <img src="/img/siegekit.png" alt="SiegeWar Kit" style={{ maxWidth: '100%', height: 'auto' }} />
-  <p><em>An example of the kit a soldier could bring to fight in a siege.</em></p>
+  <p><em>An example of a kit a soldier could bring to a siege. Bring what works best for you.</em></p>
 </div>
+
 
