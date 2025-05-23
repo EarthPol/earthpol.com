@@ -87,7 +87,8 @@ This is the primary endpoint which provides basic server information. The "endpo
     "shops": "https://api.earthpol.com/astra/shops",
     "location": "https://api.earthpol.com/astra/location",
     "discord": "https://api.earthpol.com/astra/discord",
-    "quarters": "https://api.earthpol.com/astra/quarters"
+    "quarters": "https://api.earthpol.com/astra/quarters",
+    "chat": "https://api.earthpol.com/astra/chat"
   }
 }
 ```
@@ -721,4 +722,57 @@ Response:
     "discord": "325465801710764033",
     "uuid": "d904bb76-412d-4f6a-af9f-13853b5fc614"
 }
+```
+
+### Chat
+**Endpoint:** `https://api.earthpol.com/astra/chat`
+This endpoint only supports `POST` requests with the following payloads.
+
+Example Payload:
+```
+{
+  "query": {
+    "uuid":         ["<uuid1>", "<uuid2>", …],              // up to 20 Minecraft UUID strings
+    "username":     ["<user1>", "<user2>", …],              // up to 20 usernames
+    "nickname":     ["<nick1>", "<nick2>", …],              // up to 20 nicknames
+    "message":      ["<substr1>", "<substr2>", …],          // up to 20 message substrings to match
+    "startTimestamp": "YYYY-MM-DD HH:mm:ss",                // inclusive lower time bound
+    "endTimestamp":   "YYYY-MM-DD HH:mm:ss"                 // inclusive upper time bound
+  }
+}
+```
+- Filters are all optional. You only need to supply one or more of these fields to perform a query.
+- Combined filter entries (uuid, username, nickname, message) are each limited to 20 items.
+- The endpoint will return up to 200 of the most recent chat entries that match any of the supplied filters (ordered by timestamp descending).
+- If  "query" is empty or omitted entirely, you’ll receive the last 200 messages.
+
+Working Example:
+`POST`: `https://api.earthpol.com/astra/chat`
+Payload:
+```
+{
+  "query": {
+    "uuid": ["9e47a89a-c251-4df6-9da2-792f2e3f74d0"],
+    "username": ["Bustun"],
+    "nickname": ["Busty"],
+    "message": ["Hello"],
+    "startTimestamp": "2025-05-23 05:00:00",
+    "endTimestamp":   "2025-05-23 07:00:00"
+  }
+}
+```
+
+Response:
+```
+[
+    {
+        "entry_id": 9,
+        "user_uuid": "9e47a89a-c251-4df6-9da2-792f2e3f74d0",
+        "username": "Bustun",
+        "nickname": null,
+        "message": "Hello",
+        "channel": "GLOBAL",
+        "timestamp": "2025-05-23T06:38:15Z"
+    }
+]
 ```
