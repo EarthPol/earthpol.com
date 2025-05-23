@@ -33,7 +33,7 @@ To start a siege as an attacker, place a non-white banner outside the enemy town
 
 Before entering a siege, ensure you have sufficient supplies, such as:
 
-- **Armor Sets:** Always carry extra armor, as durability degradation occurs with each death.
+- **Experience Bottles:** Carry extra experience bottles to repair your armor on the go!
 - **Potions:** Healing potions and splash potions of regeneration are essential to keep you alive during intense battles.
 - **Weapons:** Bring multiple weapons, including swords, axes, or bows, to adapt to different combat situations.
 - **Food:** Keep food with you for both healing and stamina.
@@ -42,7 +42,7 @@ If you do not have enough resources, it is crucial to gather them before engagin
 
 :::tip
 
-It is recommended to have your players who are not skilled in PvP to focus on logistics and supplying your army, allowing them to support your best fighters and maintain the flow of essential resources.
+Non PvP-focused players can still be of help at the Si PvP to focus on logistics and supplying your army, allowing them to support your best fighters and maintain the flow of essential resources.
 
 :::
 
@@ -103,6 +103,8 @@ When a town is set to **peaceful** using the `/sw towntoggle peaceful` command, 
   
 While peaceful towns may avoid the stress of constant sieges, they also lose out on the opportunity to gain resources through plunder or take control of other towns.
 
+---
+
 ## SiegeWar Basic Commands
 
 ### Nation
@@ -140,3 +142,33 @@ While peaceful towns may avoid the stress of constant sieges, they also lose out
 - `/n set occupationtax max` - As a king, set your nation's occupation tax to track the server-configured maximum.
 
 ---
+
+## SiegeWar Reference
+
+### Siege zone restriction:
+- Restricted blocks in the wilderness area of a siege zone: All water bucket types & lava buckets, cobwebs, obsidian
+
+### Proximity/Distance
+- Siege zone radius: 300 blocks around the siege banner.
+- Banner can be placed up to 2 chunks away from the opposing town's claims to begin a siege.
+
+### Cost
+- Upfront cost per plot to start siege (will be placed in the war chest): 8G
+- Plunder amount: 4G per plot owned by the defending town, + all gold that was put up front when starting the siege.
+
+### Conseuquences of Death
+- Keep inventory is **enabled** when a death occurs **inside the siege zone radius**.
+- Weapon and armor durability will degrade by **5%** upon death.
+
+
+
+
+---
+
+## EarthPol SiegeWar Kit
+
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/siegekit.png" alt="SiegeWar Kit" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>An example of the kit a soldier could bring to fight in a siege.</em></p>
+</div>
+
