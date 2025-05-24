@@ -1,3 +1,8 @@
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/townyports-thumbnail.png" alt="Towny Ports" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>Towny Ports and how to use it!</em></p>
+</div>
+
 TownyPorts is a plugin that allows individual towns that are not nation capitals to foster trade and tourism, by allowing outsiders to teleport into their town for a fee. It emphasizes the geopolitical importance of access to a coastal or river waterway.
 
 ## How to use
