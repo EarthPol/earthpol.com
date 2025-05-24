@@ -7,6 +7,15 @@ title: Quarters
 
 The **Quarters** plugin allows players to claim and manage private areas within towns. These areas, known as **quarters**, can be used for various purposes like building, setting spawn points, or customizing private spaces. Below is a detailed guide on how to create and manage quarters, including the essential commands and permissions required.
 
+Quarters are used for when a town wants to create custom-sized areas for claiming and permissions management. Quarters allows you to go beyond only being able to use Minecraft chunks and allows you to custom-define areas for other players to claim. 
+
+### When to use Quarters vs. Towny plots
+Using Quarters vs. using Towny Plots depends on how you are designing your town and is up to personal preference.
+
+- Use plots when you want to give a player unrestricted access to an entire chunk, from height limit to the bottom of the world. Typically used when creating low-density housing and/or when subdividing large areas within your town.
+- Use Quarters when you only want to give access to a specific zone that does not correspond to an entire chunk, or when an area spans through chunk borders. Typically used when creating higher density housing such as apartments, or when granting shared, trusted access to a small area that does not necessarily correspond to an entire chunk.
+- Quarters allow you to more conveniently design your city since you are no longer forced to plan it around Minecraft chunks.
+
 ---
 
 ## Creating a Quarter
