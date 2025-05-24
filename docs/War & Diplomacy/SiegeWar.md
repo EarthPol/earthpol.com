@@ -13,6 +13,47 @@ This structured environment encourages tactical thinking, resource management, a
 
 ---
 
+## Honor Points System
+
+### What are Honor Points?
+Honor Points measure how long you've stayed loyal to your natoin. They're used to gate certain important ranks (like Soldier, Guard and etc) so only truyl committed residents can earn them.
+
+### How do I earn Honor Points
+- Every New Towny Day that rolls over, if you're still in the *same* nation you were yesterday, you automatically gain **1 Honor Point**
+- If you switch nations (or leave yours), your Honor Points reset and start counting fresh in your new nation.
+
+### How many points do I need?
+You will need **3 Honor Points** (i.e., three consecutive days in the same nation) before you can pick up ranks like General, Soldier, Guard and etc.
+
+### How do I check my Points?
+Simple type
+```
+/honor
+```
+You'll see something like this:
+```
+You have 2 honor points with YourNation.
+or
+You have 0 honor points (you’re not in a nation).
+```
+
+### What Happens if I leave My Nation?
+If you leave or get kicked out, on the New Towny Day:
+1. Your points drop back to zero.
+2. When you join a new nation, you'll earn 1 point on the next daily rollover and build up form there again.
+
+### Why Honor Points?
+- **Fairness:** Only players who've truly stuck with the nation can earn its siege participation ranks. This prevents large PVP Claims from unfairly logging dozens of people who do not normally play on the server.
+- **Commitment:** Encourages long-term teamwork and stability in your nation.
+- **Clarity:** You always know exactly how many days you've "proven" your loyalty
+
+### Honor Points FAQ
+- **Question:** Can I switch towns in the same nation?
+- **Answer:** Yes, as long as you are in the same nation at the end of the day. 
+------------------
+- **Question:** Can I join another nation and come back to the same nation by the end of the day?
+- **Answer:** Yes, the system only adds or removes points at the end of the day. As long as you are in the same nation by the end of the day, you will earn points.
+
 ## Gameplay
 
 ### Battle Sessions
