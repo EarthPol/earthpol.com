@@ -103,10 +103,10 @@ if (!isset($_GET['state'])) {
 
     // --- DATABASE PART ---
     // Database credentials (update these to match your environment).
-    $dbHost = '10.0.0.2';
-    $dbName = 'discord';
-    $dbUser = 'betterdiscordsrv';
-    $dbPass = 'xvNARjClG72cClCS!';
+    $dbHost = '15.204.57.71';
+    $dbName = 's1_discord';
+    $dbUser = 'u1_NOD4SoLdEP';
+    $dbPass = '=J8QFv63l=WxU!9fm9kHoXxs';
 
     try {
         $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPass, [
