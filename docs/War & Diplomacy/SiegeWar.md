@@ -16,17 +16,16 @@ This structured environment encourages tactical thinking, resource management, a
 ## Honor Points System
 
 ### What are Honor Points?
-Honor Points measure how long you've stayed loyal to your natoin. They're used to gate certain important ranks (like Soldier, Guard and etc) so only truyl committed residents can earn them.
+Honor Points measure how long you've stayed loyal to your nation. They're used to gate military ranks (like Soldier, Guard, General) so only truly committed residents can earn them.
 
-### How do I earn Honor Points
-- Every New Towny Day that rolls over, if you're still in the *same* nation you were yesterday, you automatically gain **1 Honor Point**
+### How do I earn Honor Points?
+- Every new Towny Day that rolls over, if you're still in the *same* nation you were yesterday by the end of the Towny Day, you automatically gain **1 Honor Point.**
 - If you switch nations (or leave yours), your Honor Points reset and start counting fresh in your new nation.
 
 ### How many points do I need?
-You will need **3 Honor Points** (i.e., three consecutive days in the same nation) before you can pick up ranks like General, Soldier, Guard and etc.
+You will need **3 Honor Points** (i.e., three consecutive days in the same nation) before you can pick up military ranks.
 
 ### How do I check my Points?
-Simple type
 ```
 /honor
 ```
@@ -38,12 +37,12 @@ You have 0 honor points (you’re not in a nation).
 ```
 
 ### What Happens if I leave My Nation?
-If you leave or get kicked out, on the New Towny Day:
+If you leave or get kicked out on new Towny Day:
 1. Your points drop back to zero.
 2. When you join a new nation, you'll earn 1 point on the next daily rollover and build up form there again.
 
 ### Why Honor Points?
-- **Fairness:** Only players who've truly stuck with the nation can earn its siege participation ranks. This prevents large PVP Claims from unfairly logging dozens of people who do not normally play on the server.
+- **Fairness:** Only players who've truly stuck with the nation can earn its siege participation ranks. This prevents large PVP clans from unfairly logging on dozens of people who do not normally play on the server.
 - **Commitment:** Encourages long-term teamwork and stability in your nation.
 - **Clarity:** You always know exactly how many days you've "proven" your loyalty
 
@@ -60,11 +59,12 @@ If you leave or get kicked out, on the New Towny Day:
 
 Sieges occur during battle sessions. These battle session only occur on certain days of the week which are listed below:
 
+  - **UTC TIMEZONE**
   - Saturday: 01:45, 04:30, 07:15, 10:00, 12:45, 15:30, 18:15, 21:00, 23:45
   - Sunday: 02:30,05:15, 08:00, 10:45, 13:30, 16:15, 19:00, 21:45
   - Friday: 14:45, 17:30, 20:15, 23:00
 
-The server operates in the Pacific Time (PST) time zone. All times displayed on the server, including siege timings and other in-game events, are in 24-hour format to ensure clarity and standardization across different time zones. Please take note of this when planning your in-game activities to avoid any confusion.
+The server operates in the UTC time zone. Siege times are in 24-hour format to ensure clarity and standardization across different time zones. Please take note of this when planning your in-game activities to avoid any confusion.
 
 ### Starting a Siege
 
@@ -83,7 +83,7 @@ If you do not have enough resources, it is crucial to gather them before engagin
 
 :::tip
 
-Non PvP-focused players can still be of help at the siege banner! They can focus on logistics and supplying your army, allowing them to support your best fighters and maintain the flow of essential resources. They can also play a critical defensive role, by taking up positions as archers from within the gank, or conduct airstrikes by dropping TNT minecarts on top of the banner.
+Non PvP-focused players can still be of help at the siege banner! They can focus on logistics and supplying your army, allowing them to support your best fighters and maintain the flow of essential resources. They can also play a critical defensive role, by taking up positions as **archers from within the gank**, or **conduct airstrikes** by dropping TNT minecarts on top of the banner.
 
 :::
 
