@@ -1,7 +1,7 @@
 ---
 title: EarthPol Premium
 ---
-# EarthPol Premium
+# 💎 EarthPol Premium
 
 EarthPol Premium is our subscription-based service designed to give players exclusive in-game perks while supporting the long-term sustainability of our server. As EarthPol continues to grow, so do the costs of maintaining our infrastructure, plugins, and community resources. EarthPol Premium helps offset these costs while giving back to the players who support us.
 
@@ -11,15 +11,21 @@ EarthPol Premium is our subscription-based service designed to give players excl
 
 ---
 
+## 💰 Perks Overview
+
 For only `$6.99/month`, you can have access to the following EarthPol Premium perks:
 
-- **Priority Queue** – Premium users are prioritized when the server queue is full.
-- **Add Staff to Your Shops:** Add friends and members of your town to have restock and manage items in your ChestShops.  
-- **Cross-Platform Messaging:** – Send and receive messages between Discord’s `#earthpol` channel and in-game chat. 
-- **Premium-Only Discord Chat:** Exclusive access to a Premium-only Discord chat, including sneak peeks at upcoming developments.
-- **Change Nation Color:** Nation leaders are able to change their nation color from the default blue.
-- **Exclusive Name Color:** Stand out in chat with a bright colored name!
-- **EarthPol Rewind:** Can't download the V6 map? With Premium, you can view your old builds on our hosted V6 archive server.
+- 🚀 **Priority Queue:** Premium users are prioritized when the server queue is full.
+- 🛒 **Add Staff to Your Shops:** Add friends and members of your town to help restock and manage items in your ChestShops.  
+- 🔗 **Cross-Platform Messaging:** Send and receive messages between Discord’s `#earthpol` channel and in-game chat. 
+- 💬 **Premium-Only Discord Chat:** Exclusive access to a Premium-only Discord chat, including sneak peeks at upcoming developments.
+- 🎨 **Change Nation Color:** Nation leaders are able to change their nation color from the default blue.
+- 🌈 **Exclusive Name Color:** Stand out in chat with a bright colored name!
+- 🗺️ **EarthPol Rewind:** Can't download the V6 map? With Premium, you can view your old builds on our hosted V6 archive server.
+
+---
+
+## ⚙️ Premium Commands
 
 Additionally, EarthPol Premium gives access to the following commands:
 
@@ -40,12 +46,14 @@ Additionally, EarthPol Premium gives access to the following commands:
 | `/ec`               | Open your Ender Chest from anywhere.             |
 | `/mapcolor`         | Change the nation’s color on the EarthPol map.   |
 | `/qs staff`         | Add employees to your QuickShop to restock goods.|
-| `/qs benefit`         | Split profits with your friends in your QuickShop.|
-
+| `/qs benefit`       | Split profits with your friends in your QuickShop.|
 
 </div>
 
-Your subscription doesn’t just come with perks, it helps make EarthPol better for everyone. The revenue generated from EarthPol Premium goes directly toward server hosting fees and plugin development.
-Thank you for helping us build something special. 💚
-
 ---
+
+## 🌍 Support EarthPol’s Future
+
+Your subscription doesn’t just come with perks, it helps make EarthPol better for everyone. The revenue generated from EarthPol Premium goes directly toward server hosting fees and plugin development.
+
+Thank you for helping us build something special. 💚

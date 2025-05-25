@@ -3,33 +3,34 @@ title: Server Overview
 sidebar_position: 1
 ---
 
-# Server Overview
+# 🌍 Server Overview
 
-### Welcome to EarthPol!
+### 👋 Welcome to EarthPol!
 
-EarthPol is a geopolitical Minecraft server where players can simulate diplomacy, economics, and trade on a 1:326 scale map of Earth. Whether you wish to lead a powerful nation, engage in global trade, or strategically wage war, EarthPol provides a dynamic sandbox for you to shape the course of history. It is our goal for players to think like diplomats to make a sucessful and efficient global order.
+**EarthPol** is a geopolitical Minecraft server where players can simulate **diplomacy, economics, and trade** on a **1:326 scale map of Earth**. Whether you wish to lead a powerful nation, engage in global trade, or strategically wage war, EarthPol provides a dynamic sandbox for you to **shape the course of history**. Our goal is for players to think like diplomats to build a successful and efficient global order.
 
-For nearly five years, EarthPol has continued to set the standard for immersive and innovative gameplay. Our team of developers have built upon sucessful features and mechanics that provide a unique experience for every player.
+For nearly **five years 🎉**, EarthPol has set the standard for immersive and innovative gameplay. Our team of developers has built upon successful features to create a **unique experience for every player**.
 
 ![EarthPol Banner](/img/banner.png)
 
-#### Key Features:
-
-* **Player-Drived World:** EarthPol has no defined or predetermined storyline; its history is shaped entirely by its players. While we may simulate events, the responses and actions of players are individually unique.
-
-* **Map:** Our custom Earth map is handcrafted, using real-world data to simulate ore generation while maintaining vanilla underground features like caves, mineshafts, and ancient cities. At **1:326 scale**, there is a significant level of detail that makes geopolitics and geography important factors in nation-building and overall strategy. 
-
-* **Innovation:** Thanks to the implementation of **Folia**, our server is efficiently divided into separate regions, which significantly reduces lag. Whether you're building, exploring, or engaging in server activities, the seamless experience is guaranteed without any disruptions to your enjoyment.
-
-* **Hardware:** Using the latest technology on the market, our server ensures stability and peak performance. Our **hourly backup system** guarantees that no significant progress is lost in the event of an unexpected catastrophe, preserving the integrity of the EarthPol world.
-
 ---
 
-### Why EarthPol?
+#### ✨ Key Features:
 
-EarthPol is truly unique because of its five years of history and development, giving us a proven track record of improvement. While previous versions of the server faced their own challenges, our latest unified effort has created a more stable, cohesive experience for everyone. More importantly, our game-design philosophy is centered around absolute freedom for our players and giving them the tools to tell their own story in a world where their decisions are consequential.
+* **🌐 Player-Driven World:** No predetermined storyline—**you write the history**! While we may simulate events, the actions and decisions are uniquely yours.
 
-Furthermore, our approach sets us apart from other geopolitical servers. The EarthPol Development Team has expertise in both computer science and international relations, providing a more well-rounded and balanced experience rather than just focusing solely on server development. In addition, our staff is fully dedicated to maintaining and growing the community, always listening to player feedback and prioritizing their concerns with transparency and care.
+* **🗺️ Map:** Our handcrafted Earth map uses real-world data for ore generation while keeping vanilla features like caves, mineshafts, and ancient cities. At **1:326 scale**, geography plays a key role in **nation-building and strategy**.
+
+* **🚀 Innovation:** With **Folia**, our server is divided into separate regions, greatly reducing lag and allowing seamless exploration, building, and combat.
+
+* **🖥️ Hardware:** Running on cutting-edge technology, we ensure **maximum performance and stability**. Our **hourly backup system** keeps your progress safe from disaster.
+---
+
+### ❓ Why EarthPol?
+
+EarthPol is **truly unique** because of its **five years of continuous development**, offering a stable and evolving platform. Our design philosophy is rooted in **freedom and consequence**—every decision shapes the world.
+
+Unlike many other servers, EarthPol is backed by developers with expertise in both **computer science** and **international relations**, offering a balanced, realistic gameplay experience. Our dedicated staff team listens to player feedback and prioritizes transparency.
 
 <div style={{ display: 'flex', justifyContent: 'center', margin: '2rem 0' }}>
   <iframe
@@ -44,23 +45,37 @@ Furthermore, our approach sets us apart from other geopolitical servers. The Ear
   />
 </div>
 
-#### Notable Plugins
+---
 
-To support our philosophy of player-driven gameplay, we’ve carefully selected a set of plugins that enhance interaction, strategy, and creativity within the game:
+### 🔌 Notable Plugins
 
-* **Towny:** With Towny, players can create their own towns and nations, form alliances, and manage territories. EarthPol’s Towny configuration is specifically tailored to reflect the geography of our custom Earth map, where scarcity and resource management are significant factors in nation-building.
-* **SiegeWar:** SiegeWar allows players to engage in large-scale battles to capture cities and defend their territories. This tactical element of gameplay allows for alternative decisions while engaging in diplomacy.
-* **TradeWar:** A unique plugin created by our developers, TradeWar enables players to simulate trade conflicts within the Towny framework. Key features, such as tariffs, embargoes, and sanctions, let players wage economic battles, providing an alternative to direct combat.
-* **QuickShop:** To simulate a real-world economy, QuickShop offers an accessible and interactive way for players to set up shops, buy and sell items, and create a dynamic global market. This plugin encourages trade and entrepreneurship, making the in-game economy a vital part of players' choices.
+To support our player-driven vision, we use plugins that enhance interaction, strategy, and creativity:
+
+* **🏘️ Towny:** Create towns, build nations, form alliances, and manage land and resources. EarthPol’s custom Towny setup reflects the realism of our Earth map.
+
+* **🛡️ SiegeWar:** Wage tactical wars to conquer cities and defend your land. A crucial mechanic for strategic conflict and diplomacy.
+
+* **📉 TradeWar:** Created by our development team, TradeWar lets players engage in economic warfare, imposing tariffs, embargoes, and sanctions to weaken rivals without firing a shot. It adds an entirely new dimension to geopolitics on the server.
+
+* **🛒 QuickShop:** Simulate a real-world economy by setting up shops and trading items with others. Become an entrepreneur and build your market empire.
+
+* **💰 HeadHunters:** Another original EarthPol creation, this plugin allows you to place bounties on enemies and collect gold for successful kills. It is a system of contract warfare and deterrence with real stakes.
 
 ---
 
-### Why a 1:326 Scale Map?
+### 🌎 Why a 1:326 Scale Map?
 
-EarthPol’s current version utilizes a 1:326 scale map, a decision made to balance realism, gameplay, and strategic depth. This scale ensures that the world is neither too large nor too small, striking the right balance where territorial claims feel meaningful. In larger maps, nations may sprawl unrealistically with little player interaction, while smaller maps create overcrowding and disputes over space. The 1:326 scale allows nations to establish themselves with reasonable borders while still maintaining opportunities for diplomacy and conflict.
+Our **1:326 scale Earth map** strikes the perfect balance between **realism and gameplay**. It ensures meaningful borders, room for expansion, and high player interaction.
 
-Additionally, this map size allows for the preservation of geographical features, making mountains, rivers, and coastlines clearly visible. Players can appreciate natural terrain formations and use them to their advantage in both city planning and strategic positioning. With geography playing a key role, transportation becomes a crucial element of the game. Moving resources, establishing new nations, and maintaining supply lines require careful planning.
+This scale retains natural terrain—rivers, mountains, and coastlines, letting players plan cities and defenses with geography in mind.
 
-At this scale, geopolitics becomes more dynamic, as geography directly impacts warfare and diplomacy. Nations must consider the terrain when defending their borders, planning invasions, or forming alliances. A well-placed river or mountain range can be the difference between victory and defeat in battle. By using a 1:326 scale, EarthPol ensures that both strategic depth and realism play a central role in shaping the player-driven world.
+Strategic terrain plays a huge role in diplomacy and warfare. A single mountain range or river can mean the difference between **victory and defeat**. With EarthPol, every inch of land matters.
 
 ---
+
+### 🔗 Join EarthPol Today!
+
+📥 IP: **play.earthpol.com**  
+💬 Discord: **[Join our Server](https://discord.gg/meuVzPawmS)**  
+
+Start your nation, forge your alliances, and make your mark on history.

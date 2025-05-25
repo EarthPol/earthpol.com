@@ -3,11 +3,11 @@ title: Starter Guide
 sidebar_position: 3
 ---
 
-# Starter Guide
+# 🧭 Starter Guide
 
-Congratulations, you have officially joined EarthPol! Welcome to a world unlike any other — a dynamic, player-driven Earth server where history, politics, economy, and exploration come alive on a 1:326 scale map of the real world. Whether you dream of building a mighty empire, founding a peaceful town, exploring uncharted wilderness, or shaping global events, EarthPol offers you a canvas limited only by your imagination.
+🎉 Congratulations, you have officially joined EarthPol! Welcome to a world unlike any other — a dynamic, player-driven Earth server where history, politics, economy, and exploration come alive on a 1:326 scale map of the real world. Whether you dream of building a mighty empire, founding a peaceful town, exploring uncharted wilderness, or shaping global events, EarthPol offers you a canvas limited only by your imagination.
 
-Below is our video starter guide for new EarthPol players:
+🎥 Below is our video starter guide for new EarthPol players:
 
 <div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
   <iframe 
@@ -22,63 +22,72 @@ Below is our video starter guide for new EarthPol players:
   ></iframe>
 </div>
 
-## Spawning
+## 🗺️ Spawning
 
-When you first join EarthPol, you will be teleported to a random location on our 1:326 scale map of the Earth, which is divided into regions including Africa, Asia, Europe, the Middle East, North America, Oceania, and South America. **Visit our map [here](https://earthpol.com/map/).**
+When you first join EarthPol, you will be teleported to a random location on our 🌍 1:326 scale map of the Earth, divided into regions including Africa, Asia, Europe, the Middle East, North America, Oceania, and South America.  
 
 ![EarthPol Map](/img/servermap.png)
 
+
+
+<div style={{ textAlign: 'center' }}>
+  <p>📍 **Visit our map [here](https://earthpol.com/map/).**</p>
+</div>
+
 Upon spawning:
 
-- 🗺️ You can use `/map` to find your location on our **interactive 3D map**.
-- 🛡️ You are **immune from mob damage** for your **first hour**, giving you time to settle in safely. **Note:** Players in the wild can still attack you!
-- ✈️ Want to teleport to a different random location? Use `/rtp` to teleport randomly, or `/rtp [continent]` if you want to teleport to a **specific continent**.
+- 🧭 Use `/map` to find your location on our **interactive 3D map**.
+- 🛡️ You're **immune from mob damage** for your **first hour**, giving you time to safely settle in.  
+  ⚠️ **Note:** Other players in the wild *can still attack you*!
+- 🎲 Want a new location? Use `/rtp` to teleport randomly, or `/rtp [continent]` to choose a **specific continent**.
 
-## Starter Kit
+## 🎒 Starter Kit
 
 When you spawn, you'll also receive a helpful starter kit:
 
-- ⛏️ Stone Pickaxe
-- 🪓 Stone Axe
-- 🍞 16 Bread
-- 🛡️ Shield + Leather Armor
-- 🔥 Campfire
+- ⛏️ Stone Pickaxe  
+- 🪓 Stone Axe  
+- 🍞 16 Bread  
+- 🛡️ Shield + Leather Armor  
+- 🔥 Campfire  
 
-:::tip Bonus Items
+:::tip 🎁 Bonus Items
 
-In addition to your starter kit, you can get even more free items by liking us on NameMC!  
+In addition to your starter kit, you can get even more free items by liking us on NameMC!
 
 👉 [Like us here!](https://namemc.com/server/play.earthpol.com)
 
 :::
 
-### 🏠 Homes
+---
 
-Homes are teleport locations you set, either in protected claims or the wilderness. Below are the following commands related to homes. 
-``/sethome [name]``:  to save your current location as a home. 
-``/home [name]``:  to teleport to the home you set.
-``/homelist``: List all homes that you own.
+## 🎮 Basic Gameplay Overview
+
+### 🏡 Homes
+
+Homes are teleport locations you set, either in protected claims or the wilderness. Below are the key commands:
+
+- 🏠 `/sethome [name]`: Save your current location.  
+- 🚪 `/home [name]`: Teleport to the home.  
+- 📜 `/homelist`: View all your homes.
 
 ---
 
-## Basic Gameplay Overview
-
 ### 🏕️ Towny Camps
 
-Included in your starter kit is a **campfire**, which can be used to create a **Towny Camp**.
+Included in your starter kit is a **campfire**, used to create a **Towny Camp**.
 
-A **Towny Camp** is a temporary, one-chunk protected claim where:
+🏕️ A **Towny Camp** is a temporary, one-chunk protected claim where:
 
-- Only you can access the area.
-- PvP and griefing are disabled inside the camp.
-- Camps last **48 hours** (but you can **re-light** your campfire to reset the timer).
-- You can only place a new camp **once every 24 hours**.
+- 🔒 Only you can access the area  
+- ⚔️ PvP & griefing are disabled  
+- ⏳ Lasts for **48 hours** (can be **reset** by re-lighting)  
+- 🔁 You can place a new camp **once every 24 hours**
 
-**Creating a Towny Camp**
-
+**Creating a Camp:**  
 When you place your campfire, you'll see a prompt:  
-*"Would you like to make a Towny Camp?"*  
-Simply **click** the `/confirm` button or type `/confirm` in chat to claim the area.
+💬 *"Would you like to make a Towny Camp?"*  
+✅ Click or type `/confirm` to claim the area.
 
 ![Towny Camps](/img/campfire.png)
 
@@ -88,29 +97,31 @@ Simply **click** the `/confirm` button or type `/confirm` in chat to claim the a
 
 Once you're ready to settle permanently, you can join or create a **Town**!
 
-**Towns** provide:
+🏙️ **Towns** provide:
 
-- Permanent land claims (no expiration as long as upkeep is paid).
-- Full protection from PvP and griefing inside town land.
-- A community where you can build and collaborate.
+- 🧱 Permanent land claims  
+- 🛡️ PvP and grief protection  
+- 👥 Community building
 
-**Joining a Town**
+**Joining a Town:**
 
-- You can be **invited** to a town by another player.
-- Or, join an **open town** using `/t join <town>`.
+- 🤝 Be **invited** by another player  
+- 🌍 Join an **open town** using `/t join <town>`
 
-**Creating a Town**
+**Creating a Town:**
 
-- Requires **512 gold** and an **unclaimed area**.
-- Command: `/t new [Town Name]`
-- Confirm the creation by clicking `/confirm` or typing it manually.
+- 💰 Requires **256 gold**  
+- 📍 Must be in an unclaimed area  
+- 🛠️ Use: `/t new [Town Name]`  
+- ✅ Confirm with `/confirm`
 
-**Useful Town Commands**
-- `/t spawn` — Teleport to your town's spawn.
-- `/t invite <player>` — Invite a player to your town.
-- `/t leave` — Leave your current town (you cannot leave if you're the mayor).
+**Useful Town Commands:**
 
-▷ *For more detailed information, check our [Town Guide](Towny/Basic/Towns.md).*
+- 🚪 `/t spawn`: Go to your town’s spawn  
+- 📬 `/t invite <player>`: Invite someone  
+- 🚶 `/t leave`: Leave your current town (*you can’t leave if you’re mayor*)
+
+▷ *More info in our [Town Guide](Towny/Basic/Towns.md)*
 
 ![Town](/img/town.png)
 
@@ -118,21 +129,20 @@ Once you're ready to settle permanently, you can join or create a **Town**!
 
 ### 🏛️ Nations
 
-Towns can band together to form **Nations**, which offer even greater power and influence.
+🏛️ **Nations** are alliances of towns, offering:
 
-**Nations** include:
+- 🤝 Diplomatic tools (allies, wars, truces)  
+- 🔐 Extra protection  
+- 🌐 Global influence
 
-- Larger alliances between towns.
-- Access to diplomacy (allies, wars, truces).
-- Extra protection and global influence.
+**Creating a Nation:**
 
-**Creating a Nation**
+- 💰 Requires **2,000 gold**  
+- 🏙️ Must own **at least one town**  
+- ✍️ Use `/n new [Nation Name]`  
+- ✅ Confirm with `/confirm`
 
-- Requires **5,000 gold** and at least **one existing town**.
-- Command: `/n new [Nation Name]`
-- Confirm by clicking or typing `/confirm`.
-
-▷ *For more detailed information, check our [Nation Guide](Towny/Basic/Nations.md).*
+▷ *More info in our [Nation Guide](Towny/Basic/Nations.md)*
 
 ![Nation](/img/nation.png)
 
@@ -140,9 +150,14 @@ Towns can band together to form **Nations**, which offer even greater power and 
 
 ### 🌐 Get Connected
 
-Joining EarthPol is just the beginning, the community is what truly brings the server to life!
+Joining EarthPol is just the beginning — the **community** brings the server to life! 🎉
 
-💬 **Join our Discord server** to meet new players, find allies, organize events, and get real-time help from staff and veterans:
+💬 **Join our Discord server** to:
+
+- 🤝 Meet new players  
+- 🛡️ Find allies  
+- 🗓️ Organize events  
+- 📢 Get real-time help from staff and veterans
 
 <div style={{ textAlign: "center", margin: "20px 0" }}>
   <a href="https://discord.gg/bURuFxYqkD" target="_blank" rel="noopener noreferrer" style={{ fontSize: "1.5em", fontWeight: "bold", textDecoration: "none", color: "#5865F2" }}>
@@ -150,8 +165,6 @@ Joining EarthPol is just the beginning, the community is what truly brings the s
   </a>
 </div>
 
-Whether you’re looking for a town to join, want to discuss politics, or just chat about your latest builds, the Discord is the best place to stay connected and be part of the vibrant EarthPol community.
+Whether you’re 🏘️ looking for a town to join, 🗳️ discussing politics, or 🛠️ chatting about your latest build, the Discord is the best place to stay connected and be part of the vibrant EarthPol community.
 
 See you there! 🌍
-
----
