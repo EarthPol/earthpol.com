@@ -8,6 +8,14 @@ title: Transportation
 
 Efficient transportation is vital to success in EarthPol. Whether you're connecting your capital to rural towns or creating a cross-country trade route, good transport systems make your nation feel alive and connected. Rails can help with logistics, trade, and player movement—especially in a world where distance and geography matter. Fast, reliable transport gives players and towns a serious edge in coordination, economics, and defense.
 
+:::tip
+
+The Nether has been scaled to be 8x smaller than the Overworld. Portals built anywhere within the Nether world border should correspond to a location in the Overworld.
+
+Check out this Nether to Overworld coordinates calculator if you need to make coordinate conversions when building highways/railroads in the Nether: https://www.lunarclient.com/tools/nether-portal-calculator
+
+:::
+
 ## 🚄 Rails
 
 Rails is a neat plugin that makes minecart travel fast and practical by introducing a high-speed rail system. With this plugin, minecarts can travel up to 4x faster than vanilla powered rails, reaching speeds of 32 m/s (115 km/h)—comparable to rocket elytra flight.
