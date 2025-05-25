@@ -9,6 +9,13 @@ title: Economy
 In our economy, gold serves as the primary currency. It is essential for transactions, and players can earn, spend, and trade gold throughout the game. The system is designed to make gold the backbone of your in-game wealth and economy, ensuring a rich and immersive experience for all players.
 
 ---
+## Storing Gold
+EarthPol uses a **physical gold economy**. This means that your money is stored as physical gold; this can be in your inventory, ender chest, or wherever you decide to safely stash it.
+
+- **Shop Owners and Bounty Hunters:** By default, profits will be sent to your inventory as gold blocks or ingots. In the event you do not have enough space to hold your gold, it will be sent to your ender chest. 
+- **If your ender chest and inventory does not have enough space, your gold will spawn on top of you and fall to the ground.** Ensure you have enough space in your ender chest to receive gold deposits.
+
+---
 
 ## Earning Gold
 
