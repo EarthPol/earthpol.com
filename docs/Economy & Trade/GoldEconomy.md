@@ -14,6 +14,7 @@ EarthPol uses a **physical gold economy**. This means that your money is stored 
 
 - **Shop Owners and Bounty Hunters:** By default, profits will be sent to your inventory as gold blocks or ingots. In the event you do not have enough space to hold your gold, it will be sent to your ender chest. 
 - **If your ender chest and inventory does not have enough space, your gold will spawn on top of you and fall to the ground.** Ensure you have enough space in your ender chest to receive gold deposits.
+- `/pay` **command is disabled.** Transferring funds to other players must be done through a shop chest or by dropping the gold to them physically.
 
 ---
 
