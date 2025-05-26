@@ -43,3 +43,7 @@ title: Custom Recipes
 To view what armor trims look like, check out this free website 👉 [armortrims.com](https://www.armortrims.com)
 
 :::
+
+## Creating Bottles O' Enchanting (XP Bottles)
+- Right click an Enchantment Table while holding an empty Bottle.
+- This will "bottle" up your XP by converting the Bottle into a Bottle o' Enchanting.
