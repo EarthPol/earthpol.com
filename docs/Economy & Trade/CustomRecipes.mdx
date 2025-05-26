@@ -1,0 +1,77 @@
+---
+title: Custom Recipes
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# 🛠️ Custom Recipes
+
+## 🪓 Item & Block Recipes
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center' }}>
+  {Array.from({ length: 32 }).map((_, i) => (
+    <img
+      key={i}
+      src={`/img/Recipes/crafting-grid${i === 0 ? '' : `-${i}`}.png`}
+      alt={`Crafting Recipe ${i}`}
+      style={{ width: '192px', height: '192px', objectFit: 'contain' }}
+    />
+  ))}
+</div>
+
+
+---
+
+## 🛡️ Armor Trim Recipes
+
+<div style={{ display: "flex", flexWrap: "wrap", gap: "24px", justifyContent: "center" }}>
+
+  {[
+    "dune", "coast", "wild", "ward", "eye", "vex", "tide",
+    "snout", "spire", "rib", "wayfinder", "raiser", "shaper", "host"
+  ].map((trim, i) => (
+    <img
+      key={i}
+      src={`/img/trims/Custom_${trim}_trim.webp`}
+      alt={`Custom ${trim} trim`}
+      style={{ width: "192px", height: "192px", objectFit: "contain" }}
+    />
+  ))}
+
+</div>
+
+:::tip
+
+To view what armor trims look like, check out this free website 👉 [armortrims.com](https://www.armortrims.com)
+
+:::
+
+## ✨ Creating XP Bottles (Bottles O' Enchanting)
+
+- **Right-Click** any *Enchantment Table* while holding a *Glass Bottle*. This will place your XP into XP Bottles (Bottles O' Enchanting).
+
+{/* Now the responsive GIF: */}
+<center>
+    <picture>
+        {/* 1) Data-saver mode → low-res */}
+        <source
+            srcSet={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
+            media="(prefers-reduced-data: reduce)"
+        />
+
+        {/* 2) Otherwise choose 1× or 2× density */}
+        <source
+            srcSet={`
+          ${useBaseUrl('img/enchantmenttablebottles-lowres.gif')} 1x,
+          ${useBaseUrl('img/enchantmenttablebottles.gif')}        2x
+        `}
+        />
+
+        {/* 3) Fallback & lazy-load */}
+        <img
+            src={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
+            alt="Enchantment Table Bottles animation"
+            loading="lazy"
+        />
+    </picture>
+</center>
