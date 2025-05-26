@@ -76,7 +76,7 @@ const config = {
       },
       items: [
         // LEFT SIDE
-        { to: 'https://earthpol.com/map/', label: 'Map', position: 'left' },
+        { to: 'https://earthpol.com/map/#world:0:0:0:1500:0:0:0:1:flat', label: 'Map', position: 'left' },
         { to: 'https://earthpol.craftingstore.net/category/445275', label: 'Store', position: 'left' },
         { to: '/docs', label: 'Guide', position: 'left' },
     
