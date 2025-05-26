@@ -121,6 +121,12 @@ Ganks are strategic, defensive fortresses built within Towny claims used to trap
 #### Building your fortifications
 The optimal width for a gank is 2 blocks wide, stretching along the border of your town facing the siege banner. The deeper, the better, however the tradeoff is the amount of time and effort required to build one. Ganks should have an elevator system for easy access and escape. The goal is to trap attackers, making it harder for them to retaliate, while allowing you to land hits from a secure position. This strategy can significantly disrupt the attackers' rhythm and force them to waste valuable resources.
 
+:::tip
+
+**Give us gank perms!** Any fortification you build is useless if your allies and soldiers don't have [access](https://earthpol.com/docs/War%20&%20Diplomacy/SiegeWar#grant-access-to-your-fort)
+to it.
+:::
+
 #### Gank Example
 <div style={{ textAlign: 'center' }}>
   <img src="/img/gank1.png" alt="Basic gank design" style={{ maxWidth: '100%', height: 'auto' }} />
@@ -166,6 +172,25 @@ While peaceful towns may avoid the stress of constant sieges, they also lose out
 
 ### Spawn to Siege
 - `/sw spawn [besieged town]` - Spawn to a siege.
+
+### Grant Access to Your Fort
+
+**Give us gank perms!** Any fortification you build is useless if your allies and soldiers don't have the [permissions](https://earthpol.com/docs/Towny/Advanced/PlotPerms#plot-groups) to interact with it. To easily grant and manage permissions, you can create a plot group encompassing your gank and then grant allies permissions to interact with it.
+
+- `/plot group add MyGank` - **Stand in each chunk** that the gank is a part of and **add it to the plot group.** MyGank, the plot group name, can be whatever you want it to be.
+- `/plot group set perm ally on` `/plot set perm nation on` - **Stand in a chunk that is a part of the plot group** and run these commands to **grant permissions to nation members and allies** within the plot group.
+- `/plot group delete GankName` - Delete the group entirely if you no longer want to use it.
+- Alternatively, you can remove individual chunks by standing in each chunk you want to remove from and running `/plot group remove`
+  
+:::tip
+If your town owns multiple ganks, adding them all to the same plot group allows you to manage permissions for all of them at the same time. Convenient!
+:::
+
+:::tip
+**You can delegate responsibilities!** Town Assistants are also able to add/remove plots from plot groups and setup permissions for those groups.
+:::
+
+
 
 ### View Information:
 - Siege - `/sw hud [town name]` - Toggle a HUD on/off to monitor the progress of a particular siege.
