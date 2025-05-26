@@ -23,7 +23,7 @@ Our calendar is packed with exciting events to keep the community engaged all ye
 If you're planning to host an event on EarthPol, please follow these guidelines to ensure it's fair, well-organized, and enjoyable for the community.
 
 ### 📝 1. Submitting an Event
-- **Submit your event proposal** via the Event Registration Form below.
+- **Submit your event proposal** via a ticket in our Support Discord Event (linked below).
 - Your submission should include:
   - **Event Name**
   - **Date & Time**
@@ -54,10 +54,9 @@ If you're planning to host an event on EarthPol, please follow these guidelines 
 - It is encouraged to post **results or highlights** in the form of videos or screenshots in #media.
 - If your event was a success, you may be invited to host recurring events or join our Event Team.
 
-## Event Registration Form
+## Event Registration
 
 Please ensure that your submission is genuine and relevant to the topic at hand. Any troll submissions or irrelevant content will not be tolerated and will not be read. We strive to maintain a respectful and productive environment for all participants, and your cooperation is appreciated in keeping the discussion focused and meaningful. 
 
-**Event Registration Form:** https://forms.gle/a4MkMTYDa4GXARaY7
-
+**Register your event in our support server:** https://discord.gg/tUK3npxkDA
 ---
