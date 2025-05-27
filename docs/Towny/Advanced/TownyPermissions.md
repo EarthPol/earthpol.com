@@ -35,6 +35,13 @@ Towny allows town and nation leaders to delegate responsibilities using a rank s
 | **Recruiter**| Tasked with expanding the nation and its armed forces. | Invite new towns or residents on behalf of the nation. Grant the soldier rank to other citizens.     |
 | **Soldier**  | Military personnel involved in wars and defense.                                | Access to military infrastructure, PvP zones during war.    |
 
+
+## Honor Points System
+
+Honor Points measure how long you’ve remained loyal to a nation and are required for military ranks like Soldier, Guard, or General. You gain 1 point per Towny Day if you’re in the same nation at the end of the day. If you switch nations or leave yours, your points reset. You need 3 Honor Points (i.e., 3 days in a row) to be eligible for military ranks.
+
+To check your points, use the ``/honor`` command. Points are awarded or removed only during the daily rollover. You can switch towns within the same nation, or even temporarily leave, as long as you're back in the same nation by the day's end, you'll still earn the point. This system promotes fairness, rewards commitment, and ensures only loyal residents access military privileges.
+
 ## Managing Ranks
 
 Use the following commands to assign or remove ranks:

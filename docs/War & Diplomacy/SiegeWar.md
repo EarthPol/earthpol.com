@@ -1,105 +1,47 @@
 ---
 title: SiegeWar 
 ---
+
+import React from 'react';
+import BattleTimes from '@site/src/components/BattleTimes';
+
 # SiegeWar
 
 ## Overview
 
-SiegeWar is a carefully structured combat system designed to simulate war and the breakdown of diplomatic relations within EarthPol when peaceful negotiations are no longer feasible. It provides a strategic and immersive gameplay experience where nations engage in direct conflict, with all the risks and rewards of warfare. The mechanics surrounding the sieging process aim to create a balanced environment where both attackers and defenders must plan carefully and consider the consequences of their actions.
-
-In this system, Keep Inventory is enabled within a 200-block radius of the siege banner, ensuring that players do not lose their items upon death in this area. However, a 5% durability degradation is applied to armor and tools when a player dies, adding a layer of strategy regarding the longevity of gear. Siege Assemblies and Siege Camps are disabled, meaning the only requirement to initiate a siege is the placement of the siege banner. Each nation can only have two active siege attacks at once, which limits their offensive capabilities and forces them to carefully choose their targets. Defenders have the option to surrender, but attackers cannot abandon a siege once it begins. The Banner Control Session lasts for 6 minutes, and players must remain within a 16-block radius around the banner to gain control, as doing so adds them to the banner control list, allowing for point accumulation.
-
-This structured environment encourages tactical thinking, resource management, and coordination, as nations fight for control and influence. The rules of SiegeWar ensure that players face real consequences for their actions, making each siege a critical moment in the ongoing geopolitical struggle of EarthPol.
+SiegeWar is EarthPol’s structured warfare system, simulating the breakdown of diplomacy when peaceful options fail. It offers a strategic and immersive experience where nations engage in direct conflict with real consequences. Within 200 blocks of the siege banner, Keep Inventory is enabled, but deaths result in a 5% durability loss to armor and tools. Siege Camps and Assemblies are disabled, only placing a banner is required to initiate a siege. Each nation is limited to two active siege attacks, encouraging thoughtful target selection. Attackers cannot abandon a siege once it begins, while defenders retain the option to surrender. To gain control, players must stay within 16 blocks of the banner during a 6-minute Banner Control Session to accumulate points. 
 
 ---
-
-## Honor Points System
-
-### What are Honor Points?
-Honor Points measure how long you've stayed loyal to your nation. They're used to gate military ranks (like Soldier, Guard, General) so only truly committed residents can earn them.
-
-### How do I earn Honor Points?
-- Every new Towny Day that rolls over, if you're still in the *same* nation you were yesterday by the end of the Towny Day, you automatically gain **1 Honor Point.**
-- If you switch nations (or leave yours), your Honor Points reset and start counting fresh in your new nation.
-
-### How many points do I need?
-You will need **3 Honor Points** (i.e., three consecutive days in the same nation) before you can pick up military ranks.
-
-### How do I check my Points?
-```
-/honor
-```
-You'll see something like this:
-```
-You have 2 honor points with YourNation.
-or
-You have 0 honor points (you’re not in a nation).
-```
-
-### What Happens if I leave My Nation?
-If you leave or get kicked out on new Towny Day:
-1. Your points drop back to zero.
-2. When you join a new nation, you'll earn 1 point on the next daily rollover and build up form there again.
-
-### Why Honor Points?
-- **Fairness:** Only players who've truly stuck with the nation can earn its siege participation ranks. This prevents large PVP clans from unfairly logging on dozens of people who do not normally play on the server.
-- **Commitment:** Encourages long-term teamwork and stability in your nation.
-- **Clarity:** You always know exactly how many days you've "proven" your loyalty
-
-### Honor Points FAQ
-- **Question:** Can I switch towns in the same nation?
-- **Answer:** Yes, as long as you are in the same nation at the end of the day. 
-------------------
-- **Question:** Can I join another nation and come back to the same nation by the end of the day?
-- **Answer:** Yes, the system only adds or removes points at the end of the day. As long as you are in the same nation by the end of the day, you will earn points.
 
 ## Gameplay
 
 ### Battle Sessions
 
-Sieges occur during battle sessions. These battle session only occur on certain days of the week which are listed below:
+Sieges occur during battle sessions. These battle sessions only occur on certain days of the week which are listed below and are automatically adjusted to your timezone (**{Intl.DateTimeFormat().resolvedOptions().timeZone}**):
 
-  - **UTC TIMEZONE**
-  - Saturday: 01:45, 04:30, 07:15, 10:00, 12:45, 15:30, 18:15, 21:00, 23:45
-  - Sunday: 02:30,05:15, 08:00, 10:45, 13:30, 16:15, 19:00, 21:45
-  - Friday: 14:45, 17:30, 20:15, 23:00
+<BattleTimes />
 
-The server operates in the UTC time zone. Siege times are in 24-hour format to ensure clarity and standardization across different time zones. Please take note of this when planning your in-game activities to avoid any confusion.
+Siege times are in 24-hour format to ensure clarity and standardization across different time zones. Please take note of this when planning your in-game activities to avoid any confusion.
 
 ### Starting a Siege
 
-To start a siege as an attacker, place a non-white banner outside the enemy town. White banners are reserved for surrenders, so use any other color. After placing the banner, the siege will begin, and players can accumulate points by killing enemy players or gaining control of the banner. To find the next battle session, use the command `/sw nextsession`. Be prepared, as resources like potions and armor sets are essential for the duration of a siege.
+To initiate a siege, attackers must place a non-white banner outside the target town—white banners are reserved for surrender. Once the banner is placed, the siege begins, and players can earn points by killing enemies or maintaining control of the banner area. Use the command `/sw nextsession` to check when the next battle session begins.
 
-#### Siege Logistics and Preparation
-
-Before entering a siege, ensure you have sufficient supplies, such as:
-
-- **Experience Bottles:** Carry extra experience bottles to repair your armor on the go!
-- **Potions:** Healing potions and splash potions of regeneration are essential to keep you alive during intense battles.
-- **Weapons:** Bring multiple weapons, including swords, axes, or bows, to adapt to different combat situations.
-- **Food:** Keep food with you for both healing and stamina.
-  
-If you do not have enough resources, it is crucial to gather them before engaging in a siege. Lack of preparation could lead to being overwhelmed or forced to surrender.
+Preparation is essential: bring experience bottles for repairing armor mid-battle, healing and regeneration potions, multiple weapons, and plenty of food. Entering a siege without proper supplies greatly increases your risk of defeat or forced surrender.
 
 :::tip
 
-Non PvP-focused players can still be of help at the siege banner! They can focus on logistics and supplying your army, allowing them to support your best fighters and maintain the flow of essential resources. They can also play a critical defensive role, by taking up positions as **archers from within the gank**, or **conduct airstrikes** by dropping TNT minecarts on top of the banner.
+All players can still be of help at the siege banner! You may need players to focus on logistics and supplying your army, allowing them to support your best fighters and maintain the flow of essential resources. They can also play a critical defensive role, by taking up positions as **archers from within the gank**, or **conduct airstrikes** by dropping TNT minecarts on top of the banner.
 
 :::
 
-### Banner Control
+### Banner Control and Dynamics
 
-To control the banner, enter the 16-block radius and begin the Banner Control session (also called “capping” or “capping the banner” on EarthPol). You must stay in the control radius for the entire session, and each player must remain individually within the radius to add their name to the banner control list. Once your team controls the banner, you will earn points every 20 seconds for each player on the control list.
+To gain control of a siege, players must enter the 16-block radius around the siege banner and stay within it to start the Banner Control session (commonly called "capping" on EarthPol). Each player must remain inside the radius to be added to the banner control list, and once control is established, the team earns 10 points every 20 seconds per player on the list.
 
-### Counterattacks and Reversals
+Combat plays a critical role in siege dynamics. Kill Points award 90 points per enemy kill. Counterattacks occur when an attacker kills a banner-controlling player, triggering a 30% point bonus for the attacking side—this boost stacks with each kill. Reversals happen when a side regains banner control from the enemy, applying a 1.5x bonus to all Banner Control Points earned after the reversal.
 
-In SiegeWar, counterattacks and reversals can significantly shift the tide of battle. A **counterattack** occurs when an attacker kills a player controlling the banner, increasing the points earned by a percentage determined by the counterattack booster. A **reversal** happens when a side regains control of the banner from the enemy, applying a 1.5x bonus to the points accumulated for each player on the control list after the reversal.
-
-### Siege Balance
-
-Points in SiegeWar are earned in two primary ways: through **Kill Points** (90 points per kill) and **Banner Control Points**, which are awarded at 10 points every 20 seconds for each player in the control radius. If the control of the banner is reversed, the **Banner Control Reversal Bonus** of 1.5x applies, rewarding the effort of reclaiming control. Additionally, the **Counterattack Boost** increases points by 30% whenever a player from the banner-controlling side is killed. This boost stacks, meaning points from a counterattack can multiply significantly.
-
-The **Siege Balance** starts at 0 points, and the attackers contribute to the balance by adding points, while defenders subtract points. If the balance becomes negative, it signifies a defender victory. If positive, the attackers win.
+The Siege Balance starts at 0. Attackers increase the balance with kills and banner control, while defenders decrease it. A positive balance at the end means an attacker victory; a negative balance results in a defender win.
 
 ### Aftermath of Sieges
 
@@ -111,133 +53,72 @@ There are two primary outcomes following a siege: **Plunder** and **Invasion**.
 
 ---
 
-## Siege Strategy
+## SiegeWar Strategies
 
 ### Fortifications
 
-#### What is a "Gank"?
-Ganks are strategic, defensive fortresses built within Towny claims used to trap attackers and gain easy kills; on EarthPol, this is the colloquial term for this type of fortification.  They are typically set up on the edges of your outpost or town. They are typically erected on the fly in the expected battle area as soon as the defending town discovers that a siege is being planned against them. Well-planned, defensively fortified towns will often pre-emptively build this defensive fortification around the border of their town, and combine this with walls surrounding the town. They come in several designs, depending on the time and resources available to create them.
+Fortifications, like ganks, are strategic, defensive fortresses built within Towny claims used to trap attackers and gain easy kills; on EarthPol, this is the colloquial term for this type of fortification.  They are typically set up on the edges of your outpost or town. They are typically erected on the fly in the expected battle area as soon as the defending town discovers that a siege is being planned against them. Well-planned, defensively fortified towns will often pre-emptively build this defensive fortification around the border of their town, and combine this with walls surrounding the town. They come in several designs, depending on the time and resources available to create them.
 
-#### Building your fortifications
 The optimal width for a gank is 2 blocks wide, stretching along the border of your town facing the siege banner. The deeper, the better, however the tradeoff is the amount of time and effort required to build one. Ganks should have an elevator system for easy access and escape. The goal is to trap attackers, making it harder for them to retaliate, while allowing you to land hits from a secure position. This strategy can significantly disrupt the attackers' rhythm and force them to waste valuable resources.
+
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '20px',
+  flexWrap: 'wrap',
+  textAlign: 'center'
+}}>
+  <div style={{ flex: '1 1 400px', maxWidth: '400px' }}>
+    <img src="/img/gank1.png" alt="Basic gank design" style={{ width: '100%', height: 'auto' }} />
+  </div>
+  <div style={{ flex: '1 1 400px', maxWidth: '400px' }}>
+    <img src="/img/gank2.png" alt="Basic gank design" style={{ width: '100%', height: 'auto' }} />
+  </div>
+</div>
 
 :::tip
 
-**Give us gank perms!** Any fortification you build is useless if your allies and soldiers don't have [access](https://earthpol.com/docs/War%20&%20Diplomacy/SiegeWar#grant-access-to-your-fort)
+**Gank Perms** Any fortification you build is useless if your allies and soldiers don't have [access](https://earthpol.com/docs/War%20&%20Diplomacy/SiegeWar#grant-access-to-your-fort)
 to it.
 :::
 
-#### Gank Example
-<div style={{ textAlign: 'center' }}>
-  <img src="/img/gank1.png" alt="Basic gank design" style={{ maxWidth: '100%', height: 'auto' }} />
-  <p><em>Basic gank design</em></p>
-</div>
-<div style={{ textAlign: 'center' }}>
-  <img src="/img/gank2.png" alt="Basic gank design" style={{ maxWidth: '100%', height: 'auto' }} />
-  <p><em>Basic gank design</em></p>
-</div>
-<div style={{ textAlign: 'center' }}>
-  <img src="/img/gank3.png" alt="Basic gank design" style={{ maxWidth: '100%', height: 'auto' }} />
-  <p><em>Basic gank design</em></p>
-</div>
+### Fighting Strategies
 
-### Grouping Together:
-Avoid feeding the enemy team by grouping together and staying alive as long as possible. Dying repeatedly gives the enemy team valuable points and drains your own resources. Work with your teammates to coordinate strategies, supplies, and healing, ensuring that you can stay in the battle as long as possible. Having multiple players on the banner can help delay control and counteract enemy efforts to seize it.
+* **Grouping Together:** Avoid feeding the enemy team by grouping together and staying alive as long as possible. Each death gives the enemy valuable points and drains your own resources. Work with your teammates to coordinate strategies, supplies, and healing to stay in the fight longer. Having multiple players on the banner can help delay enemy control and buy time.
 
-### Coordinating Attacks:
-Successful sieges require effective coordination between players. Work together to control key points of the map, including the banner and the airspace above the siegezone. Use voice communication and ally chat to ensure that all attackers, including your allies, are aware of objectives and timings. You may need to rotate players in and out of the banner control area to maintain the pressure on defenders.
+* **Coordination and Communication:** Successful sieges also require effective coordination between players. Use voice communication and ally chat to make sure everyone—your town members and your allies—understands the plan. Work together to control key parts of the map, including the banner and the airspace above the siege zone. Rotate players in and out of the control area to maintain pressure.
 
-### Building Banner Forts:
-**Banner forts** can be used to keep control of the banner. Constructing a fortified area around the banner can prevent other players from easily disrupting your control. Ensure that the fort is secure but also provides escape routes in case of a counterattack.
+* **Banner forts** can further help with this. These are strongholds built around the siege banner to protect your team's control zone. A well-built banner fort prevents the enemy from breaking your hold easily. Make sure the fort is strong, but include escape routes in case of a counterattack.
 
 ---
 
-## Becoming Peaceful 
+## SiegeWar Commands
 
-### Tradeoffs of Becoming a Peaceful Town
+- `/n rank add [player name] [rank]` – Assign a nation military rank (as king or general).
 
-When a town is set to **peaceful** using the `/sw towntoggle peaceful` command, they are no longer eligible to be attacked by others, but there are tradeoffs:
 
-- **No participation in sieges**: Peaceful towns cannot participate in sieges, meaning they cannot attack others or be attacked themselves.
-- **Loss of offensive capabilities**: Peaceful towns cannot initiate sieges, and attackers cannot engage with them.
-  
-While peaceful towns may avoid the stress of constant sieges, they also lose out on the opportunity to gain resources through plunder or take control of other towns.
+:::note
 
----
+⚔️ Note: Your fighters must be assigned military ranks in order to participate in sieges. Players can only be assigned ranks after they have acquired a certain number of Honor Points.
 
-## SiegeWar Basic Commands
+**Learn more here: [📘 Military Rank and Honor System Guide](/docs/Towny/Advanced/TownyPermissions#honor-points-system)**
 
-### Nation
-- `/n rank add [player name] [rank]` - As a king, assign any nation military rank (e.g. private, sergeant, lieutenant, captain, major, colonel, or general). As a general, assign any of these except general.
-
-### Spawn to Siege
-- `/sw spawn [besieged town]` - Spawn to a siege.
-
-### Grant Access to Your Fort
-
-**Give us gank perms!** Any fortification you build is useless if your allies and soldiers don't have the [permissions](https://earthpol.com/docs/Towny/Advanced/PlotPerms#plot-groups) to interact with it. To easily grant and manage permissions, you can create a plot group encompassing your gank and then grant allies permissions to interact with it.
-
-- `/plot group add MyGank` - **Stand in each chunk** that the gank is a part of and **add it to the plot group.** MyGank, the plot group name, can be whatever you want it to be.
-- `/plot group set perm ally on` `/plot set perm nation on` - **Stand in a chunk that is a part of the plot group** and run these commands to **grant permissions to nation members and allies** within the plot group.
-- `/plot group delete GankName` - Delete the group entirely if you no longer want to use it.
-- Alternatively, you can remove individual chunks by standing in each chunk you want to remove from and running `/plot group remove`
-  
-:::tip
-If your town owns multiple ganks, adding them all to the same plot group allows you to manage permissions for all of them at the same time. Convenient!
 :::
 
-:::tip
-**You can delegate responsibilities!** Town Assistants are also able to add/remove plots from plot groups and setup permissions for those groups.
-:::
-
-
-
-### View Information:
-- Siege - `/sw hud [town name]` - Toggle a HUD on/off to monitor the progress of a particular siege.
-- Town - `/t` or `/t here` or `/t [town name]` - View detailed information about the siege on the town (if any).
-- Nation - `/n [nation name]` - View the list of sieges the nation is involved in (if any).
-
-### Make Town Peaceful:
-- `/sw town togglepeaceful` - As a mayor, declare your town to be peaceful. The peaceful state will be confirmed in 7 days (2 if the town is new).
-  - **Advantages:** 
-    - Town becomes immune to siege attacks.
-    - Town gets a public `/t spawn`.
-  - **Disadvantages:**
-    - Town cannot move homeblock.
-    - Residents cannot receive nation-military ranks.
-    - Town becomes vulnerable to being Subverted by nearby nations.
-  - **How Subverting Works (currently disabled):**
-    - The largest (by num-townblocks), non-sieged, non-peaceful town within 1,200 blocks of your peaceful town is your Guardian Town. Whichever nation owns that Guardian Town can instantly subvert and capture your peaceful town by placing a non-white banner on your town border.
-
-### Additional Commands:
-- `/sw town togglepeaceful` - As a mayor, declare your town to be Non-Peaceful. The Non-Peaceful state will be confirmed in 7 days (2 if the town is new).
-
-#### Configure Personal Preferences:
-- `/sw preference bossbar on|off` - Toggle the bossbars on and off.
-- `/sw preference beacon on|off` - Toggle the beacon beam on and off.
-
-#### Set Occupation Tax:
-- `/n set occupationtax [rate]` - As a king, set your nation's occupation tax-rate. Generally, you don't need to run this command, as your nation will automatically use the highest rate. Once you run this command, your nation's rate will no longer track the server-configured maximum.
-- `/n set occupationtax max` - As a king, set your nation's occupation tax to track the server-configured maximum.
-
----
-
-## SiegeWar Reference
-
-### Siege zone restriction:
-- Restricted blocks in the wilderness area of a siege zone: All water bucket types & lava buckets, cobwebs, obsidian
-
-### Proximity/Distance
-- Siege zone radius: 300 blocks around the siege banner.
-- Banner can be placed up to 2 chunks away from the opposing town's claims to begin a siege.
-
-### Cost
-- Upfront cost per plot to start siege (will be placed in the war chest): 8G
-- Plunder amount: 4G per plot owned by the defending town, + all gold that was put up front when starting the siege.
-
-### Conseuquences of Death
-- Keep inventory is **enabled** when a death occurs **inside the siege zone radius**.
-- Weapon and armor durability will degrade by **5%** upon death.
+- `/sw spawn [besieged town]` – Spawn to an active siege.
+- `/plot group add [group name]` – Add the current chunk to a plot group.
+- `/plot group set perm ally on` – Grant ally permissions to the current chunk's plot group.
+- `/plot set perm nation on` – Grant nation permissions to the current chunk.
+- `/plot group delete [group name]` – Delete a plot group entirely.
+- `/plot group remove` – Remove the current chunk from its plot group.
+- `/sw hud [town name]` – Toggle siege HUD for a specific town.
+- `/t` or `/t here` or `/t [town name]` – View siege and town info.
+- `/n [nation name]` – View sieges involving a nation.
+- `/sw town togglepeaceful` – Toggle peaceful/non-peaceful status for your town.
+- `/sw preference bossbar on|off` – Toggle siege bossbars on/off.
+- `/sw preference beacon on|off` – Toggle beacon beam on/off.
+- `/n set occupationtax [rate]` – Set a custom occupation tax rate.
+- `/n set occupationtax max` – Set occupation tax to track the server-configured max.
 
 ---
 
@@ -248,4 +129,15 @@ If your town owns multiple ganks, adding them all to the same plot group allows 
   <p><em>An example of a kit a soldier could bring to a siege. Bring what works best for you.</em></p>
 </div>
 
+---
 
+## Becoming Peaceful 
+
+When a town is set to **peaceful** using the `/sw towntoggle peaceful` command, they are no longer eligible to be attacked by others, but there are tradeoffs:
+
+- **No participation in sieges**: Peaceful towns cannot participate in sieges, meaning they cannot attack others or be attacked themselves.
+- **Loss of offensive capabilities**: Peaceful towns cannot initiate sieges, and attackers cannot engage with them.
+  
+While peaceful towns may avoid the stress of constant sieges, they also lose out on the opportunity to gain resources through plunder or take control of other towns.
+
+---
