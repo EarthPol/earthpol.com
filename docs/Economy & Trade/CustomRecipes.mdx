@@ -50,28 +50,27 @@ To view what armor trims look like, check out this free website 👉 [armortrims
 
 - **Right-Click** any *Enchantment Table* while holding a *Glass Bottle*. This will place your XP into XP Bottles (Bottles O' Enchanting).
 
-{/* Now the responsive GIF: */}
-<center>
+
+<div style={{ textAlign: 'center' }}>
     <picture>
-        {/* 1) Data-saver mode → low-res */}
+        {/* 1) If data-saver mode is on, always low-res */}
         <source
-            srcSet={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
             media="(prefers-reduced-data: reduce)"
+            srcSet={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
         />
 
-        {/* 2) Otherwise choose 1× or 2× density */}
+        {/* 2) On desktop‐sized viewports, load high-res */}
         <source
-            srcSet={`
-          ${useBaseUrl('img/enchantmenttablebottles-lowres.gif')} 1x,
-          ${useBaseUrl('img/enchantmenttablebottles.gif')}        2x
-        `}
+            media="(min-width: 1024px)"
+            srcSet={useBaseUrl('img/enchantmenttablebottles.gif')}
         />
 
-        {/* 3) Fallback & lazy-load */}
+        {/* 3) Fallback for everything else */}
         <img
             src={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
             alt="Enchantment Table Bottles animation"
             loading="lazy"
+            style={{ display: 'inline-block', maxWidth: '100%', height: 'auto' }}
         />
     </picture>
-</center>
+</div>
