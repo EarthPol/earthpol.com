@@ -1,5 +1,6 @@
 ---
-title: SiegeWar 
+title: SiegeWar
+sidebar_position: 3
 ---
 
 import React from 'react';

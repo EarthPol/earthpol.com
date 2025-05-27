@@ -1,5 +1,6 @@
 ---
-title: Diplomacy 
+title: Diplomacy
+sidebar_position: 4
 ---
 
 # 🕊️ Diplomacy

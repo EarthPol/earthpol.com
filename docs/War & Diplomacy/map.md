@@ -1,5 +1,6 @@
 ---
 title: Map
+sidebar_position: 6
 ---
 
 ## Our custom Earth map
