@@ -3,9 +3,9 @@ title: Town Guide
 sidebar_position: 2
 ---
 
-# Town Guide
+# 🏙️ Town Guide
 
-## Overview
+## 📘 Overview
 
 A **town** is a player-created settlement in Towny that offers a more permanent solution for land claiming than a Towny Camp. While Towny Camps are temporary and expire after a set period, towns do not have an expiration time. However, they will disband if the town fails to pay its upkeep. Once established, a town can grow over time, with the mayor (and any co-mayors/assistants) managing the town's territory, permissions, and overall governance. This provides a more structured and permanent place for players to build and interact.
 
@@ -15,7 +15,7 @@ The success of a town relies on both management and community involvement. Regul
 
 ---
 
-## Joining a Town
+## 🧑‍🤝‍🧑 Joining a Town
 
 There are a couple of ways to join a town. If you wish to join a town that’s accepting new members, you can either:
 - Request an invitation: Many towns are not open to all players, meaning you will need to request an invitation from the town’s mayor or co-mayor.
@@ -26,7 +26,7 @@ Creating a Town
 
 ---
 
-## Creating a Town
+## 🛠️ Creating a Town
 
 To create your own town, you will need 512 gold and an unclaimed area where you can establish your town's boundaries. You can then issue the command `/t new [Town Name]`, replacing `[Town Name]` with your desired town name. It’s important to ensure that your town name adheres to the server’s naming rules.
 
@@ -36,7 +36,7 @@ Once the town is established, you’ll be able to further expand by claiming mor
 
 ---
 
-## Growing Your Town
+## 🌱 Growing Your Town
 
 Growing your town in Towny comes down to being active, organized, and making it a place people actually want to live in. One of the best ways to bring in new residents is by offering plots, either for free or at a low cost so new people have a reason to join and settle down, knowing their items are safe from wild. When players feel like they have a space of their own, they’re much more likely to stick around.
 
@@ -58,7 +58,7 @@ At the end of the day, if your town is organized, active, welcoming, and has man
 
 ---
 
-## Expanding Town Borders
+## 🧱 Expanding Town Borders
 
 To expand your town's borders and claim more land, simply use the `/t claim` command in an unclaimed wild area. As long as your town has enough funds in its bank, you will be able to claim a new chunk of land. Keep in mind that towns are given a limited number of claim blocks, which determines the size of your town. Adding new players to your town will increase your claim block limit, and joining a nation will grant you bonus claim blocks. This is a great way to create more space for you and your residents to build and grow your town.
 
@@ -71,7 +71,7 @@ Towny uses chunks to manage land. To see chunk borders when expanding, press F3 
 If you need to remove a chunk from your town, you can use the `/t unclaim` command.
 
 ---
-## Taxes in Towny
+## 💰 Taxes in Towny
 
 Taxes are a key mechanic in Towny that allow mayors and nations to fund public services, infrastructure, and governance. On EarthPol, understanding how taxes work—both at the town and national level—is essential to building a stable, self-sustaining state.
 
@@ -83,7 +83,7 @@ Both taxes are collected automatically and deposited into the town bank, which p
 
 Towns can set taxes to zero, impose high taxes on wealthier players, or use creative tax strategies to shape their internal economy.
 
-## Negative Town Taxes: Universal Basic Income in Towny
+## 🏦 Negative Town Taxes: Distribute Funds to Citizens in Towny
 
 Under advanced Towny settings, towns can implement a universal basic income (UBI) system using negative town taxes. By setting the daily town tax to a negative value (e.g., -2g), the server will pay each resident that amount daily from the town bank. This creates a form of automatic wealth redistribution, allowing leaders to support new players, reward loyalty, or encourage town growth.
 

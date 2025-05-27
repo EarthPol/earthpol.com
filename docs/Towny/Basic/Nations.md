@@ -3,9 +3,9 @@ title: Nation Guide
 sidebar_position: 3
 ---
 
-# Nation Guide
+# 🏰 Nation Guide
 
-## Overview
+## 📘 Overview
 
 A **nation** is a player-created political entity in Towny that operates on a larger scale than individual towns. Nations allow for the unification of multiple towns under a single banner, enabling cooperation, diplomacy, and mutual defense between settlements. Unlike towns, nations are not limited by a specific area and can expand across vast regions of the map, providing more opportunities for collaboration, trade, and governance. Nations provide protection against PvP and griefing within the areas controlled by their towns, offering a secure and organized environment for players to build and collaborate on a larger scale.
 
@@ -13,7 +13,11 @@ Nations also allow for the establishment of alliances, the declaration of war, a
 
 The success of a nation relies on the coordination between its towns, the leadership of the nation’s ruler(s), and the active involvement of its citizens. Effective communication and cooperation between towns is essential to ensure a nation’s prosperity and growth.
 
-## Joining a Nation
+![Town](/img/nation.png)
+
+---
+
+## 🤝 Joining a Nation
 
 There are a few ways to join a nation. If you wish to become part of an existing nation, you can either:
 
@@ -22,7 +26,9 @@ There are a few ways to join a nation. If you wish to become part of an existing
 
 Once invited, you can accept the invitation by typing /accept or clicking the prompt that appears in chat. After joining, you’ll become a part of the nation and be able to enjoy its benefits, such as protection, access to nation-wide resources, and participation in the nation’s governance.
 
-## Creating a Nation
+---
+
+## 🛡️ Creating a Nation
 
 To create your own nation, you will need 1000 gold and at least one town under your control. Once you meet the requirements, you can issue the command /n new [Nation Name], replacing [Nation Name] with your desired nation name. Make sure to choose a name that complies with the server’s naming rules.
 
@@ -30,7 +36,9 @@ After issuing the command, you’ll be asked to confirm the creation of the nati
 
 Once the nation is established, you can further expand by adding new towns to your nation, forming alliances with other nations, and claiming land. You’ll also need to manage your nation’s resources, diplomacy, and defense to ensure its long-term success. Regular upkeep is required to maintain the nation’s status, so managing your nation's economy is crucial.
 
-## Growing Your Nation
+---
+
+## 🌱 Growing Your Nation
 
 Growing a nation in Towny is about fostering cooperation, expanding your territory, and making your nation an attractive place for towns to join. One of the most effective ways to grow your nation is by inviting towns to join, either by directly contacting their leaders or advertising your nation’s benefits. If you already control multiple towns, you can extend invitations to other towns to join your nation and contribute to its growth.
 
@@ -46,7 +54,9 @@ Communication is critical for a successful nation, so having a nation Discord se
 
 At the end of the day, if your nation is well-organized, active, and provides meaningful benefits to its towns, other players will want to join, and your nation will grow. By creating a cohesive, dynamic nation, you can unite players under a common cause, achieve great things, and even challenge other nations for dominance in the world!
 
-### Town proximity requirements
+---
+
+### 📍 Town proximity requirements
 
 - In order to encourage infrastructure and nations having their towns in one geographical area, there is a limit to how far towns of a nation can be from each other: **400 chunks**
 

@@ -1,0 +1,145 @@
+---
+title: Towny Overview
+sidebar_position: 1
+---
+
+import townySettings from '@site/static/townysettings.json';
+
+# Towny 
+
+## 📘 Overview
+
+Towny is a server plugin on EarthPol that lets players form towns and nations, manage land, and collaborate or compete with others. Start as a Nomad, a lone wanderer with freedom and stealth, or build your legacy by creating or joining a Town, gaining access to protected land, infrastructure, and community. As towns grow, they can band together into Nations for diplomacy, defense, and shared projects.
+
+**For full info on Towny, view the official Towny Wiki: [📘 Towny Wiki](https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works)**
+
+---
+
+## 🧭 Nomads
+By default, all new players are not in a town, meaning you begin with no ties to any town or nation. To this end, Nomads are independent players who live without ever joining a town, embracing a mobile and self-sufficient lifestyle. While they lack access to protected land and infrastructure, they enjoy total freedom, stealth, and the ability to roam, trade, and support others as scouts or mercenaries. Using features like Towny Camps, nomads can still find temporary safety while remaining untethered to any nation.
+
+**For full info on surviving and thriving as a nomad: [📘 Nomad Guide](docs\Towny\Basic\Nomads.md)**
+
+![Nomadic Hut](/img/Nomadic.png)
+
+### 🔥 Towny Camps
+
+Both new players and Nomads can find temporary protection using Towny Camps — one-chunk areas claimed by placing a campfire from your starter kit. Camps last 48 hours, protect against PvP and griefing, and can be re-lit to reset the timer. After expiring, there’s a 24-hour cooldown before creating another. This allows nomads to stay mobile while still having safe spots to rest, store items, and regroup.
+Want protection and community?
+
+**For more info on Towny Camps, check out the Starter Guide: [📘 Starter Guide](docs/Getting%20Started/StarterGuide.md)**
+
+![Towny Camps](/img/campfire.png)
+
+---
+
+## 🏙️ Towns
+
+Towns are the core of settlement and community life in Towny. They allow players to permanently claim land, build safely, and form organized groups under the leadership of a mayor. Unlike temporary Towny Camps, towns do not expire as long as their upkeep is paid. Creating or joining a town gives players access to shared resources, protected plots, and the ability to shape their environment through governance and planning. Towns can grow into thriving communities with shops, infrastructure, and unique styles of leadership.
+
+![Town](/img/town.png)
+
+### 🧑‍🤝‍🧑 Joining/Creating Towns
+
+Players can join towns either by receiving an invitation from the mayor or by using /t join [town] if the town is open to all. Invitations can be accepted with /accept or by clicking the chat prompt. Once a member, you can claim plots and use town features based on the town’s permission settings.
+
+To create a town, you need 256 gold and unclaimed land. Use /t new [Town Name] and confirm with /confirm. As mayor, you gain full control over the town, can invite members, claim land, and manage settings. Towns require upkeep, so managing an active economy is key to keeping your town alive.
+<h3 align="center">Towny Prices</h3>
+
+<div align="center">
+
+| Description                     | Value |
+|---------------------------------|-------|
+| Price to Create a New Nation    | 2000  |
+| Price to Create a New Town      | 256   |
+| Price to Merge Towns            | 64    |
+| Price of an Outpost             | 128   |
+| Price to Claim a Town Block     | 8     |
+
+</div>
+
+
+**For more info on creating or joining a town, visit our Town Guide: [📘 Town Guide](/docs/Towny/Basic/Towns)**
+
+
+### 🏛️ Town Levels & Progression
+
+As your town grows in population, it will automatically progress through different levels. Each level unlocks benefits such as increased town block limits, cosmetic upgrades to your town name, and prestige titles for your mayor. These levels encourage active recruitment, planning, and development.
+
+<div align="center">
+
+| Town Level | Required Residents | Town Block Limit | Name Postfix        | Mayor Prefix   |
+|------------|--------------------|------------------|---------------------|----------------|
+| 1          | {townySettings.levels.town_level[1].numResidents}  | {townySettings.levels.town_level[1].townBlockLimit}  | {townySettings.levels.town_level[1].namePostfix}  | {townySettings.levels.town_level[1].mayorPrefix}  |
+| 2          | {townySettings.levels.town_level[2].numResidents}  | {townySettings.levels.town_level[2].townBlockLimit}  | {townySettings.levels.town_level[2].namePostfix}  | {townySettings.levels.town_level[2].mayorPrefix}  |
+| 3          | {townySettings.levels.town_level[3].numResidents}  | {townySettings.levels.town_level[3].townBlockLimit}  | {townySettings.levels.town_level[3].namePostfix}  | {townySettings.levels.town_level[3].mayorPrefix}  |
+| 4          | {townySettings.levels.town_level[4].numResidents}  | {townySettings.levels.town_level[4].townBlockLimit}  | {townySettings.levels.town_level[4].namePostfix}  | {townySettings.levels.town_level[4].mayorPrefix}  |
+| 5          | {townySettings.levels.town_level[5].numResidents}  | {townySettings.levels.town_level[5].townBlockLimit}  | {townySettings.levels.town_level[5].namePostfix}  | {townySettings.levels.town_level[5].mayorPrefix}  |
+| 6          | {townySettings.levels.town_level[6].numResidents}  | {townySettings.levels.town_level[6].townBlockLimit}  | {townySettings.levels.town_level[6].namePostfix}  | {townySettings.levels.town_level[6].mayorPrefix}  |
+| 7          | {townySettings.levels.town_level[7].numResidents}  | {townySettings.levels.town_level[7].townBlockLimit}  | {townySettings.levels.town_level[7].namePostfix}  | {townySettings.levels.town_level[7].mayorPrefix}  |
+| 8          | {townySettings.levels.town_level[8].numResidents}  | {townySettings.levels.town_level[8].townBlockLimit}  | {townySettings.levels.town_level[8].namePostfix}  | {townySettings.levels.town_level[8].mayorPrefix}  |
+
+</div>
+
+These progression levels help towns move from humble beginnings into powerful city-states. By recruiting players and expanding wisely, your town can rise through the ranks and become a key power on the server.
+
+**For tips on growing your town, check out the Growth section in our Town Guide: [📘 Town Guide](/docs/Towny/Basic/Towns#-growing-your-town)**
+
+### 🏚️ Town Ruins
+
+Towns that fail to pay upkeep will fall into a **ruined state**. While ruined, **protections are disabled**, allowing others to loot or grief the town. However, the town is **not yet permanently deleted** — this gives the former mayor or another player a chance to reclaim and restore it.
+
+- **⏳ Max Duration (Hours):** {townySettings.town_ruining.town_ruins.max_duration_hours}
+
+  The maximum number of hours a town will remain in the ruined state before it is permanently deleted.
+
+- **⏱️ Min Duration (Hours):** {townySettings.town_ruining.town_ruins.min_duration_hours}  
+
+  The minimum number of hours a town must stay ruined before it can be reclaimed. This delay prevents instant recovery and adds tension.
+
+---
+
+## 🏰 Nations 
+
+In Towny, a nation is a large-scale player organization that unites multiple towns under one banner for collaboration, diplomacy, defense, and economic growth. Unlike towns, nations can span across vast areas, offering players a secure and structured environment to develop shared infrastructure, trade networks, and alliances. Nations are led by a ruler and rely on strong communication and cooperation between towns to succeed.
+
+![Town](/img/nation.png)
+
+To maintain realism and encourage localized collaboration, towns within a nation must be within 400 chunks of each other’s homeblocks. This ensures that nations grow regionally, maintaining continuity in their territory.
+
+### 🤝 Joining/Creating Nations
+
+To join a nation, a town can either request an invitation from an existing nation or join one that’s open. Towns that join benefit from protection and access to shared resources. To create a nation, players need 1000 gold and at least one town, using /n new [Nation Name] to form it. Leaders can then expand by inviting other towns, managing diplomacy, and building infrastructure.
+
+### 🌱 Nation Levels & Progression
+
+Growing a nation involves fostering a shared vision, staying active, encouraging communication (such as via Discord), and building a strong economy through trade and projects. Leaders play a vital role in uniting members and maintaining activity.
+
+As nations grow in population, they unlock higher **Nation Levels**, which grant strategic benefits such as additional town block bonuses, more outposts, and cosmetic title changes. These levels reward nations that maintain high resident counts and encourage active recruitment and collaboration.
+
+Here’s a breakdown of each level:
+
+| Nation Level | Required Residents | Name Prefix         | Name Postfix       | King Prefix     | Town Block Bonus | Nation Bonus Outposts |
+|--------------|--------------------|----------------------|---------------------|------------------|------------------|------------------------|
+| 1            | {townySettings.levels.nation_level[0].numResidents} | {townySettings.levels.nation_level[0].namePrefix} | {townySettings.levels.nation_level[0].namePostfix} | {townySettings.levels.nation_level[0].kingPrefix} | {townySettings.levels.nation_level[0].townBlockLimitBonus} | {townySettings.levels.nation_level[0].nationBonusOutpostLimit} |
+| 2            | {townySettings.levels.nation_level[1].numResidents} | {townySettings.levels.nation_level[1].namePrefix} | {townySettings.levels.nation_level[1].namePostfix} | {townySettings.levels.nation_level[1].kingPrefix} | {townySettings.levels.nation_level[1].townBlockLimitBonus} | {townySettings.levels.nation_level[1].nationBonusOutpostLimit} |
+| 3            | {townySettings.levels.nation_level[2].numResidents} | {townySettings.levels.nation_level[2].namePrefix} | {townySettings.levels.nation_level[2].namePostfix} | {townySettings.levels.nation_level[2].kingPrefix} | {townySettings.levels.nation_level[2].townBlockLimitBonus} | {townySettings.levels.nation_level[2].nationBonusOutpostLimit} |
+| 4            | {townySettings.levels.nation_level[3].numResidents} | {townySettings.levels.nation_level[3].namePrefix} | {townySettings.levels.nation_level[3].namePostfix} | {townySettings.levels.nation_level[3].kingPrefix} | {townySettings.levels.nation_level[3].townBlockLimitBonus} | {townySettings.levels.nation_level[3].nationBonusOutpostLimit} |
+| 5            | {townySettings.levels.nation_level[4].numResidents} | {townySettings.levels.nation_level[4].namePrefix} | {townySettings.levels.nation_level[4].namePostfix} | {townySettings.levels.nation_level[4].kingPrefix} | {townySettings.levels.nation_level[4].townBlockLimitBonus} | {townySettings.levels.nation_level[4].nationBonusOutpostLimit} |
+| 6            | {townySettings.levels.nation_level[5].numResidents} | {townySettings.levels.nation_level[5].namePrefix} | {townySettings.levels.nation_level[5].namePostfix} | {townySettings.levels.nation_level[5].kingPrefix} | {townySettings.levels.nation_level[5].townBlockLimitBonus} | {townySettings.levels.nation_level[5].nationBonusOutpostLimit} |
+
+---
+
+## 🕯️ Towny Religions
+
+With Pantheon, an EarthPol-exclusive plugin, players, towns, and nations can reflect the religious beliefs of their residents. Players can declare their faith using:
+
+    ``/res set religion [religion]`` – Choose your religion with auto-suggestions based on the existing religions in the religion list.
+
+    ``/res [resident name]`` – View your current religion.
+
+    ``/t [town name]`` – Displays the town's “Religion breakdown” on the Status Screen.
+
+    ``/n [nation name]`` – Displays the nation’s “Religion breakdown” on the Status Screen.
+
+As more residents select a religion, town and nation statistics update automatically, giving a live view of the community's spiritual makeup. 

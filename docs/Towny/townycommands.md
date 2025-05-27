@@ -1,6 +1,6 @@
 ---
 title: Towny Commands
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 # All Towny Commands
