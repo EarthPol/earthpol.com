@@ -20,6 +20,8 @@ SiegeWar is EarthPol’s structured warfare system, simulating the breakdown of 
 
 Sieges occur during battle sessions. These battle sessions only occur on certain days of the week which are listed below and are automatically adjusted to your timezone (**{Intl.DateTimeFormat().resolvedOptions().timeZone}**):
 
+Sieges weekends will occur biweekly, on the 2nd and last week of every month.
+
 <BattleTimes />
 
 Siege times are in 24-hour format to ensure clarity and standardization across different time zones. Please take note of this when planning your in-game activities to avoid any confusion.
@@ -29,6 +31,11 @@ Siege times are in 24-hour format to ensure clarity and standardization across d
 To initiate a siege, attackers must place a non-white banner outside the target town—white banners are reserved for surrender. Once the banner is placed, the siege begins, and players can earn points by killing enemies or maintaining control of the banner area. Use the command `/sw nextsession` to check when the next battle session begins.
 
 Preparation is essential: bring experience bottles for repairing armor mid-battle, healing and regeneration potions, multiple weapons, and plenty of food. Entering a siege without proper supplies greatly increases your risk of defeat or forced surrender.
+
+### Logistics
+- **Supplies:** Make sure you have adequeate reserves of war supplies, such as potions, food, armor sets, and XP bottles.
+- **Transportation**: Attackers should make sure they have a reliable way of getting through the siege zone, whether that be through rail, boat road, or teleport. For teleports, you can create a TownyPorts plot and advertise this as the siege spawn, or have a nation leader set the nation spawn to a town near the siege zone.
+
 
 :::tip
 
@@ -58,7 +65,7 @@ There are two primary outcomes following a siege: **Plunder** and **Invasion**.
 
 ### Fortifications
 
-Fortifications, like ganks, are strategic, defensive fortresses built within Towny claims used to trap attackers and gain easy kills; on EarthPol, this is the colloquial term for this type of fortification.  They are typically set up on the edges of your outpost or town. They are typically erected on the fly in the expected battle area as soon as the defending town discovers that a siege is being planned against them. Well-planned, defensively fortified towns will often pre-emptively build this defensive fortification around the border of their town, and combine this with walls surrounding the town. They come in several designs, depending on the time and resources available to create them.
+"Ganks" are strategic, defensive fortresses built within Towny claims that include a large component used to trap attackers and gain easy kills; on EarthPol, this is the colloquial term for this type of fortification.  They are typically set up on the edges of your outpost or town. They are typically erected on the fly in the expected battle area as soon as the defending town discovers that a siege is being planned against them. Well-planned, defensively fortified towns will often pre-emptively build this defensive fortification around the border of their town, and combine this with walls surrounding the town. They come in several designs, depending on the time and resources available to create them.
 
 The optimal width for a gank is 2 blocks wide, stretching along the border of your town facing the siege banner. The deeper, the better, however the tradeoff is the amount of time and effort required to build one. Ganks should have an elevator system for easy access and escape. The goal is to trap attackers, making it harder for them to retaliate, while allowing you to land hits from a secure position. This strategy can significantly disrupt the attackers' rhythm and force them to waste valuable resources.
 
@@ -107,11 +114,6 @@ to it.
 :::
 
 - `/sw spawn [besieged town]` – Spawn to an active siege.
-- `/plot group add [group name]` – Add the current chunk to a plot group.
-- `/plot group set perm ally on` – Grant ally permissions to the current chunk's plot group.
-- `/plot set perm nation on` – Grant nation permissions to the current chunk.
-- `/plot group delete [group name]` – Delete a plot group entirely.
-- `/plot group remove` – Remove the current chunk from its plot group.
 - `/sw hud [town name]` – Toggle siege HUD for a specific town.
 - `/t` or `/t here` or `/t [town name]` – View siege and town info.
 - `/n [nation name]` – View sieges involving a nation.
@@ -120,6 +122,15 @@ to it.
 - `/sw preference beacon on|off` – Toggle beacon beam on/off.
 - `/n set occupationtax [rate]` – Set a custom occupation tax rate.
 - `/n set occupationtax max` – Set occupation tax to track the server-configured max.
+
+### Grant Access to Your Gank
+
+Any fortification you build is useless if your allies and soldiers **don't have the permissions** to interact with it. To easily grant and manage permissions, you can **create a plot group encompassing your gank and then grant allies and nation members permissions to interact with it.**
+
+- `/plot group add MyGank` - Stand in each chunk that the gank is a part of and add it to the plot group. MyGank, the plot group name, can be whatever you want it to be.
+- `/plot group set perm ally on /plot set perm nation on` - Stand in a chunk that is a part of the plot group and run these commands to grant permissions to nation members and allies within the plot group.
+- `/plot group delete GankName `- Delete the group entirely if you no longer want to use it. Alternatively, you can remove individual chunks by standing in each chunk you want to remove from and running `/plot group remove`
+
 
 ---
 
