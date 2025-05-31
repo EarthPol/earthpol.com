@@ -141,6 +141,12 @@ Any fortification you build is useless if your allies and soldiers **don't have 
   <p><em>An example of a kit a soldier could bring to a siege. Bring what works best for you.</em></p>
 </div>
 
+:::warning
+
+If you log out while in combat anywhere on the server, you will automatically be eliminated. To stay safe, wait at least 60 seconds after your last hit before logging out. Logging during combat is treated as combat logging and will result in your death.
+
+:::
+
 ---
 
 ## Becoming Peaceful 
