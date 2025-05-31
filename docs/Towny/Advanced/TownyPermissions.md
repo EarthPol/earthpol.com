@@ -30,7 +30,7 @@ Towny allows town and nation leaders to delegate responsibilities using a rank s
 |--------------|--------------------------------------------------------------------------------|-------------------------------------------------------------|
 | **Leader**   | Head of the nation, responsible for diplomacy and overall direction.            | Full control: add/remove towns, set allies/enemies, set capital. |
 | **Co-leader** | Assists the leader in managing national affairs.                              | Nearly all leader permissions, but secondary authority.     |
-| **Minister** | Administrative official focused on internal management.                         | Manage taxes, invite/kick towns, adjust nation settings.    |
+| **Minister** | Administrative official and diplomatic representative of the nation. |  Invite/kick towns, adjust nation settings. Add/Remove nation allies and enemies. Grant recruiter and soldier rank.   |
 | **General**  | Commander of national forces.                                                   | Organize military actions, lead in wars, manage soldiers. SiegeWar plunder, invade, surrender, start siege.  |
 | **Recruiter**| Tasked with expanding the nation and its armed forces. | Invite new towns or residents on behalf of the nation. Grant the soldier rank to other citizens.     |
 | **Soldier**  | Military personnel involved in wars and defense.                                | Access to military infrastructure, PvP zones during war.    |
