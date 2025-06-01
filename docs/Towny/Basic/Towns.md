@@ -96,3 +96,13 @@ Under advanced Towny settings, towns can implement a universal basic income (UBI
 This feature is ideal for towns looking to create a socialist, communal, or egalitarian economic model on EarthPol, and can be a great tool for player retention and morale.
 
 ---
+
+## 👮Outlaw System
+
+Using `/t outlaw PlayerName`, town mayors can declare someone an **outlaw** in your town, effectively discouraging that person from traveling to your town. This can be used diplomatically as an extra harsh measure if nation leaders feel TradeWar sanctions against an individual are not enough. It can also be used to discourage troublesome outside players from coming into your town by introducing the threat of removal by force.
+**Outlaw status brings the following changes**:
+
+- If a player is outlawed in a town while they are in a town's claims, they will be teleported out of the town after a 5 second warmup period.
+- All residents will receive a warning when an outlawed player enters the town borders, letting them know to be careful of their presence. 
+- PvP is **always on** against that player in the outlawing town. This means that any town resident can initiate PVP against the outlaw even if they are within town borders. (**Outlaws cannot initiate PvP first**). Keep in mind that once both players are combat tagged, combat can go both ways!
+- Outlaws will be **unable to teleport** out of the town until they have **exited the town borders**.
