@@ -6,17 +6,17 @@ sidebar_position: 3
 import React from 'react';
 import BattleTimes from '@site/src/components/BattleTimes';
 
-# SiegeWar
+# ⚔️ SiegeWar
 
-## Overview
+## 🧭 Overview
 
 SiegeWar is EarthPol’s structured warfare system, simulating the breakdown of diplomacy when peaceful options fail. It offers a strategic and immersive experience where nations engage in direct conflict with real consequences. Within 200 blocks of the siege banner, Keep Inventory is enabled, but deaths result in a 5% durability loss to armor and tools. Siege Camps and Assemblies are disabled, only placing a banner is required to initiate a siege. Each nation is limited to two active siege attacks, encouraging thoughtful target selection. Attackers cannot abandon a siege once it begins, while defenders retain the option to surrender. To gain control, players must stay within 16 blocks of the banner during a 6-minute Banner Control Session to accumulate points. 
 
 ---
 
-## Gameplay
+## 🕹️ Gameplay
 
-### Battle Sessions
+### 🕒 Battle Sessions
 
 Sieges occur during battle sessions. These battle sessions only occur on certain days of the week which are listed below and are automatically adjusted to your timezone (**{Intl.DateTimeFormat().resolvedOptions().timeZone}**):
 
@@ -26,13 +26,13 @@ Sieges weekends will occur biweekly, on the 2nd and last week of every month.
 
 Siege times are in 24-hour format to ensure clarity and standardization across different time zones. Please take note of this when planning your in-game activities to avoid any confusion.
 
-### Starting a Siege
+### 🏳️ Starting a Siege
 
 To initiate a siege, attackers must place a non-white banner outside the target town—white banners are reserved for surrender. Once the banner is placed, the siege begins, and players can earn points by killing enemies or maintaining control of the banner area. Use the command `/sw nextsession` to check when the next battle session begins.
 
 Preparation is essential: bring experience bottles for repairing armor mid-battle, healing and regeneration potions, multiple weapons, and plenty of food. Entering a siege without proper supplies greatly increases your risk of defeat or forced surrender.
 
-### Logistics
+### 🚛 Logistics
 - **Supplies:** Make sure you have adequeate reserves of war supplies, such as potions, food, armor sets, and XP bottles.
 - **Transportation**: Attackers should make sure they have a reliable way of getting through the siege zone, whether that be through rail, boat road, or teleport. For teleports, you can create a TownyPorts plot and advertise this as the siege spawn, or have a nation leader set the nation spawn to a town near the siege zone.
 
@@ -43,7 +43,7 @@ All players can still be of help at the siege banner! You may need players to fo
 
 :::
 
-### Banner Control and Dynamics
+### 🎯 Banner Control and Dynamics
 
 To gain control of a siege, players must enter the 16-block radius around the siege banner and stay within it to start the Banner Control session (commonly called "capping" on EarthPol). Each player must remain inside the radius to be added to the banner control list, and once control is established, the team earns 10 points every 20 seconds per player on the list.
 
@@ -51,7 +51,7 @@ Combat plays a critical role in siege dynamics. Kill Points award 90 points per 
 
 The Siege Balance starts at 0. Attackers increase the balance with kills and banner control, while defenders decrease it. A positive balance at the end means an attacker victory; a negative balance results in a defender win.
 
-### Aftermath of Sieges
+### 🏁 Aftermath of Sieges
 
 There are two primary outcomes following a siege: **Plunder** and **Invasion**.
 
@@ -61,9 +61,9 @@ There are two primary outcomes following a siege: **Plunder** and **Invasion**.
 
 ---
 
-## SiegeWar Strategies
+## 🛡️ SiegeWar Strategies
 
-### Fortifications
+### 🏰 Fortifications
 
 "Ganks" are strategic, defensive fortresses built within Towny claims that include a large component used to trap attackers and gain easy kills; on EarthPol, this is the colloquial term for this type of fortification.  They are typically set up on the edges of your outpost or town. They are typically erected on the fly in the expected battle area as soon as the defending town discovers that a siege is being planned against them. Well-planned, defensively fortified towns will often pre-emptively build this defensive fortification around the border of their town, and combine this with walls surrounding the town. They come in several designs, depending on the time and resources available to create them.
 
@@ -90,7 +90,7 @@ The optimal width for a gank is 2 blocks wide, stretching along the border of yo
 to it.
 :::
 
-### Fighting Strategies
+### 🗡️ Fighting Strategies
 
 * **Grouping Together:** Avoid feeding the enemy team by grouping together and staying alive as long as possible. Each death gives the enemy valuable points and drains your own resources. Work with your teammates to coordinate strategies, supplies, and healing to stay in the fight longer. Having multiple players on the banner can help delay enemy control and buy time.
 
@@ -100,7 +100,7 @@ to it.
 
 ---
 
-## SiegeWar Commands
+## 💬 SiegeWar Commands
 
 - `/n rank add [player name] [rank]` – Assign a nation military rank (as king or general).
 
@@ -123,7 +123,7 @@ to it.
 - `/n set occupationtax [rate]` – Set a custom occupation tax rate.
 - `/n set occupationtax max` – Set occupation tax to track the server-configured max.
 
-### Grant Access to Your Gank
+### 🔐 Grant Access to Your Gank
 
 Any fortification you build is useless if your allies and soldiers **don't have the permissions** to interact with it. To easily grant and manage permissions, you can **create a plot group encompassing your gank and then grant allies and nation members permissions to interact with it.**
 
@@ -134,7 +134,7 @@ Any fortification you build is useless if your allies and soldiers **don't have 
 
 ---
 
-## EarthPol SiegeWar Kit
+## 🎒 EarthPol SiegeWar Kit
 
 <div style={{ textAlign: 'center' }}>
   <img src="/img/siegekit.png" alt="SiegeWar Kit" style={{ maxWidth: '100%', height: 'auto' }} />
@@ -149,7 +149,7 @@ If you log out while in combat anywhere on the server, you will automatically be
 
 ---
 
-## Becoming Peaceful 
+## 🕊️ Becoming Peaceful 
 
 When a town is set to **peaceful** using the `/sw towntoggle peaceful` command, they are no longer eligible to be attacked by others, but there are tradeoffs:
 
