@@ -5,6 +5,7 @@ sidebar_position: 3
 
 import React from 'react';
 import BattleTimes from '@site/src/components/BattleTimes';
+import BattleTimesAM_PM from '@site/src/components/BattleTimesAM_PM';
 
 # ⚔️ SiegeWar
 
@@ -20,11 +21,14 @@ SiegeWar is EarthPol’s structured warfare system, simulating the breakdown of 
 
 Sieges occur during battle sessions. These battle sessions only occur on certain days of the week which are listed below and are automatically adjusted to your timezone (**{Intl.DateTimeFormat().resolvedOptions().timeZone}**):
 
-Sieges weekends will occur biweekly, on the 2nd and last week of every month.
+Sieges weekends will occur biweekly, on the 2nd and last week of every month. Siege times are in both 12-hour and 24-hour format.
 
+
+**24-hour formatted times**
 <BattleTimes />
 
-Siege times are in 24-hour format to ensure clarity and standardization across different time zones. Please take note of this when planning your in-game activities to avoid any confusion.
+**12-hour formatted times**
+<BattleTimesAM_PM />
 
 ### 🏳️ Starting a Siege
 
