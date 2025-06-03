@@ -49,9 +49,35 @@ If you instead wish to buy items from players rather than sell to players, simpl
 
 If you wish to change the price of the item(s) you are selling/buying, open the QuickShop GUI by left-click and press the `[Change]` button next to "Price:", this will allow you to input a new buy/sell price. 
 
-### Adding Employees to a Shop
+### Adding Employees to a Shop (Premium)
 
-Premium players are able to add friends and town members to their ChestShop(s). To add an employee, use the `/qs staff` command. Employees are able to manage your inventory, prices, and toggle the buying/selling mode of the shop.
+Premium players are able to add friends and town members to their shops. To add an employee, use the `/qs staff` or `/qs staffall` command. Employees are able to manage your inventory, prices, and toggle the buying/selling mode of the shop.
+
+- Use `/qs staff` to modify only one specific shop (shop that you are currently looking at)
+- Use `/qs staffall` to modify all shops you own.
+- The following commands apply to both staff and staffall commands.
+
+| Command    | Description|
+|----------|------------|
+| `/qs staff add Player`| Add a player as shop staff.|
+| `/qs staff clear` | Remova all shop staff.|
+| `/qs staff del Player`| Remove a specific player as shop staff.|
+| `/qs staff list`| List all staff for the shop. |
+
+
+### Splitting shop profits (Premium)
+Looking at the shop, execute command `/quickshop benefit add <player> <percentage>` (example: /quickshop benefit add Aether 50%) will split the percentage rewards to the player for that specific shop.
+
+#### Example usage:
+
+Looking at a quickshop, execute command /quickshop benefit add `<player>` `<percentage>` (example: /quickshop benefit add Aether 50%) will split `<percentage>%` rewards to `<player>`.
+
+For example:
+
+    - /quickshop benefit add Alice 50%
+    - /quickshop benefit add Bob 30%
+
+In those commands, shop owner set split 50% rewards to Alice and 30% to Bob. When a shop earn 100$, Alice will get 50$ for rewards, and Bob will get 30$ for rewards, and shop owner will get remains 20% (20$) for rewards.
 
 ### Removing a Shop
 
@@ -69,4 +95,4 @@ Step-by-Step Guide to Removing a Shop:
 
 ### Chest Vaults
 
-Chest shops can only be accessed by their owner. As a result, players may choose to use chest shops as secure storage by setting an extremely high price, effectively preventing other players from purchasing the items inside. While this is allowed, we also encourage players to consider using their own individual plots as an alternative method for safely storing personal items.
+Chest shops can only be accessed by their owner. As a result, players may choose to use chest shops as secure storage by setting an extremely high price, effectively preBobng other players from purchasing the items inside. While this is allowed, we also encourage players to consider using their own individual plots as an alternative method for safely storing personal items.
