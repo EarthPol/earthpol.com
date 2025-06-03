@@ -90,8 +90,8 @@ The optimal width for a gank is 2 blocks wide, stretching along the border of yo
 
 :::tip
 
-**Gank Perms** Any fortification you build is useless if your allies and soldiers don't have [access](https://earthpol.com/docs/War%20&%20Diplomacy/SiegeWar#grant-access-to-your-fort)
-to it.
+**[Don't forget to grant permissions!](https://earthpol.com/docs/War%20&%20Diplomacy/SiegeWar/#-grant-access-to-your-gank)** Any fortification you build is useless if your allies and soldiers don't have access to it.
+If your soldiers do not have permissions to access your fortifications, they will be **unable to open/close doors and break/place blocks, which will leave allied players exposed and vulnerable to being killed in the battle area.**
 :::
 
 ### 🗡️ Fighting Strategies
@@ -107,8 +107,6 @@ to it.
 ## 💬 SiegeWar Commands
 
 - `/n rank add [player name] [rank]` – Assign a nation military rank (as king or general).
-
-
 :::note
 
 ⚔️ Note: Your fighters must be assigned military ranks in order to participate in sieges. Players can only be assigned ranks after they have acquired a certain number of Honor Points.
@@ -116,8 +114,7 @@ to it.
 **Learn more here: [📘 Military Rank and Honor System Guide](/docs/Towny/Advanced/TownyPermissions#honor-points-system)**
 
 :::
-
-- `/sw spawn [besieged town]` – Spawn to an active siege.
+- `/sw nextession` - **Find out when the next battle session is.**
 - `/sw hud [town name]` – Toggle siege HUD for a specific town.
 - `/t` or `/t here` or `/t [town name]` – View siege and town info.
 - `/n [nation name]` – View sieges involving a nation.
@@ -132,8 +129,8 @@ to it.
 Any fortification you build is useless if your allies and soldiers **don't have the permissions** to interact with it. To easily grant and manage permissions, you can **create a plot group encompassing your gank and then grant allies and nation members permissions to interact with it.**
 
 - `/plot group add MyGank` - Stand in each chunk that the gank is a part of and add it to the plot group. MyGank, the plot group name, can be whatever you want it to be.
-- `/plot group set perm ally on /plot set perm nation on` - Stand in a chunk that is a part of the plot group and run these commands to grant permissions to nation members and allies within the plot group.
-- `/plot group delete GankName `- Delete the group entirely if you no longer want to use it. Alternatively, you can remove individual chunks by standing in each chunk you want to remove from and running `/plot group remove`
+- `/plot group set perm ally on` `/plot group set perm nation on` - Stand in a chunk that is a part of the plot group and run these commands to grant permissions to nation members and allies within the plot group.
+- `/plot group delete GankName `- Deletes the group entirely if you no longer want to use it. Alternatively, you can remove individual chunks by standing in each chunk you want to remove from the group and running `/plot group remove`
 
 
 ---
@@ -157,9 +154,10 @@ If you log out while in combat anywhere on the server, you will automatically be
 
 When a town is set to **peaceful** using the `/sw towntoggle peaceful` command, they are no longer eligible to be attacked by others, but there are tradeoffs:
 
-- **No participation in sieges**: Peaceful towns cannot participate in sieges, meaning they cannot attack others or be attacked themselves.
+- **No participation in sieges**: residents of peaceful towns cannot participate in sieges, meaning they cannot attack others or be attacked themselves. They cannot gain battle points at the siege banner, and will receive strong debuff effects upon entering the siege zone. (War sickness)
 - **Loss of offensive capabilities**: Peaceful towns cannot initiate sieges, and attackers cannot engage with them.
+- **5 Gold Per Day Peaceful Upkeep**: While towns with SiegeWar enabled pay **zero upkeep**, Peacefulness comes with a daily cost. If the cost cannot be paid, peacefulness status will be lost until the cost can be paid again. 
   
-While peaceful towns may avoid the stress of constant sieges, they also lose out on the opportunity to gain resources through plunder or take control of other towns.
+While peaceful towns may avoid the stress of constant sieges, they also lose out on the opportunity to gain resources through plunder, take control of other towns, and assist their allies in their asieges.
 
 ---
