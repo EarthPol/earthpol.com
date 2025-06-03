@@ -74,10 +74,17 @@ Looking at a quickshop, execute command /quickshop benefit add `<player>` `<perc
 
 For example:
 
-    - /quickshop benefit add Alice 50%
-    - /quickshop benefit add Bob 30%
+    - `/quickshop benefit add Alice 50%`
+    - `/quickshop benefit add Bob 30%`
 
 In those commands, shop owner set split 50% rewards to Alice and 30% to Bob. When a shop earn 100$, Alice will get 50$ for rewards, and Bob will get 30$ for rewards, and shop owner will get remains 20% (20$) for rewards.
+
+##### A note about splitting gold
+
+- **IMPORTANT**: Due to the physical item-based economy, try to split percentages in such a way that all players receive an integer (whole number, no decimal) amount of gold. Any decimal amounts of gold in the revenue split that a player receives will be **rounded down**.
+- Example: Two players split the profits from an item that sells for 3 gold each.
+- 3 gold / 2 players would be 1.5 gold per player. The gold for each player will be rounded down to the nearest whole number before being paid out, since the gold ingots cannot be subdivided any further.
+- Therefore, both players would only receive 1 gold each, and the 0.5 gold in the amount for each player would be lost.
 
 ### Removing a Shop
 
