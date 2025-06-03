@@ -66,11 +66,11 @@ Premium players are able to add friends and town members to their shops. To add 
 
 
 ### Splitting shop profits (Premium)
-Looking at the shop, execute command `/quickshop benefit add <player> <percentage>` (example: /quickshop benefit add Aether 50%) will split the percentage rewards to the player for that specific shop.
+Looking at the shop, execute command `/quickshop benefit add <player> <percentage>` (example: /quickshop benefit add MrTytanic 50%) will split the percentage rewards to the player for that specific shop.
 
 #### Example usage:
 
-Looking at a quickshop, execute command /quickshop benefit add `<player>` `<percentage>` (example: /quickshop benefit add Aether 50%) will split `<percentage>%` rewards to `<player>`.
+Looking at a quickshop, execute command /quickshop benefit add `<player>` `<percentage>` (example: /quickshop benefit add MrTytanic 50%) will split `<percentage>%` rewards to `<player>`.
 
 For example:
 
