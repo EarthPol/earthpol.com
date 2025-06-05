@@ -32,7 +32,11 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 2.2 - **Alternative Accounts**: Only one account per player is allowed. Sibling accounts on the same IP must be verified. Account sharing is not permitted.
 
-2.3 - **Modifications**: Only approved mods (e.g., OptiFine, non-exploitative HUD mods) are allowed. Mods giving unfair advantages are banned. (Auto-Fishing is allowed till July 12th, 2024)
+2.3 - **Modifications**: Mods giving unfair advantages are banned, such as those found in cheat clients. Notable examples: 
+- Building mods that automatically place blocks for you, such as Printer.
+- Build mods that allow you to "air place" blocks.
+- Minimaps that show entities.
+- ESP, tracers, chams/wallhacks, etc.
 
 2.4 - **Server Disruption**: Intentional harm to server operations (DDoS, spamming) will result in a permanent ban and legal action.
 
@@ -70,7 +74,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 ## Punishments
 To ensure transparency, EarthPol has created an interactive catalog of all punishments. The website is divided into sections for bans, mutes, warnings, and kicks. Each entry includes the player’s name, the staff member who issued the punishment, the date, and the reason. A search function is also available to facilitate efficient navigation and documentation.
 
-To view bans, visit our site here: https://bans.earthpol.com/bans.
+To view bans, visit our site here: https://bans.earthpol.com/.
 
 :::warning
 
