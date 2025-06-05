@@ -36,7 +36,6 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 2.4 - **Server Disruption**: Intentional harm to server operations (DDoS, spamming) will result in a permanent ban and legal action.
 
-2.5 - **Farming and Construction Limits**: Adhere to specific limits for mob farms, spawners, and construction to prevent server lag.
 ### Section 3. Griefing and Land Use
 3.1 - **Town and Wilderness Griefing**: Griefing claimed towns or wilderness areas, including lava casting and mass burning, is prohibited. Constructive destruction for new towns requires admin discretion.
 
