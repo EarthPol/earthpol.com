@@ -39,7 +39,7 @@ Upon spawning:
 - 🧭 Use `/map` to find your location on our **interactive 3D map**.
 - 🛡️ You're **immune from mob damage** for your **first hour**, giving you time to safely settle in.  
   ⚠️ **Note:** Other players in the wild *can still attack you*!
-- 🎲 Want a new location? Use `/rtp` to teleport randomly, or `/rtp [continent]` to choose a **specific continent**.
+- 🎲 Want a new location? Use `/rtp` to teleport randomly, or `/rtp location [continent]` to choose a **specific continent**.
 
 ## 🎒 Starter Kit
 
