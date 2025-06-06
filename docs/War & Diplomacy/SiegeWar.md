@@ -48,7 +48,8 @@ Preparation is essential: bring experience bottles for repairing armor mid-battl
 
 ### 🚛 Logistics
 - **Supplies:** Make sure you have adequeate reserves of war supplies, such as potions, food, armor sets, and XP bottles.
-- **Transportation**: Attackers should make sure they have a reliable way of getting through the siege zone, whether that be through rail, boat road, or teleport. For teleports, you can create a TownyPorts plot and advertise this as the siege spawn, or have a nation leader set the nation spawn to a town near the siege zone. Keep in mind that nation members with Co-Leader and Minister rank can change nation spawn.
+- **Transportation**: Attackers should make sure they have a reliable way of getting through the siege zone, whether that be through rail, boat road, or teleport. For teleports, you can create a TownyPorts plot and advertise this as the siege spawn, or have a nation leader set the nation spawn to a town near the siege zone. **Keep in mind that nation members with Co-Leader and Minister rank can change the nation spawn, to ensure a quick response to sieges.**
+-  **Preparation:**  Have a continency plan in place. Ensure that your civilians have somewhere to hide and that soldiers have a safe pathway to reach the siege zone, such as an underground tunnel.
 
 
 :::tip
