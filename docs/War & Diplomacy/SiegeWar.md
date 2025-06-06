@@ -159,6 +159,7 @@ Any fortification you build is useless if your allies and soldiers **don't have 
 - Golden Apple and Enchanted Golden Apple cooldown
 - Ender pearl cooldown & anti-pearl glitching plugin
 - Shield block & disable sound
+- Extended shield disable cooldown
 
 :::warning
 
