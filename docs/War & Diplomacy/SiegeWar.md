@@ -19,9 +19,15 @@ SiegeWar is EarthPol’s structured warfare system, simulating the breakdown of 
 
 ### 🕒 Battle Sessions
 
-Sieges occur during battle sessions. These battle sessions only occur on certain days of the week which are listed below and are automatically adjusted to your timezone (**{Intl.DateTimeFormat().resolvedOptions().timeZone}**):
+Sieges occur during battle sessions.
+- Sieges are **13 battle sessions** in length.
+- A battle session starts at the designated time and **lasts for 1 hour and 15 minutes.** 
+- During this time, players will be able to score points towards the siege balance. 
+- After the session, there is a **1 hour break** in between for rest and resupply.
+- Sieges weekends will occur **biweekly, on the 2nd and last week of every month.** 
+- These battle sessions only occur on certain days of the week which are listed below and are automatically adjusted to your timezone (**{Intl.DateTimeFormat().resolvedOptions().timeZone}**):
 
-Sieges weekends will occur biweekly, on the 2nd and last week of every month. Siege times are in both 12-hour and 24-hour format.
+ Siege times are in both 12-hour and 24-hour format. 
 
 
 **24-hour formatted times**
@@ -32,13 +38,17 @@ Sieges weekends will occur biweekly, on the 2nd and last week of every month. Si
 
 ### 🏳️ Starting a Siege
 
-To initiate a siege, attackers must place a non-white banner outside the target town—white banners are reserved for surrender. Once the banner is placed, the siege begins, and players can earn points by killing enemies or maintaining control of the banner area. Use the command `/sw nextsession` to check when the next battle session begins.
+To initiate a siege: 
+- Qttackers must place a non-white banner outside the target town. (White banners are reserved for surrender and cannot be used to start a siege.)
+- The banner can be placed from 0 to 2 chunks away from the target town. 
+- Once the banner is placed, the siege begins, and players can earn points by killing enemies or maintaining control of the banner area. 
+- Use the command `/sw nextsession` to check when the next battle session begins.
 
 Preparation is essential: bring experience bottles for repairing armor mid-battle, healing and regeneration potions, multiple weapons, and plenty of food. Entering a siege without proper supplies greatly increases your risk of defeat or forced surrender.
 
 ### 🚛 Logistics
 - **Supplies:** Make sure you have adequeate reserves of war supplies, such as potions, food, armor sets, and XP bottles.
-- **Transportation**: Attackers should make sure they have a reliable way of getting through the siege zone, whether that be through rail, boat road, or teleport. For teleports, you can create a TownyPorts plot and advertise this as the siege spawn, or have a nation leader set the nation spawn to a town near the siege zone.
+- **Transportation**: Attackers should make sure they have a reliable way of getting through the siege zone, whether that be through rail, boat road, or teleport. For teleports, you can create a TownyPorts plot and advertise this as the siege spawn, or have a nation leader set the nation spawn to a town near the siege zone. Keep in mind that nation members with Co-Leader and Minister rank can change nation spawn.
 
 
 :::tip
@@ -48,6 +58,8 @@ All players can still be of help at the siege banner! You may need players to fo
 :::
 
 ### 🎯 Banner Control and Dynamics
+
+The siege zone is a 300 block horizontal radius around the siege banner. Kills achieved inside this zone will contribute to the siege point balance, and participants will **keep inventory with an additional 5% armor and tool durability degredation** applied to their gear after death. Be careful, accidental deaths will also contribute to the enemy's siege balance.
 
 To gain control of a siege, players must enter the 16-block radius around the siege banner and stay within it to start the Banner Control session (commonly called "capping" on EarthPol). Each player must remain inside the radius to be added to the banner control list, and once control is established, the team earns 10 points every 20 seconds per player on the list.
 
@@ -141,6 +153,11 @@ Any fortification you build is useless if your allies and soldiers **don't have 
   <img src="/img/siegekit.png" alt="SiegeWar Kit" style={{ maxWidth: '100%', height: 'auto' }} />
   <p><em>An example of a kit a soldier could bring to a siege. Bring what works best for you.</em></p>
 </div>
+
+**PvP Specifics**
+- Golden Apple and Enchanted Golden Apple cooldown
+- Ender pearl cooldown & anti-pearl glitching plugin
+- Shield block & disable sound
 
 :::warning
 
