@@ -156,10 +156,13 @@ Any fortification you build is useless if your allies and soldiers **don't have 
 </div>
 
 **PvP Specifics**
-- Golden Apple and Enchanted Golden Apple cooldown
-- Ender pearl cooldown & anti-pearl glitching plugin
-- Shield block & disable sound
-- Extended shield disable cooldown
+- SMP/Nethpot mixed kit.
+- Golden Apple and Enchanted Golden Apple cooldown.
+- Ender pearl cooldown & anti-pearl glitching plugin.
+- Shield block & disable sound.
+- Extended shield disable cooldown.
+- No crystals & anchors. TNT cart PVP is possible.
+- Totems are not intended to be obtainable.
 
 :::warning
 
