@@ -24,7 +24,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 1.7 - **Language and Channel Use**: English is the primary language for global chats. Use designated channels for other languages and content types. Follow channel-specific guidelines.
 
-1.8 - **Impersonation**: Impersonating staff, other players, or positions of authority is prohibited and subject to penalties.
+1.8 - **Disinformation & Impersonation**: Players are expected to communicate in good faith. Spreading false or misleading information about the server, its staff, or community, especially if intended to create unrest or discourage others from playing, is not allowed. This includes impersonating others, submitting knowingly false reports or tickets, tampering with evidence, or attempting to stir drama based on information known to be untrue.
 
 1.9 - **Harassment**: Targeted harassment, in-game or on associated platforms, is banned. This includes spamming, claim camping, and disruptive behaviors.
 ### Section 2. Game Integrity
@@ -32,16 +32,18 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 2.2 - **Alternative Accounts**: Only one account per player is allowed. Sibling accounts on the same IP must be verified. Account sharing is not permitted.
 
-2.3 - **Modifications**: Mods giving unfair advantages are banned, such as those found in cheat clients. Notable examples: 
+2.3 - **Modifications**: Only approved mods (e.g., OptiFine, non-exploitative HUD mods) are allowed. Mods giving unfair advantages are banned.
 - Building mods that automatically place blocks for you, such as Printer.
 - Build mods that allow you to "air place" blocks.
 - Minimaps that show entities.
 - ESP, tracers, chams/wallhacks, etc.
+- Autofishing or any automated process.
 
 2.4 - **Server Disruption**: Intentional harm to server operations (DDoS, spamming) will result in a permanent ban and legal action.
 
+2.5 - **Farming and Construction Limits**: Adhere to specific limits for mob farms, spawners, and construction to prevent server lag.
 ### Section 3. Griefing and Land Use
-3.1 - **Town and Wilderness Griefing**: Griefing claimed towns or wilderness areas, including lava casting and mass burning, is prohibited. Constructive destruction for new towns requires admin discretion.
+3.1 - **Town and Wilderness Griefing**: Griefing claimed towns or wilderness areas, including lava casting and mass burning, is prohibited. However, lava casting and mass burning are permitted within your own town if done for a clear and genuine building purpose, subject to staff discretion.
 
 3.2 - **Land Claims**: Properly fill town claims without "spaghetti claiming." Claim blocking and starting "Anchor Towns" for disruptive purposes are not allowed.
 
@@ -53,7 +55,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 4.2 - **Claim Hopping**: Using claims to avoid combat or gain an advantage is prohibited.
 ### Section 5. Naming and Representation
-5.1 - **Names and Representation**: Town and nation names must adhere to guidelines around appropriateness, uniqueness, and relevance to geopolitics. Inappropriate player skins, usernames, and nicknames are not allowed.
+5.1 - **Names and Representation**: Town and nation names must adhere to guidelines around appropriateness, uniqueness, and relevance to geopolitics. Usernames, nicknames, and player skins must not include inappropriate, offensive, misleading, or controversial content, including overt political references or impersonation, with final judgment left to admin discretion.
 ### Section 6. Towny and SiegeWar Specifics
 6.1 - **Siege Conduct**: Kill feeding, town-claim surrounding strategies, and digging pits under siege banners to disrupt sieges are prohibited.
 
@@ -74,11 +76,11 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 ## Punishments
 To ensure transparency, EarthPol has created an interactive catalog of all punishments. The website is divided into sections for bans, mutes, warnings, and kicks. Each entry includes the player’s name, the staff member who issued the punishment, the date, and the reason. A search function is also available to facilitate efficient navigation and documentation.
 
-To view bans, visit our site here: https://bans.earthpol.com/.
+To view bans, visit our site here: [Bans Page](https://bans.earthpol.com/bans.)
 
 :::warning
 
-If you need to report a violation of these rules, witnessed any staff abuse, or believe you were falsely punished by our staff team, please reach out to us on our support server (https://discord.gg/tUK3npxkDA).
+If you need to report a violation of these rules, witnessed any staff abuse, or believe you were falsely punished by our staff team, please reach out to us on our [support server](https://discord.gg/tUK3npxkDA).
 
 :::
 

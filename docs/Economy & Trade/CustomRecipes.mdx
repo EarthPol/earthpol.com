@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 ## 🪓 Item & Block Recipes
 
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center' }}>
-  {Array.from({ length: 36 }).map((_, i) => (
+  {Array.from({ length: 33 }).map((_, i) => (
     <img
       key={i}
       src={`/img/Recipes/crafting-grid${i === 0 ? '' : `-${i}`}.png`}
@@ -19,6 +19,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   ))}
 </div>
 
+:::warning
+
+Some items, such as maces, cannot be crafted.
+
+:::
 
 ---
 
