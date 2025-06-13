@@ -175,7 +175,7 @@ If you log out while in combat anywhere on the server, you will automatically be
 
 ## 🕊️ Becoming Peaceful 
 
-When a town is set to **peaceful** using the `/sw towntoggle peaceful` command, they are no longer eligible to be attacked by others, but there are tradeoffs:
+When a town is set to **peaceful** using the `/sw town togglepeaceful` command, they are no longer eligible to be attacked by others, but there are tradeoffs:
 
 - **No participation in sieges**: residents of peaceful towns cannot participate in sieges, meaning they cannot attack others or be attacked themselves. They cannot gain battle points at the siege banner, and will receive strong debuff effects upon entering the siege zone. (War sickness)
 - **Loss of offensive capabilities**: Peaceful towns cannot initiate sieges, and attackers cannot engage with them.
