@@ -248,7 +248,7 @@ Any fortification you build is useless if your allies and soldiers **don't have 
 - Shield block & disable sound.
 - Extended shield disable cooldown.
 - No crystals & anchors. TNT cart PVP is possible.
-- Totems are not intended to be obtainable.
+- Totems do not take effect in siege zones.
 - Siege zone prohibited blocks: Water & Lava buckets, cobwebs, obsidian, ice. Does not apply to Wilderness areas outside of siege zones.
 
 :::warning
