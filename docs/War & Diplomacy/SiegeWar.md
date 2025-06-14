@@ -24,7 +24,7 @@ Sieges occur during battle sessions.
 - A battle session starts at the designated time and **lasts for 1 hour and 15 minutes.** 
 - During this time, players will be able to score points towards the siege balance. 
 - After the session, there is a **1 hour break** in between for rest and resupply.
-- Sieges weekends will occur **biweekly, on the 2nd and last week of every month.** 
+- Sieges weekends will occur **once a week** on weekends.
 - These battle sessions only occur on certain days of the week which are listed below and are automatically adjusted to your timezone (**{Intl.DateTimeFormat().resolvedOptions().timeZone}**):
 
  Siege times are in both 12-hour and 24-hour format. 
