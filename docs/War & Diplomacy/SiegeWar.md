@@ -78,6 +78,92 @@ There are two primary outcomes following a siege: **Plunder** and **Invasion**.
 
 ---
 
+## Honor Points System
+
+
+### What are Honor Points?
+
+
+Honor Points measure how long you've stayed loyal to your nation. They're used to gate military ranks (like Soldier, Guard, General) so only truly committed residents can earn them.
+
+- **SiegeWar Ranks Guide**
+
+| **Rank**     | **Description**                                                                | **Typical Permissions**                                     |
+|--------------|--------------------------------------------------------------------------------|-------------------------------------------------------------|
+| **General**  | Commander of national forces.                                                   | Organize military actions, lead in wars, manage soldiers. SiegeWar plunder, invade, surrender, start siege.  |
+| **Recruiter**| Tasked with expanding the nation and its armed forces. | Invite new towns or residents on behalf of the nation. Grant the soldier rank to other citizens.     |
+| **Soldier**  | Military personnel involved in wars and defense.                                | Access to military infrastructure, PvP zones during war.    |
+
+
+
+### How do I earn Honor Points?
+
+- Every new Towny Day that rolls over, if you're still in the *same* nation you were yesterday by the end of the Towny Day, you automatically gain **1 Honor Point.**
+
+- If you switch nations (or leave yours), your Honor Points reset and start counting fresh in your new nation.
+
+
+### How many points do I need?
+
+You will need **3 Honor Points** (i.e., three consecutive days in the same nation) before you can pick up military ranks.
+
+### How do I check my Points?
+
+
+```
+/honor
+```
+
+You'll see something like this:
+
+```
+You have 2 honor points with YourNation.
+
+or
+
+You have 0 honor points (you’re not in a nation).
+
+```
+
+### What Happens if I leave My Nation?
+
+
+If you leave or get kicked out on new Towny Day:
+
+
+1. Your points drop back to zero.
+
+
+2. When you join a new nation, you'll earn 1 point on the next daily rollover and build up form there again.
+
+### Why Honor Points?
+
+
+- **Fairness:** Only players who've truly stuck with the nation can earn its siege participation ranks. This prevents large PVP clans from unfairly logging on dozens of people who do not normally play on the server mid-siege.
+
+
+- **Commitment:** Encourages long-term teamwork and stability in your nation.
+
+
+- **Clarity:** You always know exactly how many days you've "proven" your loyalty
+
+
+### Honor Points FAQ
+
+
+- **Question:** Can I switch towns in the same nation?
+
+
+- **Answer:** Yes, as long as you are in the same nation at the end of the day. 
+
+------------------
+
+- **Question:** Can I join another nation and come back to the same nation by the end of the day?
+
+
+- **Answer:** Yes, the system only adds or removes points at the end of the day. As long as you are in the same nation by the end of the day, you will earn points.
+
+
 ## 🛡️ SiegeWar Strategies
 
 ### 🏰 Fortifications
