@@ -259,7 +259,9 @@ If you log out while in combat anywhere on the server, you will automatically be
 
 ---
 
-## 🕊️ Becoming Peaceful 
+## 🕊️ Becoming Peaceful
+
+When a town is created, **peaceful mode is off** by default.
 
 When a town is set to **peaceful** using the `/sw town togglepeaceful` command, they are no longer eligible to be attacked by others, but there are tradeoffs:
 
