@@ -42,6 +42,9 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 2.4 - **Server Disruption**: Intentional harm to server operations (DDoS, spamming) will result in a permanent ban and legal action.
 
 2.5 - **Farming and Construction Limits**: Adhere to specific limits for mob farms, spawners, and construction to prevent server lag.
+
+2.6 - **Spawn Traps & Towny Jail Trapping**: Trapping players at ports, /t spawn, or /n spawn locations is prohibited, especially for the purpose of engaging in combat or killing them. 
+
 ### Section 3. Griefing and Land Use
 3.1 - **Town and Wilderness Griefing**: Griefing claimed towns or wilderness areas, including lava casting and mass burning, is prohibited. However, lava casting and mass burning are permitted within your own town if done for a clear and genuine building purpose, subject to staff discretion.
 
@@ -51,7 +54,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 3.4 - **Map Art**: Only allowed in specific areas, following content guidelines that exclude violence, discrimination, and NSFW themes.
 ### Section 4. Combat and PvP
-4.1 - **Combat Engagement**: Combat is permitted. Post-defeat engagement rules apply. Spawn camping is banned. Nation Spawn or Town Spawn camping/killing is banned.
+4.1 - **Combat Engagement**: Combat is permitted. Post-defeat engagement rules apply. Spawn camping is banned. Nation Spawn or Town Spawn camping/killing is banned. Pushing players out of claims while AFK is also prohibited.
 
 4.2 - **Claim Hopping**: Using claims to avoid combat or gain an advantage is prohibited.
 ### Section 5. Naming and Representation
