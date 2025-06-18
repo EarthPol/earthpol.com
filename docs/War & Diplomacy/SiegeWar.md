@@ -13,6 +13,19 @@ import BattleTimesAM_PM from '@site/src/components/BattleTimesAM_PM';
 
 SiegeWar is EarthPol’s structured warfare system, simulating the breakdown of diplomacy when peaceful options fail. It offers a strategic and immersive experience where nations engage in direct conflict with real consequences. Within 200 blocks of the siege banner, Keep Inventory is enabled, but deaths result in a 5% durability loss to armor and tools. Siege Camps and Assemblies are disabled, only placing a banner is required to initiate a siege. Each nation is limited to two active siege attacks, encouraging thoughtful target selection. Attackers cannot abandon a siege once it begins, while defenders retain the option to surrender. To gain control, players must stay within 16 blocks of the banner during a 6-minute Banner Control Session to accumulate points. 
 
+<div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
+  <iframe 
+    width="840"
+    height="472"
+    src="https://www.youtube.com/embed/wtStxV12mDM?si=H8Fn7RVfHPLHFlbH" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen
+  ></iframe>
+</div>
+
 ---
 
 ## 🕹️ Gameplay

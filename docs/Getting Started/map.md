@@ -49,12 +49,6 @@ To view the map, click [here](https://earthpol.com/map).
     Y 0 to Y 64
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/netherite_ore.png" width="450" /><br />
-    <strong>Netherite Ore</strong><br />
-    Y 0 to Y 16<br />
-    Mostly in South Africa
-  </div>
-  <div style={{ textAlign: 'center', width: '450px' }}>
     <img src="/img/quartz_ore.png" width="450" /><br />
     <strong>Quartz Ore</strong><br />
     Y 0 to Y 32
@@ -65,3 +59,28 @@ To view the map, click [here](https://earthpol.com/map).
     Y 0 to Y 16
   </div>
 </div>
+
+---
+
+## The Nether
+
+Since June 2024, the Nether has been enabled on our server, opening up a dangerous yet highly rewarding frontier for players. This fiery, chaotic dimension is currently the only way to obtain netherite, making it an essential destination for those seeking the most powerful gear. There are no safe zones and no places to hide. Every journey into the Nether is a gamble, where survival depends on skill, strategy, and sheer luck. Those brave enough to venture into its depths must be prepared for constant danger and fierce competition over its rare treasures...
+
+<div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
+  <iframe 
+    width="840"
+    height="472"
+    src="https://www.youtube.com/embed/9Qg2bEEoZ5w?si=iaHPQmW3pXtdINwn" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen
+  ></iframe>
+</div>
+
+Be mindful of the following when travelling to the nether: 
+
+- There are no outposts, it is complete anarchy.
+- Bed explosions are disabled.
+- You are unable to mine blaze spawners.
