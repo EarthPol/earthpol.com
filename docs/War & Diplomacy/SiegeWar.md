@@ -260,7 +260,7 @@ Any fortification you build is useless if your allies and soldiers **don't have 
 - Ender pearl cooldown & anti-pearl glitching plugin.
 - Shield block & disable sound.
 - Extended shield disable cooldown.
-- No crystals & anchors. TNT cart PVP is possible.
+- No crystals & anchors, or **Bow and arrow cart PVP**. TNT Carts can still be dropped from overhead like an airstrike.
 - Totems do not take effect in siege zones.
 - Siege zone prohibited blocks: Water & Lava buckets, cobwebs, obsidian, ice. Does not apply to Wilderness areas outside of siege zones.
 
