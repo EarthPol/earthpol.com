@@ -28,7 +28,7 @@ Creating a Town
 
 ## 🛠️ Creating a Town
 
-To create your own town, you will need 512 gold and an unclaimed area where you can establish your town's boundaries. You can then issue the command `/t new [Town Name]`, replacing `[Town Name]` with your desired town name. It’s important to ensure that your town name adheres to the server’s naming rules.
+To create your own town, you will need 256 gold and an unclaimed area where you can establish your town's boundaries. You can then issue the command `/t new [Town Name]`, replacing `[Town Name]` with your desired town name. It’s important to ensure that your town name adheres to the server’s naming rules.
 
 After issuing the command, you will be asked to confirm the creation of the town. You can do so by typing `/confirm` in chat or clicking the confirmation button that appears. Once your town is created, you’ll be the mayor and have full control over the town's land, governance, and permissions. From here, you can start managing the town, inviting new members, and claiming land to grow your settlement.
 
