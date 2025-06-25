@@ -34,7 +34,6 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 2.3 - **Modifications**: Only approved mods (e.g., OptiFine, non-exploitative HUD mods) are allowed. Mods giving unfair advantages are banned.
 - Building mods that automatically place blocks for you, such as Printer.
-- Build mods that allow you to "air place" blocks.
 - Minimaps that show entities.
 - ESP, tracers, chams/wallhacks, etc.
 - Autofishing or any automated process.
@@ -43,7 +42,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 2.5 - **Farming and Construction Limits**: Adhere to specific limits for mob farms, spawners, and construction to prevent server lag.
 
-2.6 - **Spawn Traps & Towny Jail Trapping**: Trapping players at ports, /t spawn, or /n spawn locations is prohibited, especially for the purpose of engaging in combat or killing them. 
+2.6 - **Spawn Traps & Towny Jail Trapping**: Trapping players at ports, /t spawn, or /n spawn locations is prohibited, especially for the purpose of engaging in combat or killing them. This also includes /tpa trapping. 
 
 ### Section 3. Griefing and Land Use
 3.1 - **Town and Wilderness Griefing**: Griefing claimed towns or wilderness areas, including lava casting and mass burning, is prohibited. However, lava casting and mass burning are permitted within your own town if done for a clear and genuine building purpose, subject to staff discretion.
@@ -66,6 +65,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
     - Outposts placed next to a town for the purposes of conducting a siege are not counted as claimblocking.
     - The outpost must be used to initiate a siege within two siege weekends of being placed.
     - If the outpost is there for longer than two weeks without any siege on the town being conducted, the outpost is eligible for removal upon the town mayor making a ticket. The outpost owner need not be notified, and will not be reimbursed for any materials or items left at their siege outpost.
+    - Siege outposts will be removed following their use in a siege.
 
 6.3 - **Siege Banner Access**  - The siege banner must be reasonably accessible to both sides. **Instances of this will be decided at staff discretion.**
 - No placing the banner on artificial sky islands, meant to make it more difficult to access the banner
