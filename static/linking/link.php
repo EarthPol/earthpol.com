@@ -135,10 +135,51 @@ if (!isset($_GET['state'])) {
 
     // Insert the linking information into the discord_accounts table.
     try {
-        $stmt = $pdo->prepare("INSERT INTO discord_accounts (discord, uuid) VALUES (?, ?)");
-        $stmt->execute([$discordID, $minecraftUUID]);
+        // 1) start transaction
+        $pdo->beginTransaction();
+
+        // 2) archive old links (by discord OR uuid)
+        $backupSql = "
+          INSERT INTO discord_accounts_history (discord, uuid, linked_at)
+          SELECT discord, uuid, NOW()
+            FROM discord_accounts
+           WHERE discord = :discord OR uuid = :uuid
+        ";
+        $stmt = $pdo->prepare($backupSql);
+        $stmt->execute([
+            ':discord' => $discordID,
+            ':uuid'    => $minecraftUUID
+        ]);
+
+        // 3) delete the old rows so our INSERT won’t collide
+        $deleteSql = "
+          DELETE FROM discord_accounts
+           WHERE discord = :discord OR uuid = :uuid
+        ";
+        $stmt = $pdo->prepare($deleteSql);
+        $stmt->execute([
+            ':discord' => $discordID,
+            ':uuid'    => $minecraftUUID
+        ]);
+
+        // 4) insert the fresh link
+        $insertSql = "
+          INSERT INTO discord_accounts (discord, uuid)
+          VALUES (:discord, :uuid)
+        ";
+        $stmt = $pdo->prepare($insertSql);
+        $stmt->execute([
+            ':discord' => $discordID,
+            ':uuid'    => $minecraftUUID
+        ]);
+
+        // 5) commit if all went well
+        $pdo->commit();
+
     } catch (PDOException $e) {
-        die("Failed to insert linking data into the database: " . $e->getMessage());
+        // something failed—roll back and report
+        $pdo->rollBack();
+        die("Linking transaction failed: " . $e->getMessage());
     }
 
     // --- INSERT A NOTIFICATION ---
