@@ -20,7 +20,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 1.5 - **Advertising and Promotion**: Advertising other servers or IP baiting is strictly prohibited. Encouraging players to join other servers, even without sharing IPs, is also forbidden.
 
-1.6 - **Real Money Transactions**: Selling in-game items, content, or services for real money is not allowed.
+1.6 - **Real Money Transactions**: Any transaction, service, commercial deal, swap of goods, or exchange that involves real-world currency or any in-game currency, premium item, or virtual asset from platforms, servers, or games outside of EarthPol is strictly prohibited.
 
 1.7 - **Language and Channel Use**: English is the primary language for global chats. Use designated channels for other languages and content types. Follow channel-specific guidelines.
 
@@ -53,7 +53,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 3.4 - **Map Art**: Only allowed in specific areas, following content guidelines that exclude violence, discrimination, and NSFW themes.
 ### Section 4. Combat and PvP
-4.1 - **Combat Engagement**: Combat is permitted. Post-defeat engagement rules apply. Spawn camping is banned. Nation Spawn or Town Spawn camping/killing is banned. Pushing players out of claims while AFK is also prohibited.
+4.1 - **Combat Engagement**: Combat is permitted. Post-defeat engagement rules apply. Spawn camping is banned. Nation Spawn or Town Spawn camping/killing is banned.
 
 4.2 - **Claim Hopping**: Using claims to avoid combat or gain an advantage is prohibited.
 ### Section 5. Naming and Representation
