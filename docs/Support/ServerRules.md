@@ -33,7 +33,6 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 2.2 - **Alternative Accounts**: Only one account per player is allowed. Sibling accounts on the same IP must be verified. Account sharing is not permitted.
 
 2.3 - **Modifications**: Only approved mods (e.g., OptiFine, non-exploitative HUD mods) are allowed. Mods giving unfair advantages are banned.
-- Building mods that automatically place blocks for you, such as Printer.
 - Minimaps that show entities.
 - ESP, tracers, chams/wallhacks, etc.
 - Autofishing or any automated process.
