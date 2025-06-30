@@ -102,104 +102,109 @@ if (!isset($_GET['state'])) {
     $minecraftUsername = $_SESSION['minecraft_username'];
 
     // --- DATABASE PART ---
-    // Database credentials (update these to match your environment).
     $dbHost = '15.204.57.71';
     $dbName = 's1_discord';
     $dbUser = 'u1_NOD4SoLdEP';
     $dbPass = '=J8QFv63l=WxU!9fm9kHoXxs';
 
     try {
-        $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPass, [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        ]);
+        $pdo = new PDO(
+            "mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4",
+            $dbUser, $dbPass,
+            [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
+        );
     } catch (PDOException $e) {
         die("Database connection failed: " . $e->getMessage());
     }
 
-    // Verify that there is a valid linking code for this Minecraft account.
-    $stmt = $pdo->prepare("SELECT * FROM discord_codes WHERE code = ? AND uuid = ? AND expiration > ?");
+    // Verify the linking code.
+    $stmt = $pdo->prepare(
+        "SELECT * FROM discord_codes WHERE code = ? AND uuid = ? AND expiration > ?"
+    );
     $stmt->execute([$minecraftCode, $minecraftUUID, time()]);
-    $codeRow = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    if (!$codeRow) {
-        die("Invalid linking code or the code does not match the Minecraft account.");
+    if (!$stmt->fetch(PDO::FETCH_ASSOC)) {
+        die("Invalid or expired linking code.");
     }
 
-    // Delete the used code from the discord_codes table.
-    try {
-        $stmt = $pdo->prepare("DELETE FROM discord_codes WHERE code = ? AND uuid = ?");
-        $stmt->execute([$minecraftCode, $minecraftUUID]);
-    } catch (PDOException $e) {
-        die("Failed to remove linking code: " . $e->getMessage());
-    }
+    // Delete the used code.
+    $pdo->prepare(
+        "DELETE FROM discord_codes WHERE code = ? AND uuid = ?"
+    )->execute([$minecraftCode, $minecraftUUID]);
 
-    // Insert the linking information into the discord_accounts table.
+    // Perform the linking transaction.
     try {
-        // 1) start transaction
         $pdo->beginTransaction();
 
-        // 2) archive old links (by discord OR uuid)
-        $backupSql = "
-          INSERT INTO discord_accounts_history (discord, uuid, linked_at)
-          SELECT discord, uuid, NOW()
-            FROM discord_accounts
-           WHERE discord = :discord OR uuid = :uuid
-        ";
+        // Archive any old link into history (use discord_id column)
+        $backupSql = <<<'SQL'
+            INSERT INTO discord_accounts_history (discord_id, uuid, linked_at)
+            SELECT discord, uuid, NOW()
+              FROM discord_accounts
+             WHERE discord = :discord OR uuid = :uuid
+        SQL;
         $stmt = $pdo->prepare($backupSql);
         $stmt->execute([
             ':discord' => $discordID,
-            ':uuid'    => $minecraftUUID
+            ':uuid'    => $minecraftUUID,
         ]);
 
-        // 3) delete the old rows so our INSERT won’t collide
+        // Delete existing link(s)
         $deleteSql = "
-          DELETE FROM discord_accounts
-           WHERE discord = :discord OR uuid = :uuid
+            DELETE FROM discord_accounts
+             WHERE discord = :discord OR uuid = :uuid
         ";
-        $stmt = $pdo->prepare($deleteSql);
-        $stmt->execute([
+        $pdo->prepare($deleteSql)->execute([
             ':discord' => $discordID,
-            ':uuid'    => $minecraftUUID
+            ':uuid'    => $minecraftUUID,
         ]);
 
-        // 4) insert the fresh link
-        $insertSql = "
-          INSERT INTO discord_accounts (discord, uuid)
-          VALUES (:discord, :uuid)
-        ";
-        $stmt = $pdo->prepare($insertSql);
-        $stmt->execute([
+        // Insert the new link
+        $pdo->prepare(
+            "INSERT INTO discord_accounts (discord, uuid) VALUES (:discord, :uuid)"
+        )->execute([
             ':discord' => $discordID,
-            ':uuid'    => $minecraftUUID
+            ':uuid'    => $minecraftUUID,
         ]);
 
-        // 5) commit if all went well
         $pdo->commit();
 
     } catch (PDOException $e) {
-        // something failed—roll back and report
         $pdo->rollBack();
         die("Linking transaction failed: " . $e->getMessage());
     }
 
-    // --- INSERT A NOTIFICATION ---
-    // Insert a record into discord_notification so the Minecraft server can notify the user.
+    // Notify Minecraft server asynchronously
     try {
-        $notifQuery = "INSERT INTO discord_notification (discord, uuid, mc_username, discord_username, timestamp) VALUES (?, ?, ?, ?, ?)";
-        $stmt = $pdo->prepare($notifQuery);
-        $stmt->execute([$discordID, $minecraftUUID, $minecraftUsername, $discordUsername, time()]);
+        $pdo->prepare(
+            "INSERT INTO discord_notification
+                (discord, uuid, mc_username, discord_username, timestamp)
+              VALUES (?, ?, ?, ?, ?)"
+        )->execute([
+            $discordID,
+            $minecraftUUID,
+            $minecraftUsername,
+            $discordUsername,
+            time()
+        ]);
     } catch (PDOException $e) {
-        // Log the error, but don't fail the process.
         error_log("Failed to insert notification: " . $e->getMessage());
     }
 
-    // Echo confirmation.
-    echo "Successfully linked Minecraft account (" . htmlspecialchars($minecraftUUID) .
-        ") with Discord account (" . htmlspecialchars($discordUsername) . ", ID: " .
-        htmlspecialchars($discordID) . ").";
+    // Confirmation message
+    echo sprintf(
+        "Successfully linked Minecraft UUID %s with Discord %s (ID: %s).",
+        htmlspecialchars($minecraftUUID),
+        htmlspecialchars($discordUsername),
+        htmlspecialchars($discordID)
+    );
 
-    // Clear session variables and remove the state cookie.
-    unset($_SESSION['oauth_state'], $_SESSION['minecraft_uuid'], $_SESSION['minecraft_code'], $_SESSION['minecraft_username']);
+    // Cleanup session and cookies
+    unset(
+        $_SESSION['oauth_state'],
+        $_SESSION['minecraft_uuid'],
+        $_SESSION['minecraft_code'],
+        $_SESSION['minecraft_username']
+    );
     setcookie("oauth_state", "", time() - 3600, "/");
 }
 ?>
