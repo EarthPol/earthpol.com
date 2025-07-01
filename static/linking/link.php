@@ -137,7 +137,7 @@ if (!isset($_GET['state'])) {
 
         // Archive any old link into history (use discord_id column)
         $backupSql = <<<'SQL'
-            INSERT INTO discord_accounts_history (discord_id, uuid, linked_at)
+            INSERT INTO discord_accounts_history (discord, uuid, linked_at)
             SELECT discord, uuid, NOW()
               FROM discord_accounts
              WHERE discord = :discord OR uuid = :uuid
