@@ -87,3 +87,25 @@
   align-items: center;
   justify-content: center;
 }
+
+.gradientButton {
+  background: linear-gradient(135deg, #d3e3ee, #d9f1d9); /* Light blue to light green */
+  color: #000; /* Adjust text color if needed */
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gradientButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+
+.subtitleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* centers the row itself */
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;        /* ensures text stays centered too */
+}

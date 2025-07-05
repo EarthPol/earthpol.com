@@ -9,3 +9,20 @@
   height: 200px;
   width: 200px;
 }
+
+.subtitleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem; /* smaller gap */
+  margin-top: 0.5rem; /* optional spacing below tagline */
+}
+
+.serverStatus {
+  font-size: 0.9rem;  /* smaller font size */
+  padding: 0.2rem 0.5rem; /* smaller padding */
+  border-radius: 12px; /* keep rounded corners */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
