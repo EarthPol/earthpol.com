@@ -70,7 +70,7 @@
   z-index: 30; /* Above the blur overlay */
 }
 .mainHeroVisible {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .heroTitle {
@@ -92,7 +92,7 @@
 }
 
 .introFadeOut {
-  opacity: 0;
+  opacity: 0 !important;
   pointer-events: none;
 }
 

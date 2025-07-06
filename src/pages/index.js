@@ -100,10 +100,9 @@ function HomepageHeader() {
               <div className={styles.backgroundVideoWrapper}>
                 <video
                     ref={videoRef}
-                    onEnded={() => {
-                      setStep(5);
-                      setShowIntro(false);
-                    }}
+                    onLoadedData={() => console.log('▶ video loaded')}
+                    onError={(e) => console.error('❌ video error', e)}
+                    controls
                     className={styles.backgroundVideo}
                     autoPlay
                     muted
