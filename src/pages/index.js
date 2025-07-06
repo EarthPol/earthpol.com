@@ -21,23 +21,25 @@ function HomepageHeader() {
     const seenIntro = localStorage.getItem('hasSeenIntro');
     if (seenIntro) {
       setShowIntro(false);
-      setStep(5); // Skip intro
+      setStep(5); // Skip intro animations
       return;
     }
 
     localStorage.setItem('hasSeenIntro', 'true');
 
     if (videoRef.current) {
-      videoRef.current.playbackRate = 1; // Speed up video if needed
+      videoRef.current.playbackRate = 1; // Adjust speed if needed
     }
 
     const timers = [
-      setTimeout(() => setStep(1), 1000),
-      setTimeout(() => setStep(2), 2000),
-      setTimeout(() => setStep(3), 3500),
-      setTimeout(() => setStep(4), 6500),
-      setTimeout(() => setStep(5), 7500),
+      setTimeout(() => setStep(1), 1000),  // THIS IS appears
+      setTimeout(() => setStep(2), 2000),  // THIS IS moves up + EARTHPOL appears
+      setTimeout(() => setStep(3), 3500),  // THIS IS fades out
+      setTimeout(() => setStep(4), 6500),  // EARTHPOL scales down
+      setTimeout(() => setStep(5), 7500),  // Intro fades out (video + text)
+      setTimeout(() => setShowIntro(false), 8500), // Remove intro after fade out finishes
     ];
+
     return () => timers.forEach(t => clearTimeout(t));
   }, []);
 

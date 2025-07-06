@@ -1,5 +1,8 @@
+/* Light theme background images */
 .heroBannerLight {
+  position: relative;
   background-image: url('/img/day_ultra.webp');
+  z-index: 0; /* Always at back */
 }
 
 @media (max-width: 2560px) {
@@ -7,27 +10,27 @@
     background-image: url('/img/day_large.webp');
   }
 }
-
 @media (max-width: 1920px) {
   .heroBannerLight {
     background-image: url('/img/day_desktop.webp');
   }
 }
-
 @media (max-width: 1280px) {
   .heroBannerLight {
     background-image: url('/img/day_tablet.webp');
   }
 }
-
 @media (max-width: 768px) {
   .heroBannerLight {
     background-image: url('/img/day_mobile.webp');
   }
 }
 
+/* Dark theme background images */
 .heroBannerDark {
+  position: relative;
   background-image: url('/img/night_ultra.webp');
+  z-index: 0; /* Always at back */
 }
 
 @media (max-width: 2560px) {
@@ -35,25 +38,23 @@
     background-image: url('/img/night_large.webp');
   }
 }
-
 @media (max-width: 1920px) {
   .heroBannerDark {
     background-image: url('/img/night_desktop.webp');
   }
 }
-
 @media (max-width: 1280px) {
   .heroBannerDark {
     background-image: url('/img/night_tablet.webp');
   }
 }
-
 @media (max-width: 768px) {
   .heroBannerDark {
     background-image: url('/img/night_mobile.webp');
   }
 }
 
+/* Banner container */
 .heroBanner {
   position: relative;
   height: 70vh;
@@ -64,14 +65,16 @@
   background-size: cover;
   background-position: center;
   transition: background-image 0.5s ease-in-out;
+  z-index: 0; /* same as background image */
 }
 
+/* Main site header (title, tagline, IP button) */
 .mainHero {
   opacity: 0;
   transition: opacity 1s ease;
   text-align: center;
   position: relative;
-  z-index: 10;
+  z-index: 30; /* highest: above everything */
 }
 
 .mainHeroVisible {
@@ -83,17 +86,18 @@
   font-weight: 900;
 }
 
+/* INTRO: container for video + text */
 .introContainer {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   background: transparent;
-  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   transition: opacity 1s ease;
+  z-index: 20; /* above video, below mainHero */
 }
 
 .introFadeOut {
@@ -101,12 +105,13 @@
   pointer-events: none;
 }
 
+/* Video wrapper behind intro text */
 .backgroundVideoWrapper {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   overflow: hidden;
-  z-index: 1;
+  z-index: 10; /* above background image, below intro text */
 }
 
 .backgroundVideo {
@@ -132,10 +137,11 @@
   opacity: 1;
 }
 
+/* Text over intro video */
 .textContainer {
-  text-align: center;
   position: relative;
-  z-index: 1010;
+  text-align: center;
+  z-index: 21; /* above video wrapper */
 }
 
 .thisIs {
@@ -149,7 +155,7 @@
   white-space: nowrap;
   color: white;
   pointer-events: none;
-  z-index: 1011;
+  z-index: 22; /* text must be above video and overlay */
 }
 
 .visible.thisIs {
@@ -162,7 +168,6 @@
 
 .thisIsFadeOut {
   opacity: 0 !important;
-  transition: opacity 1s ease;
 }
 
 .earthpol {
@@ -177,7 +182,7 @@
   white-space: nowrap;
   color: white;
   pointer-events: none;
-  z-index: 1012;
+  z-index: 23; /* above THIS IS text too */
 }
 
 .visible.earthpol {
