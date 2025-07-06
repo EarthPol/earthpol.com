@@ -104,7 +104,6 @@ function HomepageHeader() {
               className={styles.backgroundVideo}
               autoPlay
               muted
-              loop
               playsInline
               src={videoSrc}
             />
