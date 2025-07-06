@@ -13,35 +13,40 @@ function HomepageHeader() {
   const { colorMode } = useColorMode();
   const isDarkTheme = colorMode === 'dark';
   const [step, setStep] = useState(0);
-  const [showIntro, setShowIntro] = useState(true);
+
+  // ✅ Initialize from localStorage right away!
+  const [showIntro, setShowIntro] = useState(() => {
+    if (typeof window === 'undefined') return true; // SSR safety
+    return !localStorage.getItem('hasSeenIntro');
+  });
+
   const videoRef = useRef(null);
 
   useEffect(() => {
-    // Check if user has already seen intro
-    const seenIntro = localStorage.getItem('hasSeenIntro');
-    if (seenIntro) {
-      setShowIntro(false);
-      setStep(5); // Skip intro animations
+    if (typeof window === 'undefined') return;
+
+    if (!showIntro) {
+      setStep(5);
       return;
     }
 
     localStorage.setItem('hasSeenIntro', 'true');
 
     if (videoRef.current) {
-      videoRef.current.playbackRate = 1; // Adjust speed if needed
+      videoRef.current.playbackRate = 1;
     }
 
     const timers = [
-      setTimeout(() => setStep(1), 1000),  // THIS IS appears
-      setTimeout(() => setStep(2), 2000),  // THIS IS moves up + EARTHPOL appears
-      setTimeout(() => setStep(3), 3500),  // THIS IS fades out
-      setTimeout(() => setStep(4), 6500),  // EARTHPOL scales down
-      setTimeout(() => setStep(5), 7500),  // Intro fades out (video + text)
-      setTimeout(() => setShowIntro(false), 8500), // Remove intro after fade out finishes
+      setTimeout(() => setStep(1), 1000),
+      setTimeout(() => setStep(2), 2000),
+      setTimeout(() => setStep(3), 3500),
+      setTimeout(() => setStep(4), 6500),
+      setTimeout(() => setStep(5), 7500),
+      setTimeout(() => setShowIntro(false), 8500),
     ];
 
     return () => timers.forEach(t => clearTimeout(t));
-  }, []);
+  }, [showIntro]);
 
   return (
     <>
@@ -52,7 +57,10 @@ function HomepageHeader() {
         )}
       >
         <div
-          className={clsx(styles.mainHero, step >= 5 && styles.mainHeroVisible)}
+          className={clsx(
+            styles.mainHero,
+            (step >= 5 || !showIntro) && styles.mainHeroVisible
+          )}
         >
           <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
           <div className={styles.subtitleWrapper}>
