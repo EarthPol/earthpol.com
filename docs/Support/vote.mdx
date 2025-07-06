@@ -1,0 +1,262 @@
+---
+id: vote
+title: Voting Sites
+slug: /vote
+sidebar_position: 5
+---
+
+import React from 'react';
+import Link from '@docusaurus/Link';
+
+# ⭐️ Voting Sites
+
+Voting helps EarthPol grow by bringing in more players and you get free gold for doing it! Be in-game when you vote, enter your Minecraft username on each voting site, and click vote. Gold will be added to your inventory automatically. You can vote once per site every day, and the timer resets around midnight UTC.
+
+✅ Make sure you’re **online in-game** when you vote.  
+✅ Always have **space in your inventory** to get your gold.
+
+<div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem', marginBottom: '2rem' }}>
+  <button
+    onClick={() => {
+      window.open('https://minecraftservers.org/vote/638095', '_blank');
+      window.open('https://www.planetminecraft.com/server/earthpol-the-geopolitical-earth-server/vote/', '_blank');
+      window.open('https://minecraft-mp.com/server-s344871', '_blank');
+    }}
+    className="button button--primary"
+    style={{
+      fontSize: '1rem',
+      padding: '0.75rem 1.5rem',
+      minWidth: '500px', // Wider button
+      textAlign: 'center'
+    }}
+  >
+    Vote on All Sites!
+  </button>
+</div>
+
+<div style={{
+  display: 'flex',
+  justifyContent: 'space-around',
+  gap: '2rem',
+  flexWrap: 'wrap',
+}}>
+
+  <Link
+    to="https://minecraftservers.org/vote/638095"
+    className="button button--primary"
+    style={{
+      flex: '1 1 250px',
+      maxWidth: '300px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      padding: '1rem',
+      textDecoration: 'none',
+    }}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src="/img/banner.png" alt="Voting Site 1" style={{width: '100%', borderRadius: '8px', marginBottom: '1rem'}} />
+    MinecraftServers.org
+  </Link>
+
+  <Link
+    to="https://www.planetminecraft.com/server/earthpol-the-geopolitical-earth-server/vote/"
+    className="button button--primary"
+    style={{
+      flex: '1 1 250px',
+      maxWidth: '300px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      padding: '1rem',
+      textDecoration: 'none',
+    }}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src="/img/banner.png" alt="Voting Site 2" style={{width: '100%', borderRadius: '8px', marginBottom: '1rem'}} />
+    PlanetMinecraft.com
+  </Link>
+
+  <Link
+    to="https://minecraft-mp.com/server-s344871"
+    className="button button--primary"
+    style={{
+      flex: '1 1 250px',
+      maxWidth: '300px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      padding: '1rem',
+      textDecoration: 'none',
+    }}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src="/img/banner.png" alt="Voting Site 3" style={{width: '100%', borderRadius: '8px', marginBottom: '1rem'}} />
+    Minecraft-MP.com
+  </Link>
+
+</div>
+
+<hr style={{ margin: '3rem 0' }} />
+
+## Social Media
+
+If you would like to further support us, please consider following our social media pages.
+
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '1rem',
+  marginTop: '1rem',
+  flexWrap: 'wrap',
+}}>
+
+  <a
+    href="https://discord.gg/bURuFxYqkD"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="button button--secondary"
+    style={{
+      flex: '1 1 120px',
+      maxWidth: '160px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '40px',
+      padding: '0 1rem',
+      textDecoration: 'none',
+      fontSize: '0.9rem',
+      color: 'white',
+      fontWeight: '600',
+      background: 'linear-gradient(135deg, #7289da 0%, #99aab5 100%)',
+      borderRadius: '6px',
+      boxShadow: '0 2px 6px rgba(114, 137, 218, 0.5)',
+      transition: 'background 0.3s ease',
+      whiteSpace: 'nowrap',
+    }}
+    onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(135deg, #99aab5 0%, #7289da 100%)'}
+    onMouseLeave={e => e.currentTarget.style.background = 'linear-gradient(135deg, #7289da 0%, #99aab5 100%)'}
+  >
+    Discord
+  </a>
+
+  <a
+    href="https://www.youtube.com/@EarthPol?sub_confirmation=1"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="button button--secondary"
+    style={{
+      flex: '1 1 120px',
+      maxWidth: '160px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '40px',
+      padding: '0 1rem',
+      textDecoration: 'none',
+      fontSize: '0.9rem',
+      color: 'white',
+      fontWeight: '600',
+      background: 'linear-gradient(135deg, #ff0000 0%, #cc0000 100%)',
+      borderRadius: '6px',
+      boxShadow: '0 2px 6px rgba(255, 0, 0, 0.5)',
+      transition: 'background 0.3s ease',
+      whiteSpace: 'nowrap',
+    }}
+    onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(135deg, #cc0000 0%, #ff0000 100%)'}
+    onMouseLeave={e => e.currentTarget.style.background = 'linear-gradient(135deg, #ff0000 0%, #cc0000 100%)'}
+  >
+    YouTube
+  </a>
+
+  <a
+    href="https://www.instagram.com/earthpolmc/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="button button--secondary"
+    style={{
+      flex: '1 1 120px',
+      maxWidth: '160px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '40px',
+      padding: '0 1rem',
+      textDecoration: 'none',
+      fontSize: '0.9rem',
+      color: 'white',
+      fontWeight: '600',
+      background: 'linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%)',
+      borderRadius: '6px',
+      boxShadow: '0 2px 6px rgba(253, 191, 73, 0.5)',
+      transition: 'background 0.3s ease',
+      whiteSpace: 'nowrap',
+    }}
+    onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(135deg, #8134af 0%, #dd2a7b 50%, #f58529 100%)'}
+    onMouseLeave={e => e.currentTarget.style.background = 'linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%)'}
+  >
+    Instagram
+  </a>
+
+  <a
+    href="https://www.tiktok.com/@play.earthpol.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="button button--secondary"
+    style={{
+      flex: '1 1 120px',
+      maxWidth: '160px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '40px',
+      padding: '0 1rem',
+      textDecoration: 'none',
+      fontSize: '0.9rem',
+      color: 'white',
+      fontWeight: '600',
+      background: 'linear-gradient(135deg, #69C9D0 0%, #EE1D52 100%)',
+      borderRadius: '6px',
+      boxShadow: '0 2px 6px rgba(238, 29, 82, 0.5)',
+      transition: 'background 0.3s ease',
+      whiteSpace: 'nowrap',
+    }}
+    onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(135deg, #EE1D52 0%, #69C9D0 100%)'}
+    onMouseLeave={e => e.currentTarget.style.background = 'linear-gradient(135deg, #69C9D0 0%, #EE1D52 100%)'}
+  >
+    TikTok
+  </a>
+
+  <a
+    href="https://x.com/earth_pol"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="button button--secondary"
+    style={{
+      flex: '1 1 120px',
+      maxWidth: '160px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '40px',
+      padding: '0 1rem',
+      textDecoration: 'none',
+      fontSize: '0.9rem',
+      color: 'white',
+      fontWeight: '600',
+      background: 'linear-gradient(135deg, #1DA1F2 0%, #0d8ddb 100%)',
+      borderRadius: '6px',
+      boxShadow: '0 2px 6px rgba(29, 161, 242, 0.5)',
+      transition: 'background 0.3s ease',
+      whiteSpace: 'nowrap',
+    }}
+    onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(135deg, #0d8ddb 0%, #1DA1F2 100%)'}
+    onMouseLeave={e => e.currentTarget.style.background = 'linear-gradient(135deg, #1DA1F2 0%, #0d8ddb 100%)'}
+  >
+    Twitter
+  </a>
+
+</div>

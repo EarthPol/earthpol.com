@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useColorMode } from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
 import ServerStatus from '@site/src/components/ServerStatus';
@@ -12,13 +13,19 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   const { colorMode } = useColorMode();
   const isDarkTheme = colorMode === 'dark';
-  const [step, setStep] = useState(0);
 
-  // ✅ Initialize from localStorage right away!
+  // Use base URLs for assets
+  const bgLight = useBaseUrl('/img/day_ultra.webp');
+  const bgDark = useBaseUrl('/img/night_ultra.webp');
+  const videoSrc = useBaseUrl('/img/slideshow.mp4');
+
+  // Initialize showIntro from localStorage once, SSR safe
   const [showIntro, setShowIntro] = useState(() => {
-    if (typeof window === 'undefined') return true; // SSR safety
+    if (typeof window === 'undefined') return false; // No intro in SSR
     return !localStorage.getItem('hasSeenIntro');
   });
+
+  const [step, setStep] = useState(0);
 
   const videoRef = useRef(null);
 
@@ -26,6 +33,7 @@ function HomepageHeader() {
     if (typeof window === 'undefined') return;
 
     if (!showIntro) {
+      // If user has already seen intro, skip animation steps immediately
       setStep(5);
       return;
     }
@@ -45,16 +53,17 @@ function HomepageHeader() {
       setTimeout(() => setShowIntro(false), 8500),
     ];
 
-    return () => timers.forEach(t => clearTimeout(t));
+    return () => timers.forEach((t) => clearTimeout(t));
   }, [showIntro]);
+
+  // Set background image inline style dynamically
+  const backgroundImage = `url(${isDarkTheme ? bgDark : bgLight})`;
 
   return (
     <>
       <header
-        className={clsx(
-          styles.heroBanner,
-          isDarkTheme ? styles.heroBannerDark : styles.heroBannerLight
-        )}
+        className={styles.heroBanner}
+        style={{ backgroundImage }}
       >
         <div
           className={clsx(
@@ -83,6 +92,7 @@ function HomepageHeader() {
         </div>
       </header>
 
+      {/* Render intro only if user has NOT seen it */}
       {showIntro && step < 5 && (
         <div
           className={clsx(
@@ -98,14 +108,14 @@ function HomepageHeader() {
               muted
               loop
               playsInline
-              src="/img/slideshow.mp4"
+              src={videoSrc}
             />
             <div
               className={clsx(
                 styles.fadeToBlackOverlay,
                 step >= 4 && styles.visible
               )}
-            ></div>
+            />
           </div>
           <div className={styles.textContainer}>
             <h2

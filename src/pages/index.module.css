@@ -49,14 +49,17 @@
   z-index: 0;
 }
 
+/* The blur overlay on the background image */
 .heroBanner::before {
   content: "";
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(4px); /* adjust the blur strength here */
-  z-index: 1; /* behind your .mainHero text but above background image */
+  backdrop-filter: blur(4px); /* Adjust blur strength here */
+  -webkit-backdrop-filter: blur(4px); /* Safari support */
+  z-index: 1;
+  pointer-events: none; /* allow clicks to pass through */
 }
 
 .mainHero {
@@ -64,7 +67,7 @@
   transition: opacity 1s ease;
   text-align: center;
   position: relative;
-  z-index: 30; /* always above intro/video/background */
+  z-index: 30; /* Above the blur overlay */
 }
 .mainHeroVisible {
   opacity: 1;
@@ -144,9 +147,17 @@
   z-index: 22;
 }
 
-.visible.thisIs { opacity: 1; }
-.thisIsMoved { transform: translate(-50%, -150px); }
-.thisIsFadeOut { opacity: 0 !important; }
+.visible.thisIs {
+  opacity: 1;
+}
+
+.thisIsMoved {
+  transform: translate(-50%, -150px);
+}
+
+.thisIsFadeOut {
+  opacity: 0 !important;
+}
 
 .earthpol {
   font-size: 12rem;
@@ -163,10 +174,18 @@
   z-index: 23;
 }
 
-.visible.earthpol { opacity: 1; }
+.visible.earthpol {
+  opacity: 1;
+}
+
 .earthpolScaledDown {
   transform: translate(-50%, -50%) scale(0.42);
 }
 
-.buttons { margin-top: 1rem; }
-.serverStatusWrapper { margin-top: 0.5rem; }
+.buttons {
+  margin-top: 1rem;
+}
+
+.serverStatusWrapper {
+  margin-top: 0.5rem;
+}
