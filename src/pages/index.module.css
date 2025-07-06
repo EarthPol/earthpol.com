@@ -147,13 +147,7 @@
   z-index: 22;
 }
 
-.visible.thisIs {
-  opacity: 1;
-}
-
-.thisIs.visible {
-  opacity: 1;
-}
+.thisIs.visible { opacity: 1; }
 
 .thisIsMoved {
   transform: translate(-50%, -150px);
@@ -177,14 +171,7 @@
   pointer-events: none;
   z-index: 23;
 }
-
-.earthpol.visible {
-  opacity: 1;
-}
-
-.visible.earthpol {
-  opacity: 1;
-}
+.earthpol.visible { opacity: 1; }
 
 .earthpolScaledDown {
   transform: translate(-50%, -50%) scale(0.42);
