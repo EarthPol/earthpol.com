@@ -9,7 +9,24 @@ const config = {
   baseUrl: '/',
   organizationName: 'EarthPol',
   projectName: 'earthpol.com',
-
+  headTags: [
+    {
+      tagName: 'style',
+      attributes: {
+        type: 'text/css',
+      },
+      innerHTML: `
+      /* ensure the intro & hero have their transitions on first paint */
+      .mainHero, .introContainer {
+        opacity: 0;
+        transition: opacity 1s ease;
+      }
+      .mainHeroVisible {
+        opacity: 1 !important;
+      }
+    `,
+    },
+  ],
   scripts: [
     {
       src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3632978599628917',
