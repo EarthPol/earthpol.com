@@ -151,6 +151,10 @@
   opacity: 1;
 }
 
+.thisIs.visible {
+  opacity: 1;
+}
+
 .thisIsMoved {
   transform: translate(-50%, -150px);
 }
@@ -172,6 +176,10 @@
   color: white;
   pointer-events: none;
   z-index: 23;
+}
+
+.earthpol.visible {
+  opacity: 1;
 }
 
 .visible.earthpol {

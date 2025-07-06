@@ -97,6 +97,10 @@ function HomepageHeader() {
           <div className={styles.backgroundVideoWrapper}>
             <video
               ref={videoRef}
+              onEnded={() => {
+                setStep(5);
+                setShowIntro(false);
+              }}
               className={styles.backgroundVideo}
               autoPlay
               muted
