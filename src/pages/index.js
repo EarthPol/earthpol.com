@@ -14,49 +14,44 @@ function HomepageHeader() {
   const { colorMode } = useColorMode();
   const isDarkTheme = colorMode === 'dark';
 
-  // Use base URLs for assets
   const bgLight = useBaseUrl('/img/day_ultra.webp');
   const bgDark = useBaseUrl('/img/night_ultra.webp');
   const videoSrc = useBaseUrl('/img/slideshow.mp4');
 
-  // Initialize showIntro from localStorage once, SSR safe
-  const [showIntro, setShowIntro] = useState(() => {
-    if (typeof window === 'undefined') return false; // No intro in SSR
-    return !localStorage.getItem('hasSeenIntro');
-  });
-
   const [step, setStep] = useState(0);
-
+  const [showIntro, setShowIntro] = useState(false);
   const videoRef = useRef(null);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    if (!showIntro) {
-      // If user has already seen intro, skip animation steps immediately
+    const seenIntro = localStorage.getItem('hasSeenIntro');
+    if (!seenIntro) {
+      // First time: play intro
+      localStorage.setItem('hasSeenIntro', 'true');
+      setShowIntro(true);
+
+      if (videoRef.current) {
+        videoRef.current.playbackRate = 1;
+      }
+
+      const timers = [
+        setTimeout(() => setStep(1), 1000),
+        setTimeout(() => setStep(2), 2000),
+        setTimeout(() => setStep(3), 3500),
+        setTimeout(() => setStep(4), 6500),
+        setTimeout(() => setStep(5), 7500),
+        setTimeout(() => setShowIntro(false), 8500),
+      ];
+
+      return () => timers.forEach((t) => clearTimeout(t));
+    } else {
+      // Already seen: skip intro
+      setShowIntro(false);
       setStep(5);
-      return;
     }
+  }, []);
 
-    localStorage.setItem('hasSeenIntro', 'true');
-
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 1;
-    }
-
-    const timers = [
-      setTimeout(() => setStep(1), 1000),
-      setTimeout(() => setStep(2), 2000),
-      setTimeout(() => setStep(3), 3500),
-      setTimeout(() => setStep(4), 6500),
-      setTimeout(() => setStep(5), 7500),
-      setTimeout(() => setShowIntro(false), 8500),
-    ];
-
-    return () => timers.forEach((t) => clearTimeout(t));
-  }, [showIntro]);
-
-  // Set background image inline style dynamically
   const backgroundImage = `url(${isDarkTheme ? bgDark : bgLight})`;
 
   return (
@@ -92,7 +87,6 @@ function HomepageHeader() {
         </div>
       </header>
 
-      {/* Render intro only if user has NOT seen it */}
       {showIntro && step < 5 && (
         <div
           className={clsx(
