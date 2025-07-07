@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Towny',
-    link: '/docs/Towny/Basic/TownyOverview',
+    link: '/docs/Towny/TownyOverview',
     Svg: () => <img src="/img/compassitem.webp" alt="Map" style={{ height: 100 }} />,
     description: (
       <>
@@ -26,7 +26,7 @@ const FeatureList = [
   },
   {
     title: 'BlueMap',
-    link: '/features/bluemap',
+    link: 'https://earthpol.com/map/#world:0:0:0:32172:0:0:0:1:flat',
     Svg: () => <img src="/img/mapitem.webp" alt="Compass" style={{ height: 100 }} />,
     description: (
       <>
