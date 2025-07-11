@@ -1,0 +1,24 @@
+---
+slug: earthpol-rca-2
+title: Backup Issues
+authors: [0xBit]
+tags: [Update, Announcement]
+---
+
+import Admonition from '@theme/Admonition';
+
+# Root Cause Analysis – Backup Issues
+
+While Bustun was setting up a new development environment, an accidental server reset occurred on EarthPol. The intention was to relocate our development setup into Bustun’s home lab on the other side of the country. This move was designed to free up storage space on both our main system and backup infrastructure, enabling us to fix ongoing backup issues.
+
+Unfortunately, during this process, the production server was mistakenly reset instead of the development environment. As a result, we lost several days of player progress and were forced to restore from our latest viable backup from **July 1st, 2025**.
+
+After restoring that backup, our team manually recovered **561 towns** using CoreProtect. While major builds, towns, and stored items have been restored, some data—particularly wilderness changes, personal inventories, ender chests, and certain outposts—could not be recovered.
+
+<Admonition type="info" title="Impact">
+    This incident affects only changes made **after July 1st, 2025**, impacting roughly **35% of the server**. Town and nation balances were not affected.
+</Admonition>
+
+We understand the frustration and disappointment caused by this incident. Measures have now been put in place to prevent similar accidents, including restricting backup system access solely to myself.
+
+Thank you to the community for your patience and support as we worked to bring EarthPol back online.
