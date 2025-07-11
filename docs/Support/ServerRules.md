@@ -26,7 +26,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 1.8 - **Disinformation & Impersonation**: Players are expected to communicate in good faith. Spreading false or misleading information about the server, its staff, or community, especially if intended to create unrest or discourage others from playing, is not allowed. This includes impersonating others, submitting knowingly false reports or tickets, tampering with evidence, or attempting to stir drama based on information known to be untrue.
 
-1.9 - **Harassment**: Targeted harassment, in-game or on associated platforms, is banned. This includes spamming, claim camping, and disruptive behaviors.
+1.9 - **Harassment**: Targeted harassment, in-game or on associated platforms, is banned. This includes spamming, bypassing ignore and disruptive behaviors.
 ### Section 2. Game Integrity
 2.1 - **Exploits and Cheating**: Benefiting from or engaging in exploits, bugs, or hacks is punishable. This includes server bugs, game glitches (duping, block-glitching, etc.), and the use of cheat clients. 
 
