@@ -1,0 +1,53 @@
+---
+slug: earthpol-rca-1
+title: Server Hacked? How?
+authors: [0xBit]
+tags: [Update, Announcement]
+---
+
+import Admonition from '@theme/Admonition';
+
+<Admonition type="caution" title="Incident Summary">
+    On **June 30, 2025**, our Proxy was compromised via a plugin called **Signed Velocity**, allowing an attacker to overwrite admin-issued commands and execute arbitrary actions such as putting everyone into creative mode and granting mass items.
+</Admonition>
+
+### Who Was Involved
+- **Attacker**: Error110, a developer on the Imperia server and founder of Homestead PvP Group
+
+### Timeline & Root Cause
+1. **Plugin Deployment**
+We installed **Signed Velocity** to enable safe message/command interception between Bukkit and Velocity without sync issues.
+
+2. **Channel Registration Bug**
+Signed Velocity failed to properly register its plugin-message channel, which let a malformed payload that slipped past the channel check.
+
+3. **Buffer Overflow in Signing Logic**
+The attacker exploited the unsigned or improperly-signed buffer logic to overwrite the incoming command packet. When an admin ran any legitimate command, the buffer overflow redirected it to malicious commands like:
+- `gmc *` → put all players into Creative mode
+- `give * gold_block 9999999` → grant everyone nearly ten million gold blocks
+
+4. **Privilege Escalation & Mass Impact**
+With these commands, the attacker temporarily broke progression, economy, and gameplay for the entire server community.
+
+5. **Disclosure & Further Findings**
+Error110 publicly admitted to the hack and warned that our other plugin, **CommandForward**, suffered from the same unsigned-message vulnerability.
+
+### Mitigation & Fixes
+- **Signed Velocity** was **completely removed** from our Proxy. Its planned HMAC fix proved incompatible with Folia’s async model, so removal was the safest path—muted players are now simply disconnected instead of relying on plugin messages.
+- **CommandForward** was immediately closed-sourced and fully patched: its message handling now uses **HMAC-SHA256** authentication coupled with a strict **command whitelist**, ensuring no further unsigned payloads can be processed.
+
+<Admonition type="info" title="Why No Plugin Update?">
+    We regularly update our plugins. In this case, **CommandForward** was successfully patched with HMAC-SHA256 authentication and a strict command whitelist. However, **Signed Velocity**’s HMAC fix proved incompatible with Folia’s async model, so removal was the safest path.
+</Admonition>
+
+### Lessons Learned
+- **Always authenticate**: Even internal plugin-message channels must be signed or encrypted.
+- **Whitelist aggressively**: Never allow arbitrary command names or arguments.
+- **Test on target environments**: Folia’s async scheduling revealed incompatibilities that weren’t caught in initial testing.
+
+### Next Steps
+- We’re exploring a lightweight **in-proxy command dispatcher** that avoids plugin messages altogether.
+- A public audit of all custom plugins will begin next week.
+- We’ll add monitoring hooks to detect suspicious plugin-message patterns in real time.
+
+Thank you for your patience and support as we harden our systems. Stay vigilant, EarthPol — We never bow, we never bend, and we own the finish line!
