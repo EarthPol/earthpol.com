@@ -61,7 +61,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 - Town/Nation Names like "Silent Sanctuary" are not valid because there is no fictional relevance
 
 ### Section 6. Towny and SiegeWar Specifics
-6.1 - **Siege Conduct**: Kill feeding, town-claim surrounding strategies, and digging pits under siege banners to disrupt sieges are prohibited.
+6.1 - **Siege Conduct**: Kill feeding, town-claim surrounding strategies, and digging pits under siege banners to disrupt sieges are prohibited. This also includes abusing any mechanics of the plugin.
 
 6.2 - **Siege Outposts**:
     - Outposts placed next to a town for the purposes of conducting a siege are not counted as claimblocking.
