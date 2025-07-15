@@ -26,3 +26,9 @@
   align-items: center;
   gap: 0.3rem;
 }
+
+/* Screenshot section description */
+.screenshots p {
+  font-size: 1.2rem; /* Bigger paragraph text */
+  line-height: 1.6;
+}

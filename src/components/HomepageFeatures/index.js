@@ -50,25 +50,25 @@ const ScreenshotList = [
   {
     title: '1:326 Map',
     image: require('@site/static/img/epolmap.png').default,
-    description: 'Our custom Earth map offers a unique and immersive gameplay experience. Handcrafted using real-world topographical and geographical data, the map brings an added layer of depth and realism to EarthPol, making geopolitics truly relevant. At a 1:326 scale, this map provides an impressive level of detail, meaning cities, rivers, coastlines, and mountain ranges closely resemble their real-world counterparts.',
+    description: 'Explore our custom-made EarthPol map, crafted with real-world geography at a detailed 1:326 scale. Natural features, rivers, and landscapes mirror reality, delivering a truly immersive geopolitical Minecraft experience.',
     imageFirst: true,
   },
   {
     title: 'Building',
     image: require('@site/static/img/building.png').default,
-    description: 'On EarthPol, you can build your town knowing that builds will be preserved. We take great pride in the integrity of our build preservation system. With hourly backups and thorough CoreProtect logs, we ensure that every structure you build and every item you store is safeguarded with care. Our system is designed to offer peace of mind, knowing that your builds are not only protected but consistently preserved. Whether it is a towering skyscraper or a small town, we prioritize the security of your creations, making sure they are never lost.',
+    description: 'Build with confidence on EarthPol. Our robust preservation system, featuring hourly backups and CoreProtect logs, guarantees your creations, from small towns to skyscrapers, are safe and secure.',
     imageFirst: false,
   },
   {
     title: 'Diplomacy',
     image: require('@site/static/img/diplomacy.png').default,
-    description: 'Diplomacy plays a crucial role in shaping EarthPol. With the TradeWar plugin, players can engage in economic warfare, using trade and resources to outmaneuver rivals and establish dominance. Towny adds another layer by allowing players to create towns and nations, simulating real-world geopolitical dynamics. Beyond the server, our Discord community is where players can connect, forge alliances, and prepare for conflicts. Whether it is negotiating treaties, forming coalitions, or preparing for future battles, EarthPol offers a robust platform for players to experience the intricacies of diplomacy in a dynamic, interactive world.',
+    description: 'Master the art of diplomacy with plugins like Towny and TradeWar, engaging in economic battles, alliances, and statecraft. Join our community on Discord to negotiate treaties and shape the dynamic political landscape of EarthPol.',
     imageFirst: true,
   },
   {
-    title: 'Combat',
+    title: 'War & Combat',
     image: require('@site/static/img/SiegeCover.png').default,
-    description: 'Combat in EarthPol is designed to be both fair and exciting, with a focus on strategy and teamwork. We’ve carefully analyzed and balanced combat mechanics to ensure that each battle is engaging and rewarding, regardless of your experience level. The SiegeWar plugin enhances the experience by allowing players to launch epic sieges, where towns and nations can go head-to-head in large-scale warfare. With an emphasis on tactics and coordination, players must plan their attacks, defend their territories, and make use of both offense and defense to secure victory. EarthPol strives to create an environment where combat remains fun and competitive, encouraging collaboration while maintaining fairness for all players involved.',
+    description: 'Experience strategic, balanced combat powered by SiegeWar. Coordinate epic sieges, defend territories, and lead your nation to victory in fair, team-focused PvP warfare designed for all skill levels. Alternatively, place bounties on your political enemies with our custom bounty plugin.',
     imageFirst: false,
   },
 ];
@@ -91,7 +91,7 @@ function Feature({ Svg, title, description, link }) {
 
 function Screenshot({ image, title, description, imageFirst }) {
   return (
-    <div className="row" style={{ marginBottom: '30px' }}>
+    <div className="row" style={{ marginBottom: '60px' }}>
       {imageFirst ? (
         <>
           <div className="col col--6">
@@ -103,14 +103,14 @@ function Screenshot({ image, title, description, imageFirst }) {
             />
           </div>
           <div className="col col--6">
-            <Heading as="h3" style={{ fontSize: '2.5em' }}>{title}</Heading>
+            <Heading as="h3" style={{ fontSize: '3.5em' }}>{title}</Heading>
             <p>{description}</p>
           </div>
         </>
       ) : (
         <>
           <div className="col col--6">
-            <Heading as="h3" style={{ fontSize: '2.5em' }}>{title}</Heading>
+            <Heading as="h3" style={{ fontSize: '3.5em' }}>{title}</Heading>
             <p>{description}</p>
           </div>
           <div className="col col--6">
