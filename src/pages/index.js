@@ -53,6 +53,45 @@ function HomepageHeader() {
     }
   }, [mounted]);
 
+// ── Mouse parallax effect ──────────────────────────────────────────
+useEffect(() => {
+  if (!mounted || typeof window === 'undefined') return;
+
+  const heroBanner = document.querySelector(`.${styles.heroBanner}`);
+  if (!heroBanner) return;
+
+  // Define your base position here
+  const baseX = 50;   // Horizontal center (percentage)
+  const baseY = 20;   // Your original vertical position (percentage)
+
+  const maxDrift = 5; // Small drift range in %
+
+  const handleMouseMove = (e) => {
+    const rect = heroBanner.getBoundingClientRect();
+
+    const x = (e.clientX - rect.left) / rect.width;   // 0 to 1 inside heroBanner
+    const y = (e.clientY - rect.top) / rect.height;   // 0 to 1 inside heroBanner
+
+    const moveX = baseX + (x - 0.5) * maxDrift * 1.3;
+    const moveY = baseY + (y - 0.5) * maxDrift * 1.3;
+
+    heroBanner.style.backgroundPosition = `${moveX}% ${moveY}%`;
+  };
+
+  const handleMouseLeave = () => {
+    // Snap back to base position when cursor leaves
+    heroBanner.style.backgroundPosition = `${baseX}% ${baseY}%`;
+  };
+
+  heroBanner.addEventListener('mousemove', handleMouseMove);
+  heroBanner.addEventListener('mouseleave', handleMouseLeave);
+
+  return () => {
+    heroBanner.removeEventListener('mousemove', handleMouseMove);
+    heroBanner.removeEventListener('mouseleave', handleMouseLeave);
+  };
+}, [mounted]);
+
   // ── Prevent SSR flash ──────────────────────────────────────────────
   if (!mounted) {
     return null;
@@ -61,100 +100,100 @@ function HomepageHeader() {
   const backgroundImage = `url(${isDarkTheme ? bgDark : bgLight})`;
 
   return (
-      <>
-        <header className={styles.heroBanner} style={{ backgroundImage }}>
-          <div
+    <>
+      <header className={styles.heroBanner} style={{ backgroundImage }}>
+        <div
+          className={clsx(
+            styles.mainHero,
+            (step >= 5 || !showIntro) && styles.mainHeroVisible
+          )}
+        >
+          <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
+          <div className={styles.subtitleWrapper}>
+            <p className="hero__subtitle">{siteConfig.tagline}</p>
+          </div>
+          <div className={styles.buttons}>
+            <Link
               className={clsx(
-                  styles.mainHero,
-                  (step >= 5 || !showIntro) && styles.mainHeroVisible
+                'button button--secondary button--lg',
+                styles.gradientButton
               )}
-          >
-            <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
-            <div className={styles.subtitleWrapper}>
-              <p className="hero__subtitle">{siteConfig.tagline}</p>
-            </div>
-            <div className={styles.buttons}>
-              <Link
-                  className={clsx(
-                      'button button--secondary button--lg',
-                      styles.gradientButton
-                  )}
-                  to="/docs/Getting Started/HowToJoin"
-              >
-                IP: PLAY.EARTHPOL.COM
-              </Link>
-              <div className={styles.serverStatusWrapper}>
-                <ServerStatus />
-              </div>
+              to="/docs/Getting Started/HowToJoin"
+            >
+              IP: PLAY.EARTHPOL.COM
+            </Link>
+            <div className={styles.serverStatusWrapper}>
+              <ServerStatus />
             </div>
           </div>
-        </header>
+        </div>
+      </header>
 
-        {showIntro && step < 5 && (
+      {showIntro && step < 5 && (
+        <div
+          className={clsx(
+            styles.introContainer,
+            step >= 5 && styles.introFadeOut
+          )}
+        >
+          <div className={styles.backgroundVideoWrapper}>
+            <video
+              ref={videoRef}
+              onLoadedData={() => console.log('▶ video loaded')}
+              onError={(e) => console.error('❌ video error', e)}
+              controls
+              className={styles.backgroundVideo}
+              autoPlay
+              muted
+              playsInline
+              src={videoSrc}
+            />
             <div
-                className={clsx(
-                    styles.introContainer,
-                    step >= 5 && styles.introFadeOut
-                )}
+              className={clsx(
+                styles.fadeToBlackOverlay,
+                step >= 4 && styles.visible
+              )}
+            />
+          </div>
+          <div className={styles.textContainer}>
+            <h2
+              className={clsx(
+                styles.thisIs,
+                step >= 1 && styles.visible,
+                step >= 2 && styles.thisIsMoved,
+                step >= 3 && styles.thisIsFadeOut
+              )}
             >
-              <div className={styles.backgroundVideoWrapper}>
-                <video
-                    ref={videoRef}
-                    onLoadedData={() => console.log('▶ video loaded')}
-                    onError={(e) => console.error('❌ video error', e)}
-                    controls
-                    className={styles.backgroundVideo}
-                    autoPlay
-                    muted
-                    playsInline
-                    src={videoSrc}
-                />
-                <div
-                    className={clsx(
-                        styles.fadeToBlackOverlay,
-                        step >= 4 && styles.visible
-                    )}
-                />
-              </div>
-              <div className={styles.textContainer}>
-                <h2
-                    className={clsx(
-                        styles.thisIs,
-                        step >= 1 && styles.visible,
-                        step >= 2 && styles.thisIsMoved,
-                        step >= 3 && styles.thisIsFadeOut
-                    )}
-                >
-                  THIS IS
-                </h2>
+              THIS IS
+            </h2>
 
-                <h1
-                    className={clsx(
-                        styles.earthpol,
-                        step >= 2 && styles.visible,
-                        step >= 4 && styles.earthpolScaledDown
-                    )}
-                >
-                  EARTHPOL
-                </h1>
-              </div>
-            </div>
-        )}
-      </>
+            <h1
+              className={clsx(
+                styles.earthpol,
+                step >= 2 && styles.visible,
+                step >= 4 && styles.earthpolScaledDown
+              )}
+            >
+              EARTHPOL
+            </h1>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-      <Layout
-          title={`Welcome to ${siteConfig.title}`}
-          description="The Ultimate Geopolitical Minecraft Server"
-      >
-        <HomepageHeader />
-        <main>
-          <HomepageFeatures />
-        </main>
-      </Layout>
+    <Layout
+      title={`Welcome to ${siteConfig.title}`}
+      description="The Ultimate Geopolitical Minecraft Server"
+    >
+      <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
+    </Layout>
   );
 }

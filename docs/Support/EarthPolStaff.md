@@ -63,12 +63,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Ethnzz/80" /><br/>
-  <strong><a href="#">Ethnzz</a></strong><br/>
-  <em>Administrator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/AkselV/80" /><br/>
   <strong><a href="#">AkselV</a></strong><br/>
   <em>Administrator</em>
@@ -92,6 +86,12 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <em>Administrator</em>
 </div>
 
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/ellied64/80" /><br/>
+  <strong><a href="#">ellied64</a></strong><br/>
+  <em>Administrator</em>
+</div>
+
 </div>
 
 ### Moderators
@@ -103,6 +103,13 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <strong><a href="#">superb1aze</a></strong><br/>
   <em>Moderator</em>
 </div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Ethnzz/80" /><br/>
+  <strong><a href="#">Ethnzz</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
 
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/GrayIsBalls/80" /><br/>
@@ -123,26 +130,8 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/ellied64/80" /><br/>
-  <strong><a href="#">ellied64</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/EnnEiro/80" /><br/>
-  <strong><a href="#">EnnEiro</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/Zamings/80" /><br/>
   <strong><a href="#">Zamings</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/pmkcanadian/80" /><br/>
-  <strong><a href="#">pmkcanadian</a></strong><br/>
   <em>Moderator</em>
 </div>
 
@@ -211,8 +200,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 ---
 
 ## We want YOU!
-
-![EarthPol Staff](/img/staffphoto.png)
 
 We are always seeking dedicated and motivated individuals to join our staff team. New players are welcome, and we encourage anyone with a passion for community building and server development to get involved. To be considered, simply join our Discord server and remain active within the community. When the time comes, we will announce the next round of staff applications there. We look forward to welcoming new members who are eager to contribute to the continued success of EarthPol.
 
