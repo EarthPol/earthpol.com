@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -50,29 +51,98 @@ const ScreenshotList = [
   {
     title: '1:326 Map',
     image: require('@site/static/img/epolmap.png').default,
-    description: 'Our custom Earth map offers a unique and immersive gameplay experience. Handcrafted using real-world topographical and geographical data, the map brings an added layer of depth and realism to EarthPol, making geopolitics truly relevant. At a 1:326 scale, this map provides an impressive level of detail, meaning cities, rivers, coastlines, and mountain ranges closely resemble their real-world counterparts.',
+    description: 'Explore our custom-made EarthPol map, crafted with real-world geography at a detailed 1:326 scale. Natural features, rivers, and landscapes mirror reality, delivering a truly immersive geopolitical Minecraft experience.',
     imageFirst: true,
   },
   {
     title: 'Building',
     image: require('@site/static/img/building.png').default,
-    description: 'On EarthPol, you can build your town knowing that builds will be preserved. We take great pride in the integrity of our build preservation system. With hourly backups and thorough CoreProtect logs, we ensure that every structure you build and every item you store is safeguarded with care. Our system is designed to offer peace of mind, knowing that your builds are not only protected but consistently preserved. Whether it is a towering skyscraper or a small town, we prioritize the security of your creations, making sure they are never lost.',
+    description: 'Build with confidence on EarthPol. Our robust preservation system, featuring hourly backups and CoreProtect logs, guarantees your creations, from small towns to skyscrapers, are safe and secure.',
     imageFirst: false,
   },
   {
     title: 'Diplomacy',
     image: require('@site/static/img/diplomacy.png').default,
-    description: 'Diplomacy plays a crucial role in shaping EarthPol. With the TradeWar plugin, players can engage in economic warfare, using trade and resources to outmaneuver rivals and establish dominance. Towny adds another layer by allowing players to create towns and nations, simulating real-world geopolitical dynamics. Beyond the server, our Discord community is where players can connect, forge alliances, and prepare for conflicts. Whether it is negotiating treaties, forming coalitions, or preparing for future battles, EarthPol offers a robust platform for players to experience the intricacies of diplomacy in a dynamic, interactive world.',
+    description: 'Master the art of diplomacy with plugins like Towny and TradeWar, engaging in economic battles, alliances, and statecraft. Join our community on Discord to negotiate treaties and shape the dynamic political landscape of EarthPol.',
     imageFirst: true,
   },
   {
-    title: 'Combat',
+    title: 'War & Combat',
     image: require('@site/static/img/SiegeCover.png').default,
-    description: 'Combat in EarthPol is designed to be both fair and exciting, with a focus on strategy and teamwork. We’ve carefully analyzed and balanced combat mechanics to ensure that each battle is engaging and rewarding, regardless of your experience level. The SiegeWar plugin enhances the experience by allowing players to launch epic sieges, where towns and nations can go head-to-head in large-scale warfare. With an emphasis on tactics and coordination, players must plan their attacks, defend their territories, and make use of both offense and defense to secure victory. EarthPol strives to create an environment where combat remains fun and competitive, encouraging collaboration while maintaining fairness for all players involved.',
+    description: 'Experience strategic, balanced combat powered by SiegeWar. Coordinate epic sieges, defend territories, and lead your nation to victory in fair, team-focused PvP warfare designed for all skill levels. Alternatively, place bounties on your political enemies with our custom bounty plugin.',
     imageFirst: false,
   },
 ];
 
+// ✅ Testimonials Component
+const testimonials = [
+  {
+    text: "The most immersive minecraft experience I’ve ever been part of, to play on earth and for it to be so accurate is unparalleled. Actual competent staff, REAL WARS, and events make the server even more compelling. Quit your job to play earthpol full-time and you’ll hold zero regrets",
+    author: "ConsulAugustus, Leader of the Roman Republic",
+  },
+  {
+    text: "A great Minecraft server and experience to try, its got some fun interesting sieges and large battles battles with lots of people and communities to interact with. A genuinely fun experience you should try, especially with a couple of friends.",
+    author: "Noks__, Prime Minister of Australia",
+  },
+  {
+    text: "Earthpol is so fun it kills my irl social life! Women no longer talk to me, and I sit in my room for 8 hours a day playing the greatest server on earth!",
+    author: "Peddlers, Mayor of Metz",
+  },
+];
+
+function Testimonials() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleClick = (index) => {
+    setActiveIndex(index);
+  };
+
+  return (
+    <section className={styles.testimonialsSection}>
+      <div className="container">
+        <div className="row">
+          {/* Left Blurb */}
+          <div className="col col--6">
+            <Heading as="h1">Committed to Player Satisfaction</Heading>
+            <p className={styles.testimonialBlurb}>
+              See what our players have to say about their EarthPol adventures. From first-time settlers to veteran nation leaders, players shape this world with cities, wars, and alliances while our dedicated team works behind the scenes to keep every journey immersive and fair. Read their stories and see why EarthPol is the trusted home for builders, diplomats, and conquerors alike.
+            </p>
+          </div>
+
+          {/* Right Carousel */}
+          <div className="col col--6">
+            <div className={styles.carouselContainer}>
+              <div
+                className={styles.carouselTrack}
+                style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+              >
+                {testimonials.map((testimonial, index) => (
+                  <div key={index} className={styles.testimonialSlide}>
+                    <p>"{testimonial.text}"</p>
+                    <p><strong>- {testimonial.author}</strong></p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className={styles.carouselButtons}>
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleClick(index)}
+                  className={activeIndex === index ? styles.active : ''}
+                >
+                  ●
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ✅ Existing Feature & Screenshot components
 function Feature({ Svg, title, description, link }) {
   return (
     <div className={clsx('col col--3', 'feature-item')}>
@@ -91,7 +161,7 @@ function Feature({ Svg, title, description, link }) {
 
 function Screenshot({ image, title, description, imageFirst }) {
   return (
-    <div className="row" style={{ marginBottom: '30px' }}>
+    <div className="row" style={{ marginBottom: '60px' }}>
       {imageFirst ? (
         <>
           <div className="col col--6">
@@ -103,14 +173,14 @@ function Screenshot({ image, title, description, imageFirst }) {
             />
           </div>
           <div className="col col--6">
-            <Heading as="h3" style={{ fontSize: '2.5em' }}>{title}</Heading>
+            <Heading as="h3" style={{ fontSize: '3.5em' }}>{title}</Heading>
             <p>{description}</p>
           </div>
         </>
       ) : (
         <>
           <div className="col col--6">
-            <Heading as="h3" style={{ fontSize: '2.5em' }}>{title}</Heading>
+            <Heading as="h3" style={{ fontSize: '3.5em' }}>{title}</Heading>
             <p>{description}</p>
           </div>
           <div className="col col--6">
@@ -127,6 +197,7 @@ function Screenshot({ image, title, description, imageFirst }) {
   );
 }
 
+// ✅ Full Homepage
 export default function HomepageFeatures() {
   return (
     <>
@@ -156,52 +227,56 @@ export default function HomepageFeatures() {
         </div>
       </section>
 
-{/* Horizontal Line before Discord */}
-<hr className="horizontalLine" />
+      <hr className="horizontalLine" />
 
-{/* Discord Widget Section */}
-<section className={styles.discordSection} style={{ textAlign: 'center', marginBottom: '50px' }}>
-  <Heading as="h1" style={{ marginBottom: '30px' }}>Join Our Community</Heading>
-  <div
-    className="row"
-    style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      flexWrap: 'wrap',
-      gap: '30px',
-    }}
-  >
-    {/* Left Image */}
-    <div className="col col--4" style={{ textAlign: 'center' }}>
-      <img
-        src={require('@site/static/img/community.png').default}
-        alt="Diplomacy"
-        style={{
-          height: '500px',
-          width: '100%',
-          objectFit: 'cover',
-          borderRadius: '12px',
-        }}
-      />
-    </div>
+      {/* ✅ Testimonials Section */}
+      <Testimonials />
 
-    {/* Discord Widget */}
-    <div className="col col--4" style={{ textAlign: 'center' }}>
-      <iframe
-        src="https://discord.com/widget?id=1204204837483446353&theme=dark"
-        width="100%"
-        height="500"
-        allowTransparency="true"
-        frameBorder="0"
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-        style={{
-          borderRadius: '12px',
-        }}
-      ></iframe>
-    </div>
-  </div>
-</section>
+      <hr className="horizontalLine" />
+
+      {/* Discord Widget Section */}
+      <section className={styles.discordSection} style={{ textAlign: 'center', marginBottom: '50px' }}>
+        <Heading as="h1" style={{ marginBottom: '30px' }}>Join Our Community</Heading>
+        <div
+          className="row"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            gap: '30px',
+          }}
+        >
+          {/* Left Image */}
+          <div className="col col--4" style={{ textAlign: 'center' }}>
+            <img
+              src={require('@site/static/img/community.png').default}
+              alt="Diplomacy"
+              style={{
+                height: '500px',
+                width: '100%',
+                objectFit: 'cover',
+                borderRadius: '12px',
+              }}
+            />
+          </div>
+
+          {/* Discord Widget */}
+          <div className="col col--4" style={{ textAlign: 'center' }}>
+            <iframe
+              src="https://discord.com/widget?id=1204204837483446353&theme=dark"
+              width="100%"
+              height="500"
+              allowTransparency="true"
+              frameBorder="0"
+              sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+              style={{
+                borderRadius: '12px',
+              }}
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

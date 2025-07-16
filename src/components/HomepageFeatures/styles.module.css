@@ -26,3 +26,62 @@
   align-items: center;
   gap: 0.3rem;
 }
+
+/* Screenshot section description */
+.screenshots p {
+  font-size: 1.2rem; /* Bigger paragraph text */
+  line-height: 1.6;
+}
+
+/* ✅ Testimonials Section */
+.testimonialsSection {
+  padding: 4rem 0;
+  text-align: left;
+}
+
+.testimonialBlurb {
+  font-size: 1.3rem; /* Larger blurb text */
+  line-height: 1.8;
+}
+
+.carouselContainer {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonialSlide {
+  flex: 0 0 100%;
+  background-color: #f5f5f5;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  min-height: 150px;
+  color: #000;
+  font-size: 1.4rem; /* Larger testimonial text */
+  line-height: 1.8;
+  box-sizing: border-box;
+}
+
+.carouselButtons {
+  margin-top: 1rem;
+}
+
+.carouselButtons button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  margin: 0 0.5rem;
+}
+
+.carouselButtons button:hover,
+.carouselButtons .active {
+  color: #333;
+}
+
