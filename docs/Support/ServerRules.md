@@ -55,6 +55,8 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 4.1 - **Combat Engagement**: Combat is permitted. Post-defeat engagement rules apply. Spawn camping is banned. Nation Spawn or Town Spawn camping/killing is banned.
 
 4.2 - **Claim Hopping**: Using claims to avoid combat or gain an advantage is prohibited.
+
+4.3 – Bounty Abuse: Players may not intentionally coordinate deaths to split or share bounty rewards, nor arrange to have themselves killed for personal or mutual financial gain. Such actions are considered abuse of the Bounty plugin and are prohibited.
 ### Section 5. Naming and Representation
 5.1 - **Names and Representation**: Town and nation names must adhere to guidelines around appropriateness, uniqueness, and relevance to geopolitics. Names should relate either to real-world geopolitical entities or to fictional places that possess a defined political, cultural, or territorial identity within an established or original geopolitical context. Purely fantasy or generic names without clear geopolitical significance are not permitted. Usernames, nicknames, and player skins must not include inappropriate, offensive, misleading, or controversial content, including overt political references or impersonation, with final judgment left to admin discretion.
 - Town/Nation Names like "Ba Sing Se" are valid because there is fictional geopolitical relevance as it is the name of the Earth Kingdom's Capital in the Avatar anime.
