@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -73,6 +74,75 @@ const ScreenshotList = [
   },
 ];
 
+// ✅ Testimonials Component
+const testimonials = [
+  {
+    text: "The most immersive minecraft experience I’ve ever been part of, to play on earth and for it to be so accurate is unparalleled. Actual competent staff, REAL WARS, and events make the server even more compelling. Quit your job to play earthpol full-time and you’ll hold zero regrets",
+    author: "ConsulAugustus, Leader of the Roman Republic",
+  },
+  {
+    text: "A great Minecraft server and experience to try, its got some fun interesting sieges and large battles battles with lots of people and communities to interact with. A genuinely fun experience you should try, especially with a couple of friends.",
+    author: "Noks__, Prime Minister of Australia",
+  },
+  {
+    text: "Earthpol is so fun it kills my irl social life! Women no longer talk to me, and I sit in my room for 8 hours a day playing the greatest server on earth!",
+    author: "Peddlers, Mayor of Metz",
+  },
+];
+
+function Testimonials() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleClick = (index) => {
+    setActiveIndex(index);
+  };
+
+  return (
+    <section className={styles.testimonialsSection}>
+      <div className="container">
+        <div className="row">
+          {/* Left Blurb */}
+          <div className="col col--6">
+            <Heading as="h1">Committed to Player Satisfaction</Heading>
+            <p className={styles.testimonialBlurb}>
+              See what our players have to say about their EarthPol adventures. From first-time settlers to veteran nation leaders, players shape this world with cities, wars, and alliances while our dedicated team works behind the scenes to keep every journey immersive and fair. Read their stories and see why EarthPol is the trusted home for builders, diplomats, and conquerors alike.
+            </p>
+          </div>
+
+          {/* Right Carousel */}
+          <div className="col col--6">
+            <div className={styles.carouselContainer}>
+              <div
+                className={styles.carouselTrack}
+                style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+              >
+                {testimonials.map((testimonial, index) => (
+                  <div key={index} className={styles.testimonialSlide}>
+                    <p>"{testimonial.text}"</p>
+                    <p><strong>- {testimonial.author}</strong></p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className={styles.carouselButtons}>
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleClick(index)}
+                  className={activeIndex === index ? styles.active : ''}
+                >
+                  ●
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ✅ Existing Feature & Screenshot components
 function Feature({ Svg, title, description, link }) {
   return (
     <div className={clsx('col col--3', 'feature-item')}>
@@ -127,6 +197,7 @@ function Screenshot({ image, title, description, imageFirst }) {
   );
 }
 
+// ✅ Full Homepage
 export default function HomepageFeatures() {
   return (
     <>
@@ -156,52 +227,56 @@ export default function HomepageFeatures() {
         </div>
       </section>
 
-{/* Horizontal Line before Discord */}
-<hr className="horizontalLine" />
+      <hr className="horizontalLine" />
 
-{/* Discord Widget Section */}
-<section className={styles.discordSection} style={{ textAlign: 'center', marginBottom: '50px' }}>
-  <Heading as="h1" style={{ marginBottom: '30px' }}>Join Our Community</Heading>
-  <div
-    className="row"
-    style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      flexWrap: 'wrap',
-      gap: '30px',
-    }}
-  >
-    {/* Left Image */}
-    <div className="col col--4" style={{ textAlign: 'center' }}>
-      <img
-        src={require('@site/static/img/community.png').default}
-        alt="Diplomacy"
-        style={{
-          height: '500px',
-          width: '100%',
-          objectFit: 'cover',
-          borderRadius: '12px',
-        }}
-      />
-    </div>
+      {/* ✅ Testimonials Section */}
+      <Testimonials />
 
-    {/* Discord Widget */}
-    <div className="col col--4" style={{ textAlign: 'center' }}>
-      <iframe
-        src="https://discord.com/widget?id=1204204837483446353&theme=dark"
-        width="100%"
-        height="500"
-        allowTransparency="true"
-        frameBorder="0"
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-        style={{
-          borderRadius: '12px',
-        }}
-      ></iframe>
-    </div>
-  </div>
-</section>
+      <hr className="horizontalLine" />
+
+      {/* Discord Widget Section */}
+      <section className={styles.discordSection} style={{ textAlign: 'center', marginBottom: '50px' }}>
+        <Heading as="h1" style={{ marginBottom: '30px' }}>Join Our Community</Heading>
+        <div
+          className="row"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            gap: '30px',
+          }}
+        >
+          {/* Left Image */}
+          <div className="col col--4" style={{ textAlign: 'center' }}>
+            <img
+              src={require('@site/static/img/community.png').default}
+              alt="Diplomacy"
+              style={{
+                height: '500px',
+                width: '100%',
+                objectFit: 'cover',
+                borderRadius: '12px',
+              }}
+            />
+          </div>
+
+          {/* Discord Widget */}
+          <div className="col col--4" style={{ textAlign: 'center' }}>
+            <iframe
+              src="https://discord.com/widget?id=1204204837483446353&theme=dark"
+              width="100%"
+              height="500"
+              allowTransparency="true"
+              frameBorder="0"
+              sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+              style={{
+                borderRadius: '12px',
+              }}
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
