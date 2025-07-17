@@ -77,6 +77,14 @@ const ScreenshotList = [
 // ✅ Testimonials Component
 const testimonials = [
   {
+    text: "Earthpol is one of the few geopolitical servers that genuinely puts the player experience first [...] with an active community and a staff team that listens, players can easily request changes to the server and vote on other propositions to help form an experience that meets the needs of all.",
+    author: "8set, Mayor of Ramsar",
+  },
+  {
+    text: "EPMC is easily one of the most consistently entertaining and enjoyable experiences i’ve had on Minecraft. Since joining as a new player, I’ve been warmly welcomed by both the loyal, helpful player base and the amazing and friendly staff team.",
+    author: "kuuvine, Leader of the Altai Republic",
+  },
+  {
     text: "The most immersive minecraft experience I’ve ever been part of, to play on earth and for it to be so accurate is unparalleled. Actual competent staff, REAL WARS, and events make the server even more compelling. Quit your job to play earthpol full-time and you’ll hold zero regrets",
     author: "ConsulAugustus, Leader of the Roman Republic",
   },
