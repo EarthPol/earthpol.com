@@ -275,7 +275,11 @@ Below is a shortened example of the GET response returned from the URL above, li
     {
         "name": "Cuba",
         "uuid": "5eda99c0-e430-4552-abae-4e7604579483"
-	}
+	},
+    {
+        "name": "Hokkaido",
+        "uuid": "1bd8a430-05a5-43da-b74d-5054e843f81d"
+    }
 ]
 ```
 
@@ -285,8 +289,8 @@ Payload:
 {
     "query": [
         //You can query by Nation Name or Nation UUID, doing both will return double results.
-        "Cuba", //Nation Name
-        "5eda99c0-e430-4552-abae-4e7604579483" //Nation UUID
+        "Hokkaido", //Nation Name
+        "1bd8a430-05a5-43da-b74d-5054e843f81d" //Nation UUID
     ]
 }
 ```
@@ -295,84 +299,144 @@ Response
 ```JSON
 [
     {
-        "name": "Cuba",
-        "uuid": "5eda99c0-e430-4552-abae-4e7604579483",
-        "board": "Welcome to the Empire of Cuba",
+        "name": "Hokkaido",
+        "uuid": "1bd8a430-05a5-43da-b74d-5054e843f81d",
+        "board": "Glory to Hokkaido!",
         "king": {
-            "name": "jhjhjh098k",
-            "uuid": "9a2657ea-e15c-4469-8886-6c101151eff0"
+            "name": "0xBit",
+            "uuid": "d550441b-5fcf-448c-a756-5fa391b89a46"
         },
         "capital": {
-            "name": "Havana",
-            "uuid": "ff50d039-669d-413e-84e0-18c3fd370ea3"
+            "name": "Sapporo",
+            "uuid": "d694c985-0514-4f98-a6f2-48213d1a7c47"
         },
         "timestamps": {
-            "registered": 1719176120296
+            "registered": 1749343045130
         },
         "status": {
-            "isPublic": true,
+            "isPublic": false,
             "isOpen": false,
             "isNeutral": false
         },
         "stats": {
-            "numTownBlocks": 1021,
-            "numResidents": 15,
-            "numTowns": 2,
-            "numAllies": 9,
-            "numEnemies": 0,
-            "balance": 0.0
+            "numTownBlocks": 3124,
+            "numResidents": 47,
+            "numTowns": 5,
+            "numAllies": 66,
+            "numEnemies": 9,
+            "balance": 3547.0
         },
         "coordinates": {
             "spawn": {
                 "world": "world",
-                "x": -27720.00379749501,
-                "y": 64.0,
-                "z": -7744.0120470932,
-                "pitch": -1.3423146,
-                "yaw": 0.06389673
+                "x": 48433.35710783266,
+                "y": 63.0,
+                "z": -14687.509163325874,
+                "pitch": 1.5000051,
+                "yaw": 89.90117
             }
         },
         "residents": [
             {
-                "name": "MrTytanic",
-                "uuid": "d904bb76-412d-4f6a-af9f-13853b5fc614"
+                "name": "0xBit",
+                "uuid": "d550441b-5fcf-448c-a756-5fa391b89a46"
             },
             {
-                "name": "jhjhjh098k",
-                "uuid": "9a2657ea-e15c-4469-8886-6c101151eff0"
+                "name": "Spiceit",
+                "uuid": "2bddc5c4-fb63-4f4d-9b38-d73e8e1bb2c4"
+            },
+            {
+                "name": "Keipthountx",
+                "uuid": "1118f770-c55e-4677-af34-40a571a335b5"
+            },
+            {
+                "name": "Frxzt",
+                "uuid": "0bea07e0-60f9-47e4-bffb-919d2eee7463"
+            },
+            {
+                "name": "korey4907",
+                "uuid": "c2ee15fb-54f0-4acb-8ed0-2ff9da673f01"
+            },
+            {
+                "name": "Hosentil",
+                "uuid": "e7d3a4b1-d262-4583-82d9-1418bf62a677"
             }
         ],
         "towns": [
             {
-                "name": "Havana",
-                "uuid": "ff50d039-669d-413e-84e0-18c3fd370ea3"
+                "name": "HIA",
+                "uuid": "2d886361-9eb6-4c0b-8011-d6eb36f1f25d"
             },
             {
-                "name": "Skibidi",
-                "uuid": "0b86c2db-da31-4ac2-84f3-de3e4166164c"
+                "name": "Karafuto",
+                "uuid": "661e2d58-e1f9-4614-acb0-a92c2a9a99b5"
+            },
+            {
+                "name": "New_Atlanta",
+                "uuid": "4fa2bd84-1414-410d-ae96-fff5d006cab3"
+            },
+            {
+                "name": "Sapporo",
+                "uuid": "d694c985-0514-4f98-a6f2-48213d1a7c47"
+            },
+            {
+                "name": "Wakkanai",
+                "uuid": "3360a5ee-e307-4f13-b1c6-89c7a622a343"
             }
         ],
         "allies": [
             {
-                "name": "Japan",
-                "uuid": "93f28b00-51ba-43b2-930f-a63e496317a2"
-            },
-            {
-                "name": "Cascadia",
-                "uuid": "e38c9fbc-78d9-4e9b-a90f-870fba949693"
+                "name": "German_Empire",
+                "uuid": "00b142fb-a5cf-4cf0-9f0a-e6f43f723c66"
             }
         ],
-        "enemies": [],
+        "enemies": [
+            {
+                "name": "SPQM",
+                "uuid": "913c897d-fc38-4c9f-bc97-02e557fa2876"
+            }
+        ],
         "sanctioned": [],
+        "discord": "https://discord.gg/KtSPBrQsct",
         "ranks": {
-            "co-leader": [],
-            "minister": [],
-            "recruiter": [],
-            "soldier": [],
+            "co-leader": [
+                {
+                    "name": "SpaceJavelin",
+                    "uuid": "2c56e5ab-3995-4481-be09-4e14e5170b25"
+                }
+            ],
+            "minister": [
+                {
+                    "name": "korey4907",
+                    "uuid": "c2ee15fb-54f0-4acb-8ed0-2ff9da673f01"
+                }
+            ],
+            "ambassador": [
+                {
+                    "name": "MarshalTactix",
+                    "uuid": "e9203daa-a7e1-49e9-a691-b18a85dab008"
+                }
+            ],
+            "recruiter": [
+                {
+                    "name": "Tree404",
+                    "uuid": "cf4f0d3d-accc-4d92-a997-0f5d1bf63369"
+                }
+            ],
+            "soldier": [
+                {
+                    "name": "korey4907",
+                    "uuid": "c2ee15fb-54f0-4acb-8ed0-2ff9da673f01"
+                }
+            ],
             "general": [
                 {
-                    "name": "NimbKied",
-                    "uuid": "f0256093-23b5-4fdd-96f0-451ef4acb63c"
+                    "name": "MarshalTactix",
+                    "uuid": "e9203daa-a7e1-49e9-a691-b18a85dab008"
+                },
+                {
+                    "name": "SpaceJavelin",
+                    "uuid": "2c56e5ab-3995-4481-be09-4e14e5170b25"
                 }
             ]
         }
@@ -428,40 +492,61 @@ Response:
     {
         "name": "MrTytanic",
         "uuid": "d904bb76-412d-4f6a-af9f-13853b5fc614",
-        "title": "&6&lKing",
+        "title": null,
         "surname": null,
-        "formattedName": "§6§lKing MrTytanic",
-        "about": "Kobenge clear",
+        "formattedName": "MrTytanic",
+        "about": "/res set about [msg]",
+        "premium": false,
         "town": {
-            "name": "Havana",
-            "uuid": "ff50d039-669d-413e-84e0-18c3fd370ea3"
+            "name": null,
+            "uuid": null
         },
         "nation": {
-            "name": "Cuba",
-            "uuid": "5eda99c0-e430-4552-abae-4e7604579483"
+            "name": null,
+            "uuid": null
         },
         "timestamps": {
-            "registered": 1718426928686,
-            "joinedTownAt": 1719014190767,
-            "lastOnline": 1744735653973
+            "registered": 1748406206481,
+            "joinedTownAt": null,
+            "lastOnline": 1753137047306
         },
         "status": {
             "isOnline": false,
             "isNPC": false,
             "isMayor": false,
             "isKing": false,
-            "hasTown": true,
-            "hasNation": true
+            "hasTown": false,
+            "hasNation": false
         },
         "stats": {
-            "balance": 67.0,
-            "numFriends": 2
+            "balance": 348.0,
+            "numFriends": 0
         },
         "perms": {
-            "build": [true, false, false, false],
-            "destroy": [true, false, false, false],
-            "switch": [true, false, false, false],
-            "itemUse": [true, false, false, false],
+            "build": [
+                true,
+                false,
+                false,
+                false
+            ],
+            "destroy": [
+                true,
+                false,
+                false,
+                false
+            ],
+            "switch": [
+                true,
+                false,
+                false,
+                false
+            ],
+            "itemUse": [
+                true,
+                false,
+                false,
+                false
+            ],
             "flags": {
                 "pvp": false,
                 "explosion": false,
@@ -473,16 +558,7 @@ Response:
             "townRanks": [],
             "nationRanks": []
         },
-        "friends": [
-            {
-                "name": "0xBit",
-                "uuid": "d550441b-5fcf-448c-a756-5fa391b89a46"
-            },
-            {
-                "name": "Bustun",
-                "uuid": "9e47a89a-c251-4df6-9da2-792f2e3f74d0"
-            }
-        ]
+        "friends": []
     }
 ]
 ```
@@ -533,22 +609,31 @@ Response:
 ```JSON
 [
     {
-        "id": 2,
-        "owner": "d904bb76-412d-4f6a-af9f-13853b5fc614",
-        "item": "ItemStack{NETHERITE_INGOT x 1}",
-        "price": 1.0
+        "id": 4462,
+        "owner": "13d27295-93bf-402a-8108-f8822e4adceb",
+        "item": "ItemStack{GOLD_INGOT x 1}",
+        "price": 1.0,
+        "type": "SELLING",
+        "space": -1,
+        "stock": 410
     },
     {
-        "id": 3,
-        "owner": "d904bb76-412d-4f6a-af9f-13853b5fc614",
-        "item": "ItemStack{NETHERITE_BLOCK x 1}",
-        "price": 9.0
+        "id": 9035,
+        "owner": "c6361698-4f03-4fb2-bb3c-74e799a22ad5",
+        "item": "ItemStack{BAKED_POTATO x 56}",
+        "price": 1.0,
+        "type": "SELLING",
+        "space": -1,
+        "stock": 0
     },
     {
-        "id": 4,
-        "owner": "d904bb76-412d-4f6a-af9f-13853b5fc614",
-        "item": "ItemStack{DIAMOND x 1}",
-        "price": 13.0
+        "id": 9656,
+        "owner": "c6361698-4f03-4fb2-bb3c-74e799a22ad5",
+        "item": "ItemStack{BARREL x 33}",
+        "price": 9.0E11,
+        "type": "SELLING",
+        "space": 2.0,
+        "stock": 0
     }
 ]
 ```
