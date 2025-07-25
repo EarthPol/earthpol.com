@@ -48,6 +48,13 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <a href="https://github.com/jhjhjh098k"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
 </div>
 
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/imide/80" /><br/>
+  <strong><a href="#">Imide</a></strong><br/>
+  <em>Developer</em><br/>
+  <a href="https://github.com/imide"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
+</div>
+
 </div>
 
 </div>
@@ -55,6 +62,12 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 ### Administrators
 
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/KeijoDPutt/80" /><br/>
+  <strong><a href="#">KeijoDPutt</a></strong><br/>
+  <em>Staff Manager</em>
+</div>
 
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/Irochi_/80" /><br/>
@@ -65,12 +78,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/AkselV/80" /><br/>
   <strong><a href="#">AkselV</a></strong><br/>
-  <em>Administrator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/KeijoDPutt/80" /><br/>
-  <strong><a href="#">KeijoDPutt</a></strong><br/>
   <em>Administrator</em>
 </div>
 
@@ -141,6 +148,24 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <em>Moderator</em>
 </div>
 
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/RojoTsu/80" /><br/>
+  <strong><a href="#">RojoTsu</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Dandire/80" /><br/>
+  <strong><a href="#">Dandire</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Malibu_Kane/80" /><br/>
+  <strong><a href="#">Malibu_Kane</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
 </div>
 
 ### Helpers and Builders
@@ -150,6 +175,12 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/Stilka/80" /><br/>
   <strong><a href="#">Stilka</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Granitial/80" /><br/>
+  <strong><a href="#">Granitial</a></strong><br/>
   <em>Helper</em>
 </div>
 
@@ -184,8 +215,26 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/reking/80" /><br/>
-  <strong><a href="#">reking</a></strong><br/>
+  <img src="https://minotar.net/avatar/Kuvviine/80" /><br/>
+  <strong><a href="#">Kuvviine</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/ImSigmaBoy/80" /><br/>
+  <strong><a href="#">ImSigmaBoy</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/The_Dichotomy/80" /><br/>
+  <strong><a href="#">The_Dichotomy</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/wilkous/80" /><br/>
+  <strong><a href="#">wilkous</a></strong><br/>
   <em>Helper</em>
 </div>
 
