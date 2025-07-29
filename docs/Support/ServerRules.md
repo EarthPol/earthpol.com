@@ -36,6 +36,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 - Minimaps that show entities.
 - ESP, tracers, chams/wallhacks, etc.
 - Autofishing or any automated process.
+- EasyPlace is allowed. Anticheat might give you issues however.
 
 2.4 - **Server Disruption**: Intentional harm to server operations (DDoS, spamming) will result in a permanent ban and legal action.
 
