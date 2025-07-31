@@ -29,11 +29,6 @@ const config = {
   ],
   scripts: [
     {
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3632978599628917',
-      async: true,
-      crossorigin: 'anonymous',
-    },
-    {
       src: 'https://umami.earthpol.com/script.js',
       defer: true,
       'data-website-id': 'd293e0ae-dcc5-4af8-adee-aa437c652be2',
