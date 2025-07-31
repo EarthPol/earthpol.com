@@ -125,18 +125,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Hyp3r/80" /><br/>
-  <strong><a href="#">Hyp3r</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/K1nda/80" /><br/>
-  <strong><a href="#">K1nda</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/Zamings/80" /><br/>
   <strong><a href="#">Zamings</a></strong><br/>
   <em>Moderator</em>
@@ -173,12 +161,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Stilka/80" /><br/>
-  <strong><a href="#">Stilka</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/Granitial/80" /><br/>
   <strong><a href="#">Granitial</a></strong><br/>
   <em>Helper</em>
@@ -193,12 +175,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/Amisco/80" /><br/>
   <strong><a href="#">Amisco</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/bigheadbarley/80" /><br/>
-  <strong><a href="#">bigheadbarley</a></strong><br/>
   <em>Helper</em>
 </div>
 
@@ -236,12 +212,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <img src="https://minotar.net/avatar/wilkous/80" /><br/>
   <strong><a href="#">wilkous</a></strong><br/>
   <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/CrazyCoolCas/80" /><br/>
-  <strong><a href="#">CrazyCoolCas</a></strong><br/>
-  <em>Builder</em>
 </div>
 
 </div>
