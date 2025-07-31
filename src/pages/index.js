@@ -19,8 +19,8 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   const { colorMode } = useColorMode();
   const isDarkTheme = colorMode === 'dark';
-  const bgLight = useBaseUrl('/img/day_ultra.webp');
-  const bgDark = useBaseUrl('/img/night_ultra.webp');
+  const bgLight = useBaseUrl('/img/light_map.png');
+  const bgDark = useBaseUrl('/img/dark_map.png');
   const videoSrc = useBaseUrl('/img/slideshow.mp4');
 
   // ── Hydration guard ────────────────────────────────────────────────
