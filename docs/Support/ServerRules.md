@@ -40,7 +40,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 2.4 - **Server Disruption**: Intentional harm to server operations (DDoS, spamming) will result in a permanent ban and legal action.
 
-2.5 - **Farming and Construction Limits**: Adhere to specific limits for mob farms, spawners, and construction to prevent server lag.
+2.5 - **Farming and Construction Limits**: Adhere to specific limits for mob farms, spawners, and construction to prevent server lag. Chunk loaders are not allowed. Prohibited farms will be removed, without warning, with no refunds for materials used given.
 
 2.6 - **Spawn Traps & Towny Jail Trapping**: Trapping players at ports, /t spawn, or /n spawn locations is prohibited, especially for the purpose of engaging in combat or killing them. This also includes /tpa trapping. 
 
