@@ -63,22 +63,6 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 - Town/Nation Names like "Ba Sing Se" are valid because there is fictional geopolitical relevance as it is the name of the Earth Kingdom's Capital in the Avatar anime.
 - Town/Nation Names like "Silent Sanctuary" are not valid because there is no fictional relevance
 
-5.2 - **Stewardship of Famous and Populated Areas**:
-
-To preserve the health and longevity of the server, especially in relation to iconic real-world locations, the following rule applies:
-
-If a notably famous or highly populated real-world location (e.g., New York City, London, Tokyo) is claimed by a player who has shown minimal progress, lack of meaningful development, or extended inactivity, a staff-led evaluation may be initiated.
-
-Outside the existing 45-day mayor inactivity succession rule, a 3/4ths majority vote by the admin team may remove the mayor from power and appoint a more active and dedicated candidate to steward the town.
-
-- Factors considered in such decisions include:
-- Total online time
-- Quality and scale of builds or infrastructure
-- Community engagement and contribution
-- Evidence of abandonment or stagnation
-
-This rule is intended to ensure that high-profile geopolitical towns reflect activity and value, in the spirit of a thriving and dynamic geopolitical server.
-
 ### Section 6. Towny and SiegeWar Specifics
 6.1 - **Siege Conduct**: Kill feeding, town-claim surrounding strategies, and digging pits under siege banners to disrupt sieges are prohibited. This also includes abusing any mechanics of the plugin.
 
