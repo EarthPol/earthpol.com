@@ -45,7 +45,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 2.6 - **Spawn Traps & Towny Jail Trapping**: Trapping players at ports, /t spawn, or /n spawn locations is prohibited, especially for the purpose of engaging in combat or killing them. This also includes /tpa trapping. 
 
 ### Section 3. Griefing and Land Use
-3.1 - **Town and Wilderness Griefing**: Griefing claimed towns or wilderness areas, including lava casting and mass burning, is prohibited. However, lava casting and mass burning are permitted within your own town if done for a clear and genuine building purpose, subject to staff discretion.
+3.1 - **Town Proximity and Wilderness Protection**: Griefing the wilderness, including activities such as lava casting, mass burning, large-scale explosions, or similar destructive acts, is prohibited. This applies both to general wilderness areas and to the immediate wilderness surrounding another town’s claims to prevent harassment. Protection does not extend to unclaimed builds or infrastructure left in the wilderness, which may be removed or altered by other players.
 
 3.2 - **Land Claims**: Properly fill town claims without "spaghetti claiming." Claim blocking and starting "Anchor Towns" for disruptive purposes are not allowed.
 
