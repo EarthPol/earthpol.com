@@ -92,3 +92,524 @@ To view what armor trims look like, check out this free website 👉 [armortrims
 - There is a **carpet dupe** crafting recipe for each type of carpet.
 - 1 carpet --> 3 carpet
 - Due to this recipe, carpets cannot be used as fuel in furnaces, blast furnaces, and smokers.
+
+---
+# BreweryX Recipes
+
+```YAML
+recipes:
+  ex:
+    enabled: true
+    name: Bad Example/Example/Good Example
+    ingredients:
+    - Bedrock/2
+    - Spruce_Planks/8
+    - Bedrock/1
+    cookingtime: 1
+    distillruns: 2
+    distilltime: 60
+    wood: 4
+    age: 11
+    color: DARK_RED
+    difficulty: 3
+    alcohol: 14
+    lore:
+    - This is an example brew
+    - ++Just a normal Example
+    - This text would be on the brew
+    - + Smells disgusting
+    - ++ Smells alright
+    - +++ Smells really good
+    servercommands:
+    - +++ weather clear
+    - + weather rain
+    playercommands:
+    - homes
+    drinkmessage: Tastes good
+    drinktitle: Warms you from inside
+    glint: true
+    customModelData: 556/557/557
+    effects:
+    - FIRE_RESISTANCE/20
+    - HEAL/1
+    - WEAKNESS/2-3/50-60
+    - POISON/1-0/20-0
+  wheatbeer:
+    name: Skunky Wheatbeer/Wheatbeer/Fine Wheatbeer
+    ingredients:
+    - Wheat/3
+    cookingtime: 8
+    distillruns: 0
+    wood: 1
+    age: 2
+    color: ffb84d
+    difficulty: 1
+    alcohol: 5
+    lore:
+    - +++ &8Refreshing
+  beer:
+    name: Skunky Beer/Beer/Fine Beer
+    ingredients:
+    - Wheat/6
+    cookingtime: 2
+    distillruns: 0
+    wood: 0
+    age: 3
+    color: ffd333
+    difficulty: 1
+    alcohol: 6
+    lore:
+    - +++ &8Crisp taste
+  darkbeer:
+    name: Skunky Darkbeer/Darkbeer/Fine Darkbeer
+    ingredients:
+    - Wheat/6
+    cookingtime: 8
+    distillruns: 0
+    wood: 6
+    age: 8
+    color: '650013'
+    difficulty: 2
+    alcohol: 7
+    lore:
+    - +++ &8Roasted taste
+  wine:
+    name: Red Wine
+    ingredients:
+    - Sweet_Berries/5
+    cookingtime: 5
+    distillruns: 0
+    wood: 0
+    age: 20
+    color: RED
+    difficulty: 4
+    alcohol: 8
+    lore:
+    - + &8Harsh
+    - + &8Corked
+    - ++ &8Mellow
+    - +++ &8Full-Bodied
+  mead:
+    name: Awkward Mead/Mead/&6Golden Mead
+    ingredients:
+    - Sugar_Cane/6
+    cookingtime: 3
+    distillruns: 0
+    wood: 2
+    age: 4
+    color: ORANGE
+    difficulty: 2
+    alcohol: 9
+    lore:
+    - +++ Has a golden shine
+  ap_mead:
+    name: Apple Mead/Sweet Apple Mead/&6Sweet Golden Apple Mead
+    ingredients:
+    - Sugar_Cane/6
+    - Apple/2
+    cookingtime: 4
+    distillruns: 0
+    wood: 2
+    age: 4
+    color: ORANGE
+    difficulty: 4
+    alcohol: 11
+    lore:
+    - Is there any Apple in this?
+    - Refreshing taste of Apple
+    - Sweetest hint of Apple
+    effects:
+    - WATER_BREATHING/1-2/150
+  cidre:
+    name: Poor Cidre/Apple Cider/Great Apple Cider
+    ingredients:
+    - Apple/14
+    cookingtime: 7
+    distillruns: 0
+    wood: 0
+    age: 3
+    color: f86820
+    difficulty: 4
+    alcohol: 7
+  apple_liquor:
+    name: Sour Apple Liquor/Apple Liquor/Calvados
+    ingredients:
+    - Apple/12
+    cookingtime: 16
+    distillruns: 3
+    wood: 5
+    age: 6
+    color: BRIGHT_RED
+    difficulty: 5
+    alcohol: 14
+    lore:
+    - +Sour like Acid
+    - +++ Good Apple Liquor
+  whiskey:
+    name: Unsightly Whiskey/Whiskey/Scotch Whiskey
+    ingredients:
+    - Wheat/10
+    cookingtime: 10
+    distillruns: 2
+    distilltime: 50
+    wood: 4
+    age: 18
+    color: ORANGE
+    difficulty: 7
+    alcohol: 26
+    lore:
+    - '&7Single Malt'
+  rum:
+    name: Bitter Rum/Spicy Rum/&6Golden Rum
+    ingredients:
+    - Sugar_Cane/18
+    cookingtime: 6
+    distillruns: 2
+    distilltime: 30
+    wood: 2
+    age: 14
+    color: DARK_RED
+    difficulty: 6
+    alcohol: 30
+    lore:
+    - + &8Too bitter to drink
+    - ++ &8Spiced by the barrel
+    - +++ &eSpiced Gold
+    effects:
+    - FIRE_RESISTANCE/1/20-100
+    - POISON/1-0/30-0
+  vodka:
+    name: Lousy Vodka/Vodka/Russian Vodka
+    ingredients:
+    - Potato/10
+    cookingtime: 15
+    distillruns: 3
+    age: 0
+    color: WHITE
+    difficulty: 4
+    alcohol: 20
+    lore:
+    - + &8Almost undrinkable
+    effects:
+    - WEAKNESS/15
+    - POISON/10
+  shroom_vodka:
+    name: Mushroom Vodka/Mushroom Vodka/Glowing Mushroom Vodka
+    ingredients:
+    - Potato/10
+    - Red_Mushroom/3
+    - Brown_Mushroom/3
+    cookingtime: 18
+    distillruns: 5
+    age: 0
+    color: ff9999
+    difficulty: 7
+    alcohol: 18
+    lore:
+    - +++&aGlows in the dark
+    effects:
+    - WEAKNESS/80
+    - CONFUSION/27
+    - NIGHT_VISION/50-80
+    - BLINDNESS/12-2
+    - SLOW/10-3
+  gin:
+    name: Pale Gin/Gin/Old Tom Gin
+    ingredients:
+    - Wheat/9
+    - blue-flowers/6
+    - Apple/1
+    cookingtime: 6
+    distillruns: 2
+    color: 99ddff
+    difficulty: 6
+    alcohol: 20
+    lore:
+    - ++ With the
+    - ++ taste of juniper
+    - +++ Perfectly finished off
+    - +++ with juniper
+  tequila:
+    name: Mezcal/Tequila/Tequila anejo
+    ingredients:
+    - cactus/8
+    cookingtime: 15
+    distillruns: 2
+    wood: 1
+    age: 12
+    color: f5f07e
+    difficulty: 5
+    alcohol: 20
+    lore:
+    - Desert spirit
+  absinthe:
+    name: Poor Absinthe/Absinthe/Strong Absinthe
+    ingredients:
+    - Grass/15
+    cookingtime: 3
+    distillruns: 6
+    distilltime: 80
+    color: GREEN
+    difficulty: 8
+    alcohol: 42
+    lore:
+    - +++&8High proof liquor
+    effects:
+    - POISON/15-25
+  gr_absinthe:
+    name: Poor Absinthe/Green Absinthe/Bright Green Absinthe
+    ingredients:
+    - Grass/17
+    - Poisonous_Potato/2
+    cookingtime: 5
+    distillruns: 6
+    distilltime: 85
+    color: LIME
+    difficulty: 9
+    alcohol: 46
+    lore:
+    - '&aLooks poisonous'
+    effects:
+    - POISON/25-40
+    - HARM/2
+    - NIGHT_VISION/40-60
+  potato_soup:
+    name: Potato soup
+    ingredients:
+    - Potato/5
+    - Grass/3
+    cookingtime: 3
+    color: ORANGE
+    difficulty: 1
+    effects:
+    - HEAL/0-1
+  coffee:
+    name: Stale Coffee/Coffee/Strong Coffee
+    ingredients:
+    - Cocoa_Beans/12
+    - Milk_Bucket/2
+    cookingtime: 2
+    color: BLACK
+    difficulty: 3
+    alcohol: -6
+    lore:
+    - + &8Probably a week old
+    effects:
+    - REGENERATION/1/2-5
+    - SPEED/1/30-140
+  eggnog:
+    name: Egg Liquor/Eggnog/Advocaat
+    ingredients:
+    - Egg/5
+    - Sugar/2
+    - Milk_Bucket/1
+    cookingtime: 2
+    age: 3
+    color: ffe680
+    difficulty: 4
+    alcohol: 10
+    lore:
+    - Made with raw egg
+  g_vodka:
+    name: Rancid Vodka/&6Golden Vodka/&6Shimmering Golden Vodka
+    ingredients:
+    - Potato/10
+    - Gold_Nugget/2
+    cookingtime: 18
+    distillruns: 3
+    age: 0
+    color: ORANGE
+    difficulty: 6
+    alcohol: 20
+    effects:
+    - WEAKNESS/28
+    - POISON/4
+  fire_whiskey:
+    name: Powdery Whiskey/Burning Whiskey/Blazing Whiskey
+    ingredients:
+    - Wheat/10
+    - Blaze_Powder/2
+    cookingtime: 12
+    distillruns: 3
+    distilltime: 55
+    wood: 4
+    age: 18
+    color: ORANGE
+    difficulty: 7
+    alcohol: 28
+    drinkmessage: You get a burning feeling in your mouth
+  hot_choc:
+    name: Hot Chocolate
+    ingredients:
+    - cookie/3
+    cookingtime: 2
+    color: DARK_RED
+    difficulty: 2
+    effects:
+    - FAST_DIGGING/40
+  iced_coffee:
+    name: Watery Coffee/Iced Coffee/Strong Iced Coffee
+    ingredients:
+    - cookie/8
+    - snowball/4
+    - milk_bucket/1
+    cookingtime: 1
+    color: BLACK
+    difficulty: 4
+    alcohol: -8
+    effects:
+    - SPEED/1/10
+  cherry_wine:
+    name: Sour Cherry Wine/Cherry Wine/Sweet Cherry Wine
+    ingredients:
+    - Sweet_Berries/8
+    - Apple/2
+    cookingtime: 6
+    distillruns: 0
+    wood: 1
+    age: 12
+    color: DARK_RED
+    difficulty: 3
+    alcohol: 9
+    lore:
+    - + Sour notes
+    - ++ Pleasantly sweet
+    - +++ Full cherry aroma
+  pumpkin_ale:
+    name: Watery Pumpkin Ale/Pumpkin Ale/Spiced Pumpkin Ale
+    ingredients:
+    - Pumpkin/3
+    - Wheat/4
+    - Sugar/2
+    cookingtime: 5
+    distillruns: 0
+    wood: 2
+    age: 5
+    color: ff9933
+    difficulty: 3
+    alcohol: 6
+    lore:
+    - + &8Thin and watery
+    - ++ &8Mild spice
+    - +++ &6Rich autumn flavor
+  berry_mead:
+    name: Dull Berry Mead/Berry Mead/Rich Berry Mead
+    ingredients:
+    - Sugar_Cane/6
+    - Sweet_Berries/4
+    cookingtime: 4
+    distillruns: 0
+    wood: 2
+    age: 6
+    color: PURPLE
+    difficulty: 4
+    alcohol: 11
+    lore:
+    - + Hints of fruit
+    - ++ Smooth blend
+    - +++ Deep berry flavor
+  honey_rum:
+    name: Weak Honey Rum/Honey Rum/Golden Honey Rum
+    ingredients:
+    - Sugar_Cane/12
+    - Honey_Bottle/3
+    cookingtime: 8
+    distillruns: 2
+    distilltime: 35
+    wood: 2
+    age: 10
+    color: e6b800
+    difficulty: 6
+    alcohol: 28
+    lore:
+    - + &8Overly sweet
+    - ++ &eBalanced sweetness
+    - +++ &6Smooth honey finish
+  cactus_cooler:
+    name: Bitter Cactus Cooler/Cactus Cooler/Refreshing Cactus Cooler
+    ingredients:
+    - Cactus/6
+    - Sugar/2
+    - Lime_Dye/1
+    cookingtime: 3
+    distillruns: 0
+    wood: 0
+    age: 2
+    color: LIME
+    difficulty: 2
+    alcohol: 5
+    lore:
+    - + Bitter and earthy
+    - ++ Refreshing taste
+    - +++ Crisp desert drink
+  caramel_latte:
+    name: Weak Caramel Latte/Caramel Latte/Strong Caramel Latte
+    ingredients:
+    - Cocoa_Beans/8
+    - Milk_Bucket/1
+    - Sugar/2
+    cookingtime: 2
+    color: c68e17
+    difficulty: 4
+    alcohol: -6
+    lore:
+    - + &8Almost no caramel
+    - ++ &6Balanced caramel
+    - +++ &eRich caramel flavor
+  frostbite_vodka:
+    name: Harsh Frostbite Vodka/Frostbite Vodka/Ice-Clear Frostbite Vodka
+    ingredients:
+    - Potato/10
+    - Snowball/3
+    cookingtime: 16
+    distillruns: 3
+    distilltime: 15
+    age: 0
+    color: WHITE
+    difficulty: 5
+    alcohol: 22
+    lore:
+    - + Freezing burn
+    - ++ Smooth chill
+    - +++ Crisp and icy
+  haste:
+    name: Poor Haste Potion/Haste Potion/Energising Haste Potion
+    ingredients:
+    - stone_pickaxe/1
+    - golden_carrot/1
+    - sugar/3
+    cookingtime: 30
+    distillruns: 0
+    distilltime: 30
+    age: 0
+    color: ffaa33
+    difficulty: 5
+    alcohol: -6
+    lore:
+    - + Clumps of sticks.
+    - ++ Subtle hints of wood.
+    - +++ Tastes sweet?
+    drinkmessage: A sudden urge to break everything rushes through your mind.
+    effects:
+    - HASTE/1-3/30-90
+  energydrink:
+    name: Energy Drink
+    ingredients:
+    - SUGAR/3
+    - COCOA_BEANS/2
+    - GLOW_BERRIES/2
+    - HONEY_BOTTLE/1
+    - REDSTONE/1
+    cookingtime: 8
+    distillruns: 0
+    wood: oak
+    age: 2
+    color: YELLOW
+    difficulty: 1
+    lore:
+    - '&eA glowing, sugary rush in a bottle!'
+    - '&7Side effects may include shaky hands...'
+    effects:
+    - NAUSEA/1/10
+    - SPEED/1-2/20-40
+```
