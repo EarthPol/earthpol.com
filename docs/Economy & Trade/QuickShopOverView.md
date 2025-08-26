@@ -49,6 +49,11 @@ If you instead wish to buy items from players rather than sell to players, simpl
 
 If you wish to change the price of the item(s) you are selling/buying, open the QuickShop GUI by left-click and press the `[Change]` button next to "Price:", this will allow you to input a new buy/sell price. 
 
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/chestshops.gif" alt="Rails" style={{ maxWidth: '100%', height: 'auto' }} />
+  <p><em>Demonstration of how to create a ChestShop</em></p>
+</div>
+
 ### Adding Employees to a Shop (Premium)
 
 Premium players are able to add friends and town members to their shops. To add an employee, use the `/qs staff` or `/qs staffall` command. Employees are able to manage your inventory, prices, and toggle the buying/selling mode of the shop.

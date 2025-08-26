@@ -102,7 +102,7 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/ellied64/80" /><br/>
-  <strong><a href="#">ellied64</a></strong><br/>
+  <strong><a href="#">Ellied64</a></strong><br/>
   <em>Administrator</em>
 </div>
 
