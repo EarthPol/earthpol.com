@@ -55,6 +55,13 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <a href="https://github.com/imide"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
 </div>
 
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Granitial/80" /><br/>
+  <strong><a href="#">Granitial</a></strong><br/>
+  <em>Developer</em>
+  <a href="https://github.com/imide"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
+</div>
+
 </div>
 
 </div>
@@ -106,19 +113,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/superb1aze/80" /><br/>
-  <strong><a href="#">superb1aze</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Ethnzz/80" /><br/>
-  <strong><a href="#">Ethnzz</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-
-<div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/GrayIsBalls/80" /><br/>
   <strong><a href="#">GrayIsBalls</a></strong><br/>
   <em>Moderator</em>
@@ -154,47 +148,23 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <em>Moderator</em>
 </div>
 
-</div>
-
-### Helpers and Builders
-
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
-
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Granitial/80" /><br/>
-  <strong><a href="#">Granitial</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/AloofJuice/80" /><br/>
-  <strong><a href="#">AloofJuice</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Amisco/80" /><br/>
-  <strong><a href="#">Amisco</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/DekuFullCowling/80" /><br/>
-  <strong><a href="#">DekuFullCowling</a></strong><br/>
-  <em>Helper</em>
+  <img src="https://minotar.net/avatar/Kuvviine/80" /><br/>
+  <strong><a href="#">Kuvviine</a></strong><br/>
+  <em>Moderator</em>
 </div>
 
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/OneSpookyGhost/80" /><br/>
   <strong><a href="#">OneSpookyGhost</a></strong><br/>
-  <em>Helper</em>
+  <em>Moderator</em>
 </div>
 
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Kuvviine/80" /><br/>
-  <strong><a href="#">Kuvviine</a></strong><br/>
-  <em>Helper</em>
 </div>
+
+### Helpers and Builders
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
 
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/ImSigmaBoy/80" /><br/>
@@ -209,8 +179,40 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/wilkous/80" /><br/>
-  <strong><a href="#">wilkous</a></strong><br/>
+  <img src="https://minotar.net/avatar/The_Dichotomy/80" /><br/>
+  <strong><a href="#">Synistor</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+</div>
+
+---
+
+## Social Media Team
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/reking/80" /><br/>
+  <strong><a href="#">reking</a></strong><br/>
+  <em>Social Media Manager</em>
+</div>
+
+</div>
+
+## Event Team
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/MattIsOff/80" /><br/>
+  <strong><a href="#">MattIsOff</a></strong><br/>
+  <em>Event Team Coordinator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/AloofJuice/80" /><br/>
+  <strong><a href="#">AloofJuice</a></strong><br/>
   <em>Helper</em>
 </div>
 
