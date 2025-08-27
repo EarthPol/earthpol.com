@@ -77,5 +77,6 @@ Strategic terrain plays a huge role in diplomacy and warfare. A single mountain 
 
 📥 IP: **play.earthpol.com**  
 💬 Discord: **[Join our Server](https://discord.gg/meuVzPawmS)**  
+📚 Wiki: **[The EarthPol Wiki](https://wiki.earthpol.com/Main_Page)**
 
 Start your nation, forge your alliances, and make your mark on history.
