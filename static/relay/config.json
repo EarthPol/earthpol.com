@@ -24,6 +24,31 @@
             "channel_id": "1409322162149654652",
             "display_name": "New York Gazette",
             "avatar_url": "https://i.imgur.com/Irj2DDF.png"
+        },
+        {
+            "channel_id": "1409322174363340830",
+            "display_name": "Islamic Republic News Agency",
+            "avatar_url": "https://i.imgur.com/GdIss6e.png"
+        },
+        {
+            "channel_id": "1409322188091424838",
+            "display_name": "CBC News",
+            "avatar_url": "https://i.imgur.com/BkNROsx.jpeg"
+        },
+        {
+            "channel_id": "1409322202033160405",
+            "display_name": "Voice of the Americas",
+            "avatar_url": "https://i.imgur.com/UXWuzEc.png"
+        },
+        {
+            "channel_id": "1409322214381060207",
+            "display_name": "Mizzima",
+            "avatar_url": "https://i.imgur.com/rXoXIAm.png"
+        },
+        {
+            "channel_id": "1409322225940561930",
+            "display_name": "The Sand Empire Newsletter",
+            "avatar_url": "https://i.imgur.com/Cv4amZc.jpeg"
         }
 ]
 }
