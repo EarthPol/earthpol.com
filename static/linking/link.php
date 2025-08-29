@@ -9,7 +9,7 @@ session_start();
 
 // Replace these with your actual Discord app credentials.
 $clientID = '1204206372271427675';
-$clientSecret = 'sZz7A5nIycWow18b8Mrra8SeX5vVFJ0I';
+$clientSecret = 'VEd5flyaBnDTKmHZ19AOHZDpcdodL8JO';
 
 // This redirect URI must match the one configured in your Discord Developer Portal.
 $redirectURI = 'https://earthpol.com/linking/link.php';
