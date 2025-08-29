@@ -105,7 +105,7 @@ if (!isset($_GET['state'])) {
     $dbHost = '15.204.57.71';
     $dbName = 's1_discord';
     $dbUser = 'u1_NOD4SoLdEP';
-    $dbPass = '=J8QFv63l=WxU!9fm9kHoXxs';
+    $dbPass = 'd^!KI6wB5ThEXiuh.Wx=xc@U';
 
     try {
         $pdo = new PDO(
