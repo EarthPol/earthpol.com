@@ -1,0 +1,389 @@
+---
+slug: earthpol-blog-3
+title: August 2025 - Raising the Standard
+authors: [mrtytanic]
+tags: [Update, Announcement]
+---
+
+## Hello, EarthPol Community!
+
+Welcome to our latest monthly blog post in which we give an overview of recent changes, community updates, and the overall direction of the server.
+
+![Blog Thumbnail](/img/blogpost3.png)
+
+**Fascinating Statistics:** This month, EarthPol welcomed 2,630 new users, a 12.1% increase compared to last month. In that time, 327 new towns and 62 new nations have been created. As of now, there are 703 towns and 158 total nations on the server, with a total combined playtime of 16 years, 3 months, 19 days, 19 hours, 24 minutes, and 26 seconds.
+
+*While school is starting back up for most of us, EarthPol and its community will definitely be around for you to enjoy!*
+
+---
+
+## Development Updates
+
+This month, development efforts focused on shipping our first major update, the Banners and Borders Update, which introduced many new features and key improvements. Behind the scenes, many improvements also occured including a successful migration to a ten gigabit network and tackling technical debt to ensure smooth updates in the future. 
+### Banners and Borders Update
+This month marked the release of EarthPol's first major update: the **Banners and Borders Update**. This update brought many new mechanics and quality-of-life imrpovements to EarthPol, including some additional bug fixes to existing issues. 
+
+![Update](/img/update1.png)
+
+#### Main Features
+- **BreweryX:** Players can craft alcoholic drinks that cause in-game drunkenness through a multi-step process including fermenting, distilling, and aging, with custom recipes unique to EarthPol and the challenge of mastering even the most complex brews.
+
+![Brewery](/img/brewery.png)
+
+- **Town Edge Shield:** Claim camping is prevented with a 4-chunk protective radius outside any town, keep inventory is enabled within this zone, and the system does not apply during SiegeWar.
+- **Spawn Trap Prevention:** Players are protected from spawn trapping with an 8-chunk buffer that tracks movement between chunks, keep inventory remains enabled until the 9th chunk, and messages can be silenced using ``/protection hide``.
+- **Towny Ports Overhaul:** Legacy port commands were migrated into the Towny command system for consistency, a new spawn point system was introduced, Co-Mayors and Assistants gained port management permissions, and a clearer guide was published on the website.
+
+![Ports](/img/ports.png)
+
+- **Mayoral Succession:** Rule 5.2 has been removed, mayorship now transfers to a recently active assistant after 30 days of mayor inactivity.
+
+- **Automatic Town Sale System:**  Towns are listed for sale instead of being ruined after 30 days of full resident inactivity, and sale prices are automatically calculated using the following new formula:
+
+``(Plot Cost x Number of Plots) + Town Balance + Per Resident Cost + Town Start Cost``
+
+- **SiegeTP:** Nation spawns no longer need to be moved for sieges, with new commands like ``/siegetp setspawn``, ``/siegetp removespawn``, and ``/siegetp tp <siege>`` enabling direct control; siege spawns can be set by attacking kings, co-leaders, generals, and defending mayors, and teleporting to one grants 10 seconds of spawn protection and nerfs.
+
+- **Updated Cauldron Mechanics:** Players standing in filled cauldrons can have their “bath water” collected and quality graded. Additionally, right-clicking a filled cauldron with powdered concrete instantly converts it to solid concrete and lowers the water level.
+
+![Cauldrons](/img/cauldron.png)
+
+#### Quality of Life Changes
+- A horn will play to all players in a Siege zone when the Battle
+Session starts.
+- Chorus Fruit no longer works in Siege Zones.
+- McMMO Fishing XP is better aligned with the leveling speed
+of other skills.
+- Advancement to unlock all custom recipes.
+- Ⓚ symbol for Nation Leaders in chat.
+- Server-wide religion stats using /pantheon.
+- Wither Skulls are in the Loot Pool and can be obtained while mining coal.
+
+#### Bug Fixes
+
+- Chest Shops can not longer be created in Siege Zones
+- Fixed an issue with Nationless towns and Honor Points
+- Peaceful Towns have their Siege Ranks removed automatically.
+- Being allied to both sides in a Siege will remove you as a participant
+
+### Additional Features & Bug Fixes this Month
+
+#### New Features
+
+- Added a ⚖️ icon to the map, which now indicates a town is for sale
+- Added ``/roar`` and ``/moo`` to the Animal Farm plugin
+- Soul sand recipe has been added
+- To prevent /t buytown and /t merge abuse, We have enabled a limitation on how far you can move your homeblock to the same distance it takes to merge a town.
+
+#### Bug Fixes
+
+- Disabled Ender Chest Gold Counting due to TNE bug causing duped gold
+- SiegeTP bug: SiegeWar not calculating the closest siege correctly when you /siegetp setspawn
+- Claim refunding has been disabled due to a duplication bug that could give you infinite gold
+- Fixed sand transmutation recipes
+
+### EarthPol Migration
+As we continue to strive for long-term stability, EarthPol's recent server migration was a huge success and was completed in just under two hours. The upgrade to a ten gigabit network marks a significant leap from the previous two gigabit setup, giving EarthPol dramatically improved bandwidth. For players, this will improve latency issues and keep your connection stable, especially during times of high-traffic.
+
+### Current Development Cycle
+Development this cycle has been heavily focused on reworking SiegeWar to better align with EarthPol's geopolitical dynamics. Here are a few sneak peaks to what will be introduced in our **next major update**:
+- **Map Colors Reflect Conquest**: If your town gets occupied, its map color will match the conquering nation.
+- **Conquest Tax Rework**: A new system will calculate occupation taxes more fairly. No more flat per-plot fees.
+- **Peaceful Town Charges**: Daily costs for peaceful towns will scale based on size and population, not a one-size-fits-all fee.
+- **Expansion of BreweryX**: Players will soon enjoy a built-in recipe book for easier brewing and experimentation, along with new plantable seeds and fruits to grow their own ingredients. 
+
+### Combatting Technical Debt
+Technical debt is a term developers use to describe "quick fixes" or shortcuts taken to meet deadlines or ship features faster. While not necessarily a bad thing, and often necessary to keep momentum, it can build up over time and slow down future development if left unchecked.
+
+That’s why this month, the EarthPol Development Team rolled up their sleeves and tackled a major chunk of that technical debt. Cleaning up legacy code, optimizing backend systems, and building custom solutions were just some of the actions taken. Although players might not see these changes directly, the work done here will improve the development team's workflows and pave the way for smoother updates and a more stable experience over time. It’s the kind of work that doesn’t make headlines, but makes everything else possible!
+
+---
+
+## Community Highlights
+
+### Social Media Campaign
+
+This month, our Social Media Team launched a successful campaign focused on celebrating the EarthPol community through dynamic storytelling. The initiative combined short-form content that highlights server features and gameplay moments with long-form videos that dive deeper into player narratives and server lore.
+
+Notably, our first long-form video was released earlier this month, documenting a year-long investigation into __bruh69, a mysterious player on EarthPol:
+
+<div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/StkuEClfVNc?si=7DbDLt1OyDyWdop9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+---
+
+#### Statistical Growth
+
+Most notably, our [recent video](https://www.tiktok.com/@play.earthpol.com/video/7537430182429281566) on TikTok received over 192.4k views. making it our most viral video to date. This surge in visibility sparked a wave of engagement across all our platforms and we saw a significant amount of players join as a result of this video.
+
+Below are more visual indicators of our follower growth lately amid the thousands of viewers who have seen our content:
+
+<div
+  style={{
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gap: '20px',
+    margin: '20px 0',
+  }}
+>
+  {[
+    { title: 'Discord Server Member Growth', data: [4249, 4254, 4272, 4307, 4333, 4406, 4436, 4508, 4517] },
+    { title: 'YouTube Subscribers', data: [235, 242, 279, 307, 337, 428, 448, 518, 546] },
+    { title: 'Instagram Followers', data: [608, 609, 617, 624, 631, 637, 646, 654, 656] },
+    { title: 'TikTok Followers', data: [163, 163, 169, 171, 201, 935, 1003, 1031, 1032] },
+  ].map((graph, index) => {
+    const labels = ['8/1','8/5','8/10','8/15','8/20','8/25','8/26','8/30','8/31'];
+    const data = graph.data.map((value,i)=>({label:labels[i], value}));
+    
+    const min = Math.min(...data.map(d=>d.value));
+    const max = Math.max(...data.map(d=>d.value)) * 1.02; // slight headroom
+
+    const chartHeight = 250;
+    const chartWidth = 300;
+    const paddingTop = 20;
+    const paddingBottom = 30;
+
+    return (
+      <div
+        key={index}
+        style={{
+          position: 'relative',
+          height: '320px',
+          background: '#1e1e1e',
+          borderRadius: '10px',
+          padding: `${paddingTop}px 20px ${paddingBottom}px 60px`,
+        }}
+      >
+        <div
+          style={{
+            textAlign: 'center',
+            color: 'white',
+            fontWeight: 'bold',
+            marginBottom: '10px',
+          }}
+        >
+          {graph.title}
+        </div>
+        <svg width="100%" height="100%" viewBox={`-40 0 ${chartWidth+40} ${chartHeight + paddingTop + paddingBottom}`}>
+          {/* Grid lines */}
+          {[0,1,2,3,4].map(i=>{
+            const y = chartHeight + paddingTop - (i*(max-min)/4)*chartHeight/(max-min);
+            return <line key={'h'+i} x1="0" y1={y} x2={chartWidth} y2={y} stroke="#ccc" strokeWidth="0.5" />;
+          })}
+          {[0,1,2,3,4,5,6,7,8].map(i=>{
+            const x = (i*chartWidth)/(data.length-1);
+            return <line key={'v'+i} x1={x} y1={paddingTop} x2={x} y2={chartHeight + paddingTop} stroke="#ccc" strokeWidth="0.5" />;
+          })}
+          {/* Line */}
+          <polyline
+            fill="none"
+            stroke="limegreen"
+            strokeWidth="2"
+            points={data.map((d,i)=>`${(i*chartWidth)/(data.length-1)},${chartHeight + paddingTop - ((d.value-min)/(max-min))*chartHeight}`).join(' ')}
+          />
+          {/* Points */}
+          {data.map((d,i)=>{
+            const cx = (i*chartWidth)/(data.length-1);
+            const cy = chartHeight + paddingTop - ((d.value-min)/(max-min))*chartHeight;
+            return (
+              <g key={i}>
+                <circle
+                  cx={cx}
+                  cy={cy}
+                  r="6"
+                  fill="limegreen"
+                  style={{ transition: 'all 0.2s' }}
+                  onMouseEnter={e=>{
+                    const tooltip = document.getElementById(`tooltip${index}`);
+                    tooltip.innerHTML = `${d.label}: ${d.value}`;
+                    tooltip.style.display='block';
+                    tooltip.style.left = e.nativeEvent.offsetX+'px';
+                    tooltip.style.top = e.nativeEvent.offsetY-30+'px';
+                    e.target.setAttribute('r','9');
+                  }}
+                  onMouseLeave={e=>{
+                    const tooltip = document.getElementById(`tooltip${index}`);
+                    tooltip.style.display='none';
+                    e.target.setAttribute('r','6');
+                  }}
+                />
+              </g>
+            )
+          })}
+          {/* X-axis labels */}
+          {data.map((d,i)=>(
+            <text key={i} x={(i*chartWidth)/(data.length-1)} y={chartHeight + paddingTop + 15} textAnchor="middle" fontSize="12" fill="white">
+              {d.label}
+            </text>
+          ))}
+          {/* Y-axis labels (outside chart) */}
+          {[0,1,2,3,4].map(i=>{
+            const val = Math.round(min + i*(max-min)/4);
+            const y = chartHeight + paddingTop - ((val-min)/(max-min))*chartHeight + 4;
+            return <text key={i} x={-10} y={y} fontSize="10" fill="white" textAnchor="end">{val}</text>
+          })}
+        </svg>
+        <div
+          id={`tooltip${index}`}
+          style={{
+            position:'absolute',
+            display:'none',
+            background:'#000',
+            color:'#fff',
+            padding:'4px 8px',
+            borderRadius:'4px',
+            fontSize:'12px',
+            pointerEvents:'none',
+          }}
+        ></div>
+      </div>
+    )
+  })}
+</div>
+
+### World News Relay System
+On the EPMC discord, the ``📰┃world-news`` channel allows for news organizations to post their stories covering major geopolitical events on the server. This system operates using discord’s webhook feature and prior to this month, only fifteen webhooks could be activated at a given time.
+
+With the new **World News Relay System**, there is now an effective infinite number of webhooks that can be used, meaning that there is no longer a limit to how many organizations can be added. 
+
+---
+
+## Looking Ahead
+
+![MAKE EARTHPOL GREAT AGAIN](/img/mrtytanicusa.png)
+
+Success is never the end, it is only proof that we are capable. This month's progress is the continued foundation upon which EarthPol is built: delivering the high quality we strive for and improving our standards. This month, we have strengthened the server’s development and community, showing what the values of discipline and unity can truly achieve.
+
+Every improvement and every decision reflects the deeper truth that greatness is earned in momentum. As we continue in our relentless and bold vision, EarthPol will not simply be the best server, it will be the standard by which all others are measured.
+
+Thank you for your continued support,
+
+– MrTytanic
+
+---
+
+<div style={{ textAlign: 'center' }}>
+  **Follow us on Social Media!**
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<div
+  style={{
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '1rem',
+    marginTop: '1rem',
+    flexWrap: 'wrap',
+  }}
+>
+  <a
+    href="https://discord.gg/bURuFxYqkD"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#5865F2',
+      borderRadius: '6px',
+      width: '40px',
+      height: '40px',
+      boxShadow: '0 2px 6px rgba(88, 101, 242, 0.5)',
+      transition: 'transform 0.2s ease',
+    }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+    onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+  >
+    <i className="fab fa-discord" style={{ color: 'white', fontSize: '20px' }}></i>
+  </a>
+
+  <a
+    href="https://www.youtube.com/@EarthPol?sub_confirmation=1"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#FF0000',
+      borderRadius: '6px',
+      width: '40px',
+      height: '40px',
+      boxShadow: '0 2px 6px rgba(255, 0, 0, 0.5)',
+      transition: 'transform 0.2s ease',
+    }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+    onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+  >
+    <i className="fab fa-youtube" style={{ color: 'white', fontSize: '20px' }}></i>
+  </a>
+
+  <a
+    href="https://www.instagram.com/earthpolmc/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background:
+        'linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%)',
+      borderRadius: '6px',
+      width: '40px',
+      height: '40px',
+      boxShadow: '0 2px 6px rgba(253, 191, 73, 0.5)',
+      transition: 'transform 0.2s ease',
+    }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+    onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+  >
+    <i className="fab fa-instagram" style={{ color: 'white', fontSize: '20px' }}></i>
+  </a>
+
+  <a
+    href="https://www.tiktok.com/@play.earthpol.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background: 'linear-gradient(135deg, #69C9D0 0%, #EE1D52 100%)',
+      borderRadius: '6px',
+      width: '40px',
+      height: '40px',
+      boxShadow: '0 2px 6px rgba(238, 29, 82, 0.5)',
+      transition: 'transform 0.2s ease',
+    }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+    onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+  >
+    <i className="fab fa-tiktok" style={{ color: 'white', fontSize: '20px' }}></i>
+  </a>
+
+  <a
+    href="https://x.com/earth_pol"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#1DA1F2',
+      borderRadius: '6px',
+      width: '40px',
+      height: '40px',
+      boxShadow: '0 2px 6px rgba(29, 161, 242, 0.5)',
+      transition: 'transform 0.2s ease',
+    }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+    onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+  >
+    <i className="fab fa-twitter" style={{ color: 'white', fontSize: '20px' }}></i>
+  </a>
+</div>
