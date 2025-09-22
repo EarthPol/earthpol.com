@@ -285,3 +285,13 @@ When a town is set to **peaceful** using the `/sw town togglepeaceful` command, 
 While peaceful towns may avoid the stress of constant sieges, they also lose out on the opportunity to gain resources through plunder, take control of other towns, and assist their allies in their asieges.
 
 ---
+
+## 📡 Seige Teleport
+
+Gone are the days of changing your Nation Spawn to accommodate war. With a custom EarthPol feature, you can directly set your siege spawn *per siege zone*.
+
+- `/siegetp tp <siege>` - Teleports you to either Attacker or Defender spawns depending on your Alliances.
+- `/siegetp setspawn` - Sets the Siege Teleport location, can only be set by Attacking Nation Leader (or General) or the Defending Town Mayor.
+- `/siegetp removespawn` - Removes the Siege Teleport location, can only be removed by Attacking Nation Leader (or General) or the Defending Town Mayor.
+
+---
