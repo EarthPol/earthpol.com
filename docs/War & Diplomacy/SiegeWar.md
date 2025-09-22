@@ -149,6 +149,10 @@ If you leave or get kicked out on new Towny Day:
 
 2. When you join a new nation, you'll earn 1 point on the next daily rollover and build up form there again.
 
+### Why do I lose Honor Points?
+
+- After remaining offline for 7 days, you will begin to lose 1 point a day until you reach 0. This is to ensure that online and active players are rewarded for their gameplay and PvP clans do not simply log on once and gain honor forever.
+
 ### Why Honor Points?
 
 
@@ -159,7 +163,6 @@ If you leave or get kicked out on new Towny Day:
 
 
 - **Clarity:** You always know exactly how many days you've "proven" your loyalty
-
 
 ### Honor Points FAQ
 
