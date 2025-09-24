@@ -266,6 +266,7 @@ Any fortification you build is useless if your allies and soldiers **don't have 
 - No crystals & anchors, or **Bow and arrow cart PVP**. TNT Carts can still be dropped from overhead like an airstrike.
 - Totems do not take effect in siege zones.
 - Siege zone prohibited blocks: Water & Lava buckets, cobwebs, obsidian, ice. Does not apply to Wilderness areas outside of siege zones.
+- Honey bottles cure all debuffs
 
 :::warning
 
@@ -289,12 +290,38 @@ While peaceful towns may avoid the stress of constant sieges, they also lose out
 
 ---
 
-## 📡 Seige Teleport
+## 📡 Siege Teleport
 
 Gone are the days of changing your Nation Spawn to accommodate war. With a custom EarthPol feature, you can directly set your siege spawn *per siege zone*.
 
+- Sieges are named after the defending town.
 - `/siegetp tp <siege>` - Teleports you to either Attacker or Defender spawns depending on your Alliances.
-- `/siegetp setspawn` - Sets the Siege Teleport location, can only be set by Attacking Nation Leader (or General) or the Defending Town Mayor.
-- `/siegetp removespawn` - Removes the Siege Teleport location, can only be removed by Attacking Nation Leader (or General) or the Defending Town Mayor.
+- `/siegetp setspawn <siege>` - Sets the Siege Teleport location, can only be set by Attacking Nation Leader (or General) or the Defending Town Mayor.
+- `/siegetp removespawn <siege>` - Removes the Siege Teleport location, can only be removed by Attacking Nation Leader (or General) or the Defending Town Mayor.
+
+## 💣 Ghast Strike
+
+Establish air superiority and ground control at the siege zone with Happy Ghasts. Bombs away!
+
+- Drop TNT and TNT minecart bombs at the siege zone.
+- Increased speed: Happy Ghast speeds have been slightly increased for a better flight experience.
+- `/siegetp ghasttp <siege>` - Teleport directly to a siege with your Happy Ghast and its passengers. All passengers will be required to be siege participants on your same side. 
+- Flight height limit is in place to prevent flying at excessive heights.
+- Happy Ghast combat mechanics only work in active siege zones.
+- Bomb your enemies on the ground and engage in air to air dogfights!
+
+### Bombing Mechanics
+- Right click holding a TNT minecart or TNT block, while riding the Happy Ghast, to drop the bomb. A cooldown will apply to all bomb items.
+- Any player sitting on the Happy Ghast can drop bombs
+
+### Damage Mechanics
+- While being ridden by a player, Happy Ghasts themselves will have the amount of damage they take reduced so that they do not die so quickly.
+- However, **any damage** taken by the Happy Ghast is transferred in full, without the reduction, to all passengers on board.
+- 
+
+### Countermeasures
+Happy Ghasts can be countered with the following custom projectile items. Crafting recipes for these items can be found on the crafting recipe page.
+- **Interceptor:** Small, cheap, and fast-moving fireballs that can destroy primed TNT, TNT Minecarts, Surface to Air Fireballs, and other Interceptors. Use these to keep you and your allies safe from bombs.
+- **Surface to Air Fireball:** Larger and slower moving but devastating, this fireball is designed for taking down Happy Ghasts and their riders. Upon striking a Happy Ghast, a significant amount of damage will be dealt to all riders and the Happy Ghast which will ignore all armor and protection effects. While it's not its primary purpose, this projectile will also take out TNT Minecarts and primed TNT.
 
 ---
