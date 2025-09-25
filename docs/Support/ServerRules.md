@@ -74,14 +74,14 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
     - If the outpost is there for longer than two weeks without any siege on the town being conducted, the outpost is eligible for removal upon the town mayor making a ticket. The outpost owner need not be notified, and will not be reimbursed for any materials or items left at their siege outpost.
     - Siege outposts will be removed following their use in a siege.
 
-6.3 - **Siege Banner Access**  - The siege banner must be reasonably accessible to both sides. **Instances of this will be decided at staff discretion.**
+6.3 - **Siege Banner Access**: The siege banner must be reasonably accessible to both sides. **Instances of this will be decided at staff discretion.**
 - No placing the banner on artificial sky islands, meant to make it more difficult to access the banner
 - No digging giant pits under the banner
 - No placing the banner inside of a giant hole.
 - Banners under or near bodies of water are **allowed.**
 - Guidance: In general, banner placement on the natural terrain, or flattening the terrain around the siege banner, is acceptable. Instances of violating this rule are ultimately up to staff discretion.
 
-6.4 - **Abuse of Peaceful Town Claims** - You are not allowed to surround, in whole or in part, a non-peaceful town within a peaceful town in order to avoid getting sieged. This will be decided at staff discreation.
+6.4 - **Abuse of Peaceful Town Claims**: You are not allowed to surround, in whole or in part, a non-peaceful town within a peaceful town in order to avoid getting sieged. This will be decided at staff discretion.
 
 **Discretionary Enforcement Policy**
 To maintain a healthy and respectful environment, Admins retain the right to remove any player whose behavior is considered disruptive or harmful to the community. This action may be taken without advance notice, explanation, or the opportunity for appeal. Use of this policy is rare and only enacted after careful internal review by the server owners.
