@@ -81,6 +81,8 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 - Banners under or near bodies of water are **allowed.**
 - Guidance: In general, banner placement on the natural terrain, or flattening the terrain around the siege banner, is acceptable. Instances of violating this rule are ultimately up to staff discretion.
 
+6.4 - **Abuse of Peaceful Town Claims** - You are not allowed to surround, in whole or in part, a non-peaceful town within a peaceful town in order to avoid getting sieged. This will be decided at staff discreation.
+
 **Discretionary Enforcement Policy**
 To maintain a healthy and respectful environment, Admins retain the right to remove any player whose behavior is considered disruptive or harmful to the community. This action may be taken without advance notice, explanation, or the opportunity for appeal. Use of this policy is rare and only enacted after careful internal review by the server owners.
 
