@@ -6,17 +6,17 @@ tags: [Update, Announcement]
 ---
 
 Welcome to **Update #2**!  
-This cycle focuses on combat polish, brewing/economy additions, quality‑of‑life perks, and a major Towny expansion at the top end of city building.
 
 ## TL;DR
 - 🔧 **Server now on 1.21.8.**
-- ⚔️ **EarthPolCombat 2.2.0** applied — includes the new **Ghast Strike** feature.
+- ⚔️ **EarthPolCombat** updates applied — includes the new **Ghast Strike** feature.
 - 🚩 **FlagsH** added - Make horizontal flags in game.
 - 🍻 **BreweryX expansion: _BreweryGarden_** is in. Make brews with custom fruits.
 - ✨ **New Premium perk:** Decorate your items by naming them with color codes in the anvil menu.
 - 🥕 **Golden carrot overhaul** + **recipe change:** costs **1 gold ingot** per carrot.
 - 🏙️ **New Towny top tier: _Metropolis_** (100–128 residents). Title: **Archduke**. **Town blocks:** 800–1000. **Outposts:** 5–8.
 - 🗺️ **Outpost limits** are now enforced/tuned.
+- Bug fixes
 
 ---
 
@@ -44,13 +44,19 @@ Establish air superiority and ground control at the siege zone with Happy Ghasts
 #### Damage Mechanics
 - While being ridden by a player, Happy Ghasts themselves will have the amount of damage they take reduced so that they do not die so quickly.
 - However, **any damage** taken by the Happy Ghast is transferred in full, without the reduction, to all passengers on board.
-- 
 
 #### Countermeasures
 Happy Ghasts can be countered with the following custom projectile items. Crafting recipes for these items can be found on the crafting recipe page.
 - **Interceptor:** Small, cheap, and fast-moving fireballs that can destroy primed TNT, TNT Minecarts, Surface to Air Fireballs, and other Interceptors. Use these to keep you and your allies safe from bombs.
 - **Surface to Air Fireball:** Larger and slower moving but devastating, this fireball is designed for taking down Happy Ghasts and their riders. Upon striking a Happy Ghast, a significant amount of damage will be dealt to all riders and the Happy Ghast which will ignore all armor and protection effects. While it's not its primary purpose, this projectile will also take out TNT Minecarts and primed TNT.
 - General combat polish, balance, and fixes from the 2.2.0 cycle.
+
+### Combat balancing
+
+#### Debuff balancing
+- Bows and crossbows will incur a cooldown when firing debuff tipped arrows
+- Thrown debuff potions will incur a cooldown upon being thrown
+- Drinking a bottle of honey will remove all debuffs
 
 ## FlagsH
 The **FlagsH** plugin is live. 
@@ -83,12 +89,21 @@ INSERT NEW TOWN OUTPOSTS BALANCE HERE.
 ### Outpost Limits
 Outpost limits are now active. Please review your town’s outpost usage and consolidate if needed.
 
+## Bug fixes
+### mcMMO
+- Updated mcMMO plugin
+- Due to the Crossbows bug that allows players to obtain arrows with extra-extended effects from tipped arrows, mcMMO crossbows
+**Trickshot** skill has been disabled.
+- Debuff arrows will not apply their effects if the effect time length exceeds 30 seconds.
+
 ---
 
 ## What’s Next (Sneak Peek: Update Cycle 3)
 We’re preparing a **Geopolitics‑focused update** next. Early notes include:
-- **SiegeWar rework:** conquest and peaceful tax reworks, peaceful occupation, map color changer, possible **EventWar for capitals**, mechanics for **occupying a majority of a nation’s towns**, **casus belli**, and a **siege start distance limiter**.
-- **Politics:** **satellite states** and related systems.
+- **SiegeWar rework:** conquest and peaceful tax reworks, peaceful occupation, map color changer,
+ mechanics for **occupying a majority of a nation’s towns**/taking over the nation, 
+ **casus belli**, and limitations on siege start distances.
+- **Politics:** **satellite states/vassal states**
 - **Elections System**
 
 We’ll share specifics as they lock in.
