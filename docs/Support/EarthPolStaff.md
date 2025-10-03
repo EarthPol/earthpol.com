@@ -112,26 +112,8 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/XPurple_Diamondx/80" /><br/>
-  <strong><a href="#">XPurple_DiamondX</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/RojoTsu/80" /><br/>
   <strong><a href="#">RojoTsu</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Malibu_Kane/80" /><br/>
-  <strong><a href="#">Malibu_Kane</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/OneSpookyGhost/80" /><br/>
-  <strong><a href="#">OneSpookyGhost</a></strong><br/>
   <em>Moderator</em>
 </div>
 
@@ -143,7 +125,7 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 
 </div>
 
-### Helpers and Builders
+### Helpers
 
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
 
@@ -156,6 +138,18 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/MattIsOff/80" /><br/>
   <strong><a href="#">MattIsOff</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/T3mp0st/80" /><br/>
+  <strong><a href="#">T3mp0st</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/xTheWardenx/80" /><br/>
+  <strong><a href="#">xTheWardenx</a></strong><br/>
   <em>Helper</em>
 </div>
 

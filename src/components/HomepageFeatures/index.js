@@ -81,20 +81,12 @@ const testimonials = [
     author: "8set, Mayor of Ramsar",
   },
   {
-    text: "EPMC is easily one of the most consistently entertaining and enjoyable experiences i’ve had on Minecraft. Since joining as a new player, I’ve been warmly welcomed by both the loyal, helpful player base and the amazing and friendly staff team.",
-    author: "kuuvine, Leader of the Altai Republic",
-  },
-  {
     text: "The most immersive minecraft experience I’ve ever been part of, to play on earth and for it to be so accurate is unparalleled. Actual competent staff, REAL WARS, and events make the server even more compelling. Quit your job to play earthpol full-time and you’ll hold zero regrets",
     author: "ConsulAugustus, Leader of the Roman Republic",
   },
   {
     text: "A great Minecraft server and experience to try, its got some fun interesting sieges and large battles battles with lots of people and communities to interact with. A genuinely fun experience you should try, especially with a couple of friends.",
     author: "Noks__, Prime Minister of Australia",
-  },
-  {
-    text: "Earthpol is so fun it kills my irl social life! Women no longer talk to me, and I sit in my room for 8 hours a day playing the greatest server on earth!",
-    author: "Peddlers, Mayor of Metz",
   },
 ];
 
