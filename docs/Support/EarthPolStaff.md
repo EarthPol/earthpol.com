@@ -136,12 +136,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/MattIsOff/80" /><br/>
-  <strong><a href="#">MattIsOff</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/T3mp0st/80" /><br/>
   <strong><a href="#">T3mp0st</a></strong><br/>
   <em>Helper</em>
@@ -150,6 +144,84 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/xTheWardenx/80" /><br/>
   <strong><a href="#">xTheWardenx</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Vertualy/80" /><br/>
+  <strong><a href="#">Vertualy</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/georgeat4k/80" /><br/>
+  <strong><a href="#">georgeat4k</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Hosentil/80" /><br/>
+  <strong><a href="#">Hosentil</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/jessiesgirl/80" /><br/>
+  <strong><a href="#">jessiesgirl</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/kairo236/80" /><br/>
+  <strong><a href="#">kairo236</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Nokss__/80" /><br/>
+  <strong><a href="#">Nokss__</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/AyameHimuro/80" /><br/>
+  <strong><a href="#">AyameHimuro</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/XLNuggets/80" /><br/>
+  <strong><a href="#">XLNuggets</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+</div>
+
+### Community Team
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/MattIsOff/80" /><br/>
+  <strong><a href="#">MattIsOff</a></strong><br/>
+  <em>Team Leader</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/LShadow35/80" /><br/>
+  <strong><a href="#">LShadow35</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Quintincan/80" /><br/>
+  <strong><a href="#">Quintincan</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Senpaii_soupp/80" /><br/>
+  <strong><a href="#">Senpaii_soupp</a></strong><br/>
   <em>Helper</em>
 </div>
 
