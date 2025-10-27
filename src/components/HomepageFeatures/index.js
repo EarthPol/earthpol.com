@@ -50,25 +50,25 @@ const FeatureList = [
 const ScreenshotList = [
   {
     title: '1:326 Map',
-    image: require('@site/static/img/epolmap.png').default,
+    image: require('@site/static/img/epolmap.avif').default,
     description: 'Explore our custom-made EarthPol map, crafted with real-world geography at a detailed 1:326 scale. Natural features, rivers, and landscapes mirror reality, delivering a truly immersive geopolitical Minecraft experience.',
     imageFirst: true,
   },
   {
     title: 'Building',
-    image: require('@site/static/img/building.png').default,
+    image: require('@site/static/img/building.avif').default,
     description: 'Build with confidence on EarthPol. Our robust preservation system, featuring hourly backups and CoreProtect logs, guarantees your creations, from small towns to skyscrapers, are safe and secure.',
     imageFirst: false,
   },
   {
     title: 'Diplomacy',
-    image: require('@site/static/img/diplomacy.png').default,
+    image: require('@site/static/img/diplomacy.avif').default,
     description: 'Master the art of diplomacy with plugins like Towny and TradeWar, engaging in economic battles, alliances, and statecraft. Join our community on Discord to negotiate treaties and shape the dynamic political landscape of EarthPol.',
     imageFirst: true,
   },
   {
     title: 'War & Combat',
-    image: require('@site/static/img/SiegeCover.png').default,
+    image: require('@site/static/img/SiegeCover.avif').default,
     description: 'Experience strategic, balanced combat powered by SiegeWar. Coordinate epic sieges, defend territories, and lead your nation to victory in fair, team-focused PvP warfare designed for all skill levels. Alternatively, place bounties on your political enemies with our custom bounty plugin.',
     imageFirst: false,
   },
@@ -250,7 +250,7 @@ export default function HomepageFeatures() {
           {/* Left Image */}
           <div className="col col--4" style={{ textAlign: 'center' }}>
             <img
-              src={require('@site/static/img/community.png').default}
+              src={require('@site/static/img/community.avif').default}
               alt="Diplomacy"
               style={{
                 height: '500px',
