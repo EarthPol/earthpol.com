@@ -26,7 +26,7 @@ sidebar_position: 3
 
 When you first join EarthPol, you will be teleported to a random location on our 🌍 1:326 scale map of the Earth, divided into regions including Africa, Asia, Europe, the Middle East, North America, Oceania, and South America.  
 
-![EarthPol Map](/img/servermap.png)
+![EarthPol Map](/img/servermap.avif)
 
 
 
@@ -89,7 +89,7 @@ When you place your campfire, you'll see a prompt:
 💬 *"Would you like to make a Towny Camp?"*  
 ✅ Click or type `/confirm` to claim the area.
 
-![Towny Camps](/img/campfire.png)
+![Towny Camps](/img/campfire.avif)
 
 ---
 
@@ -123,7 +123,7 @@ Once you're ready to settle permanently, you can join or create a **Town**!
 
 ▷ *More info in our [Town Guide](Towny/Basic/Towns.md)*
 
-![Town](/img/town.png)
+![Town](/img/town.avif)
 
 ---
 
@@ -144,7 +144,7 @@ Once you're ready to settle permanently, you can join or create a **Town**!
 
 ▷ *More info in our [Nation Guide](Towny/Basic/Nations.md)*
 
-![Nation](/img/nation.png)
+![Nation](/img/nation.avif)
 
 ---
 

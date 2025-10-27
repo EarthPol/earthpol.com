@@ -5,7 +5,7 @@ sidebar_position: 6
 
 ## Our custom Earth map
 
-![EarthPol Map](/img/servermap.png)
+![EarthPol Map](/img/servermap.avif)
 
 Our custom Earth map offers a unique and immersive gameplay experience. Handcrafted using real-world topographical and geographical data, the map brings an added layer of depth and realism to EarthPol, making geopolitics truly relevant. At a 1:326 scale, this map provides an impressive level of detail, meaning cities, rivers, coastlines, and mountain ranges closely resemble their real-world counterparts.
 

@@ -9,7 +9,7 @@ sidebar_position: 1
 
 Welcome to the official EarthPol guide! This is the root-level page where you will find essential information about how to navigate and utilize the resources available.
 
-![An EarthPol Build](/img/DesertBuild.png)
+![An EarthPol Build](/img/desert-build.avif)
 
 import Link from '@docusaurus/Link';
 

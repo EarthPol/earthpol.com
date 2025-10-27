@@ -13,7 +13,7 @@ Nations also allow for the establishment of alliances, the declaration of war, a
 
 The success of a nation relies on the coordination between its towns, the leadership of the nation’s ruler(s), and the active involvement of its citizens. Effective communication and cooperation between towns is essential to ensure a nation’s prosperity and growth.
 
-![Town](/img/nation.png)
+![Nation](/img/nation.avif)
 
 ---
 
