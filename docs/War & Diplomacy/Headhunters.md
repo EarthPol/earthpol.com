@@ -4,7 +4,7 @@ sidebar_position: 5
 ---
 # 🏹 Bounty System
 
-![Bounty Hunter](/img/BountyHunter.png)
+![Bounty Hunter](/img/BountyHunter.avif)
 
 ## 💭 What is the Bounty System
 The Bounty System is a feature that lets you set a price on a targets head for their immediate dispatch. The person to successfully eliminate the bounty target will receive the posted price in gold immediately upon success. The higher the price, the more competition and likeliness that target will be eliminated.

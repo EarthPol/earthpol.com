@@ -145,12 +145,6 @@ const config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    stylesheets: [
-      {
-        href: 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap',
-        type: 'text/css',
-      },
-    ],
   },
 };
 

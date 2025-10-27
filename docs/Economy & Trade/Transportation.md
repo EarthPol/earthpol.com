@@ -31,7 +31,7 @@ Rails is a neat plugin that makes minecart travel fast and practical by introduc
 **Regular Behavior**: Placing a powered rail on any other block creates a normal powered rail.
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/Rails.png" alt="EarthPol Rails Map" style={{ maxWidth: '100%', height: 'auto' }} />
+  <img src="/img/Rails.avif" alt="EarthPol Rails Map" style={{ maxWidth: '100%', height: 'auto' }} />
   <p><em>Example of a national rail layout</em></p>
 </div>
 
@@ -58,6 +58,6 @@ Stand on any ice block and run the ```/boat``` command to automatically be place
 :::
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/iceroad1.png" alt="Rails" style={{ maxWidth: '100%', height: 'auto' }} />
+  <img src="/img/iceroad1.avif" alt="Rails" style={{ maxWidth: '100%', height: 'auto' }} />
   <p><em>Example of an ice road in Nether.</em></p>
 </div>

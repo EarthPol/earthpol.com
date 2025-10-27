@@ -35,7 +35,7 @@ The EarthPol Dev Team is extremely grateful to **[0xBit](https://wiki.earthpol.c
 
 A 1:326 scale Earth map used in Version 3 of EarthPol, a time in which the server was defined by a surge of new players, intense geopolitical maneuvering, and a wave of wars and diplomatic showdowns. It was a time of rapid expansion, nation-building, and historic battles that shaped the foundation of EarthPol’s evolving political landscape.
 
-![V3 Map](/img/v3image.png)
+![V3 Map](/img/v3image.avif)
 
 👉 **Download**: https://cdn.earthmc.org/downloads/world-v3.zip
 
@@ -48,7 +48,7 @@ A 1:326 scale Earth map used in Version 3 of EarthPol, a time in which the serve
 
 A 1:217 scale Earth map used in Version 4 of EarthPol. This version saw the rise and fall of legendary nations and was known for its vibrant diplomacy, dynamic alliances, and large-scale geopolitical conflicts. Many players consider V4 to be a golden age of the server, filled with iconic moments and unforgettable power struggles.
 
-![V4 Map](/img/v4image.png)
+![V4 Map](/img/v4image.avif)
 
 👉 **Download**: https://cdn.earthmc.org/downloads/world-v4.zip
 
@@ -61,7 +61,7 @@ A 1:217 scale Earth map used in Version 4 of EarthPol. This version saw the rise
 
 A 1:326 scale Earth map used in Version 6, marking the start of a new era for EarthPol with MrTytanic as the owner. This version introduced bold reforms, ambitious infrastructure projects, and a renewed focus on player diplomacy and development. While shorter in length than past versions, V6 was packed with political intrigue, international alliances, and emerging superpowers vying for influence.
 
-![V6 Map](/img/v6image.png)
+![V6 Map](/img/v6image.avif)
 
 
 👉 **Download**: https://cdn.earthmc.org/downloads/world-v6.zip

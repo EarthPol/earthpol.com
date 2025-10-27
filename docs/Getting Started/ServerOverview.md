@@ -11,7 +11,7 @@ sidebar_position: 1
 
 For nearly **five years 🎉**, EarthPol has set the standard for immersive and innovative gameplay. Our team of developers has built upon successful features to create a **unique experience for every player**.
 
-![EarthPol Banner](/img/banner.png)
+![EarthPol Banner](/img/banner.avif)
 
 ---
 

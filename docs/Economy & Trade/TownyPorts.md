@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem'
 import Admonition from '@theme/Admonition'
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/townyports-thumbnail.png" alt="Towny Ports" style={{ maxWidth: '100%', height: 'auto' }} />
+  <img src="/img/townyports-thumbnail.avif" alt="Towny Ports" style={{ maxWidth: '100%', height: 'auto' }} />
   <p><em>Towny Ports and how to use it!</em></p>
 </div>
 

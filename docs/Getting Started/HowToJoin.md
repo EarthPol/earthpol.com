@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # 🚪 How to Join
 
-![EarthPol Lobby](/img/earthpol-lobby.png)
+![EarthPol Lobby](/img/earthpol-lobby.avif)
 
 :::warning
 EarthPol is currently supported for Java Edition only.

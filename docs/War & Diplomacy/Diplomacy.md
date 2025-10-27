@@ -13,7 +13,7 @@ Mastering diplomacy allows players to avoid unnecessary conflict, secure long-te
 
 By understanding how international relations function in both theory and practice, players gain a unique advantage in EarthPol's player-driven world. Whether you're a lone city-state looking to survive, or a sprawling empire seeking global legitimacy, diplomacy is your most powerful tool.
 
-![Diplomatic Meeting](/img/diplomacy.png)
+![Diplomatic Meeting](/img/diplomacy.avif)
 
 ---
 

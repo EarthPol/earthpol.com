@@ -7,7 +7,7 @@ EarthPol Premium is our subscription-based service designed to give players excl
 
 👉 You can purchase Premium here: **[Premium Store](https://earthpol.craftingstore.net/category/445275)**
 
-![Premium](/img/premium.png)
+![Premium](/img/premium.avif)
 
 ---
 

@@ -7,7 +7,7 @@ sidebar_position: 4
 ## 🗺️ Overview  
 While unconventional, **Nomads** are independent players who choose to live without joining a town. This playstyle offers freedom and flexibility but comes with its own unique challenges. Whether you're a new player exploring your options or a veteran seeking a fresh experience, becoming a nomad can be a rewarding alternative.
 
-![Nomadic Hut](/img/Nomadic.png)  
+![Nomadic Hut](/img/Nomadic.avif)  
 *Example of a Nomadic Tribe's temporary yurt in Nebula (V4)*
 
 ## 🎮 Gameplay  

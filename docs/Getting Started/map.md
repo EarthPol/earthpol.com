@@ -5,7 +5,7 @@ sidebar_position: 6
 
 ## Our custom Earth map
 
-![EarthPol Map](/img/servermap.png)
+![EarthPol Map](/img/servermap.avif)
 
 Our custom Earth map offers a unique and immersive gameplay experience. Handcrafted using real-world topographical and geographical data, the map brings an added layer of depth and realism to EarthPol, making geopolitics truly relevant. At a 1:326 scale, this map provides an impressive level of detail, meaning cities, rivers, coastlines, and mountain ranges closely resemble their real-world counterparts.
 
@@ -19,42 +19,42 @@ To view the map, click [here](https://earthpol.com/map).
 
 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '40px' }}>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/clay_clumps.png" width="450" /><br />
+    <img src="/img/clay_clumps.avif" width="450" /><br />
     <strong>Clay Clumps</strong><br />
     Y 48 to Y 319
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/coal_ore.png" width="450" /><br />
+    <img src="/img/coal_ore.avif" width="450" /><br />
     <strong>Coal Ore</strong><br />
     Y 0 to Y 319
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/copper_ore.png" width="450" /><br />
+    <img src="/img/copper_ore.avif" width="450" /><br />
     <strong>Copper Ore</strong><br />
     Y 0 to Y 112
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/diamond_ore.png" width="450" /><br />
+    <img src="/img/diamond_ore.avif" width="450" /><br />
     <strong>Diamond Ore</strong><br />
     Y 0 to Y 16
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/gold_ore.png" width="450" /><br />
+    <img src="/img/gold_ore.avif" width="450" /><br />
     <strong>Gold Ore</strong><br />
     Y 0 to Y 112
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/iron_ore.png" width="450" /><br />
+    <img src="/img/iron_ore.avif" width="450" /><br />
     <strong>Iron Ore</strong><br />
     Y 0 to Y 64
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/quartz_ore.png" width="450" /><br />
+    <img src="/img/quartz_ore.avif" width="450" /><br />
     <strong>Quartz Ore</strong><br />
     Y 0 to Y 32
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/redstone_ore.png" width="450" /><br />
+    <img src="/img/redstone_ore.avif" width="450" /><br />
     <strong>Redstone Ore</strong><br />
     Y 0 to Y 16
   </div>
