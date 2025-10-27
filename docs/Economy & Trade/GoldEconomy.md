@@ -28,7 +28,7 @@ There are several ways to obtain gold in the game, below are a few recommendatio
 4. Events – Participate in various server events that offer gold rewards as part of the prize pool.
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/goldmining.png" alt="Mining Gold" style={{ maxWidth: '100%', height: 'auto' }} />
+  <img src="/img/goldmining.avif" alt="Mining Gold" style={{ maxWidth: '100%', height: 'auto' }} />
   <p><em>A player mining gold.</em></p>
 </div>
 
@@ -39,7 +39,7 @@ There are several ways to obtain gold in the game, below are a few recommendatio
 On EarthPol your gold is tracked automatically. You can store it in your inventory or Ender Chest, and it will be added to your gold balance. When you make a purchase, the cost is automatically deducted from that balance. Make sure you have gold in your inventory or Ender Chest when shopping, or the transaction will not go through. Managing where you keep your gold is important and should be a high priority for all players.
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/goldbal.png" alt="Gold in Balance" style={{ maxWidth: '100%', height: 'auto' }} />
+  <img src="/img/goldbal.avif" alt="Gold in Balance" style={{ maxWidth: '100%', height: 'auto' }} />
   <p><em>Example of gold in one's balance based on items in their hotbars.</em></p>
 </div>
 
@@ -60,7 +60,7 @@ Here are some effective strategies to help you earn gold for yourself or your to
 With these strategies, you can quickly build up your wealth and take full advantage of the gold-based economy!
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/playershop.png" alt="A Shop" style={{ maxWidth: '100%', height: 'auto' }} />
+  <img src="/img/playershop.avif" alt="A Shop" style={{ maxWidth: '100%', height: 'auto' }} />
   <p><em>Example of a shop where items can be sold.</em></p>
 </div>
 
