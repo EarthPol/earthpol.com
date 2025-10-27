@@ -1,4 +1,8 @@
-/* Light theme backgrounds */
+/* ================================
+   index.module.css (optimized, buttons preserved)
+   ================================ */
+
+/* ---------- Theme-specific hero backgrounds (SSR-friendly) ---------- */
 .heroBannerLight {
   position: relative;
   background-image: url('/img/day_ultra.webp');
@@ -36,39 +40,76 @@
   .heroBannerDark { background-image: url('/img/night_mobile.webp'); }
 }
 
+/* ---------- Hero banner base ---------- */
 .heroBanner {
   position: relative;
   height: 70vh;
+  min-height: 520px;
+  max-height: 900px;
+
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: 150%; /* Or whatever zoom you want */
+
   background-position: center 20%;
   background-repeat: no-repeat;
-  transition: background-position 0.2s ease; /* Smooth movement */
+  background-size: 150%;
+
+  transition: none;
+  will-change: background-position;
+  transform: translateZ(0);
+  contain: paint;
   z-index: 0;
 }
 
-/* The blur overlay on the background image */
-.heroBanner::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(4px); /* Adjust blur strength here */
-  -webkit-backdrop-filter: blur(4px); /* Safari support */
-  z-index: 1;
-  pointer-events: none; /* allow clicks to pass through */
+@media (max-width: 768px) {
+  .heroBanner {
+    height: 60vh;
+    min-height: 420px;
+  }
 }
 
+/* Enable smooth parallax after first frame */
+.heroBannerReady {
+  transition: background-position 0.2s ease;
+}
+
+/* ---------- Overlay optimization ---------- */
+.heroBanner::before {
+  opacity: 0.0001;
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1;
+  pointer-events: none;
+}
+.heroBannerReady::before {
+  opacity: 1;
+}
+
+/* Respect reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .heroBannerReady {
+    transition: none;
+  }
+  .heroBanner::before,
+  .heroBannerReady::before {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    opacity: 0;
+  }
+}
+
+/* ---------- Main hero content ---------- */
 .mainHero {
   opacity: 0;
   transition: opacity 1s ease;
   text-align: center;
   position: relative;
-  z-index: 30; /* Above the blur overlay */
+  z-index: 30;
 }
 .mainHeroVisible {
   opacity: 1 !important;
@@ -76,13 +117,145 @@
 
 .heroTitle {
   font-size: 5rem;
+  line-height: 1.05;
   font-weight: 900;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 1280px) {
+  .heroTitle { font-size: 4rem; }
+}
+@media (max-width: 768px) {
+  .heroTitle { font-size: 3rem; }
 }
 
+.subtitleWrapper {
+  margin-top: 0.5rem;
+}
+.subtitleWrapper .hero__subtitle {
+  font-size: 1.125rem;
+  opacity: 0.95;
+}
+
+/* ---------- Buttons & server status ---------- */
+.buttons {
+  margin-top: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.serverStatusWrapper {
+  margin-top: 0.5rem;
+}
+
+/* ---------- Horizontal line divider ---------- */
+.horizontalLine {
+  border: 0;
+  height: 1px;
+  margin: 40px auto;
+  width: min(92%, 1100px);
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.15), transparent);
+}
+[data-theme='dark'] .horizontalLine {
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.15), transparent);
+}
+
+/* ---------- Feature grid ---------- */
+.features {
+  padding: 24px 0 8px;
+}
+.featureSvg {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: inline-block;
+}
+.feature-item {
+  margin-bottom: 24px;
+}
+.feature-item p {
+  margin-top: 0.5rem;
+}
+
+/* ---------- Screenshot section ---------- */
+.screenshots {
+  margin-bottom: 50px;
+}
+.screenshotImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* ---------- Testimonials ---------- */
+.testimonialsSection {
+  padding: 24px 0 8px;
+}
+.testimonialBlurb {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(127,127,127,0.15);
+}
+.carouselTrack {
+  display: flex;
+  width: 100%;
+  transition: transform 300ms ease;
+  will-change: transform;
+}
+.testimonialSlide {
+  min-width: 100%;
+  padding: 20px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.carouselButtons {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.carouselButtons button {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(127,127,127,0.4);
+  cursor: pointer;
+  transition: transform 150ms ease, background-color 150ms ease;
+}
+.carouselButtons button:hover {
+  transform: scale(1.1);
+}
+.carouselButtons button.active {
+  background: #3a51b3;
+}
+
+/* ---------- Discord section ---------- */
+.discordSection {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* ---------- Legacy intro / animation classes (kept for compatibility) ---------- */
 .introContainer {
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  inset: 0;
   background: transparent;
   display: flex;
   justify-content: center;
@@ -91,20 +264,14 @@
   transition: opacity 1s ease;
   z-index: 20;
 }
-
-.introFadeOut {
-  opacity: 0 !important;
-  pointer-events: none;
-}
+.introFadeOut { opacity: 0 !important; pointer-events: none; }
 
 .backgroundVideoWrapper {
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  inset: 0;
   overflow: hidden;
   z-index: 10;
 }
-
 .backgroundVideo {
   width: 100%;
   height: 100%;
@@ -112,27 +279,17 @@
   filter: brightness(0.5);
   pointer-events: none;
 }
-
 .fadeToBlackOverlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: black;
   opacity: 0;
   transition: opacity 1s ease;
   pointer-events: none;
 }
+.fadeToBlackOverlay.visible { opacity: 1; }
 
-.fadeToBlackOverlay.visible {
-  opacity: 1;
-}
-
-.textContainer {
-  position: relative;
-  text-align: center;
-  z-index: 21;
-}
+.textContainer { position: relative; text-align: center; z-index: 21; }
 
 .thisIs {
   font-size: 3rem;
@@ -147,16 +304,9 @@
   pointer-events: none;
   z-index: 22;
 }
-
 .thisIs.visible { opacity: 1; }
-
-.thisIsMoved {
-  transform: translate(-50%, -150px);
-}
-
-.thisIsFadeOut {
-  opacity: 0 !important;
-}
+.thisIsMoved { transform: translate(-50%, -150px); }
+.thisIsFadeOut { opacity: 0 !important; }
 
 .earthpol {
   font-size: 12rem;
@@ -173,15 +323,4 @@
   z-index: 23;
 }
 .earthpol.visible { opacity: 1; }
-
-.earthpolScaledDown {
-  transform: translate(-50%, -50%) scale(0.42);
-}
-
-.buttons {
-  margin-top: 1rem;
-}
-
-.serverStatusWrapper {
-  margin-top: 0.5rem;
-}
+.earthpolScaledDown { transform: translate(-50%, -50%) scale(0.42); }
