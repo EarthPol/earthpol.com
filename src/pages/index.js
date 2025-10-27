@@ -1,121 +1,177 @@
-import React, { useState, useEffect, useRef } from 'react';
+// src/pages/index.js
+import React, { useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useColorMode } from '@docusaurus/theme-common';
+import useIsBrowser from '@docusaurus/useIsBrowser';
+import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
 import ServerStatus from '@site/src/components/ServerStatus';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  // ── Declare all hooks unconditionally ─────────────────────────────
-  const [mounted, setMounted] = useState(false);
-  const [step, setStep] = useState(0);
-  const [showIntro, setShowIntro] = useState(false);
-
   const { siteConfig } = useDocusaurusContext();
   const { colorMode } = useColorMode();
-  const isDarkTheme = colorMode === 'dark';
-  const bgLight = useBaseUrl('/img/light_map.avif');
-  const bgDark = useBaseUrl('/img/dark_map.avif');
+  const isBrowser = useIsBrowser();
+  const isDark = colorMode === 'dark';
 
-  // ── Hydration guard ────────────────────────────────────────────────
+  // After first paint, we add a class that enables transitions and heavier effects
+  const [ready, setReady] = useState(false);
+
+  const heroRef = useRef(null);
+  const rectRef = useRef(null);
+  const rafRef = useRef(null);
+  const needFrameRef = useRef(false);
+  const lastXYRef = useRef(null);
+
+  const baseX = 50;
+  const baseY = 20;
+  const maxDrift = 5;
+
+  // Mark ready right after first frame to keep first paint clean
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    if (!isBrowser) return;
+    const id = requestAnimationFrame(() => setReady(true));
+    return () => cancelAnimationFrame(id);
+  }, [isBrowser]);
 
-// ── Mouse parallax effect ──────────────────────────────────────────
-useEffect(() => {
-  if (!mounted || typeof window === 'undefined') return;
+  // Defer parallax to idle so it never blocks first paint
+  useEffect(() => {
+    if (!isBrowser || !heroRef.current) return;
 
-  const heroBanner = document.querySelector(`.${styles.heroBanner}`);
-  if (!heroBanner) return;
+    const reduce =
+        window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ||
+        window.navigator?.connection?.saveData;
 
-  // Define your base position here
-  const baseX = 50;   // Horizontal center (percentage)
-  const baseY = 20;   // Your original vertical position (percentage)
+    if (reduce) return;
 
-  const maxDrift = 5; // Small drift range in %
+    const enableParallax = () => {
+      const el = heroRef.current;
+      if (!el) return;
 
-  const handleMouseMove = (e) => {
-    const rect = heroBanner.getBoundingClientRect();
+      const computeRect = () => {
+        rectRef.current = el.getBoundingClientRect();
+      };
 
-    const x = (e.clientX - rect.left) / rect.width;   // 0 to 1 inside heroBanner
-    const y = (e.clientY - rect.top) / rect.height;   // 0 to 1 inside heroBanner
+      computeRect();
+      const onResize = () => computeRect();
 
-    const moveX = baseX + (x - 0.5) * maxDrift * 1.3;
-    const moveY = baseY + (y - 0.5) * maxDrift * 1.3;
+      const paint = () => {
+        needFrameRef.current = false;
+        const rect = rectRef.current;
+        const last = lastXYRef.current;
+        if (!rect || !last) return;
 
-    heroBanner.style.backgroundPosition = `${moveX}% ${moveY}%`;
-  };
+        const x = (last.x - rect.left) / rect.width;
+        const y = (last.y - rect.top) / rect.height;
+        const moveX = baseX + (x - 0.5) * maxDrift * 1.3;
+        const moveY = baseY + (y - 0.5) * maxDrift * 1.3;
 
-  const handleMouseLeave = () => {
-    // Snap back to base position when cursor leaves
-    heroBanner.style.backgroundPosition = `${baseX}% ${baseY}%`;
-  };
+        el.style.backgroundPosition = `${moveX}% ${moveY}%`;
+      };
 
-  heroBanner.addEventListener('mousemove', handleMouseMove);
-  heroBanner.addEventListener('mouseleave', handleMouseLeave);
+      const onPointerMove = (e) => {
+        lastXYRef.current = { x: e.clientX, y: e.clientY };
+        if (!needFrameRef.current) {
+          needFrameRef.current = true;
+          rafRef.current = window.requestAnimationFrame(paint);
+        }
+      };
 
-  return () => {
-    heroBanner.removeEventListener('mousemove', handleMouseMove);
-    heroBanner.removeEventListener('mouseleave', handleMouseLeave);
-  };
-}, [mounted]);
+      const onPointerLeave = () => {
+        lastXYRef.current = null;
+        el.style.backgroundPosition = `${baseX}% ${baseY}%`;
+      };
 
-  // ── Prevent SSR flash ──────────────────────────────────────────────
-  if (!mounted) {
-    return null;
-  }
+      el.addEventListener('pointermove', onPointerMove, { passive: true });
+      el.addEventListener('pointerleave', onPointerLeave, { passive: true });
+      window.addEventListener('resize', onResize, { passive: true });
 
-  const backgroundImage = `url(${isDarkTheme ? bgDark : bgLight})`;
+      return () => {
+        el.removeEventListener('pointermove', onPointerMove);
+        el.removeEventListener('pointerleave', onPointerLeave);
+        window.removeEventListener('resize', onResize);
+        if (rafRef.current != null) {
+          cancelAnimationFrame(rafRef.current);
+          rafRef.current = null;
+        }
+      };
+    };
+
+    const idle = window.requestIdleCallback || ((fn) => setTimeout(fn, 1));
+    const idleId = idle(() => enableParallax());
+
+    return () => {
+      if (window.cancelIdleCallback) window.cancelIdleCallback(idleId);
+    };
+  }, [isBrowser]);
+
+  if (!isBrowser) return null;
 
   return (
-    <>
-      <header className={styles.heroBanner} style={{ backgroundImage }}>
-        <div
-          className={clsx(
-            styles.mainHero,
-            (step >= 5 || !showIntro) && styles.mainHeroVisible
-          )}
+      <>
+        {/* Preload likely LCP background for each theme at desktop size */}
+        <Head>
+          <link
+              rel="preload"
+              as="image"
+              href="/img/day_desktop.webp"
+              media="(prefers-color-scheme: light)"
+          />
+          <link
+              rel="preload"
+              as="image"
+              href="/img/night_desktop.webp"
+              media="(prefers-color-scheme: dark)"
+          />
+        </Head>
+
+        <header
+            ref={heroRef}
+            className={clsx(
+                styles.heroBanner,
+                isDark ? styles.heroBannerDark : styles.heroBannerLight,
+                ready && styles.heroBannerReady
+            )}
         >
-          <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
-          <div className={styles.subtitleWrapper}>
-            <p className="hero__subtitle">{siteConfig.tagline}</p>
-          </div>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--secondary button--lg',
-                styles.gradientButton
-              )}
-              to="/docs/Getting Started/HowToJoin"
-            >
-              IP: PLAY.EARTHPOL.COM
-            </Link>
-            <div className={styles.serverStatusWrapper}>
-              <ServerStatus />
+          <div className={clsx(styles.mainHero, styles.mainHeroVisible)}>
+            <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
+            <div className={styles.subtitleWrapper}>
+              <p className="hero__subtitle">{siteConfig.tagline}</p>
+            </div>
+            <div className={styles.buttons}>
+              <Link
+                  className={clsx(
+                      'button button--secondary button--lg',
+                      styles.gradientButton
+                  )}
+                  to="/docs/Getting Started/HowToJoin"
+              >
+                IP: PLAY.EARTHPOL.COM
+              </Link>
+              <div className={styles.serverStatusWrapper}>
+                <ServerStatus />
+              </div>
             </div>
           </div>
-        </div>
-      </header>
-    </>
+        </header>
+      </>
   );
 }
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Welcome to ${siteConfig.title}`}
-      description="The Ultimate Geopolitical Minecraft Server"
-    >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+      <Layout
+          title={`Welcome to ${siteConfig.title}`}
+          description="The Ultimate Geopolitical Minecraft Server"
+      >
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+        </main>
+      </Layout>
   );
 }
