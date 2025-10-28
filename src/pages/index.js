@@ -1,141 +1,45 @@
-// src/pages/index.js
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useColorMode } from '@docusaurus/theme-common';
-import useIsBrowser from '@docusaurus/useIsBrowser';
-import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
 import ServerStatus from '@site/src/components/ServerStatus';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Head from '@docusaurus/Head';
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
-  const { colorMode } = useColorMode();
-  const isBrowser = useIsBrowser();
-  const isDark = colorMode === 'dark';
-
-  // After first paint, we add a class that enables transitions and heavier effects
-  const [ready, setReady] = useState(false);
-
-  const heroRef = useRef(null);
-  const rectRef = useRef(null);
-  const rafRef = useRef(null);
-  const needFrameRef = useRef(false);
-  const lastXYRef = useRef(null);
-
-  const baseX = 50;
-  const baseY = 20;
-  const maxDrift = 5;
-
-  // Mark ready right after first frame to keep first paint clean
-  useEffect(() => {
-    if (!isBrowser) return;
-    const id = requestAnimationFrame(() => setReady(true));
-    return () => cancelAnimationFrame(id);
-  }, [isBrowser]);
-
-  // Defer parallax to idle so it never blocks first paint
-  useEffect(() => {
-    if (!isBrowser || !heroRef.current) return;
-
-    const reduce =
-        window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ||
-        window.navigator?.connection?.saveData;
-
-    if (reduce) return;
-
-    const enableParallax = () => {
-      const el = heroRef.current;
-      if (!el) return;
-
-      const computeRect = () => {
-        rectRef.current = el.getBoundingClientRect();
-      };
-
-      computeRect();
-      const onResize = () => computeRect();
-
-      const paint = () => {
-        needFrameRef.current = false;
-        const rect = rectRef.current;
-        const last = lastXYRef.current;
-        if (!rect || !last) return;
-
-        const x = (last.x - rect.left) / rect.width;
-        const y = (last.y - rect.top) / rect.height;
-        const moveX = baseX + (x - 0.5) * maxDrift * 1.3;
-        const moveY = baseY + (y - 0.5) * maxDrift * 1.3;
-
-        el.style.backgroundPosition = `${moveX}% ${moveY}%`;
-      };
-
-      const onPointerMove = (e) => {
-        lastXYRef.current = { x: e.clientX, y: e.clientY };
-        if (!needFrameRef.current) {
-          needFrameRef.current = true;
-          rafRef.current = window.requestAnimationFrame(paint);
-        }
-      };
-
-      const onPointerLeave = () => {
-        lastXYRef.current = null;
-        el.style.backgroundPosition = `${baseX}% ${baseY}%`;
-      };
-
-      el.addEventListener('pointermove', onPointerMove, { passive: true });
-      el.addEventListener('pointerleave', onPointerLeave, { passive: true });
-      window.addEventListener('resize', onResize, { passive: true });
-
-      return () => {
-        el.removeEventListener('pointermove', onPointerMove);
-        el.removeEventListener('pointerleave', onPointerLeave);
-        window.removeEventListener('resize', onResize);
-        if (rafRef.current != null) {
-          cancelAnimationFrame(rafRef.current);
-          rafRef.current = null;
-        }
-      };
-    };
-
-    const idle = window.requestIdleCallback || ((fn) => setTimeout(fn, 1));
-    const idleId = idle(() => enableParallax());
-
-    return () => {
-      if (window.cancelIdleCallback) window.cancelIdleCallback(idleId);
-    };
-  }, [isBrowser]);
-
-  if (!isBrowser) return null;
 
   return (
       <>
-        {/* Preload likely LCP background for each theme at desktop size */}
+        {/* Preload primary desktop hero to speed LCP */}
         <Head>
-          <link
-              rel="preload"
-              as="image"
-              href="/img/day_desktop.webp"
-              media="(prefers-color-scheme: light)"
-          />
-          <link
-              rel="preload"
-              as="image"
-              href="/img/night_desktop.webp"
-              media="(prefers-color-scheme: dark)"
-          />
+          <link rel="preload" as="image" href="/img/day_desktop.webp" />
         </Head>
 
-        <header
-            ref={heroRef}
-            className={clsx(
-                styles.heroBanner,
-                isDark ? styles.heroBannerDark : styles.heroBannerLight,
-                ready && styles.heroBannerReady
-            )}
-        >
+        <header className={styles.heroBanner}>
+          {/* Background image as real <img> so it becomes LCP and is trackable */}
+          <picture>
+            <source media="(max-width: 768px)" srcSet="/img/day_mobile.webp" />
+            <source media="(max-width: 1280px)" srcSet="/img/day_tablet.webp" />
+            <source media="(max-width: 1920px)" srcSet="/img/day_desktop.webp" />
+            <source media="(max-width: 2560px)" srcSet="/img/day_large.webp" />
+            {/* Fallback to ultra for very large screens */}
+            <img
+                className={styles.heroBgImg}
+                src="/img/day_ultra.webp"
+                alt=""
+                role="presentation"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+            />
+          </picture>
+
+          {/* Optional soft overlay to improve text contrast */}
+          <div className={styles.heroOverlay} />
+
           <div className={clsx(styles.mainHero, styles.mainHeroVisible)}>
             <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
             <div className={styles.subtitleWrapper}>
@@ -143,10 +47,7 @@ function HomepageHeader() {
             </div>
             <div className={styles.buttons}>
               <Link
-                  className={clsx(
-                      'button button--secondary button--lg',
-                      styles.gradientButton
-                  )}
+                  className={clsx('button', 'button--secondary', 'button--lg')}
                   to="/docs/Getting Started/HowToJoin"
               >
                 IP: PLAY.EARTHPOL.COM
