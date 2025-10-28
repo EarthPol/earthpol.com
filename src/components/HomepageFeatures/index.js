@@ -151,7 +151,7 @@ function Feature({ Svg, title, description, link }) {
           <Svg className={styles.featureSvg} role="img" />
         </div>
         <div className="text--center padding-horiz--md">
-          <Heading as="h3">{title}</Heading>
+          <Heading as="h2">{title}</Heading>
           <p>{description}</p>
         </div>
       </a>
@@ -173,14 +173,14 @@ function Screenshot({ image, title, description, imageFirst }) {
             />
           </div>
           <div className="col col--6">
-            <Heading as="h3" style={{ fontSize: '3.5em' }}>{title}</Heading>
+            <Heading as="h2" style={{ fontSize: '3.5em' }}>{title}</Heading>
             <p>{description}</p>
           </div>
         </>
       ) : (
         <>
           <div className="col col--6">
-            <Heading as="h3" style={{ fontSize: '3.5em' }}>{title}</Heading>
+            <Heading as="h2" style={{ fontSize: '3.5em' }}>{title}</Heading>
             <p>{description}</p>
           </div>
           <div className="col col--6">
@@ -263,18 +263,7 @@ export default function HomepageFeatures() {
 
           {/* Discord Widget */}
           <div className="col col--4" style={{ textAlign: 'center' }}>
-            <iframe
-              src="https://discord.com/widget?id=1204204837483446353&theme=dark"
-              width="100%"
-              height="500"
-              allowTransparency="true"
-              title="EarthPol Discord Server"
-              frameBorder="0"
-              sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-              style={{
-                borderRadius: '12px',
-              }}
-            ></iframe>
+            
           </div>
         </div>
       </section>
