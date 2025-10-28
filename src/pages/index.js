@@ -21,14 +21,14 @@ function HomepageHeader() {
         <header className={styles.heroBanner}>
           {/* Background image as real <img> so it becomes LCP and is trackable */}
           <picture>
-            <source media="(max-width: 768px)" srcSet="/img/day_mobile.webp" />
-            <source media="(max-width: 1280px)" srcSet="/img/day_tablet.webp" />
-            <source media="(max-width: 1920px)" srcSet="/img/day_desktop.webp" />
-            <source media="(max-width: 2560px)" srcSet="/img/day_large.webp" />
+            <source media="(max-width: 768px)" srcSet="/img/dark_map.avif" />
+            <source media="(max-width: 1280px)" srcSet="/img/dark_map.avif" />
+            <source media="(max-width: 1920px)" srcSet="/img/dark_map.avif" />
+            <source media="(max-width: 2560px)" srcSet="/img/dark_map.avif" />
             {/* Fallback to ultra for very large screens */}
             <img
                 className={styles.heroBgImg}
-                src="/img/day_ultra.webp"
+                src="/img/dark_map.avif"
                 alt=""
                 role="presentation"
                 decoding="async"
