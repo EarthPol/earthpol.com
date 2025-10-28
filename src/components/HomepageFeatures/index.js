@@ -263,7 +263,7 @@ export default function HomepageFeatures() {
 
           {/* Discord Widget */}
           <div className="col col--4" style={{ textAlign: 'center' }}>
-
+            
           </div>
         </div>
       </section>
