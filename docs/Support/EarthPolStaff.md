@@ -160,32 +160,14 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Hosentil/80" /><br/>
-  <strong><a href="#">Hosentil</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/jessiesgirl/80" /><br/>
   <strong><a href="#">jessiesgirl</a></strong><br/>
   <em>Helper</em>
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/kairo236/80" /><br/>
-  <strong><a href="#">kairo236</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/Nokss__/80" /><br/>
   <strong><a href="#">Nokss__</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/AyameHimuro/80" /><br/>
-  <strong><a href="#">AyameHimuro</a></strong><br/>
   <em>Helper</em>
 </div>
 
