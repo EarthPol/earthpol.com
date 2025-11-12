@@ -55,7 +55,7 @@ It is essential for EarthPol to maintain a safe and welcoming community for its 
 
 3.5 – **Railways and Ice Roads**: Railways, ice roads, and similar transportation routes may not be intentionally broken, altered, or removed when they are used to connect existing towns. This restriction applies to all blocks and materials forming the route, not just the rails themselves.
 ### Section 4. Combat and PvP
-4.1 - **Combat Engagement**: Combat is permitted. Post-defeat engagement rules apply. Spawn camping is banned. Nation Spawn or Town Spawn camping/killing is banned.
+4.1 - **Combat Engagement**: Combat is permitted across the server; however, all participants must follow post-defeat engagement rules. Once a player or group has been clearly defeated, the victors must cease further aggression, allowing the defeated to safely retreat or respawn without harassment unless they prove to be a further risk (such as having gear on) or interfere with you purposefully. Spawn camping or repeated killing at Nation or Town spawns is strictly prohibited and will be treated as spawn camping abuse.
 
 4.2 - **Claim Hopping**: Using claims to avoid combat or gain an advantage is prohibited.
 
