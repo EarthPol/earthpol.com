@@ -102,14 +102,15 @@ if (!isset($_GET['state'])) {
     $minecraftUsername = $_SESSION['minecraft_username'];
 
     // --- DATABASE PART ---
-    $dbHost = '15.204.57.71';
-    $dbName = 's1_discord';
-    $dbUser = 'u1_NOD4SoLdEP';
-    $dbPass = 'd^!KI6wB5ThEXiuh.Wx=xc@U';
+    $dbHost = '50.53.45.169';
+    $dbPort = '3336'
+    $dbName = 's14_discord';
+    $dbUser = 'u14_WlFztL1WqY';
+    $dbPass = 'kOhU^0b6RzLKNnNOfDN^h3sA';
 
     try {
         $pdo = new PDO(
-            "mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4",
+            "mysql:host=$dbHost;port=$dbPort;dbname=$dbName;charset=utf8mb4",
             $dbUser, $dbPass,
             [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
         );
