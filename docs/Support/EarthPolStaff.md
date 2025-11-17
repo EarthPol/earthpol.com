@@ -48,13 +48,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <a href="https://github.com/jhjhjh098k"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
 </div>
 
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Granitial/80" /><br/>
-  <strong><a href="#">Granitial</a></strong><br/>
-  <em>Developer</em>
-  <a href="https://github.com/imide"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
-</div>
-
 </div>
 
 </div>
@@ -62,12 +55,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 ### Administrators
 
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Dandire/80" /><br/>
-  <strong><a href="#">Dandire</a></strong><br/>
-  <em>Staff Manager</em>
-</div>
 
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/Irochi_/80" /><br/>

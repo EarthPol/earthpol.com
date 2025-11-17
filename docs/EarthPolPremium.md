@@ -13,7 +13,7 @@ EarthPol Premium is our subscription-based service designed to give players excl
 
 ## 💰 Perks Overview
 
-For only `$6.99/month`, you can have access to the following EarthPol Premium perks:
+For only `$5.99/month`, you can have access to the following EarthPol Premium perks:
 
 - 🚀 **Priority Queue:** Premium users are prioritized when the server queue is full.
 - 🛒 **Add Staff to Your Shops:** Add friends and members of your town to help restock and manage items in your ChestShops.  
