@@ -103,7 +103,7 @@ if (!isset($_GET['state'])) {
 
     // --- DATABASE PART ---
     $dbHost = '50.53.45.169';
-    $dbPort = '3336'
+    $dbPort = '3336';
     $dbName = 's14_discord';
     $dbUser = 'u14_WlFztL1WqY';
     $dbPass = 'kOhU^0b6RzLKNnNOfDN^h3sA';
