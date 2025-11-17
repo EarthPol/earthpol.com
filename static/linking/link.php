@@ -102,7 +102,7 @@ if (!isset($_GET['state'])) {
     $minecraftUsername = $_SESSION['minecraft_username'];
 
     // --- DATABASE PART ---
-    $dbHost = '50.53.45.169';
+    $dbHost = 'one.ip.to.rule.them.all.xbit.dev';
     $dbPort = '3336';
     $dbName = 's14_discord';
     $dbUser = 'u14_WlFztL1WqY';
