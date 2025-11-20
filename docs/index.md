@@ -53,7 +53,7 @@ export function SearchGuides() {
     { title: "SiegeWar Guide", url: "/docs/War & Diplomacy/SiegeWar" },
     { title: "Diplomacy", url: "/docs/War & Diplomacy/Diplomacy" },
     { title: "Headhunters Guide", url: "/docs/War & Diplomacy/Headhunters" },
-    { title: "McMMO Overview", url: "/docs/McMMO/McmmoOverview" },
+    { title: "McMMO Overview", url: "/docs/McmmoOverview" },
     { title: "API", url: "/docs/api" },
     { title: "EarthPol Premium", url: "/docs/EarthPolPremium" },
     { title: "FlagsH", url: "/docs/Plugins and Custom Features/FlagsH" },

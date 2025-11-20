@@ -1,5 +1,6 @@
 ---
 title: McMMO Guide
+sidebar_position: 7
 ---
 
 # What is mcMMO?

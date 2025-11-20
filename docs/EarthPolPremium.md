@@ -22,10 +22,6 @@ For only `$5.99/month`, you can have access to the following EarthPol Premium pe
 - 🎨 **Change Nation Color:** Nation leaders are able to change their nation color from the default blue.
 - 🌈 **Exclusive Name Color:** Stand out in chat with a bright colored name!
 
-### Features Coming Soon!
-
-- 🗺️ **EarthPol Rewind:** Can't download the V6 map? With Premium, you can view your old builds on our hosted V6 archive server.
-
 ---
 
 ## ⚙️ Premium Commands
