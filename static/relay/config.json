@@ -89,6 +89,31 @@
             "channel_id": "1410491865702072402",
             "display_name": "Borealia News Network",
             "avatar_url": "https://i.imgur.com/tBhpKZU.png"
+        },
+        {
+            "channel_id": "1410491874204057643",
+            "display_name": "EarthPol Transport Association",
+            "avatar_url": "https://i.imgur.com/ZOhvtZ1.png"
+        },
+        {
+            "channel_id": "1410491882563309588",
+            "display_name": "The Rokoko Post",
+            "avatar_url": "https://i.imgur.com/6ybU2lL.jpeg"
+        },
+        {
+            "channel_id": "1410491893539672064",
+            "display_name": "Gnome News Network",
+            "avatar_url": "https://i.imgur.com/A88EuR2.png"
+        },
+        {
+            "channel_id": "1410491902137991268",
+            "display_name": "Atlantic Guardian",
+            "avatar_url": "https://i.postimg.cc/x1kMC6tQ/Atlantic-Guardian.png"
+        },
+        {
+            "channel_id": "1410491914121121812",
+            "display_name": "Sky News",
+            "avatar_url": "https://i.imgur.com/Kwdez1l.png"
         }
 ]
 }
