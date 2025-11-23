@@ -862,3 +862,60 @@ Response:
     }
 ]
 ```
+
+### Voting
+**Endpoint:** `https://api.earthpol.com/astra/voting`
+This endpoint only supports `GET` requests.
+
+Response:
+```
+{
+    "totalVotesAllTime": 62968,
+    "totalVotesThisMonth": 7005,
+    "totalVotesThisWeek": 0,
+    "totalVotesThisDay": 0,
+    "votePartyCurrentVotes": 11,
+    "votePartyVotesRequired": 100,
+    "votePartyVotesNeeded": 89,
+    "timeUntilMonthReset": "7 Days 0 Hours 36 Minutes"
+}
+```
+
+
+### Sieges
+**Endpoint:** `https://api.earthpol.com/astra/sieges`
+This endpoint only supports `GET` requests.
+
+Response:
+```
+{
+    "activeSiegeCount": 0,
+    "battleSessionTimeTill": "1.4 hours",
+    "battleSessionTimeRemaining": 0,
+      "sieges": [
+        {
+          "name": "Aiacciu",
+          "type": "CONQUEST",
+          "status": "In Progress",
+          "isActive": true,
+          "allowsInvading": false,
+          "allowsPlundering": true,
+          "attackersWon": false,
+          "defendersWon": false,
+          "attacker": "Nation_A",
+          "defender": "Aiacciu",
+          "attackerPoints": 1860,
+          "defenderPoints": 400,
+          "balance": 1460,
+          "sessionsCompleted": 3,
+          "sessionsLeft": 9,
+          "bannerLocation": {
+            "world": "world",
+            "x": -123,
+            "y": 75,
+            "z": 420
+          }
+        }
+    ]
+}
+```
