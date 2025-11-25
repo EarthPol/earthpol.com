@@ -2,22 +2,13 @@
 title: Custom Recipes
 ---
 
+import RecipeDigester from '@site/src/components/RecipeDigester';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 # 🛠️ Custom Recipes
 
-## 🪓 Item & Block Recipes
-
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center' }}>
-  {Array.from({ length: 42 }).map((_, i) => (
-    <img
-      key={i}
-      src={`/img/Recipes/crafting-grid${i === 0 ? '' : `-${i}`}.png`}
-      alt={`Crafting Recipe ${i}`}
-      style={{ width: '192px', height: '192px', objectFit: 'contain' }}
-    />
-  ))}
-</div>
+<RecipeDigester />
 
 :::warning
 
@@ -31,17 +22,17 @@ Some items, such as maces, cannot be crafted.
 
 <div style={{ display: "flex", flexWrap: "wrap", gap: "24px", justifyContent: "center" }}>
 
-  {[
-    "dune", "coast", "wild", "ward", "eye", "vex", "tide",
-    "snout", "spire", "rib", "wayfinder", "raiser", "shaper", "host"
-  ].map((trim, i) => (
-    <img
-      key={i}
-      src={`/img/Trims/Custom_${trim}_trim.webp`}
-      alt={`Custom ${trim} trim`}
-      style={{ width: "192px", height: "192px", objectFit: "contain" }}
-    />
-  ))}
+    {[
+        "dune", "coast", "wild", "ward", "eye", "vex", "tide",
+        "snout", "spire", "rib", "wayfinder", "raiser", "shaper", "host"
+    ].map((trim, i) => (
+        <img
+            key={i}
+            src={`/img/Trims/Custom_${trim}_trim.webp`}
+            alt={`Custom ${trim} trim`}
+            style={{ width: "192px", height: "192px", objectFit: "contain" }}
+        />
+    ))}
 
 </div>
 

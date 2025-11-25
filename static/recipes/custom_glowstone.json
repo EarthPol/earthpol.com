@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:redstone",
+    "b": "minecraft:blaze_powder"
+  },
+  "result": {
+    "id": "minecraft:glowstone_dust",
+    "count": 8
+  }
+}

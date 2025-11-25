@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:cobbled_deepslate",
+    "b": "minecraft:white_dye"
+  },
+  "result": {
+    "id": "minecraft:end_stone",
+    "count": 8
+  }
+}

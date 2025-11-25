@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#minecraft:sand",
+    "minecraft:lapis_lazuli",
+    "#minecraft:dirt"
+  ],
+  "result": {
+    "id": "minecraft:prismarine_shard",
+    "count": 12
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:glowstone_dust",
+    "b": "minecraft:coal"
+  },
+  "result": {
+    "id": "minecraft:gunpowder",
+    "count": 8
+  }
+}
