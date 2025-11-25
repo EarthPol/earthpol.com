@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:glowstone",
+    "b": "minecraft:yellow_dye"
+  },
+  "result": {
+    "id": "minecraft:ochre_froglight",
+    "count": 8
+  }
+}

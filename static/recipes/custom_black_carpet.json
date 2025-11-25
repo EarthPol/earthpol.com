@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:black_carpet"
+  ],
+  "result": {
+    "id": "minecraft:black_carpet",
+    "count": 3
+  }
+}

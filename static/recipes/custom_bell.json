@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    " b ",
+    "bcb"
+  ],
+  "key": {
+    "a": "minecraft:stick",
+    "b": "minecraft:gold_ingot",
+    "c": "minecraft:gold_nugget"
+  },
+  "result": {
+    "id": "minecraft:bell",
+    "count": 1
+  }
+}

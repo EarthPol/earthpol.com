@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:diorite",
+    "b": "minecraft:quartz"
+  },
+  "result": {
+    "id": "minecraft:calcite",
+    "count": 8
+  }
+}

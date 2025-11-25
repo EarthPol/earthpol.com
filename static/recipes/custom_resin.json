@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:brown_mushroom",
+    "minecraft:honeycomb",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "minecraft:resin_clump",
+    "count": 3
+  }
+}

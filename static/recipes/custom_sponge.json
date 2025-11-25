@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "#minecraft:wool",
+    "#minecraft:wool",
+    "#minecraft:wool",
+    "minecraft:copper_ingot"
+  ],
+  "result": {
+    "id": "minecraft:sponge",
+    "count": 6
+  }
+}

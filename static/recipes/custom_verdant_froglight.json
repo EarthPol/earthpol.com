@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:glowstone",
+    "b": "minecraft:green_dye"
+  },
+  "result": {
+    "id": "minecraft:verdant_froglight",
+    "count": 8
+  }
+}
