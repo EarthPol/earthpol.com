@@ -54,11 +54,16 @@ const RecipeDigester: React.FC = () => {
             return raw;
         }
 
-        function itemNameToImageUrl(itemName: string | null): string | null {
+        function itemNameToImageSources(itemName: string | null): { primary: string; fallback: string } | null {
             if (!itemName) return null;
+
             const clean = sanitizeItemName(itemName);
             if (!clean) return null;
-            return `https://minecraft-api.vercel.app/images/items/${clean}.png`;
+
+            return {
+                primary: `https://minecraft-api.vercel.app/images/items/${clean}.png`,
+                fallback: `https://api.earthpol.com/textures/item/${clean}.png`,
+            };
         }
 
         function itemIdToDisplayName(id: any): string {
@@ -160,8 +165,26 @@ const RecipeDigester: React.FC = () => {
 
             const img = document.createElement('img');
             img.className = 'item-icon';
-            const src = itemNameToImageUrl(itemName);
-            if (src) img.src = src;
+
+            const sources = itemNameToImageSources(itemName);
+
+            if (sources) {
+                let triedFallback = false;
+
+                img.src = sources.primary;
+
+                img.onerror = () => {
+                    if (!triedFallback && sources.fallback && sources.fallback !== sources.primary) {
+                        triedFallback = true;
+                        img.src = sources.fallback;
+                    } else {
+                        img.style.display = 'none';
+                    }
+                };
+            } else {
+                img.style.display = 'none';
+            }
+
 
             const displayName = itemIdToDisplayName(itemIdOrName ?? itemName);
             img.alt = displayName;
@@ -197,14 +220,29 @@ const RecipeDigester: React.FC = () => {
 
             const img = document.createElement('img');
             img.className = 'result-icon';
-            const src = itemNameToImageUrl(itemName);
-            if (src) img.src = src;
+
+            const sources = itemNameToImageSources(itemName);
+
+            if (sources) {
+                let triedFallback = false;
+
+                img.src = sources.primary;
+
+                img.onerror = () => {
+                    if (!triedFallback && sources.fallback && sources.fallback !== sources.primary) {
+                        triedFallback = true;
+                        img.src = sources.fallback;
+                    } else {
+                        img.style.display = 'none';
+                    }
+                };
+            } else {
+                img.style.display = 'none';
+            }
+
             img.alt = displayName;
             img.title = displayName;
 
-            img.onerror = () => {
-                img.style.display = 'none';
-            };
 
             const countEl = document.createElement('span');
             countEl.className = 'result-count';
