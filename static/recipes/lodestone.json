@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:chiseled_stone_bricks",
+    "b": "minecraft:diamond"
+  },
+  "result": {
+    "id": "minecraft:lodestone",
+    "count": 1
+  }
+}

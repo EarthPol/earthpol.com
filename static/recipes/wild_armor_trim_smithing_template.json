@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:copper_ingot",
+    "b": "minecraft:mossy_cobblestone"
+  },
+  "result": {
+    "id": "minecraft:wild_armor_trim_smithing_template",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:gold_nugget",
+    "minecraft:gold_nugget",
+    "minecraft:gold_nugget",
+    "minecraft:melon_slice"
+  ],
+  "result": {
+    "id": "minecraft:glistering_melon_slice",
+    "count": 3
+  }
+}

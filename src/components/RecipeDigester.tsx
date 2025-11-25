@@ -544,7 +544,7 @@ const RecipeDigester: React.FC = () => {
 
             card.appendChild(header);
             card.appendChild(layout);
-            card.appendChild(tiny);
+            //card.appendChild(tiny);
 
             const typeLabel = type === 'blasting' ? 'blast furnace' : 'furnace';
             (card as any).dataset.searchText = [

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ded"
+  ],
+  "key": {
+    "a": "minecraft:iron_block",
+    "b": "minecraft:netherite_ingot",
+    "c": "minecraft:crafting_table",
+    "d": "minecraft:redstone_block",
+    "e": "minecraft:dropper"
+  },
+  "result": {
+    "id": "minecraft:crafter",
+    "count": 1
+  }
+}
