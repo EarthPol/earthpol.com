@@ -38,6 +38,12 @@ const RecipeDigester: React.FC = () => {
             }
 
             raw = raw.replace(/^minecraft:/, '');
+
+            // special case ONLY for "#minecraft:wool"
+            if (raw === "#minecraft:wool") {
+                return "white_wool";
+            }
+
             raw = sanitizeItemName(raw) ?? null;
             if (!raw) return null;
 
