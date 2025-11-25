@@ -185,17 +185,12 @@ const RecipeDigester: React.FC = () => {
                 img.style.display = 'none';
             }
 
-
             const displayName = itemIdToDisplayName(itemIdOrName ?? itemName);
             img.alt = displayName;
             img.title = displayName;
 
             slot.dataset.tooltip = displayName;
             attachTooltipHandlers(slot, displayName);
-
-            img.onerror = () => {
-                img.style.display = 'none';
-            };
 
             slot.appendChild(img);
 
@@ -208,6 +203,7 @@ const RecipeDigester: React.FC = () => {
 
             return slot;
         }
+
 
         function createResultSlot(resultId: any, count: number): HTMLDivElement {
             const itemName = idToItemName(resultId);
