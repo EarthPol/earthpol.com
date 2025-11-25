@@ -61,8 +61,8 @@ const RecipeDigester: React.FC = () => {
             if (!clean) return null;
 
             return {
-                primary: `https://minecraft-api.vercel.app/images/items/${clean}.png`,
-                fallback: `https://api.earthpol.com/textures/item/${clean}.png`,
+                primary: `https://api.earthpol.com/textures/item/${clean}.png`,
+                fallback: `https://minecraft-api.vercel.app/images/items/${clean}.png`,
             };
         }
 
