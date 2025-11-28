@@ -139,7 +139,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} EarthPol. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} EarthPol. Built with Docusaurus. Hosted by <a href="https://tinydc.net/" target="__blank">tinydc.net</a>`,
     },
     prism: {
       theme: prismThemes.github,
