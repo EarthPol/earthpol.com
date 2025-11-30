@@ -81,6 +81,7 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [
+          // Economy & Trade -> economy-trade
           {
             from: '/docs/Economy%20&%20Trade/CustomRecipes',
             to: '/docs/economy-trade/custom-recipes',
@@ -90,33 +91,37 @@ const config = {
             to: '/docs/economy-trade/GoldEconomy',
           },
           {
-            from: '/docs/Economy & Trade/QuickShopOverView',
+            from: '/docs/Economy%20&%20Trade/QuickShopOverView',
             to: '/docs/economy-trade/QuickShopOverView',
           },
           {
-            from: '/docs/Economy & Trade/TownyPorts',
+            from: '/docs/Economy%20&%20Trade/TownyPorts',
             to: '/docs/economy-trade/TownyPorts',
           },
           {
-            from: '/docs/Economy & Trade/Transportation',
+            from: '/docs/Economy%20&%20Trade/Transportation',
             to: '/docs/economy-trade/Transportation',
           },
+
+          // Getting Started -> getting-started
           {
-            from: '/docs/Getting Started/ServerOverview',
+            from: '/docs/Getting%20Started/ServerOverview',
             to: '/docs/getting-started/ServerOverview',
           },
           {
-            from: '/docs/Getting Started/HowToJoin',
+            from: '/docs/Getting%20Started/HowToJoin',
             to: '/docs/getting-started/HowToJoin',
           },
           {
-            from: '/docs/Getting Started/StarterGuide',
+            from: '/docs/Getting%20Started/StarterGuide',
             to: '/docs/getting-started/StarterGuide',
           },
           {
-            from: '/docs/Getting Started/map',
+            from: '/docs/Getting%20Started/map',
             to: '/docs/getting-started/map',
           },
+
+          // Towny -> towny
           {
             from: '/docs/Towny/TownyOverview',
             to: '/docs/towny/TownyOverview',
@@ -149,42 +154,52 @@ const config = {
             from: '/docs/Towny/Advanced/TownyPermissions',
             to: '/docs/towny/Advanced/TownyPermissions',
           },
+
+          // War & Diplomacy -> war-diplomacy
           {
-            from: '/docs/War & Diplomacy/TradeWar',
+            from: '/docs/War%20&%20Diplomacy/TradeWar',
             to: '/docs/war-diplomacy/TradeWar',
           },
           {
-            from: '/docs/War & Diplomacy/SiegeWar',
+            from: '/docs/War%20&%20Diplomacy/SiegeWar',
             to: '/docs/war-diplomacy/SiegeWar',
           },
           {
-            from: '/docs/War & Diplomacy/Diplomacy',
+            from: '/docs/War%20&%20Diplomacy/Diplomacy',
             to: '/docs/war-diplomacy/Diplomacy',
           },
           {
-            from: '/docs/War & Diplomacy/Headhunters',
+            from: '/docs/War%20&%20Diplomacy/Headhunters',
             to: '/docs/war-diplomacy/Headhunters',
           },
+
+          // Plugins and Custom Features -> plugins-custom-features
           {
             from: '/docs/Plugins and Custom Features/FlagsH',
-            to: '/docs/Plugins and Custom Features/Optimizations',
+            to: '/docs/plugins-custom-features/FlagsH',
           },
+          {
+            from: '/docs/Plugins and Custom Features/Optimizations',
+            to: '/docs/plugins-custom-features/Optimizations',
+          },
+
+          // Support -> support
           {
             from: '/docs/Support/ServerRules',
             to: '/docs/support/ServerRules',
           },
           {
-            from: '/docs/support/Downloads',
-            to: '/docs/Support/Downloads',
+            from: '/docs/Support/Downloads',
+            to: '/docs/support/Downloads',
           },
           {
-            from: '/docs/support/EarthPolStaff',
-            to: '/docs/Support/EarthPolStaff',
+            from: '/docs/Support/EarthPolStaff',
+            to: '/docs/support/EarthPolStaff',
           },
           {
-            from: '/docs/support/FAQ',
-            to: '/docs/Support/FAQ',
-          }
+            from: '/docs/Support/FAQ',
+            to: '/docs/support/FAQ',
+          },
         ],
       },
     ],
