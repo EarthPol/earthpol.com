@@ -33,6 +33,14 @@ const config = {
       defer: true,
       'data-website-id': 'd293e0ae-dcc5-4af8-adee-aa437c652be2',
     },
+    {
+      src: 'https://www.googletagmanager.com/gtag/js?id=AW-17761889667"',
+      async: true,
+    },
+    {
+      // Google Analytics tracking code
+      src: '/js/gtag.js',
+    },
   ],
 
   onBrokenLinks: 'warn',
