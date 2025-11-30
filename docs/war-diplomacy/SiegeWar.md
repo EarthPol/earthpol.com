@@ -226,7 +226,7 @@ If your soldiers do not have permissions to access your fortifications, they wil
 
 ⚔️ Note: Your fighters must be assigned military ranks in order to participate in sieges. Players can only be assigned ranks after they have acquired a certain number of Honor Points.
 
-**Learn more here: [📘 Military Rank and Honor System Guide](/docs/Towny/Advanced/TownyPermissions#honor-points-system)**
+**Learn more here: [📘 Military Rank and Honor System Guide](/docs/towny/Advanced/TownyPermissions#honor-points-system)**
 
 :::
 - `/sw nextession` - **Find out when the next battle session is.**
