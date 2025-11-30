@@ -83,7 +83,7 @@ const config = {
         redirects: [
           // Economy & Trade -> economy-trade
           {
-            from: '/docs/Economy%20&%20Trade/CustomRecipes',
+            from: '/docs/economy-trade/CustomRecipes',
             to: '/docs/economy-trade/custom-recipes',
           },
           {
