@@ -74,8 +74,118 @@ const config = {
       '@docusaurus/plugin-google-gtag',
       {
         trackingID: 'G-R4GEM4H142',
-        // Optional: anonymize IPs for GDPR
         anonymizeIP: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/docs/Economy%20&%20Trade/CustomRecipes',
+            to: '/docs/economy-trade/custom-recipes',
+          },
+          {
+            from: '/docs/Economy%20&%20Trade/GoldEconomy',
+            to: '/docs/economy-trade/GoldEconomy',
+          },
+          {
+            from: '/docs/Economy & Trade/QuickShopOverView',
+            to: '/docs/economy-trade/QuickShopOverView',
+          },
+          {
+            from: '/docs/Economy & Trade/TownyPorts',
+            to: '/docs/economy-trade/TownyPorts',
+          },
+          {
+            from: '/docs/Economy & Trade/Transportation',
+            to: '/docs/economy-trade/Transportation',
+          },
+          {
+            from: '/docs/Getting Started/ServerOverview',
+            to: '/docs/getting-started/ServerOverview',
+          },
+          {
+            from: '/docs/Getting Started/HowToJoin',
+            to: '/docs/getting-started/HowToJoin',
+          },
+          {
+            from: '/docs/Getting Started/StarterGuide',
+            to: '/docs/getting-started/StarterGuide',
+          },
+          {
+            from: '/docs/Getting Started/map',
+            to: '/docs/getting-started/map',
+          },
+          {
+            from: '/docs/Towny/TownyOverview',
+            to: '/docs/towny/TownyOverview',
+          },
+          {
+            from: '/docs/Towny/Basic/Towns',
+            to: '/docs/towny/Basic/Towns',
+          },
+          {
+            from: '/docs/Towny/Basic/Nations',
+            to: '/docs/towny/Basic/Nations',
+          },
+          {
+            from: '/docs/Towny/Basic/Nomads',
+            to: '/docs/towny/Basic/Nomads',
+          },
+          {
+            from: '/docs/Towny/townycommands',
+            to: '/docs/towny/townycommands',
+          },
+          {
+            from: '/docs/Towny/Advanced/PlotPerms',
+            to: '/docs/towny/Advanced/PlotPerms',
+          },
+          {
+            from: '/docs/Towny/Advanced/Quarters',
+            to: '/docs/towny/Advanced/Quarters',
+          },
+          {
+            from: '/docs/Towny/Advanced/TownyPermissions',
+            to: '/docs/towny/Advanced/TownyPermissions',
+          },
+          {
+            from: '/docs/War & Diplomacy/TradeWar',
+            to: '/docs/war-diplomacy/TradeWar',
+          },
+          {
+            from: '/docs/War & Diplomacy/SiegeWar',
+            to: '/docs/war-diplomacy/SiegeWar',
+          },
+          {
+            from: '/docs/War & Diplomacy/Diplomacy',
+            to: '/docs/war-diplomacy/Diplomacy',
+          },
+          {
+            from: '/docs/War & Diplomacy/Headhunters',
+            to: '/docs/war-diplomacy/Headhunters',
+          },
+          {
+            from: '/docs/Plugins and Custom Features/FlagsH',
+            to: '/docs/Plugins and Custom Features/Optimizations',
+          },
+          {
+            from: '/docs/Support/ServerRules',
+            to: '/docs/support/ServerRules',
+          },
+          {
+            from: '/docs/support/Downloads',
+            to: '/docs/Support/Downloads',
+          },
+          {
+            from: '/docs/support/EarthPolStaff',
+            to: '/docs/Support/EarthPolStaff',
+          },
+          {
+            from: '/docs/support/FAQ',
+            to: '/docs/Support/FAQ',
+          }
+        ],
       },
     ],
   ],

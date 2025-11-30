@@ -1,0 +1,9 @@
+{
+    "label": "War & Diplomacy",
+    "position": 5,
+    "link": {
+        "type": "generated-index",
+        "title": "War & Diplomacy",
+        "description": "Overview of how War & Diplomacy functions on EarthPol"
+    }
+}

@@ -1,9 +1,9 @@
-update:
+Update:
   label: Update
   permalink: /updates
   description: All Update Posts
 
-announcement:
+Announcement:
   label: Announcement
   permalink: /announcements
   description: All Announcement Posts

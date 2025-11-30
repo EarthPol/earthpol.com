@@ -121,7 +121,7 @@ Once you're ready to settle permanently, you can join or create a **Town**!
 - 📬 `/t invite <player>`: Invite someone  
 - 🚶 `/t leave`: Leave your current town (*you can’t leave if you’re mayor*)
 
-▷ *More info in our [Town Guide](Towny/Basic/Towns.md)*
+▷ *More info in our [Town Guide](towny/Basic/Towns.md)*
 
 ![Town](/img/town.avif)
 
@@ -142,7 +142,7 @@ Once you're ready to settle permanently, you can join or create a **Town**!
 - ✍️ Use `/n new [Nation Name]`  
 - ✅ Confirm with `/confirm`
 
-▷ *More info in our [Nation Guide](Towny/Basic/Nations.md)*
+▷ *More info in our [Nation Guide](towny/Basic/Nations.md)*
 
 ![Nation](/img/nation.avif)
 
