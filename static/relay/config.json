@@ -71,7 +71,7 @@
             "avatar_url": "https://i.imgur.com/c6QhJMf.png"
         },
         {
-            "channel_id": "1410491928851517441",
+            "channel_id": "1445118751874748520",
             "display_name": "EarthPol News Network",
             "avatar_url": "https://i.imgur.com/x2RxUzv.png"
         },
@@ -109,6 +109,11 @@
             "channel_id": "1410491914121121812",
             "display_name": "Sky News",
             "avatar_url": "https://i.imgur.com/Kwdez1l.png"
-        }
+        },
+		{
+            "channel_id": "1445118455165489163",
+            "display_name": "World News Switzerland",
+            "avatar_url": "https://i.imgur.com/rQx6KVM.png"
+        },
 ]
 }
