@@ -572,3 +572,28 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ifm-color-secondary-text);
   padding: 1rem 0;
 }
+
+
+/* Remove Docusaurus alert-style box from rule dropdowns */
+.theme-doc-markdown details.ep-rule.alert {
+  --ifm-alert-background-color: transparent;
+  --ifm-alert-background-color-highlight: transparent;
+  --ifm-alert-border-color: transparent;
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* Make the summary look like normal text (no extra padding/box) */
+.theme-doc-markdown details.ep-rule.alert > summary {
+  padding: 0;
+  margin: 0;
+}
+
+/* Optional: small indent for the content when opened */
+.theme-doc-markdown details.ep-rule.alert > div {
+  padding: 0 0 0 0;
+}
