@@ -1,119 +1,119 @@
 {
     "sources": [
     {
-        "channel_id": "1409316415432949833",
-        "display_name": "EarthPol Live",
-        "avatar_url": "https://i.imgur.com/MeJRnYC.png"
+		"channel_id": "1409316415432949833",
+		"display_name": "EarthPol Live",
+		"avatar_url": "https://i.imgur.com/MeJRnYC.png"
     },
     {
-        "channel_id": "1409316438451159182",
-        "display_name": "World News EarthPol",
-        "avatar_url": "https://i.imgur.com/zzjMvVW.png"
+		"channel_id": "1409316438451159182",
+		"display_name": "World News EarthPol",
+		"avatar_url": "https://i.imgur.com/zzjMvVW.png"
     },
-        {
-            "channel_id": "1409316451625468036",
-            "display_name": "Antarctic News",
-            "avatar_url": "https://media.discordapp.net/attachments/1388192993411993782/1409331141038575686/eden1.png?ex=68acfd68&is=68ababe8&hm=d97a150386cb9f5d9f616ca51279e6774cdc489e4bc6ecf939162c9b5e9d2a83&=&format=webp&quality=lossless"
-        },
-        {
-            "channel_id": "1409322162149654652",
-            "display_name": "New York Gazette",
-            "avatar_url": "https://i.imgur.com/Irj2DDF.png"
-        },
-        {
-            "channel_id": "1409322174363340830",
-            "display_name": "Islamic Republic News Agency",
-            "avatar_url": "https://i.imgur.com/GdIss6e.png"
-        },
-        {
-            "channel_id": "1409322188091424838",
-            "display_name": "CBC News",
-            "avatar_url": "https://i.imgur.com/BkNROsx.jpeg"
-        },
-        {
-            "channel_id": "1409322202033160405",
-            "display_name": "Voice of the Americas",
-            "avatar_url": "https://i.imgur.com/UXWuzEc.png"
-        },
-        {
-            "channel_id": "1409322214381060207",
-            "display_name": "Mizzima",
-            "avatar_url": "https://i.imgur.com/rXoXIAm.png"
-        },
-        {
-            "channel_id": "1409322225940561930",
-            "display_name": "The Sand Empire Newsletter",
-            "avatar_url": "https://i.imgur.com/Cv4amZc.jpeg"
-        },
-        {
-            "channel_id": "1409322236091039886",
-            "display_name": "UN International News",
-            "avatar_url": "https://i.imgur.com/SMpR35m.png"
-        },
-        {
-            "channel_id": "1409322247092437102",
-            "display_name": "Nvke News",
-            "avatar_url": "https://i.imgur.com/3wnbSrj.jpeg"
-        },
-        {
-            "channel_id": "1409322261818769540",
-            "display_name": "Fox News",
-            "avatar_url": "https://i.imgur.com/UB3yDKt.png"
-        },
-        {
-            "channel_id": "1409322275148398775",
-            "display_name": "ɪɴᴅɪᴀɴ ɴᴇᴡꜱ",
-            "avatar_url": "https://i.imgur.com/ezQ6CKt.png"
-        },
-        {
-            "channel_id": "1410491833380769885",
-            "display_name": "TMZ Broadcasting",
-            "avatar_url": "https://i.imgur.com/c6QhJMf.png"
-        },
-        {
-            "channel_id": "1445118751874748520",
-            "display_name": "EarthPol News Network",
-            "avatar_url": "https://i.imgur.com/x2RxUzv.png"
-        },
-        {
-            "channel_id": "1410491855250001940",
-            "display_name": "Al-Thawra (الثورة) - Syrian News",
-            "avatar_url": "https://i.imgur.com/a/C9ljsRj.png"
-        },
-        {
-            "channel_id": "1410491865702072402",
-            "display_name": "Borealia News Network",
-            "avatar_url": "https://i.imgur.com/tBhpKZU.png"
-        },
-        {
-            "channel_id": "1410491874204057643",
-            "display_name": "EarthPol Transport Association",
-            "avatar_url": "https://i.imgur.com/ZOhvtZ1.png"
-        },
-        {
-            "channel_id": "1410491882563309588",
-            "display_name": "The Rokoko Post",
-            "avatar_url": "https://i.imgur.com/6ybU2lL.jpeg"
-        },
-        {
-            "channel_id": "1410491893539672064",
-            "display_name": "Gnome News Network",
-            "avatar_url": "https://i.imgur.com/A88EuR2.png"
-        },
-        {
-            "channel_id": "1410491902137991268",
-            "display_name": "Atlantic Guardian",
-            "avatar_url": "https://i.postimg.cc/x1kMC6tQ/Atlantic-Guardian.png"
-        },
-        {
-            "channel_id": "1410491914121121812",
-            "display_name": "Sky News",
-            "avatar_url": "https://i.imgur.com/Kwdez1l.png"
-        },
+    {
+        "channel_id": "1409316451625468036",
+        "display_name": "Antarctic News",
+        "avatar_url": "https://media.discordapp.net/attachments/1388192993411993782/1409331141038575686/eden1.png?ex=68acfd68&is=68ababe8&hm=d97a150386cb9f5d9f616ca51279e6774cdc489e4bc6ecf939162c9b5e9d2a83&=&format=webp&quality=lossless"
+    },
+    {
+        "channel_id": "1409322162149654652",
+        "display_name": "New York Gazette",
+        "avatar_url": "https://i.imgur.com/Irj2DDF.png"
+    },
+    {
+        "channel_id": "1409322174363340830",
+        "display_name": "Islamic Republic News Agency",
+        "avatar_url": "https://i.imgur.com/GdIss6e.png"
+    },
+    {
+        "channel_id": "1409322188091424838",
+        "display_name": "CBC News",
+        "avatar_url": "https://i.imgur.com/BkNROsx.jpeg"
+    },
+    {
+        "channel_id": "1409322202033160405",
+        "display_name": "Voice of the Americas",
+        "avatar_url": "https://i.imgur.com/UXWuzEc.png"
+    },
+    {
+        "channel_id": "1409322214381060207",
+        "display_name": "Mizzima",
+        "avatar_url": "https://i.imgur.com/rXoXIAm.png"
+    },
+    {
+        "channel_id": "1409322225940561930",
+        "display_name": "The Sand Empire Newsletter",
+        "avatar_url": "https://i.imgur.com/Cv4amZc.jpeg"
+    },
+    {
+        "channel_id": "1409322236091039886",
+        "display_name": "UN International News",
+        "avatar_url": "https://i.imgur.com/SMpR35m.png"
+    },
+    {
+        "channel_id": "1409322247092437102",
+        "display_name": "Nvke News",
+        "avatar_url": "https://i.imgur.com/3wnbSrj.jpeg"
+    },
+    {
+        "channel_id": "1409322261818769540",
+        "display_name": "Fox News",
+        "avatar_url": "https://i.imgur.com/UB3yDKt.png"
+    },
+    {
+        "channel_id": "1409322275148398775",
+        "display_name": "ɪɴᴅɪᴀɴ ɴᴇᴡꜱ",
+        "avatar_url": "https://i.imgur.com/ezQ6CKt.png"
+    },
+    {
+        "channel_id": "1410491833380769885",
+        "display_name": "TMZ Broadcasting",
+        "avatar_url": "https://i.imgur.com/c6QhJMf.png"
+    },
+    {
+        "channel_id": "1445118751874748520",
+        "display_name": "EarthPol News Network",
+        "avatar_url": "https://i.imgur.com/x2RxUzv.png"
+    },
+    {
+        "channel_id": "1410491855250001940",
+        "display_name": "Al-Thawra (الثورة) - Syrian News",
+        "avatar_url": "https://i.imgur.com/a/C9ljsRj.png"
+    },
+    {
+        "channel_id": "1410491865702072402",
+        "display_name": "Borealia News Network",
+        "avatar_url": "https://i.imgur.com/tBhpKZU.png"
+    },
+    {
+        "channel_id": "1410491874204057643",
+        "display_name": "EarthPol Transport Association",
+        "avatar_url": "https://i.imgur.com/ZOhvtZ1.png"
+    },
+    {
+        "channel_id": "1410491882563309588",
+        "display_name": "The Rokoko Post",
+        "avatar_url": "https://i.imgur.com/6ybU2lL.jpeg"
+    },
+    {
+        "channel_id": "1410491893539672064",
+        "display_name": "Gnome News Network",
+        "avatar_url": "https://i.imgur.com/A88EuR2.png"
+    },
+    {
+        "channel_id": "1410491902137991268",
+        "display_name": "Atlantic Guardian",
+        "avatar_url": "https://i.postimg.cc/x1kMC6tQ/Atlantic-Guardian.png"
+    },
+    {
+        "channel_id": "1410491914121121812",
+        "display_name": "Sky News",
+        "avatar_url": "https://i.imgur.com/Kwdez1l.png"
+    },
 		{
-            "channel_id": "1445118455165489163",
-            "display_name": "World News Switzerland",
-            "avatar_url": "https://i.imgur.com/rQx6KVM.png"
-        },
+        "channel_id": "1445118455165489163",
+        "display_name": "World News Switzerland",
+        "avatar_url": "https://i.imgur.com/rQx6KVM.png"
+    }
 ]
 }
