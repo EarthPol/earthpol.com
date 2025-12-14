@@ -21,16 +21,6 @@
         "avatar_url": "https://i.imgur.com/GdIss6e.png"
     },
     {
-        "channel_id": "1409322188091424838",
-        "display_name": "CBC News",
-        "avatar_url": "https://i.imgur.com/BkNROsx.jpeg"
-    },
-    {
-        "channel_id": "1409322202033160405",
-        "display_name": "Voice of the Americas",
-        "avatar_url": "https://i.imgur.com/UXWuzEc.png"
-    },
-    {
         "channel_id": "1409322214381060207",
         "display_name": "Mizzima",
         "avatar_url": "https://i.imgur.com/rXoXIAm.png"
@@ -46,16 +36,6 @@
         "avatar_url": "https://i.imgur.com/SMpR35m.png"
     },
     {
-        "channel_id": "1409322247092437102",
-        "display_name": "Nvke News",
-        "avatar_url": "https://i.imgur.com/3wnbSrj.jpeg"
-    },
-    {
-        "channel_id": "1409322261818769540",
-        "display_name": "Fox News",
-        "avatar_url": "https://i.imgur.com/UB3yDKt.png"
-    },
-    {
         "channel_id": "1409322275148398775",
         "display_name": "ɪɴᴅɪᴀɴ ɴᴇᴡꜱ",
         "avatar_url": "https://i.imgur.com/ezQ6CKt.png"
@@ -64,11 +44,6 @@
         "channel_id": "1410491833380769885",
         "display_name": "TMZ Broadcasting",
         "avatar_url": "https://i.imgur.com/c6QhJMf.png"
-    },
-    {
-        "channel_id": "1445118751874748520",
-        "display_name": "EarthPol News Network",
-        "avatar_url": "https://i.imgur.com/x2RxUzv.png"
     },
     {
         "channel_id": "1410491855250001940",
@@ -104,11 +79,6 @@
         "channel_id": "1410491914121121812",
         "display_name": "Sky News",
         "avatar_url": "https://i.imgur.com/Kwdez1l.png"
-    },
-		{
-        "channel_id": "1445118455165489163",
-        "display_name": "World News Switzerland",
-        "avatar_url": "https://i.imgur.com/rQx6KVM.png"
     }
 ]
 }
