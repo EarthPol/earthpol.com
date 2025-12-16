@@ -43,6 +43,7 @@ Additionally, EarthPol Premium gives access to the following commands:
 | `/carttable`        | Craft cartography-related items instantly.       |
 | `/grindstone`       | Repair or disenchant items anywhere.             |
 | `/ec`               | Open your Ender Chest from anywhere.             |
+| `/fullbright`       | Use to enable night vision.                      |
 | `/mapcolor`         | Change the nation’s color on the EarthPol map.   |
 | `/qs staff`         | Add employees to your QuickShop to restock goods.|
 | `/qs benefit`       | Split profits with your friends in your QuickShop.|
