@@ -37,7 +37,7 @@ A 1:326 scale Earth map used in Version 3 of EarthPol, a time in which the serve
 
 ![V3 Map](/img/v3image.avif)
 
-👉 **Download**: https://cdn.earthmc.org/downloads/world-v3.zip
+👉 **Download**: https://cdn.earthpol.com/downloads/world-v3.zip
 
 🖼️ **V3 Map Art**: https://goodrich.dev/map-art/v3/
 
@@ -50,7 +50,7 @@ A 1:217 scale Earth map used in Version 4 of EarthPol. This version saw the rise
 
 ![V4 Map](/img/v4image.avif)
 
-👉 **Download**: https://cdn.earthmc.org/downloads/world-v4.zip
+👉 **Download**: https://cdn.earthpol.com/downloads/world-v4.zip
 
 🖼️ **V4 Map Art**: https://goodrich.dev/map-art/v4/
 
@@ -64,7 +64,7 @@ A 1:326 scale Earth map used in Version 6, marking the start of a new era for Ea
 ![V6 Map](/img/v6image.avif)
 
 
-👉 **Download**: https://cdn.earthmc.org/downloads/world-v6.zip
+👉 **Download**: https://cdn.earthpol.com/downloads/world-v6.zip
 
 🖼️ **V6 Map Art**: https://goodrich.dev/map-art/v6/
 
