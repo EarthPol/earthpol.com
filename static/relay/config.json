@@ -79,6 +79,21 @@
         "channel_id": "1410491914121121812",
         "display_name": "Sky News",
         "avatar_url": "https://i.imgur.com/Kwdez1l.png"
-    }
+    },
+	{
+		"channel_id": "1452186124570333295",
+        "display_name": "Oceanic News",
+        "avatar_url": "https://i.imgur.com/Y7leWQ7_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{
+		"channel_id": "1452186184901070868",
+        "display_name": "Paris Post",
+        "avatar_url": "https://i.imgur.com/Y7leWQ7_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{
+		"channel_id": "1452191950290686136",
+        "display_name": "The Danube Overseer",
+        "avatar_url": "https://i.imgur.com/nc4yHeT_d.webp?maxwidth=760&fidelity=grand"
+	}
 ]
 }
