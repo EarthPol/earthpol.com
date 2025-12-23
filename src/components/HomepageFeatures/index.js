@@ -233,40 +233,6 @@ export default function HomepageFeatures() {
       <Testimonials />
 
       <hr className="horizontalLine" />
-
-      {/* Discord Widget Section */}
-      <section className={styles.discordSection} style={{ textAlign: 'center', marginBottom: '50px' }}>
-        <Heading as="h1" style={{ marginBottom: '30px' }}>Join Our Community</Heading>
-        <div
-          className="row"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexWrap: 'wrap',
-            gap: '30px',
-          }}
-        >
-          {/* Left Image */}
-          <div className="col col--4" style={{ textAlign: 'center' }}>
-            <img
-              src={require('@site/static/img/community.avif').default}
-              alt="Diplomacy"
-              style={{
-                height: '500px',
-                width: '100%',
-                objectFit: 'cover',
-                borderRadius: '12px',
-              }}
-            />
-          </div>
-
-          {/* Discord Widget */}
-          <div className="col col--4" style={{ textAlign: 'center' }}>
-            
-          </div>
-        </div>
-      </section>
     </>
   );
 }
