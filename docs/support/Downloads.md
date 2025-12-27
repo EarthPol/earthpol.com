@@ -68,11 +68,24 @@ A 1:326 scale Earth map used in Version 6, marking the start of a new era for Ea
 
 🖼️ **V6 Map Art**: https://goodrich.dev/map-art/v6/
 
+### 🗺️ Version 7 (Astra) Voxy File
+*🗓 December 18th, 2025*
+
+Voxy is a mod that allows you to see in a 32,768 Chunks Radius. However for multiplayer servers, it requires you to explore the entire world to load these areas. We downloaded the EarthPol map and generated a fully prepared Voxy Download for you to install.
+
+#### Steps to install
+1. Download the file
+2. Extract the `.voxy` file into your `.minecraft` folder or where your client with Voxy Mod is installed at.
+3. Login to `play.earthpol.com` and join the main world.
+4. You should now see the whole map!
+
+👉 **Download**: https://cdn.earthpol.com/downloads/epmc-voxy.zip (173.5GB)
+
 ---
 
 ## 📚 Additional Resources
 
-    🔗 [Browse More Map Downloads](https://cdn.earthmc.org/downloads/) – See other available versions and related files.
+    🔗 [Browse More Map Downloads](https://earthmc.org/) – See other available versions and related files.
 
     🌎 [Download Blank Earth Maps](https://earthmc.org/) – Perfect for custom servers or creative projects.
 
