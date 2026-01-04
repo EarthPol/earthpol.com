@@ -117,6 +117,18 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <em>Moderator</em>
 </div>
 
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Senpaii_soupp/80" /><br/>
+  <strong><a href="#">Senpaii_soupp</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Nokss__/80" /><br/>
+  <strong><a href="#">Nokss__</a></strong><br/>
+  <em>Moderator</em>
+</div>
+
 
 </div>
 
@@ -143,8 +155,20 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Nokss__/80" /><br/>
-  <strong><a href="#">Nokss__</a></strong><br/>
+  <img src="https://minotar.net/avatar/KingGaming001/80" /><br/>
+  <strong><a href="#">KingGaming001</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/Bruno0929/80" /><br/>
+  <strong><a href="#">Bruno0929</a></strong><br/>
+  <em>Helper</em>
+</div>
+
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/RealDanTM/80" /><br/>
+  <strong><a href="#">RealDanTM</a></strong><br/>
   <em>Helper</em>
 </div>
 
@@ -167,14 +191,14 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Senpaii_soupp/80" /><br/>
-  <strong><a href="#">Senpaii_soupp</a></strong><br/>
+  <img src="https://minotar.net/avatar/the0warrior/80" /><br/>
+  <strong><a href="#">The0warrior</a></strong><br/>
   <em>Helper</em>
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/the0warrior/80" /><br/>
-  <strong><a href="#">The0warrior</a></strong><br/>
+  <img src="https://minotar.net/avatar/Flnb/80" /><br/>
+  <strong><a href="#">Flnb</a></strong><br/>
   <em>Helper</em>
 </div>
 
