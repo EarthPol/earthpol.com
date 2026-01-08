@@ -104,6 +104,16 @@
 		"channel_id": "1452186160792207403",
 		"display_name": "The American Post",
 		"avatar_url": "https://i.imgur.com/3zwrr7X_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{	
+		"channel_id": "1458959869687365632",
+		"display_name": "KBS Korean News",
+		"avatar_url": "https://i.imgur.com/lnKYdWo_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{	
+		"channel_id": "1458962068051857541",
+		"display_name": "Border News",
+		"avatar_url": "https://i.imgur.com/l0JeVQT_d.webp?maxwidth=760&fidelity=grand"
 	}
 ]
 }
