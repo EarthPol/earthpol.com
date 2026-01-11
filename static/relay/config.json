@@ -114,6 +114,41 @@
 		"channel_id": "1458962068051857541",
 		"display_name": "Border News",
 		"avatar_url": "https://i.imgur.com/l0JeVQT_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{	
+		"channel_id": "1459805128298336390",
+		"display_name": "United Nations",
+		"avatar_url": "https://i.imgur.com/VggTHEz_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{	
+		"channel_id": "1459805857834467359",
+		"display_name": "Soviet News Network",
+		"avatar_url": "https://i.imgur.com/yfdozhw_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{	
+		"channel_id": "1459807081522532435",
+		"display_name": "Elahiyeh Times",
+		"avatar_url": "https://i.imgur.com/L7ODA3I_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{	
+		"channel_id": "1459807081522532435",
+		"display_name": "Elahiyeh Times",
+		"avatar_url": "https://i.imgur.com/L7ODA3I_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{	
+		"channel_id": "1459807081522532435",
+		"display_name": "Elahiyeh Times",
+		"avatar_url": "https://i.imgur.com/L7ODA3I_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{	
+		"channel_id": "1459807533136085027",
+		"display_name": "Baltija Board",
+		"avatar_url": "https://i.imgur.com/bxEOfNC_d.webp?maxwidth=760&fidelity=grand"
+	},
+	{	
+		"channel_id": "1459808325158961205",
+		"display_name": "BBC",
+		"avatar_url": "https://i.imgur.com/dtquO0U.png"
 	}
 ]
 }
