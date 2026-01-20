@@ -92,18 +92,18 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <em>Administrator</em>
 </div>
 
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/xTheWardenx/80" /><br/>
+  <strong><a href="#">xTheWardenx</a></strong><br/>
+  <em>Administrator</em>
+</div>
+
 
 </div>
 
 ### Moderators
 
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/xTheWardenx/80" /><br/>
-  <strong><a href="#">xTheWardenx</a></strong><br/>
-  <em>Moderator</em>
-</div>
 
 <div align="center" style={{ width: '150px' }}>
   <img src="https://minotar.net/avatar/XLNuggets/80" /><br/>
@@ -155,8 +155,8 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
 </div>
 
 <div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/KingGaming001/80" /><br/>
-  <strong><a href="#">KingGaming001</a></strong><br/>
+  <img src="https://minotar.net/avatar/aniiwoww/80" /><br/>
+  <strong><a href="#">aniiwoww</a></strong><br/>
   <em>Helper</em>
 </div>
 
@@ -172,6 +172,12 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <em>Helper</em>
 </div>
 
+<div align="center" style={{ width: '150px' }}>
+  <img src="https://minotar.net/avatar/CharlesonCh/80" /><br/>
+  <strong><a href="#">CharlesonCh</a></strong><br/>
+  <em>Helper</em>
+</div>
+
 </div>
 
 ### Community Team
@@ -182,12 +188,6 @@ Our staff team is dedicated to fostering a safe environment, growing the server,
   <img src="https://minotar.net/avatar/MattIsOff/80" /><br/>
   <strong><a href="#">MattIsOff</a></strong><br/>
   <em>Team Leader</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/LShadow35/80" /><br/>
-  <strong><a href="#">LShadow35</a></strong><br/>
-  <em>Helper</em>
 </div>
 
 <div align="center" style={{ width: '150px' }}>
