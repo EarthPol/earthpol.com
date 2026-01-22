@@ -458,6 +458,7 @@ const RecipeDigester: React.FC = () => {
             const resultCount = result.count || 1;
             const displayName = itemIdToDisplayName(resultId);
 
+            // --- Header ---
             const header = document.createElement('div');
             header.className = 'recipe-card-header';
 
@@ -471,28 +472,17 @@ const RecipeDigester: React.FC = () => {
             const category = recipe.category || 'misc';
             const exp = recipe.experience != null ? `${recipe.experience} xp` : null;
             const timeTicks = recipe.cookingtime || recipe.cooktime || null;
-            const timeSeconds =
-                timeTicks != null ? `${(timeTicks / 20).toFixed(1)} s` : null;
+            const timeSeconds = timeTicks != null ? `${(timeTicks / 20).toFixed(1)} s` : null;
 
             const chips: HTMLSpanElement[] = [];
-
             const catChip = document.createElement('span');
             catChip.innerHTML = `<span class="chip-dot"></span>${category}`;
             chips.push(catChip);
 
-            if (exp) {
-                const expChip = document.createElement('span');
-                expChip.textContent = exp;
-                chips.push(expChip);
-            }
+            if (exp) chips.push(Object.assign(document.createElement('span'), { textContent: exp }));
+            if (timeSeconds) chips.push(Object.assign(document.createElement('span'), { textContent: timeSeconds }));
 
-            if (timeSeconds) {
-                const timeChip = document.createElement('span');
-                timeChip.textContent = timeSeconds;
-                chips.push(timeChip);
-            }
-
-            chips.forEach((ch) => meta.appendChild(ch));
+            chips.forEach(ch => meta.appendChild(ch));
 
             leftHeader.appendChild(title);
             leftHeader.appendChild(meta);
@@ -504,82 +494,44 @@ const RecipeDigester: React.FC = () => {
             header.appendChild(leftHeader);
             header.appendChild(typeTag);
 
+            // --- Layout ---
             const layout = document.createElement('div');
             layout.className = 'recipe-layout';
 
             const furnace = document.createElement('div');
             furnace.className = 'furnace-layout';
 
-            const ingredientCol = document.createElement('div');
-            ingredientCol.className = 'furnace-column';
-
+            // --- Ingredient Slot ---
             let ingredient = recipe.ingredient || recipe.ingredients;
             let ingredientItem: any = null;
 
             if (Array.isArray(ingredient) && ingredient.length > 0) {
                 const first = ingredient[0];
-                if (typeof first === 'string') ingredientItem = first;
-                else if (first.item) ingredientItem = first.item;
-                else if (first.id) ingredientItem = first.id;
-            } else if (typeof ingredient === 'string') {
-                ingredientItem = ingredient;
-            } else if (ingredient && typeof ingredient === 'object') {
-                if (ingredient.item) ingredientItem = ingredient.item;
-                else if (ingredient.id) ingredientItem = ingredient.id;
-            }
+                ingredientItem = typeof first === 'string' ? first : first.item || first.id;
+            } else if (typeof ingredient === 'string') ingredientItem = ingredient;
+            else if (ingredient && typeof ingredient === 'object') ingredientItem = ingredient.item || ingredient.id;
 
             const ingredientSlot = createItemSlot(ingredientItem, 1, 'round');
-            const ingredientLabel = document.createElement('div');
-            ingredientLabel.className = 'furnace-label';
-            ingredientLabel.textContent = 'Ingredient';
 
-            ingredientCol.appendChild(ingredientSlot);
-            ingredientCol.appendChild(ingredientLabel);
-
-            const arrow1 = document.createElement('div');
-            arrow1.className = 'recipe-arrow';
-            arrow1.textContent = '➜';
-
-            const fuelCol = document.createElement('div');
-            fuelCol.className = 'furnace-column';
-
-            const fuelSlot = createItemSlot(null, 0, 'round fuel empty');
-            const fuelLabel = document.createElement('div');
-            fuelLabel.className = 'furnace-label';
-            fuelLabel.textContent = 'Fuel';
-
-            fuelCol.appendChild(fuelSlot);
-            fuelCol.appendChild(fuelLabel);
-
-            const arrow2 = document.createElement('div');
-            arrow2.className = 'recipe-arrow';
-            arrow2.textContent = '➜';
-
-            const resultCol = document.createElement('div');
-            resultCol.className = 'furnace-column';
+            // --- Result Slot ---
             const resultSlot = createResultSlot(resultId, resultCount);
-            const resultLabel = document.createElement('div');
-            resultLabel.className = 'furnace-label';
-            resultLabel.textContent = 'Output';
-            resultCol.appendChild(resultSlot);
-            resultCol.appendChild(resultLabel);
 
-            furnace.appendChild(ingredientCol);
-            furnace.appendChild(arrow1);
-            furnace.appendChild(fuelCol);
-            furnace.appendChild(arrow2);
-            furnace.appendChild(resultCol);
+            // --- Arrow ---
+            const arrow = document.createElement('div');
+            arrow.className = 'recipe-arrow';
+            arrow.textContent = '➜';
+
+            // --- Append everything in one line ---
+            furnace.appendChild(ingredientSlot);
+            furnace.appendChild(arrow);
+            furnace.appendChild(resultSlot);
 
             layout.appendChild(furnace);
 
-            const tiny = document.createElement('div');
-            tiny.className = 'tiny-text';
-            tiny.textContent = fileName;
-
             card.appendChild(header);
             card.appendChild(layout);
-            //card.appendChild(tiny);
 
+            // --- Search data ---
             const typeLabel = type === 'blasting' ? 'blast furnace' : 'furnace';
             (card as any).dataset.searchText = [
                 displayName,
@@ -588,9 +540,7 @@ const RecipeDigester: React.FC = () => {
                 typeLabel,
                 exp || '',
                 timeSeconds || '',
-            ]
-                .join(' ')
-                .toLowerCase();
+            ].join(' ').toLowerCase();
 
             return card;
         }
@@ -663,6 +613,8 @@ const RecipeDigester: React.FC = () => {
                     return;
                 }
 
+                const seenResults = new Set<string>(); // <--- track duplicates by result item
+
                 for (const file of files as string[]) {
                     try {
                         const res = await fetch(`${RECIPES_BASE_PATH}${file}`);
@@ -670,8 +622,19 @@ const RecipeDigester: React.FC = () => {
                             console.warn('Could not load recipe file:', file);
                             continue;
                         }
+
                         const recipe = await res.json();
                         const fileNameNoExt = file.replace(/\.json$/i, '');
+
+                        // Determine the result item name
+                        const resultId = recipe.result?.id || recipe.result?.item || recipe.result;
+                        const resultName = idToItemName(resultId);
+                        if (!resultName) continue;
+
+                        // Skip if we've already seen this result
+                        if (seenResults.has(resultName)) continue;
+                        seenResults.add(resultName);
+
                         const card = renderRecipe(recipe, fileNameNoExt);
                         container.appendChild(card);
                     } catch (e) {
@@ -699,9 +662,9 @@ const RecipeDigester: React.FC = () => {
             <header>
                 <div className="header-top">
                     <div className="header-text">
-                        <h1>Recipe Digester</h1>
+                        <h1>Custom Recipes</h1>
                         <p>
-                            Custom built by EarthPol, imports recipes directly from datapacks!
+                            Explore our recipes exclusive to EarthPol. Use the searchbar below to find a specific recipe.
                         </p>
                     </div>
                     <div className="search-wrapper">
@@ -722,8 +685,7 @@ const RecipeDigester: React.FC = () => {
                     className="recipes-empty"
                     style={{ display: 'none' }}
                 >
-                    No recipes were found. Make sure <code>/recipes/index.json</code> exists and
-                    lists your recipe files.
+                    No recipes were found.
                 </div>
             </main>
         </div>
