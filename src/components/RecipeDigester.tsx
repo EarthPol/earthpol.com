@@ -688,6 +688,9 @@ const RecipeDigester: React.FC = () => {
                     No recipes were found.
                 </div>
             </main>
+            <footer style={{ textAlign: 'center', marginTop: '1rem', fontStyle: 'italic' }}>
+                Note: Maces and Elytra cannot be crafted or obtained.
+            </footer>
         </div>
     );
 };
