@@ -30,8 +30,8 @@ To view what armor trims look like, check out this free website 👉 [armortrims
 
 ## ✨ Creating XP Bottles (Bottles O' Enchanting)
 
-- **Right-Click** any *Enchantment Table* while holding a *Glass Bottle*. This will place your XP into XP Bottles (Bottles O' Enchanting).
-
+- **Right-Click** any *Enchantment Table* while holding a *Glass Bottle* to store XP using one bottle at a time.
+- **Left-Click** any *Enchantment Table* while holding a *Glass Bottle* to store XP using the entire stack at once.
 
 <div style={{ textAlign: 'center' }}>
     <picture>
@@ -70,907 +70,193 @@ To view what armor trims look like, check out this free website 👉 [armortrims
 - 1 carpet --> 3 carpet
 - Due to this recipe, carpets cannot be used as fuel in furnaces, blast furnaces, and smokers.
 
----
 ## BreweryX Recipes
 
-```YAML
-  beer:
-    name: Skunky Beer/Beer/Fine Beer
-    ingredients:
-    - Wheat/6
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 3
-    color: ffd333
-    difficulty: 1
-    alcohol: 6
-    lore:
-    - +++ &8Crisp taste
-  darkbeer:
-    name: Skunky Darkbeer/Darkbeer/Fine Darkbeer
-    ingredients:
-    - Wheat/12
-    cookingtime: 8
-    distillruns: 0
-    wood: dark_oak
-    age: 8
-    color: '650013'
-    difficulty: 2
-    alcohol: 7
-    lore:
-    - +++ &8Roasted taste
-  cider:
-    name: Poor Cidre/Apple Cider/Great Apple Cider
-    ingredients:
-    - garden:apple/14
-    - Sugar_Cane/6
-    cookingtime: 7
-    distillruns: 0
-    wood: oak
-    age: 3
-    color: f86820
-    difficulty: 4
-    alcohol: 8
-  ap_mead:
-    name: Apple Mead/Sweet Apple Mead/&6Sweet Golden Apple Mead
-    ingredients:
-    - garden:apple/2
-    - Sugar_Cane/6
-    cookingtime: 4
-    distillruns: 0
-    wood: spruce
-    age: 4
-    color: ORANGE
-    difficulty: 4
-    alcohol: 11
-    lore:
-    - Refreshing taste of Apple
-    effects:
-    - WATER_BREATHING/1-2/150
-  apple_liquor:
-    name: Sour Apple Liquor/Apple Liquor/Calvados
-    ingredients:
-    - garden:apple/12
-    - Sugar_Cane/8
-    cookingtime: 16
-    distillruns: 3
-    wood: dark_oak
-    age: 6
-    color: BRIGHT_RED
-    difficulty: 5
-    alcohol: 14
-    lore:
-    - +Sour like Acid
-    - +++ Good Apple Liquor
-  wine:
-    name: Red Wine
-    ingredients:
-    - garden:grapes/10
-    - Sugar_Cane/5
-    cookingtime: 5
-    distillruns: 0
-    wood: oak
-    age: 20
-    color: RED
-    difficulty: 4
-    alcohol: 12
-    lore:
-    - + &8Harsh
-    - ++ &8Corked
-    - +++ &8Full-Bodied
-  mead:
-    name: Awkward Mead/Mead/&6Golden Mead
-    ingredients:
-    - Sugar_Cane/6
-    - Honey_Bottle/2
-    cookingtime: 3
-    distillruns: 0
-    wood: jungle
-    age: 4
-    color: ORANGE
-    difficulty: 2
-    alcohol: 9
-    lore:
-    - +++ Has a golden shine
-  berry_mead:
-    name: Dull Berry Mead/Berry Mead/Rich Berry Mead
-    ingredients:
-    - Sugar_Cane/6
-    - garden:berry/4
-    cookingtime: 4
-    distillruns: 0
-    wood: spruce
-    age: 6
-    color: PURPLE
-    difficulty: 4
-    alcohol: 11
-    lore:
-    - + Hints of fruit
-    - ++ Smooth blend
-    - +++ Deep berry flavor
-  blueberry_liquor:
-    name: Blueberry Spirit/Blueberry Liquor/&6Golden Blueberry Spirit
-    ingredients:
-    - garden:blueberry/10
-    - Sugar_Cane/6
-    cookingtime: 6
-    distillruns: 2
-    wood: oak
-    age: 8
-    color: BLUE
-    difficulty: 5
-    alcohol: 15
-  cranberry_liquor:
-    name: Tart Cranberry Spirit/Cranberry Liquor/&6Sweet Cranberry Spirit
-    ingredients:
-    - garden:cranberry/10
-    - Sugar_Cane/6
-    cookingtime: 6
-    distillruns: 2
-    wood: spruce
-    age: 8
-    color: RED
-    difficulty: 5
-    alcohol: 15
-  lemon_liquor:
-    name: Sour Lemon Spirit/Lemon Liquor/&6Golden Lemon Spirit
-    ingredients:
-    - garden:lemon/8
-    - Sugar_Cane/5
-    cookingtime: 5
-    distillruns: 2
-    wood: birch
-    age: 6
-    color: YELLOW
-    difficulty: 5
-    alcohol: 14
-  lime_liquor:
-    name: Tart Lime Spirit/Lime Liquor/&6Golden Lime Spirit
-    ingredients:
-    - garden:lime/8
-    - Sugar_Cane/5
-    cookingtime: 5
-    distillruns: 2
-    wood: birch
-    age: 6
-    color: LIME
-    difficulty: 5
-    alcohol: 14
-  orange_liquor:
-    name: Citrus Orange Spirit/Orange Liquor/&6Sweet Orange Spirit
-    ingredients:
-    - garden:orange/8
-    - Sugar_Cane/5
-    cookingtime: 5
-    distillruns: 2
-    wood: oak
-    age: 6
-    color: ORANGE
-    difficulty: 5
-    alcohol: 14
-  peach_liquor:
-    name: Sweet Peach Spirit/Peach Liquor/&6Golden Peach Spirit
-    ingredients:
-    - garden:peach/8
-    - Sugar_Cane/5
-    cookingtime: 5
-    distillruns: 2
-    wood: oak
-    age: 6
-    color: PINK
-    difficulty: 5
-    alcohol: 14
-  strawberry_liquor:
-    name: Tart Strawberry Spirit/Strawberry Liquor/&6Sweet Strawberry Spirit
-    ingredients:
-    - garden:strawberry/8
-    - Sugar_Cane/5
-    cookingtime: 5
-    distillruns: 2
-    wood: oak
-    age: 6
-    color: RED
-    difficulty: 5
-    alcohol: 14
-  whiskey:
-    name: Unsightly Whiskey/Whiskey/Scotch Whiskey
-    ingredients:
-    - Wheat/10
-    cookingtime: 10
-    distillruns: 2
-    distilltime: 50
-    wood: oak
-    age: 18
-    color: ORANGE
-    difficulty: 7
-    alcohol: 26
-    lore:
-    - '&7Single Malt'
-  rum:
-    name: Bitter Rum/Spicy Rum/&6Golden Rum
-    ingredients:
-    - Sugar_Cane/18
-    cookingtime: 6
-    distillruns: 2
-    distilltime: 30
-    wood: jungle
-    age: 14
-    color: DARK_RED
-    difficulty: 6
-    alcohol: 30
-    lore:
-    - + &8Too bitter to drink
-    - ++ &8Spiced by the barrel
-    - +++ &eSpiced Gold
-    effects:
-    - FIRE_RESISTANCE/1/20-100
-    - POISON/1-0/30-0
-  vodka:
-    name: Lousy Vodka/Vodka/Russian Vodka
-    ingredients:
-    - Potato/10
-    cookingtime: 15
-    distillruns: 3
-    age: 0
-    color: WHITE
-    difficulty: 4
-    alcohol: 20
-    lore:
-    - + &8Almost undrinkable
-    effects:
-    - WEAKNESS/15
-    - POISON/10
-  apple_wine:
-    name: Poor Apple Wine/Apple Wine/Great Apple Wine
-    ingredients:
-    - garden:apple/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: RED
-    difficulty: 4
-    alcohol: 9
-    lore:
-    - + Tart
-    - ++ Smooth
-    - +++ Full apple aroma
-  berry_wine:
-    name: Dull Berry Wine/Berry Wine/Rich Berry Wine
-    ingredients:
-    - garden:berry/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: PURPLE
-    difficulty: 4
-    alcohol: 9
-    lore:
-    - + Slightly sour
-    - ++ Balanced
-    - +++ Rich berry flavor
-  blueberry_wine:
-    name: Sour Blueberry Wine/Blueberry Wine/Sweet Blueberry Wine
-    ingredients:
-    - garden:blueberry/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: 3b2f8f
-    difficulty: 4
-    alcohol: 10
-    lore:
-    - + Tart
-    - ++ Smooth
-    - +++ Sweet blueberry aroma
-  cherry_wine:
-    name: Sour Cherry Wine/Cherry Wine/Sweet Cherry Wine
-    ingredients:
-    - garden:cherry/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: DARK_RED
-    difficulty: 4
-    alcohol: 10
-    lore:
-    - + Tart cherry notes
-    - ++ Pleasantly sweet
-    - +++ Full cherry aroma
-  cranberry_wine:
-    name: Tart Cranberry Wine/Cranberry Wine/Sweet Cranberry Wine
-    ingredients:
-    - garden:cranberry/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: RED
-    difficulty: 4
-    alcohol: 10
-    lore:
-    - + Tart
-    - ++ Fruity
-    - +++ Smooth cranberry flavor
-  grape_wine:
-    name: Sour Grape Wine/Grape Wine/Sweet Grape Wine
-    ingredients:
-    - garden:grape/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: PURPLE
-    difficulty: 4
-    alcohol: 10
-    lore:
-    - + Tart and fruity
-    - ++ Smooth and balanced
-    - +++ Full-bodied grape flavor
-  lemon_wine:
-    name: Bitter Lemon Wine/Lemon Wine/Sweet Lemon Wine
-    ingredients:
-    - garden:lemon/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: YELLOW
-    difficulty: 4
-    alcohol: 9
-    lore:
-    - + Bitter citrus
-    - ++ Mildly sweet
-    - +++ Fresh lemon aroma
-  lime_wine:
-    name: Sour Lime Wine/Lime Wine/Sweet Lime Wine
-    ingredients:
-    - garden:lime/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: LIME
-    difficulty: 4
-    alcohol: 9
-    lore:
-    - + Tart citrus
-    - ++ Balanced flavor
-    - +++ Sweet lime notes
-  orange_wine:
-    name: Tart Orange Wine/Orange Wine/Sweet Orange Wine
-    ingredients:
-    - garden:orange/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: ORANGE
-    difficulty: 4
-    alcohol: 9
-    lore:
-    - + Tart
-    - ++ Juicy
-    - +++ Sweet orange aroma
-  peach_wine:
-    name: Tart Peach Wine/Peach Wine/Sweet Peach Wine
-    ingredients:
-    - garden:peach/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: ORANGE
-    difficulty: 4
-    alcohol: 10
-    lore:
-    - + Tart
-    - ++ Smooth
-    - +++ Full peach aroma
-  strawberry_wine:
-    name: Sour Strawberry Wine/Strawberry Wine/Sweet Strawberry Wine
-    ingredients:
-    - garden:strawberry/6
-    cookingtime: 6
-    distillruns: 0
-    wood: oak
-    age: 12
-    color: RED
-    difficulty: 4
-    alcohol: 10
-    lore:
-    - + Tart notes
-    - ++ Balanced
-    - +++ Sweet strawberry aroma
-  pure_ethanol:
-    name: Dirty Ethanol/Ethanol/Pure Ethanol
-    ingredients:
-    - beetroot/32
-    cookingtime: 30
-    distillruns: 10
-    distilltime: 120
-    wood: oak
-    age: 0
-    color: WHITE
-    difficulty: 10
-    alcohol: 97
-    lore:
-    - + Extremely harsh and chemical
-    - ++ Industrial-grade ethanol, very strong
-    - +++ Pure 97% ethanol, smooth and potent
-    effects:
-    - POISON/30
-  soju:
-    name: Watery Soju/Chamisul Soju/Hwayo Soju
-    ingredients:
-    - wheat/12
-    - potato/2
-    cookingtime: 18
-    distillruns: 4
-    distilltime: 40
-    wood: oak
-    age: 2
-    color: LIME
-    difficulty: 6
-    alcohol: 10
-    lore:
-    - + Watery with chemical aftertaste
-    - ++ Cheap mass-produced soju
-    - +++ Traditional Korean soju, distilled from pure grains
-  apple_soju:
-    name: Sickly Apple Soju/Sweet Orchard Soju/Golden Apple Soju
-    ingredients:
-    - brewery:soju/1
-    - garden:apple/6
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 0
-    color: FFFFC5
-    difficulty: 3
-    alcohol: 10
-    lore:
-    - + Sickly sweet, artificial apple flavor
-    - ++ Easy-drinking flavored apple soju
-    - +++ Smooth, crisp soju made from real orchard apples
-  berry_ethanol:
-    name: Harsh Berry Liquor/Tart Berry Liquor/Ruby Berry Elixir
-    ingredients:
-    - brewery:pure_ethanol/1
-    - garden:berry/6
-    - garden:cranberry/4
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 0
-    color: DARK_RED
-    difficulty: 6
-    alcohol: 40
-    lore:
-    - + Bitter, unbalanced berry burn
-    - ++ Tart berry liquor with rough edges
-    - +++ Ruby berry elixir with rich, layered fruit
-  blueberry_vodka:
-    name: Weak Blueberry Vodka/Infused Blueberry Vodka/Velvet Blue Vodka
-    ingredients:
-    - brewery:vodka/1
-    - garden:blueberry/6
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 0
-    color: BLUE
-    difficulty: 4
-    alcohol: 20
-    lore:
-    - + Bare hint of blueberry, almost neutral
-    - ++ Smooth vodka with subtle blueberry notes
-    - +++ Velvet-blue vodka, perfectly balanced flavor
-  cherry_soju:
-    name: Syrupy Cherry Soju/Sweet Cherry Soju/Garnet Orchard Soju
-    ingredients:
-    - brewery:soju/1
-    - garden:cherry/6
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 0
-    color: RED
-    difficulty: 3
-    alcohol: 10
-    lore:
-    - + Syrupy cherry aftertaste
-    - ++ Bright, easy cherry soju
-    - +++ Smooth garnet orchard soju
-  cranberry_vodka:
-    name: Bitter Cranberry Vodka/Cranberry Vodka/Scarlet Berry Vodka
-    ingredients:
-    - brewery:vodka/1
-    - garden:cranberry/6
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 0
-    color: DC143C
-    difficulty: 3
-    alcohol: 20
-    lore:
-    - + Overly tart and biting
-    - ++ Classic cranberry vodka mix
-    - +++ Scarlet berry vodka with crisp, smooth balance
-  grape_ethanol:
-    name: Rough Grape Liquor/Strong Grape Liquor/Amethyst Grape Elixir
-    ingredients:
-    - brewery:pure_ethanol/1
-    - garden:grape/6
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 0
-    color: PURPLE
-    difficulty: 5
-    alcohol: 40
-    lore:
-    - + Harsh, bitter grape burn
-    - ++ Strong grape liquor, bold and heavy
-    - +++ Amethyst grape elixir, full-bodied richness
-  lemon_vodka:
-    name: Harsh Lemon Vodka/Bright Lemon Vodka/Zesty Golden Vodka
-    ingredients:
-    - brewery:vodka/1
-    - garden:lemon/5
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 0
-    color: YELLOW
-    difficulty: 3
-    alcohol: 20
-    lore:
-    - + Sharp and sour
-    - ++ Clean, bright lemon vodka
-    - +++ Zesty golden vodka with refreshing aroma
-  lime_soju:
-    name: Sharp Lime Soju/Tangy Lime Soju/Jade Citrus Soju
-    ingredients:
-    - brewery:soju/1
-    - garden:lime/5
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 0
-    color: GREEN
-    difficulty: 3
-    alcohol: 10
-    lore:
-    - + Harsh lime bite
-    - ++ Tangy, easy-drinking lime soju
-    - +++ Smooth jade citrus soju
-  orange_vodka:
-    name: Flat Orange Vodka/Sweet Orange Vodka/Amber Sun Vodka
-    ingredients:
-    - brewery:vodka/1
-    - garden:orange/5
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 0
-    color: ORANGE
-    difficulty: 3
-    alcohol: 20
-    lore:
-    - + Thin, tangy orange taste
-    - ++ Sweet, easy orange vodka
-    - +++ Amber sun vodka with rich, fruity aroma
-  peach_ethanol:
-    name: Harsh Peach Liquor/Peach Liquor/Sunset Peach Elixir
-    ingredients:
-    - brewery:pure_ethanol/1
-    - garden:peach/6
-    cookingtime: 2
-    distillruns: 0
-    wood: oak
-    age: 0
-    color: F4A384
-    difficulty: 5
-    alcohol: 40
-    lore:
-    - + Rough, cloying peach burn
-    - ++ Gentle peach-flavored liquor
-    - +++ Sunset peach elixir with smooth fruit warmth
-  strawberry_soju:
-    name: Bitter Strawberry Soju/Strawberry Soju/Sweet Strawberry Soju
-    ingredients:
-	- garden:strawberry/4
-	- brewery:soju/1
-    cookingtime: 3
-    distillruns: 0
-    wood: 0
-    age: 0
-    color: 3b2f2f
-    difficulty: 1
-    alcohol: -3
-    lore:
-    - + Candy-like strawberry flavor
-    - ++ Sweet, light strawberry soju
-    - +++ Rose quartz soju with delicate berry glow
-    effects:
-    - SATURATION/1/20
-  iced_coffee:
-    name: Iced Coffee
-    ingredients:
-    - cocoa_beans/2
-    - ice/1
-    - sugar/1
-    cookingtime: 3
-    distillruns: 0
-    wood: 0
-    age: 0
-    color: 4d2c1d
-    difficulty: 1
-    alcohol: -4
-    effects:
-    - SPEED/1/90
-    - HUNGER/1/30
-  energydrink:
-    name: Energy Drink
-    ingredients:
-    - sugar/3
-    - glowstone_dust/1
-    - water_bucket/1
-    cookingtime: 3
-    distillruns: 0
-    wood: 0
-    age: 0
-    color: ffff00
-    difficulty: 1
-    alcohol: -5
-    effects:
-    - SPEED/2/60
-    - JUMP/1/60
-    - NAUSEA/1/15
-  coffee:
-    name: Coffee
-    ingredients:
-    - cocoa_beans/3
-    - milk_bucket/1
-    cookingtime: 3
-    distillruns: 0
-    wood: 0
-    age: 0
-    color: 3c2a1e
-    difficulty: 1
-    alcohol: -5
-    effects:
-    - SPEED/1/120
-  potato_soup:
-    name: Potato Soup
-    ingredients:
-    - potato/3
-    - milk_bucket/1
-    - bowl/1
-    cookingtime: 3
-    distillruns: 0
-    wood: 0
-    age: 0
-    color: d2b48c
-    difficulty: 1
-    alcohol: -3
-  haste:
-    name: Poor Haste Potion/Haste Potion/Energising Haste Potion
-    ingredients:
-    - stone_pickaxe/1
-    - golden_carrot/1
-    - sugar/3
-    cookingtime: 30
-    distillruns: 0
-    distilltime: 30
-    age: 0
-    color: ffaa33
-    difficulty: 5
-    alcohol: -6
-    lore:
-    - + Clumps of sticks.
-    - ++ Subtle hints of wood.
-    - +++ Tastes sweet?
-    effects:
-    - HASTE/1-3/30-90
-  sprite_cranberry:
-    name: Flat Sprite Cranberry/Sprite Cranberry/Refreshing Sprite Cranberry
-    ingredients:
-    - garden:cranberry/3
-    - sugar/5
-    cookingtime: 3
-    distillruns: 3
-    distilltime: 5
-    age: 0
-    color: f2f2f2
-    difficulty: 3
-    alcohol: 0
-    lore:
-    - + Does not taste carbonated
-    - ++ Nice and sweet
-    - +++ Perfectly chilled, mix of flavor and sweetness
-  tequila:
-    name: Mezcal/Tequila/Tequila anejo
-    ingredients:
-    - cactus/8
-    cookingtime: 15
-    distillruns: 2
-    wood: 1
-    age: 12
-    color: f5f07e
-    difficulty: 5
-    alcohol: 20
-    lore:
-    - Desert spirit
-  honey_rum:
-    name: Weak Honey Rum/Honey Rum/Golden Honey Rum
-    ingredients:
-    - Sugar_Cane/12
-    - Honey_Bottle/3
-    cookingtime: 8
-    distillruns: 2
-    distilltime: 35
-    wood: 2
-    age: 10
-    color: e6b800
-    difficulty: 6
-    alcohol: 28
-    lore:
-    - + &8Overly sweet
-    - ++ &eBalanced sweetness
-    - +++ &6Smooth honey finish
-  absinthe:
-    name: Poor Absinthe/Absinthe/Strong Absinthe
-    ingredients:
-    - Grass/15
-    cookingtime: 3
-    distillruns: 6
-    distilltime: 80
-    color: GREEN
-    difficulty: 8
-    alcohol: 42
-    lore:
-    - +++&8High proof liquor
-    effects:
-    - POISON/15-25
-  eggnog:
-    name: Egg Liquor/Eggnog/Advocaat
-    ingredients:
-    - Egg/5
-    - Sugar/2
-    - Milk_Bucket/1
-    cookingtime: 2
-    age: 3
-    color: ffe680
-    difficulty: 4
-    alcohol: 10
-    lore:
-    - Made with raw egg
-  fire_whiskey:
-    name: Powdery Whiskey/Burning Whiskey/Blazing Whiskey
-    ingredients:
-    - Wheat/10
-    - Blaze_Powder/2
-    cookingtime: 12
-    distillruns: 3
-    distilltime: 55
-    wood: 4
-    age: 18
-    color: ORANGE
-    difficulty: 7
-    alcohol: 28
-    drinkmessage: You get a burning feeling in your mouth
-  frostbite_vodka:
-    name: Harsh Frostbite Vodka/Frostbite Vodka/Ice-Clear Frostbite Vodka
-    ingredients:
-    - Potato/10
-    - Snowball/3
-    cookingtime: 16
-    distillruns: 3
-    distilltime: 15
-    age: 0
-    color: WHITE
-    difficulty: 5
-    alcohol: 22
-    lore:
-    - + Freezing burn
-    - ++ Smooth chill
-    - +++ Crisp and icy
-  g_vodka:
-    name: Rancid Vodka/&6Golden Vodka/&6Shimmering Golden Vodka
-    ingredients:
-    - Potato/10
-    - Gold_Nugget/2
-    cookingtime: 18
-    distillruns: 3
-    age: 0
-    color: ORANGE
-    difficulty: 6
-    alcohol: 20
-    effects:
-    - WEAKNESS/28
-    - POISON/4
-  gin:
-    name: Pale Gin/Gin/Old Tom Gin
-    ingredients:
-    - Wheat/9
-    - blue-flowers/6
-    - Apple/1
-    cookingtime: 6
-    distillruns: 2
-    color: 99ddff
-    difficulty: 6
-    alcohol: 20
-    lore:
-    - ++ With the
-    - ++ taste of juniper
-    - +++ Perfectly finished off
-    - +++ with juniper
-  gr_absinthe:
-    name: Poor Absinthe/Green Absinthe/Bright Green Absinthe
-    ingredients:
-    - Grass/17
-    - Poisonous_Potato/2
-    cookingtime: 5
-    distillruns: 6
-    distilltime: 85
-    color: LIME
-    difficulty: 9
-    alcohol: 46
-    lore:
-    - '&aLooks poisonous'
-    effects:
-    - POISON/25-40
-    - HARM/2
-    - NIGHT_VISION/40-60
-  hot_choc:
-    name: Hot Chocolate
-    ingredients:
-    - cookie/3
-    cookingtime: 2
-    color: DARK_RED
-    difficulty: 2
-  pumpkin_ale:
-    name: Watery Pumpkin Ale/Pumpkin Ale/Spiced Pumpkin Ale
-    ingredients:
-    - Pumpkin/3
-    - Wheat/4
-    - Sugar/2
-    cookingtime: 5
-    distillruns: 0
-    wood: 2
-    age: 5
-    color: ff9933
-    difficulty: 3
-    alcohol: 6
-    lore:
-    - + &8Thin and watery
-    - ++ &8Mild spice
-    - +++ &6Rich autumn flavor
-  shroom_vodka:
-    name: Mushroom Vodka/Mushroom Vodka/Glowing Mushroom Vodka
-    ingredients:
-    - Potato/10
-    - Red_Mushroom/3
-    - Brown_Mushroom/3
-    cookingtime: 18
-    distillruns: 5
-    age: 0
-    color: ff9999
-    difficulty: 7
-    alcohol: 18
-    lore:
-    - +++&aGlows in the dark
-    effects:
-    - WEAKNESS/80
-    - CONFUSION/27
-    - NIGHT_VISION/50-80
-    - BLINDNESS/12-2
-    - SLOW/10-3
-```
+{/* --- BEGIN KPI STYLE --- */}
+<style>
+{String.raw`
+/* -------------------------------- */
+/* CORE THEME VARIABLES */
+/* -------------------------------- */
+:root {
+  --kpi-bg: #ffffff;
+  --kpi-border: #e6e8eb;
+  --kpi-text: #0b1726;
+  --kpi-muted: #6b7280;
+  --kpi-accent: #2ecc71;
+  --kpi-accent-red: #ed0e3f;
+  --kpi-shadow: 0 6px 18px rgba(11,20,40,0.06);
+  --kpi-radius: 12px;
+}
+
+/* DARK MODE */
+html[data-theme='dark'] {
+  --kpi-bg: #14161a;
+  --kpi-border: #2a2d32;
+  --kpi-text: #e5e7eb;
+  --kpi-muted: #9ca3af;
+  --kpi-accent: #27ae60;
+  --kpi-accent-red: #ed0e3f;
+  --kpi-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+/* -------------------------------- */
+/* GRID LAYOUT */
+/* -------------------------------- */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 1rem;
+  margin-bottom: 2rem; /* added spacing below grid */
+}
+
+@media (max-width: 900px){
+  .kpi-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 520px){
+  .kpi-grid { grid-template-columns: 1fr; }
+}
+
+/* -------------------------------- */
+/* KPI CARD */
+/* -------------------------------- */
+.kpi-card {
+  background: var(--kpi-bg);
+  border: 1px solid var(--kpi-border);
+  border-radius: var(--kpi-radius);
+  padding: 1.25rem;
+  box-shadow: var(--kpi-shadow);
+  transition: background .2s, border-color .2s, color .2s;
+}
+
+/* KPI NUMBER */
+.kpi-value {
+  font-weight: 700;
+  font-size: 1.65rem;
+  color: var(--kpi-text);
+}
+
+/* KPI LABEL */
+.kpi-label {
+  font-size: 0.85rem;
+  color: var(--kpi-muted);
+  margin-top: 0.25rem;
+}
+
+/* KPI % LINE */
+.kpi-percent {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--kpi-accent);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.kpi-percent-red {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--kpi-accent-red);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+`}
+</style>
+
+{/* --- END KPI STYLE --- */}
+
+<div className="kpi-grid">
+
+  <div className="kpi-card">
+    <div className="kpi-value">Beer</div>
+    <div className="kpi-label">Skunky → Fine Beer</div>
+    <div className="kpi-label"><strong>Ingredients:</strong> Wheat ×6</div>
+    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
+    <div className="kpi-label"><strong>Age:</strong> 3 (Oak)</div>
+    <div className="kpi-percent">Difficulty 1 · Alcohol 6%</div>
+  </div>
+
+  <div className="kpi-card">
+    <div className="kpi-value">Dark Beer</div>
+    <div className="kpi-label">Skunky → Fine Darkbeer</div>
+    <div className="kpi-label"><strong>Ingredients:</strong> Wheat ×12</div>
+    <div className="kpi-label"><strong>Cook:</strong> 8 min</div>
+    <div className="kpi-label"><strong>Age:</strong> 8 (Dark Oak)</div>
+    <div className="kpi-percent">Difficulty 2 · Alcohol 7%</div>
+  </div>
+
+  <div className="kpi-card">
+    <div className="kpi-value">Apple Cider</div>
+    <div className="kpi-label">Poor → Great</div>
+    <div className="kpi-label"><strong>Ingredients:</strong> Apple ×14, Sugar Cane ×6</div>
+    <div className="kpi-label"><strong>Cook:</strong> 7 min</div>
+    <div className="kpi-label"><strong>Age:</strong> 3 (Oak)</div>
+    <div className="kpi-percent">Difficulty 4 · Alcohol 8%</div>
+  </div>
+
+  <div className="kpi-card">
+    <div className="kpi-value">Apple Mead</div>
+    <div className="kpi-label">Sweet Golden Variant</div>
+    <div className="kpi-label"><strong>Ingredients:</strong> Apple ×2, Sugar Cane ×6</div>
+    <div className="kpi-label"><strong>Cook:</strong> 4 min</div>
+    <div className="kpi-label"><strong>Age:</strong> 4 (Spruce)</div>
+    <div className="kpi-percent">Difficulty 4 · Alcohol 11%</div>
+  </div>
+
+  <div className="kpi-card">
+    <div className="kpi-value">Apple Liquor</div>
+    <div className="kpi-label">Calvados</div>
+    <div className="kpi-label"><strong>Ingredients:</strong> Apple ×12, Sugar Cane ×8</div>
+    <div className="kpi-label"><strong>Cook:</strong> 16 min · Distill ×3</div>
+    <div className="kpi-label"><strong>Age:</strong> 6 (Dark Oak)</div>
+    <div className="kpi-percent">Difficulty 5 · Alcohol 14%</div>
+  </div>
+
+  <div className="kpi-card">
+    <div className="kpi-value">Red Wine</div>
+    <div className="kpi-label">Full-Bodied</div>
+    <div className="kpi-label"><strong>Ingredients:</strong> Grapes ×10, Sugar Cane ×5</div>
+    <div className="kpi-label"><strong>Cook:</strong> 5 min</div>
+    <div className="kpi-label"><strong>Age:</strong> 20 (Oak)</div>
+    <div className="kpi-percent">Difficulty 4 · Alcohol 12%</div>
+  </div>
+
+  <div className="kpi-card">
+    <div className="kpi-value">Mead</div>
+    <div className="kpi-label">Golden Mead</div>
+    <div className="kpi-label"><strong>Ingredients:</strong> Sugar Cane ×6, Honey ×2</div>
+    <div className="kpi-label"><strong>Cook:</strong> 3 min</div>
+    <div className="kpi-label"><strong>Age:</strong> 4 (Jungle)</div>
+    <div className="kpi-percent">Difficulty 2 · Alcohol 9%</div>
+  </div>
+
+  <div className="kpi-card">
+    <div className="kpi-value">Whiskey</div>
+    <div className="kpi-label">Scotch Whiskey</div>
+    <div className="kpi-label"><strong>Ingredients:</strong> Wheat ×10</div>
+    <div className="kpi-label"><strong>Cook:</strong> 10 min · Distill ×2</div>
+    <div className="kpi-label"><strong>Age:</strong> 18 (Oak)</div>
+    <div className="kpi-percent kpi-percent-red">Difficulty 7 · Alcohol 26%</div>
+  </div>
+
+  <div className="kpi-card">
+    <div className="kpi-value">Vodka</div>
+    <div className="kpi-label">Russian Vodka</div>
+    <div className="kpi-label"><strong>Ingredients:</strong> Potato ×10</div>
+    <div className="kpi-label"><strong>Cook:</strong> 15 min · Distill ×3</div>
+    <div className="kpi-label"><strong>Age:</strong> None</div>
+    <div className="kpi-percent">Difficulty 4 · Alcohol 20%</div>
+  </div>
+
+  <div className="kpi-card">
+    <div className="kpi-value">Pure Ethanol</div>
+    <div className="kpi-label">97% Industrial</div>
+    <div className="kpi-label"><strong>Ingredients:</strong> Beetroot ×32</div>
+    <div className="kpi-label"><strong>Cook:</strong> 30 min · Distill ×10</div>
+    <div className="kpi-label"><strong>Age:</strong> None</div>
+    <div className="kpi-percent kpi-percent-red">Difficulty 10 · Alcohol 97%</div>
+  </div>
+
+</div>
