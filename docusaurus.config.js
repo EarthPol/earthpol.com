@@ -236,7 +236,6 @@ const config = {
             { label: 'YouTube', href: 'https://www.youtube.com/@EarthPol?sub_confirmation=1' },
             { label: 'Instagram', href: 'https://www.instagram.com/earthpolmc/' },
             { label: 'TikTok', href: 'https://www.tiktok.com/@play.earthpol.com' },
-            { label: 'X', href: 'https://x.com/earth_pol' },
           ],
         },
         { to: '/docs/events', label: 'Events', position: 'right' },
