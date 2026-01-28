@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "   ",
+    "#R#",
+    "CCC"
+  ],
+  "key": {
+    "#": "minecraft:redstone_torch",
+    "R": "minecraft:redstone",
+    "C": "minecraft:cobbled_deepslate"
+  },
+  "result": {
+    "id": "minecraft:repeater",
+    "count": 1
+  }
+}
