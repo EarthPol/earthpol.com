@@ -5,9 +5,31 @@ authors: [mrtytanic]
 tags: [Update, Announcement]
 ---
 
+import React, { useEffect, useState } from 'react';
+
+export function DaysOnline() {
+  const [days, setDays] = useState(0);
+
+  useEffect(() => {
+    const startDate = new Date('2025-06-07'); // Version start date
+    const today = new Date();
+    const diffTime = today.getTime() - startDate.getTime(); // Difference in milliseconds
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)); // Convert to days
+    setDays(diffDays);
+  }, []);
+
+  return <strong>{days}</strong>;
+}
+
 ## Hello EarthPol!
 
-Welcome to our first blog post of 2026! This was an exceptional month and greatly built upon the success we saw in December 2025 which you can read about [here.](/blog/earthpol-blog-5)
+Welcome to our first blog post of 2026! This was an exceptional month and greatly built upon the success we saw in December 2025, which you can read about [here.](/blog/earthpol-blog-5)
+
+## Landmark Version
+
+I’m pleased to announce that this version of EarthPol is now officially the longest-running in the server’s five-year history. Before Astra, the record was held by Nebula, which lasted 235 days. Astra has currently been online and active for <DaysOnline /> days!
+
+Since June 2025, our server has grown and thrived, and we’re excited to soon surpass a full year of uptime. This effort would not have been possible without our dedicated staff and amazing community!
 
 ## Server Growth
 
@@ -152,6 +174,9 @@ Below are some key performance indicators of the server's growth this month:
 ## Community Highlights
 
 ### Social Media
+
+This month we saw significant growth, especially on YouTube and TikTok.
+
 <div class="kpi-grid">
 
     <div class="kpi-card">
@@ -212,8 +237,18 @@ This month saw a series of extensive developments, most of which were originally
 - Parkour Timer: We are currently working on our own custom Parkour Timer plugin to be added to the lobby.
 - Tutorial Section: We are interested in expanding upon our guides and having a dedicated tutorial area within the lobby for new players.
 
+### Security Upgrades
+- Vulcan AnitCheat: With Folia support now available, Vulcan has returned to EarthPol, making us one of the first Folia-based servers to implement it. Having used Vulcan prior to Folia, we’re excited to bring it back as we expect it will catch cheaters more efficiently and create a fairer experience for everyone.
+- Custom VPNShield: Our custom-built anti-VPN system improves alt account detection and helps us maintain the high standards of security and fairness we uphold.
 
 ### API Changes
+With our recent SiegeWar and SiegeStats updates, we now have a proper SiegeWar system behind the scenes. The SiegeWar features have been completely rebuilt to:
+- Keep track of each siege
+- Record every battle session in a siege
+- Track every kill during each session
+- Track every banner capture point earned
+
+This means leaderboards are now accurate, historical stats work properly, and points are tracked correctly across the entire war system.
 
 ### EarthPol Observatory Updates
 
