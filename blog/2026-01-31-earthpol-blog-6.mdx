@@ -133,39 +133,39 @@ Below are some key performance indicators of the server's growth this month:
    <div class="kpi-grid">
 
      <div class="kpi-card">
-       <div class="kpi-value">#</div>
+       <div class="kpi-value">4,827</div>
        <div class="kpi-label">Total Players in Janurary</div>
-       <div class="kpi-percent">▲ +#% compared to December</div>
+       <div class="kpi-percent">▲ +23.89% compared to December</div>
      </div>
 
      <div class="kpi-card">
-       <div class="kpi-value">#</div>
+       <div class="kpi-value">2,931</div>
        <div class="kpi-label">New Players</div>
-       <div class="kpi-percent">▲ +#% compared to December</div>
+       <div class="kpi-percent">▲ +22.48% compared to December</div>
      </div>
 
      <div class="kpi-card">
-       <div class="kpi-value">#</div>
+       <div class="kpi-value">167</div>
        <div class="kpi-label">Peak Concurrent</div>
-       <div class="kpi-percent">▲ +#% compared to December</div>
+       <div class="kpi-percent">▲ +35.77% compared to December</div>
      </div>
 
      <div class="kpi-card">
-       <div class="kpi-value">#</div>
+       <div class="kpi-value">131</div>
        <div class="kpi-label">Total Nations</div>
-       <div class="kpi-percent">▲ +#% compared to December</div>
+       <div class="kpi-percent">▲ +3.96% compared to December</div>
      </div>
 
      <div class="kpi-card">
-       <div class="kpi-value">#</div>
+       <div class="kpi-value">598</div>
        <div class="kpi-label">Total Towns</div>
-       <div class="kpi-percent">▲ +#% compared to December</div>
+       <div class="kpi-percent">▲ +1.70% compared to December</div>
      </div>
 
      <div class="kpi-card">
-       <div class="kpi-value">#</div>
+       <div class="kpi-value">16,851</div>
        <div class="kpi-label">Total Residents</div>
-       <div class="kpi-percent">▲ +#% compared to December</div>
+       <div class="kpi-percent">▲ +18.35% compared to December</div>
      </div>
 
    </div>
@@ -180,33 +180,33 @@ This month we saw significant growth, especially on YouTube and TikTok.
 <div class="kpi-grid">
 
     <div class="kpi-card">
-        <div class="kpi-value">#</div>
+        <div class="kpi-value">5,468</div>
         <div class="kpi-label">Discord Members</div>
-        <div class="kpi-percent">▲ +#% compared to December</div>
+        <div class="kpi-percent">▲ +9.09% compared to December</div>
     </div>
 
     <div class="kpi-card">
-        <div class="kpi-value">#</div>
+        <div class="kpi-value">2,753</div>
         <div class="kpi-label">YouTube Subscribers</div>
-        <div class="kpi-percent">▲ +#% compared to December</div>
+        <div class="kpi-percent">▲ +53.02% compared to December</div>
     </div>
 
     <div class="kpi-card">
-        <div class="kpi-value">#</div>
+        <div class="kpi-value">703</div>
         <div class="kpi-label">Instagram Followers</div>
-        <div class="kpi-percent">▲ +#% compared to December</div>
+        <div class="kpi-percent">▲ +1.88% compared to December</div>
     </div>
 
     <div class="kpi-card">
-        <div class="kpi-value">#</div>
+        <div class="kpi-value">2,869</div>
         <div class="kpi-label">TikTok Followers</div>
-        <div class="kpi-percent">▲ +#% compared to December</div>
+        <div class="kpi-percent">▲ +123.09% compared to December</div>
     </div>
 
     <div class="kpi-card">
-        <div class="kpi-value">#</div>
+        <div class="kpi-value">977</div>
         <div class="kpi-label">LinkTree Visits</div>
-        <div class="kpi-percent">▲ +#% compared to December</div>
+        <div class="kpi-percent">▲ +9.04% compared to December</div>
     </div>
 </div>
 
@@ -223,13 +223,21 @@ This month saw a series of extensive developments, most of which were originally
 
 
 ### SiegeWar Improvements
-- Siegestats
-- SiegeWar Notification Silencer: This has been a long-requested feature and we're happy to bring it to EarthPol. By using the command ``/sw preferences notifications OFF``, players can now toggle kill notifications in their chat feed.
-- New SiegeWar Stats Page:
+- SiegeWar Backend Update: SiegeWar now supports tracking Banner Control and Penalty Points for addon plugins and includes unique siege identifiers to distinguish repeated sieges on the same town.
+- SiegeStats: Siege statistics have been expanded to track all point events, including kills, deaths, banner captures, and penalty points, both per session and per siege. Due to structural changes in SiegeWar, existing tables were reset, which should be the last time this is necessary. The /siegestats command provides detailed statistics and leaderboards for sieges, allowing players to track performance both globally and within individual sieges.
+    - `/siegestats current`: View your stats in the current active siege.
+    - `/siegestats profile [player]`:  View global totals for a player across all sieges.
+    - `/siegestats top [stat] [page]`:  View the global leaderboard for a specific stat.
+    - `/siegestats [siege] top [stat] [page]`:  View the leaderboard for a specific siege.
+    - `/siegestats [siege] player [player]`:  View a player’s stats within a specific siege.
+    - `/siegestats [siege] kills [player]`:  View who a player killed during a specific siege.
+
+- New SiegeWar Stats Page: A new ``/sieges`` endpoint is available on the [EarthPol Observatory website](https://earthpol.org/sieges), check it out!
 - Death Message Cooldown: A 30-second cooldown has now been added to death messages when a custom lore weapon with an incrementing kill counter is involved. The kill counter will still increment but this is intended to limit chat spam.
+- Live Siege Tracker: We’ve launched a [live Siege Tracker](https://earthpol.org/sieges) that gives real-time visibility into active sieges, ongoing sessions, and results.
 
 ### Updated Lobby
-- KitPvp:
+- KitPvp: KitPvP is now available in the lobby, featuring a [live leaderboard](https://earthpol.org/kitpvp) to track your progress.
 - Domination/Revenge Kills: Similar to mechanics seen in other games, if a player is killed three times by the same player without any deaths, they will be marked as "Dominated." If the dominated player kills the person who is dominating them, they will get a "Revenge" kill.
 
 #### What's next for the lobby?
@@ -240,30 +248,47 @@ This month saw a series of extensive developments, most of which were originally
 ### Security Upgrades
 - Vulcan AnitCheat: With Folia support now available, Vulcan has returned to EarthPol, making us one of the first Folia-based servers to implement it. Having used Vulcan prior to Folia, we’re excited to bring it back as we expect it will catch cheaters more efficiently and create a fairer experience for everyone.
 - Custom VPNShield: Our custom-built anti-VPN system improves alt account detection and helps us maintain the high standards of security and fairness we uphold.
+- Wiki Account Verification: An email is now required when creating a new wiki account. This improvement helps protect the EarthPol Wiki against griefing while ensuring account security.
 
 ### API Changes
-With our recent SiegeWar and SiegeStats updates, we now have a proper SiegeWar system behind the scenes. The SiegeWar features have been completely rebuilt to:
-- Keep track of each siege
-- Record every battle session in a siege
-- Track every kill during each session
-- Track every banner capture point earned
+- /shops API: No longer returns empty shops, shops priced over 100,000G, or shops outside the primary world.
+- /sieges API: Now correctly returns battleSession timers in long format, making it easier to build automated notifications.
+- SiegeWar & SiegeStats:
+  - Fully rebuilt siege system
+  - Tracks each siege individually
+  - Records every battle session within a siege
+  - Tracks all kills during each session
+  - Tracks every banner capture point earned
 
-This means leaderboards are now accurate, historical stats work properly, and points are tracked correctly across the entire war system.
+Leaderboards are now accurate, historical stats work properly, and points are tracked correctly across the entire war system.
 
 ### EarthPol Observatory Updates
+- ``/shops``: Now automatically recommends the most viewed item stacks for easier access.
+- ``/shops``: Continues to provide auto-suggestions even if a space is used instead of _ in item names.
+- ``/nations``: Deleted nations are no longer displayed, but data is retained for an upcoming reports feature.
+- ``/towns``: Deleted towns are no longer displayed, but data is retained for a future feature set.
 
 ### 1.21.11 Update
-On Janurary 19, EarthPol officially updated to 1.21.11, which includes many amazing features such as shelves, lances, and copper golems.
+On January 19, EarthPol officially updated to 1.21.11, which includes many amazing features such as shelves, lances, and copper golems.
 
-### Misc. Changes
-- Item Pickup Priority
-- In-Game Calendar
-- Mapcolor Rework
+### Additional Changes
+- Item Pickup Priority: Our new custom solution temporarily restricts newly dropped items, including weapons, armor, tools, and rare materials, to their original owner for 5 seconds to prevent theft during mining, drops, or container breaks.
+- In-Game Calendar: We’ve added /calendar, an in-game system that lets players view upcoming events, community activities, and server-wide moments directly within Minecraft and reduce reliance on Discord.
+- Mapcolor Rework: For Premium users, ``/mapcolor`` now supports two options, *border* and *area*, allowing you to set the outline and fill colors of towns within your nation using the format ``/mapcolor [option] [color]``.
 - New Vote Site - Our server has now been added to [Minecraft Server List (MCSL)](https://minecraft-server-list.com/server/517249/).
-- Added more emojis like ``:joy:``, ``:sob:``, ``:pensive:``, ``:nerd:``, ``:cookie:``, and ``:eyes:`` to translate in-game to their unicode equivalent.
+- Added more emojis like ``:joy:``, ``:sob:``, ``:pensive:``, ``:nerd:``, ``:cookie:``, ``:cake:``, ``:party:``, ``:fire:``, ``:robot:``, ``:gem:``, ``:balloon:`` and ``:eyes:`` to translate in-game to their unicode equivalent.
+- Cleaned up the
 
-### What's next for 2026?
+### Bug Fixes
+- Fixed an issue that led to players being kicked when using Easyplace.
+- Fixed an anvil bug that allowed for Lunge V.
+- Cleaned up the [Custom Recipes](https://earthpol.com/docs/economy-trade/custom-recipes/) page to be updated and user-friendly.
+
+### What's next?
 - New Major Update: Currently, we are on track to release our next major update in mid-February.
 - Website Improvements: We are looking for a Front-End Developer who is interested in reorganizing the EarthPol website in preparation for future expansion. If you are interested, please reach out to ``@georgeorwells1984`` on discord.
 
 *Don't forget to also read our thoughts on Hytale and why EarthPol will not be pursuing any venture in the game: [Hytale Blog Post](https://goodrich.dev/blog/why-earthpol-will-not-be-moving-to-hytale).*
+
+---
+
