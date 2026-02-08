@@ -712,7 +712,7 @@
     "price_town_neutrality": "8.0",
     "price_town_neutrality_charges_per_plot": "false",
     "new_expand": {
-      "price_new_nation": "5000.0",
+      "price_new_nation": "2000.0",
       "price_new_town": "512.0",
       "price_town_merge": "128",
       "price_town_merge_per_plot_percentage": "50",
