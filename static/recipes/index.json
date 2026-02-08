@@ -92,5 +92,21 @@
   "vex_armor_trim_smithing_template.json",
   "ward_armor_trim_smithing_template.json",
   "wayfinder_armor_trim_smithing_template.json",
-  "wild_armor_trim_smithing_template.json"
+  "wild_armor_trim_smithing_template.json",
+  "white_banner.json",
+  "orange_banner.json",
+  "magenta_banner.json",
+  "light_blue_banner.json",
+  "yellow_banner.json",
+  "lime_banner.json",
+  "pink_banner.json",
+  "gray_banner.json",
+  "light_gray_banner.json",
+  "cyan_banner.json",
+  "purple_banner.json",
+  "blue_banner.json",
+  "brown_banner.json",
+  "green_banner.json",
+  "red_banner.json",
+  "black_banner.json"
 ]
