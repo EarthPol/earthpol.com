@@ -2,6 +2,17 @@
 import React, { useEffect } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+type Variant = {
+    recipe: any;
+    resultName: string;              // idToItemName(resultId)
+    shapedGrid?: (string | null)[];  // length 9 if shaped
+};
+
+type RenderOpts = {
+    displayNameOverride?: string;
+    variants?: Variant[]; // if present and length > 1, we will cycle the whole card (grid + result) in sync
+};
+
 const RecipeDigester: React.FC = () => {
     const recipesBasePath = useBaseUrl('/recipes/');
 
@@ -11,6 +22,9 @@ const RecipeDigester: React.FC = () => {
         const RECIPES_BASE_PATH = recipesBasePath.endsWith('/')
             ? recipesBasePath
             : `${recipesBasePath}/`;
+
+        // Track any intervals we create so we can clean them up on unmount
+        const intervalIds: number[] = [];
 
         function sanitizeItemName(name: string | null): string | null {
             if (!name) return name;
@@ -75,6 +89,20 @@ const RecipeDigester: React.FC = () => {
                 .join(' ');
         }
 
+        // --- banner/carpet grouping helpers ---
+        function normalizeCyclingResultKey(resultItemName: string): string {
+            if (/_banner$/i.test(resultItemName)) return 'banner';
+            if (/_carpet$/i.test(resultItemName)) return 'carpet';
+            return resultItemName;
+        }
+
+        function normalizeCyclingDisplayName(groupKey: string): string {
+            if (groupKey === 'banner') return 'Banner';
+            if (groupKey === 'carpet') return 'Carpet';
+            return itemIdToDisplayName(groupKey);
+        }
+
+        // --- Tooltip ---
         let itemTooltipEl: HTMLDivElement | null = null;
 
         function getItemTooltipEl(): HTMLDivElement {
@@ -86,11 +114,14 @@ const RecipeDigester: React.FC = () => {
             return itemTooltipEl;
         }
 
-        function attachTooltipHandlers(element: HTMLElement, text: string) {
+        // IMPORTANT: tooltip reads element.dataset.tooltip live so cycling updates correctly
+        function attachTooltipHandlers(element: HTMLElement, _text: string) {
             const tooltip = getItemTooltipEl();
-            if (!text) return;
 
             const show = (event: MouseEvent) => {
+                const text = element.dataset.tooltip || '';
+                if (!text) return;
+
                 tooltip.textContent = text;
 
                 const offset = 12;
@@ -101,12 +132,8 @@ const RecipeDigester: React.FC = () => {
                 const vw = window.innerWidth;
                 const vh = window.innerHeight;
 
-                if (x + rect.width + 8 > vw) {
-                    x = vw - rect.width - 8;
-                }
-                if (y + rect.height + 8 > vh) {
-                    y = vh - rect.height - 8;
-                }
+                if (x + rect.width + 8 > vw) x = vw - rect.width - 8;
+                if (y + rect.height + 8 > vh) y = vh - rect.height - 8;
 
                 tooltip.style.left = `${x}px`;
                 tooltip.style.top = `${y}px`;
@@ -125,31 +152,48 @@ const RecipeDigester: React.FC = () => {
                 const vw = window.innerWidth;
                 const vh = window.innerHeight;
 
-                if (x + rect.width + 8 > vw) {
-                    x = vw - rect.width - 8;
-                }
-                if (y + rect.height + 8 > vh) {
-                    y = vh - rect.height - 8;
-                }
+                if (x + rect.width + 8 > vw) x = vw - rect.width - 8;
+                if (y + rect.height + 8 > vh) y = vh - rect.height - 8;
 
                 tooltip.style.left = `${x}px`;
                 tooltip.style.top = `${y}px`;
             };
 
-            const hide = () => {
-                tooltip.classList.remove('visible');
-            };
+            const hide = () => tooltip.classList.remove('visible');
 
             element.addEventListener('mouseenter', show);
             element.addEventListener('mousemove', move);
             element.addEventListener('mouseleave', hide);
         }
 
+        // --- Image setter (handles fallback) ---
+        function setImgToItemName(img: HTMLImageElement, itemName: string | null) {
+            const sources = itemNameToImageSources(itemName);
+            if (!sources) {
+                img.style.display = 'none';
+                return;
+            }
+
+            img.style.display = '';
+            let triedFallback = false;
+
+            img.src = sources.primary;
+            img.onerror = () => {
+                if (!triedFallback && sources.fallback && sources.fallback !== sources.primary) {
+                    triedFallback = true;
+                    img.src = sources.fallback;
+                } else {
+                    img.style.display = 'none';
+                }
+            };
+        }
+
+        // --- Slot creation (single/static item) ---
         function createItemSlot(
             itemIdOrName: any,
             count: number,
             extraClasses?: string,
-        ): HTMLDivElement {
+        ): { slot: HTMLDivElement; img: HTMLImageElement | null } {
             const itemName =
                 typeof itemIdOrName === 'string' && !itemIdOrName.includes(':')
                     ? itemIdOrName
@@ -160,30 +204,11 @@ const RecipeDigester: React.FC = () => {
 
             if (!itemName) {
                 slot.classList.add('empty');
-                return slot;
+                return { slot, img: null };
             }
 
             const img = document.createElement('img');
             img.className = 'item-icon';
-
-            const sources = itemNameToImageSources(itemName);
-
-            if (sources) {
-                let triedFallback = false;
-
-                img.src = sources.primary;
-
-                img.onerror = () => {
-                    if (!triedFallback && sources.fallback && sources.fallback !== sources.primary) {
-                        triedFallback = true;
-                        img.src = sources.fallback;
-                    } else {
-                        img.style.display = 'none';
-                    }
-                };
-            } else {
-                img.style.display = 'none';
-            }
 
             const displayName = itemIdToDisplayName(itemIdOrName ?? itemName);
             img.alt = displayName;
@@ -191,6 +216,8 @@ const RecipeDigester: React.FC = () => {
 
             slot.dataset.tooltip = displayName;
             attachTooltipHandlers(slot, displayName);
+
+            setImgToItemName(img, itemName);
 
             slot.appendChild(img);
 
@@ -201,44 +228,24 @@ const RecipeDigester: React.FC = () => {
                 slot.appendChild(countEl);
             }
 
-            return slot;
+            return { slot, img };
         }
 
-
-        function createResultSlot(resultId: any, count: number): HTMLDivElement {
+        function createResultSlot(resultId: any, count: number, displayNameOverride?: string): { wrapper: HTMLDivElement; img: HTMLImageElement } {
             const itemName = idToItemName(resultId);
             const wrapper = document.createElement('div');
             wrapper.className = 'result-slot';
 
-            const displayName = itemIdToDisplayName(resultId);
+            const displayName = displayNameOverride ?? itemIdToDisplayName(resultId);
             wrapper.dataset.tooltip = displayName;
             attachTooltipHandlers(wrapper, displayName);
 
             const img = document.createElement('img');
             img.className = 'result-icon';
-
-            const sources = itemNameToImageSources(itemName);
-
-            if (sources) {
-                let triedFallback = false;
-
-                img.src = sources.primary;
-
-                img.onerror = () => {
-                    if (!triedFallback && sources.fallback && sources.fallback !== sources.primary) {
-                        triedFallback = true;
-                        img.src = sources.fallback;
-                    } else {
-                        img.style.display = 'none';
-                    }
-                };
-            } else {
-                img.style.display = 'none';
-            }
-
             img.alt = displayName;
             img.title = displayName;
 
+            setImgToItemName(img, itemName);
 
             const countEl = document.createElement('span');
             countEl.className = 'result-count';
@@ -246,17 +253,103 @@ const RecipeDigester: React.FC = () => {
 
             wrapper.appendChild(img);
             wrapper.appendChild(countEl);
-            return wrapper;
+
+            return { wrapper, img };
         }
 
-        function renderCraftingShaped(recipe: any, fileName: string): HTMLElement {
+        function getShapedGridItemNames(recipe: any): (string | null)[] {
+            const pattern = recipe.pattern || [];
+            const key = recipe.key || {};
+
+            const out: (string | null)[] = [];
+
+            for (let r = 0; r < 3; r++) {
+                const row = pattern[r] || '';
+                for (let c = 0; c < 3; c++) {
+                    const symbol = row[c] || ' ';
+                    if (symbol === ' ') {
+                        out.push(null);
+                        continue;
+                    }
+
+                    const mapped = key[symbol];
+                    let itemId: any = null;
+
+                    if (typeof mapped === 'string') itemId = mapped;
+                    else if (mapped && typeof mapped === 'object') {
+                        if (mapped.item) itemId = mapped.item;
+                        else if (mapped.id) itemId = mapped.id;
+                    }
+
+                    out.push(idToItemName(itemId));
+                }
+            }
+
+            return out;
+        }
+
+        // Cycles the entire card (grid + result) in sync (one interval per card)
+        function startCardCycler(args: {
+            variants: Variant[];
+            gridImgs: Array<HTMLImageElement | null>; // length 9 (nulls for empty slots)
+            gridSlots: Array<HTMLDivElement>;         // length 9
+            resultImg: HTMLImageElement;
+            resultWrapper: HTMLDivElement;
+            displayNameOverride?: string;
+        }) {
+            const { variants, gridImgs, gridSlots, resultImg, resultWrapper, displayNameOverride } = args;
+
+            if (!variants || variants.length <= 1) return;
+
+            let idx = 0;
+
+            const applyVariant = (v: Variant) => {
+                // result
+                setImgToItemName(resultImg, v.resultName);
+                const resultDN = displayNameOverride ?? itemIdToDisplayName(v.resultName);
+                resultWrapper.dataset.tooltip = resultDN;
+                resultImg.alt = resultDN;
+                resultImg.title = resultDN;
+
+                // shaped grid (if available)
+                if (v.shapedGrid && v.shapedGrid.length === 9) {
+                    for (let i = 0; i < 9; i++) {
+                        const nm = v.shapedGrid[i];
+                        const img = gridImgs[i];
+                        const slot = gridSlots[i];
+
+                        if (!img) continue; // empty slot
+
+                        setImgToItemName(img, nm);
+
+                        const dn = nm ? itemIdToDisplayName(nm) : 'Unknown Item';
+                        slot.dataset.tooltip = dn;
+                        img.alt = dn;
+                        img.title = dn;
+                    }
+                }
+            };
+
+            // init
+            applyVariant(variants[idx]);
+
+            const id = window.setInterval(() => {
+                idx = (idx + 1) % variants.length;
+                applyVariant(variants[idx]);
+            }, 1000);
+
+            intervalIds.push(id);
+        }
+
+        function renderCraftingShaped(recipe: any, fileName: string, opts?: RenderOpts): HTMLElement {
             const card = document.createElement('article');
             card.className = 'recipe-card';
 
             const result = recipe.result || {};
             const resultId = result.id || result.item || result;
             const resultCount = result.count || 1;
-            const displayName = itemIdToDisplayName(resultId);
+
+            const displayName = opts?.displayNameOverride ?? itemIdToDisplayName(resultId);
 
             const header = document.createElement('div');
             header.className = 'recipe-card-header';
@@ -290,13 +383,19 @@ const RecipeDigester: React.FC = () => {
             const pattern = recipe.pattern || [];
             const key = recipe.key || {};
 
+            // We'll capture the 9 grid slots/imgs so we can update them in sync with the result
+            const gridSlots: HTMLDivElement[] = [];
+            const gridImgs: Array<HTMLImageElement | null> = [];
+
             for (let r = 0; r < 3; r++) {
                 const row = pattern[r] || '';
                 for (let c = 0; c < 3; c++) {
                     const symbol = row[c] || ' ';
                     if (symbol === ' ') {
-                        const emptySlot = createItemSlot(null, 0, 'empty');
-                        grid.appendChild(emptySlot);
+                        const { slot } = createItemSlot(null, 0, 'empty');
+                        grid.appendChild(slot);
+                        gridSlots.push(slot);
+                        gridImgs.push(null);
                     } else {
                         const mapped = key[symbol];
                         let itemId: any = null;
@@ -310,8 +409,10 @@ const RecipeDigester: React.FC = () => {
                             if (mapped.count) count = mapped.count;
                         }
 
-                        const slot = createItemSlot(itemId, count);
+                        const { slot, img } = createItemSlot(itemId, count);
                         grid.appendChild(slot);
+                        gridSlots.push(slot);
+                        gridImgs.push(img);
                     }
                 }
             }
@@ -320,11 +421,11 @@ const RecipeDigester: React.FC = () => {
             arrow.className = 'recipe-arrow';
             arrow.textContent = '➜';
 
-            const resultSlot = createResultSlot(resultId, resultCount);
+            const { wrapper: resultWrapper, img: resultImg } = createResultSlot(resultId, resultCount, displayName);
 
             layout.appendChild(grid);
             layout.appendChild(arrow);
-            layout.appendChild(resultSlot);
+            layout.appendChild(resultWrapper);
 
             card.appendChild(header);
             card.appendChild(layout);
@@ -335,21 +436,31 @@ const RecipeDigester: React.FC = () => {
                 category,
                 fileName,
                 typeLabel,
-            ]
-                .join(' ')
-                .toLowerCase();
+            ].join(' ').toLowerCase();
+
+            // If this card has variants, cycle the WHOLE card in sync (grid + result)
+            if (opts?.variants && opts.variants.length > 1) {
+                startCardCycler({
+                    variants: opts.variants,
+                    gridImgs,
+                    gridSlots,
+                    resultImg,
+                    resultWrapper,
+                    displayNameOverride: displayName,
+                });
+            }
 
             return card;
         }
 
-        function renderCraftingShapeless(recipe: any, fileName: string): HTMLElement {
+        function renderCraftingShapeless(recipe: any, fileName: string, opts?: RenderOpts): HTMLElement {
             const card = document.createElement('article');
             card.className = 'recipe-card';
 
             const result = recipe.result || {};
             const resultId = result.id || result.item || result;
             const resultCount = result.count || 1;
-            const displayName = itemIdToDisplayName(resultId);
+            const displayName = opts?.displayNameOverride ?? itemIdToDisplayName(resultId);
 
             const header = document.createElement('div');
             header.className = 'recipe-card-header';
@@ -416,9 +527,11 @@ const RecipeDigester: React.FC = () => {
                 for (let c = 0; c < 3; c++) {
                     const slotData = slotMap[r][c];
                     if (slotData && slotData.itemId) {
-                        grid.appendChild(createItemSlot(slotData.itemId, slotData.count));
+                        const { slot } = createItemSlot(slotData.itemId, slotData.count);
+                        grid.appendChild(slot);
                     } else {
-                        grid.appendChild(createItemSlot(null, 0, 'empty'));
+                        const { slot } = createItemSlot(null, 0, 'empty');
+                        grid.appendChild(slot);
                     }
                 }
             }
@@ -427,11 +540,11 @@ const RecipeDigester: React.FC = () => {
             arrow.className = 'recipe-arrow';
             arrow.textContent = '➜';
 
-            const resultSlot = createResultSlot(resultId, resultCount);
+            const { wrapper: resultWrapper } = createResultSlot(resultId, resultCount, displayName);
 
             layout.appendChild(grid);
             layout.appendChild(arrow);
-            layout.appendChild(resultSlot);
+            layout.appendChild(resultWrapper);
 
             card.appendChild(header);
             card.appendChild(layout);
@@ -442,9 +555,7 @@ const RecipeDigester: React.FC = () => {
                 category,
                 fileName,
                 typeLabel,
-            ]
-                .join(' ')
-                .toLowerCase();
+            ].join(' ').toLowerCase();
 
             return card;
         }
@@ -458,7 +569,6 @@ const RecipeDigester: React.FC = () => {
             const resultCount = result.count || 1;
             const displayName = itemIdToDisplayName(resultId);
 
-            // --- Header ---
             const header = document.createElement('div');
             header.className = 'recipe-card-header';
 
@@ -481,7 +591,6 @@ const RecipeDigester: React.FC = () => {
 
             if (exp) chips.push(Object.assign(document.createElement('span'), { textContent: exp }));
             if (timeSeconds) chips.push(Object.assign(document.createElement('span'), { textContent: timeSeconds }));
-
             chips.forEach(ch => meta.appendChild(ch));
 
             leftHeader.appendChild(title);
@@ -494,14 +603,12 @@ const RecipeDigester: React.FC = () => {
             header.appendChild(leftHeader);
             header.appendChild(typeTag);
 
-            // --- Layout ---
             const layout = document.createElement('div');
             layout.className = 'recipe-layout';
 
             const furnace = document.createElement('div');
             furnace.className = 'furnace-layout';
 
-            // --- Ingredient Slot ---
             let ingredient = recipe.ingredient || recipe.ingredients;
             let ingredientItem: any = null;
 
@@ -511,27 +618,22 @@ const RecipeDigester: React.FC = () => {
             } else if (typeof ingredient === 'string') ingredientItem = ingredient;
             else if (ingredient && typeof ingredient === 'object') ingredientItem = ingredient.item || ingredient.id;
 
-            const ingredientSlot = createItemSlot(ingredientItem, 1, 'round');
+            const { slot: ingredientSlot } = createItemSlot(ingredientItem, 1, 'round');
+            const { wrapper: resultWrapper } = createResultSlot(resultId, resultCount);
 
-            // --- Result Slot ---
-            const resultSlot = createResultSlot(resultId, resultCount);
-
-            // --- Arrow ---
             const arrow = document.createElement('div');
             arrow.className = 'recipe-arrow';
             arrow.textContent = '➜';
 
-            // --- Append everything in one line ---
             furnace.appendChild(ingredientSlot);
             furnace.appendChild(arrow);
-            furnace.appendChild(resultSlot);
+            furnace.appendChild(resultWrapper);
 
             layout.appendChild(furnace);
 
             card.appendChild(header);
             card.appendChild(layout);
 
-            // --- Search data ---
             const typeLabel = type === 'blasting' ? 'blast furnace' : 'furnace';
             (card as any).dataset.searchText = [
                 displayName,
@@ -545,13 +647,13 @@ const RecipeDigester: React.FC = () => {
             return card;
         }
 
-        function renderRecipe(recipe: any, fileName: string): HTMLElement {
+        function renderRecipe(recipe: any, fileName: string, opts?: RenderOpts): HTMLElement {
             const type = recipe.type || '';
             if (type.startsWith('minecraft:crafting_shaped')) {
-                return renderCraftingShaped(recipe, fileName);
+                return renderCraftingShaped(recipe, fileName, opts);
             }
             if (type.startsWith('minecraft:crafting_shapeless')) {
-                return renderCraftingShapeless(recipe, fileName);
+                return renderCraftingShapeless(recipe, fileName, opts);
             }
             if (type === 'minecraft:smelting' || type === 'minecraft:smoker') {
                 return renderFurnaceLike(recipe, fileName, 'furnace');
@@ -613,7 +715,15 @@ const RecipeDigester: React.FC = () => {
                     return;
                 }
 
-                const seenResults = new Set<string>(); // <--- track duplicates by result item
+                type Group = {
+                    key: string;
+                    displayName: string;
+                    variants: Variant[];     // store ALL variants (recipes + resultName + shapedGrid if shaped)
+                    fileNameNoExt: string;   // first filename (for search text)
+                };
+
+                const groups = new Map<string, Group>();
+                const orderedKeys: string[] = [];
 
                 for (const file of files as string[]) {
                     try {
@@ -626,20 +736,55 @@ const RecipeDigester: React.FC = () => {
                         const recipe = await res.json();
                         const fileNameNoExt = file.replace(/\.json$/i, '');
 
-                        // Determine the result item name
                         const resultId = recipe.result?.id || recipe.result?.item || recipe.result;
                         const resultName = idToItemName(resultId);
                         if (!resultName) continue;
 
-                        // Skip if we've already seen this result
-                        if (seenResults.has(resultName)) continue;
-                        seenResults.add(resultName);
+                        const groupKey = normalizeCyclingResultKey(resultName);
+                        const displayName = normalizeCyclingDisplayName(groupKey);
 
-                        const card = renderRecipe(recipe, fileNameNoExt);
-                        container.appendChild(card);
+                        const type = recipe.type || '';
+                        const shapedGrid = type.startsWith('minecraft:crafting_shaped')
+                            ? getShapedGridItemNames(recipe)
+                            : undefined;
+
+                        const variant: Variant = { recipe, resultName, shapedGrid };
+
+                        if (!groups.has(groupKey)) {
+                            groups.set(groupKey, {
+                                key: groupKey,
+                                displayName,
+                                variants: [variant],
+                                fileNameNoExt,
+                            });
+                            orderedKeys.push(groupKey);
+                        } else {
+                            const g = groups.get(groupKey)!;
+
+                            // Dedup by resultName (so duplicates in index don't create extra ticks)
+                            if (!g.variants.some(v => v.resultName === resultName)) {
+                                g.variants.push(variant);
+                            }
+                        }
                     } catch (e) {
                         console.error('Error parsing recipe file', file, e);
                     }
+                }
+
+                for (const key of orderedKeys) {
+                    const g = groups.get(key);
+                    if (!g) continue;
+
+                    // Use the first variant's recipe for structure (pattern/key/etc),
+                    // then cycle through all variants to update both grid+result.
+                    const base = g.variants[0];
+
+                    const card = renderRecipe(base.recipe, g.fileNameNoExt, {
+                        displayNameOverride: g.displayName,
+                        variants: g.variants.length > 1 ? g.variants : undefined,
+                    });
+
+                    container.appendChild(card);
                 }
 
                 if (!container.children.length) {
@@ -655,6 +800,10 @@ const RecipeDigester: React.FC = () => {
         }
 
         loadRecipes();
+
+        return () => {
+            intervalIds.forEach((id) => window.clearInterval(id));
+        };
     }, [recipesBasePath]);
 
     return (
