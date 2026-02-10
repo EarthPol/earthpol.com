@@ -86,12 +86,14 @@ body,
   text-transform: uppercase;
 }
 
-/* Center logo absolutely */
-.navbar__logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+/* Center logo absolutely on desktop only */
+@media (min-width: 997px) {
+  .navbar__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
 }
 
 /* Apply pop-out animation ONLY to the image inside */
@@ -122,11 +124,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Ensure navbar is a flex container */
-.navbar__items {
-  display: flex;
-  align-items: center; /* Vertically center everything */
-  justify-content: space-evenly; /* Distribute items evenly across the navbar */
-  width: 100%; /* Ensure items take up the full width of the navbar */
+@media (min-width: 997px) {
+  .navbar__items {
+    display: flex;
+    align-items: center; /* Vertically center everything */
+    justify-content: space-evenly; /* Distribute items evenly across the navbar */
+    width: 100%; /* Ensure items take up the full width of the navbar */
+  }
 }
 
 /* Adjust logo so it doesn't push other items */
@@ -142,20 +146,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Optional: Add specific margins to the buttons for spacing */
-.navbar__items--left,
-.navbar__items--right {
-  display: flex;
-  gap: 5px; /* Further reduce gap between navbar items */
+@media (min-width: 997px) {
+  .navbar__items--left,
+  .navbar__items--right {
+    display: flex;
+    gap: 5px; /* Further reduce gap between navbar items */
+  }
 }
 
 /* Responsive design adjustments */
 @media (max-width: 996px) {
-  .navbar__logo {
-    margin: 0 auto;
+  .navbar__items--left,
+  .theme-layout-navbar-left {
+    flex: 1;
+    justify-content: flex-start;
   }
+
+  .navbar__items--left > :not(.navbar__toggle):not(.navbar__brand),
+  .theme-layout-navbar-left > :not(.navbar__toggle):not(.navbar__brand) {
+    display: none !important;
+  }
+
+  .navbar__items--left .navbar__item:not(.navbar__toggle):not(.navbar__brand),
+  .navbar__items--left .navbar__link,
+  .navbar__items--left .dropdown,
+  .theme-layout-navbar-left .navbar__item:not(.navbar__toggle):not(.navbar__brand),
+  .theme-layout-navbar-left .navbar__link,
+  .theme-layout-navbar-left .dropdown {
+    display: none !important;
+  }
+
+  .navbar__items--right {
+    display: none;
+  }
+
+  .navbar__brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .navbar__logo {
+    position: static;
+    transform: none;
+    margin: 0;
+  }
+
   .navbar__items {
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
   }
 }
 
