@@ -156,11 +156,32 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive design adjustments */
 @media (max-width: 996px) {
+  .navbar__items--left {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .navbar__items--left > :not(.navbar__toggle):not(.navbar__brand) {
+    display: none;
+  }
+
+  .navbar__items--right {
+    display: none;
+  }
+
+  .navbar__brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
   .navbar__logo {
     position: static;
     transform: none;
     margin: 0;
   }
+
   .navbar__items {
     flex-direction: row;
     justify-content: flex-start;
