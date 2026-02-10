@@ -162,7 +162,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .navbar__items--left > :not(.navbar__toggle):not(.navbar__brand) {
-    display: none;
+    display: none !important;
+  }
+
+  .navbar__items--left .navbar__item:not(.navbar__toggle):not(.navbar__brand),
+  .navbar__items--left .navbar__link,
+  .navbar__items--left .dropdown {
+    display: none !important;
   }
 
   .navbar__items--right {
