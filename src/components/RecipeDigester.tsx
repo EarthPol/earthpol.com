@@ -5,7 +5,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 type Variant = {
     recipe: any;
     resultName: string;              // idToItemName(resultId)
-    shapedGrid?: (string | null)[];  // length 9 if shaped
+    craftingGrid?: (string | null)[]; // length 9 for crafting recipes
 };
 
 type RenderOpts = {
@@ -288,6 +288,34 @@ const RecipeDigester: React.FC = () => {
             return out;
         }
 
+        function getShapelessGridItemNames(recipe: any): (string | null)[] {
+            const ingredients = recipe.ingredients || [];
+            const slotOrder: [number, number][] = [
+                [2, 0], [2, 1], [2, 2],
+                [1, 0], [1, 1], [1, 2],
+                [0, 0], [0, 1], [0, 2],
+            ];
+
+            const out: (string | null)[] = Array.from({ length: 9 }, () => null);
+
+            for (let i = 0; i < ingredients.length && i < slotOrder.length; i++) {
+                const ing = ingredients[i];
+                let itemId: any = null;
+
+                if (typeof ing === 'string') {
+                    itemId = ing;
+                } else if (ing && typeof ing === 'object') {
+                    if (ing.item) itemId = ing.item;
+                    else if (ing.id) itemId = ing.id;
+                }
+
+                const [r, c] = slotOrder[i];
+                out[(r * 3) + c] = idToItemName(itemId);
+            }
+
+            return out;
+        }
+
         // Cycles the entire card (grid + result) in sync (one interval per card)
         function startCardCycler(args: {
             variants: Variant[];
@@ -311,10 +339,10 @@ const RecipeDigester: React.FC = () => {
                 resultImg.alt = resultDN;
                 resultImg.title = resultDN;
 
-                // shaped grid (if available)
-                if (v.shapedGrid && v.shapedGrid.length === 9) {
+                // crafting grid (if available)
+                if (v.craftingGrid && v.craftingGrid.length === 9) {
                     for (let i = 0; i < 9; i++) {
-                        const nm = v.shapedGrid[i];
+                        const nm = v.craftingGrid[i];
                         const img = gridImgs[i];
                         const slot = gridSlots[i];
 
@@ -523,15 +551,22 @@ const RecipeDigester: React.FC = () => {
                 slotMap[r][c] = { itemId, count };
             }
 
+            const gridSlots: HTMLDivElement[] = [];
+            const gridImgs: Array<HTMLImageElement | null> = [];
+
             for (let r = 0; r < 3; r++) {
                 for (let c = 0; c < 3; c++) {
                     const slotData = slotMap[r][c];
                     if (slotData && slotData.itemId) {
-                        const { slot } = createItemSlot(slotData.itemId, slotData.count);
+                        const { slot, img } = createItemSlot(slotData.itemId, slotData.count);
                         grid.appendChild(slot);
+                        gridSlots.push(slot);
+                        gridImgs.push(img);
                     } else {
                         const { slot } = createItemSlot(null, 0, 'empty');
                         grid.appendChild(slot);
+                        gridSlots.push(slot);
+                        gridImgs.push(null);
                     }
                 }
             }
@@ -540,7 +575,7 @@ const RecipeDigester: React.FC = () => {
             arrow.className = 'recipe-arrow';
             arrow.textContent = '➜';
 
-            const { wrapper: resultWrapper } = createResultSlot(resultId, resultCount, displayName);
+            const { wrapper: resultWrapper, img: resultImg } = createResultSlot(resultId, resultCount, displayName);
 
             layout.appendChild(grid);
             layout.appendChild(arrow);
@@ -556,6 +591,17 @@ const RecipeDigester: React.FC = () => {
                 fileName,
                 typeLabel,
             ].join(' ').toLowerCase();
+
+            if (opts?.variants && opts.variants.length > 1) {
+                startCardCycler({
+                    variants: opts.variants,
+                    gridImgs,
+                    gridSlots,
+                    resultImg,
+                    resultWrapper,
+                    displayNameOverride: displayName,
+                });
+            }
 
             return card;
         }
@@ -744,11 +790,13 @@ const RecipeDigester: React.FC = () => {
                         const displayName = normalizeCyclingDisplayName(groupKey);
 
                         const type = recipe.type || '';
-                        const shapedGrid = type.startsWith('minecraft:crafting_shaped')
+                        const craftingGrid = type.startsWith('minecraft:crafting_shaped')
                             ? getShapedGridItemNames(recipe)
+                            : type.startsWith('minecraft:crafting_shapeless')
+                                ? getShapelessGridItemNames(recipe)
                             : undefined;
 
-                        const variant: Variant = { recipe, resultName, shapedGrid };
+                        const variant: Variant = { recipe, resultName, craftingGrid };
 
                         if (!groups.has(groupKey)) {
                             groups.set(groupKey, {
