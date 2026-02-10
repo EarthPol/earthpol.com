@@ -156,18 +156,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive design adjustments */
 @media (max-width: 996px) {
-  .navbar__items--left {
+  .navbar__items--left,
+  .theme-layout-navbar-left {
     flex: 1;
     justify-content: flex-start;
   }
 
-  .navbar__items--left > :not(.navbar__toggle):not(.navbar__brand) {
+  .navbar__items--left > :not(.navbar__toggle):not(.navbar__brand),
+  .theme-layout-navbar-left > :not(.navbar__toggle):not(.navbar__brand) {
     display: none !important;
   }
 
   .navbar__items--left .navbar__item:not(.navbar__toggle):not(.navbar__brand),
   .navbar__items--left .navbar__link,
-  .navbar__items--left .dropdown {
+  .navbar__items--left .dropdown,
+  .theme-layout-navbar-left .navbar__item:not(.navbar__toggle):not(.navbar__brand),
+  .theme-layout-navbar-left .navbar__link,
+  .theme-layout-navbar-left .dropdown {
     display: none !important;
   }
 
