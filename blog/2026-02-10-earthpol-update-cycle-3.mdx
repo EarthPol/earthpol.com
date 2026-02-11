@@ -1,0 +1,282 @@
+---
+slug: earthpol-update-cycle-3
+authors: [mrtytanic]
+title: Update Cycle 3
+tags: [Update, Announcement]
+---
+
+## Hello EarthPol!
+
+The Wilds and Wonders Update is here! We, the EarthPol Development Team, are excited to share **Update Cycle #3** with you, bringing a wide range of new features, improvements, and long-awaited fixes to the server.
+
+This cycle focuses specifically on rewarding exploration, adding **unique systems** that encourage interaction across the world, and resolving long-standing **bugs** that have affected player experience over time.
+
+Update Cycle #3 is built around a simple idea: EarthPol should feel alive, connected, and worth exploring. Whether it’s traveling to new nations, meeting new players, using improved travel systems, or engaging with community-driven mechanics, nearly every feature in this update is designed to make movement, interaction, and discovery a natural part of gameplay.
+
+For a quick overview of this update and its features, be sure to check out our accompanying YouTube video:
+
+<div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aZPUmUwrJrM?si=XjuVrAh3hTm20KC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+Below, we’ll break down everything coming to EarthPol in this update:
+
+---
+
+## New Features
+
+### NationPassports
+
+NationPassports introduces a brand new way to experience exploration on EarthPol. Using `/passport`, players can open a live travel log that records the history of every nation they have visited. This system rewards movement, tourism, and roleplay by giving players a tangible record of their journeys across the world.
+
+- A new “stamp” is added the first time you visit a nation.
+- Stamps occur when you **teleport into** or **physically enter** a nation’s borders.
+- Each stamp records the nation name and the date of your first visit.
+- The passport dynamically reflects sanctions or travel restrictions.
+- The passport is generated on demand and always reflects your current data.
+
+### Player Reputations
+
+The Player Reputation system allows the community itself to define who is respected, trusted, questionable, or infamous. Players can give positive or negative reputation to others in a controlled, limited way that encourages social interaction, rivalries, and alliances.
+
+- Give +1 (Fame) or -1 (Infamy) to other players.
+- Limited number of votes per day to prevent abuse.
+- Unlock titles such as **Trusted**, **Esteemed**, **Shady**, and **Infamous**.
+- Reputation is entirely community-driven.
+- Planned future additions include leaderboards and optional badges.
+
+### Preference Management
+
+A new centralized `/preference` system has been introduced that allows players to control how EarthPol behaves for them across multiple plugins. This creates a single place to manage personal settings that will continue to expand as more systems integrate with it.
+
+- Control chat mentions, pickup behavior, and other personal settings.
+- Used by multiple plugins across the server.
+- Will continue to expand as more features adopt the system.
+- One command to manage how EarthPol feels for you.
+
+### Channel Management
+
+Chat on EarthPol is now fully customizable. Players now have significantly more control over which channels they see, how they receive notifications, and how they interact with the server’s communication system.
+
+- Leave or join channels with `/channel leave` and `/channel join`.
+- Use `/channel list` for a clickable way to manage channels.
+- Disable mentions and notification sounds if desired.
+- Fine-tune exactly what chat you see and what you don’t.
+
+### Special Bounties
+
+Special Bounties add a new layer of prestige and danger to the bounty system. These high-value bounties reward hunters with something more than money — a trophy that proves the kill.
+
+- Killing the target drops the player’s head as a reward.
+- The kill must occur in the wilderness (not in a siege zone or arena).
+- Designed to make bounty hunting feel more meaningful and memorable.
+
+### TownyPorts 4.0 Overhaul
+
+TownyPorts has received a major overhaul focused on reliability, clarity, and immersion. Travel is smoother, ports are easier to manage, and many long-standing frustrations with the system have been resolved.
+
+- Players can now travel between ports while mounted on horses, donkeys, or mules.
+- New commands allow players to:
+    - Check if their town has a port.
+    - See exactly where the port is located.
+    - Properly remove or reset ports.
+    - Use clear, clickable help menus.
+- Players are now guided to their port location instead of having to guess.
+- Ports are now stored more reliably, preventing them from deleting themselves.
+- A more stable long-term storage system for town ports.
+
+### Custom Recipe Additions
+
+Many community-suggested recipes have been added to make crafting more intuitive, consistent, and accessible across EarthPol.
+
+- Easier banner crafting for all 16 colors
+- Sand from sandstone
+- Moss to dirt
+- Cobbled deepslate usable in all redstone recipes:
+    - Pistons
+    - Comparators
+    - Repeaters
+    - Observers
+    - Dispensers
+    - Droppers
+    - Lever
+    - Stone button
+- Copper and wood trapdoors via the stonecutter
+- Coal blocks craftable from charcoal
+- 1 glowstone block converts into 4 glowstone dust
+- Rooted dirt crafting recipe
+- Red sand concrete powder recipe
+- Leather obtained from rotten flesh and leather armor smelting
+- Coral, coral fans, and coral block crafting recipes
+- Improved dispenser recipe
+
+*All of these recipes are now featured on our newly updated [Custom Crafting Recipe Digester](http://localhost:3000/docs/economy-trade/custom-recipes/) on our custom recipes page!*
+
+### Additional Features
+
+This update also includes a variety of smaller features that add personality, polish, and convenience across the server.
+
+- **Unique Daily Player Counter**
+    - `/unique` shows how many unique players joined that day
+    - Resets every Towny day
+
+- **Parkour Timer in the Lobby**
+    - A timed parkour challenge with a leaderboard to compete against others
+
+- **Nation & Town Creation Sounds**
+    - A unique sound plays whenever a nation or town is created
+
+- **Death Message Customization**
+    - Death messages no longer spam the entire server
+    - Only relevant players see them
+    - No death messages inside towns or siege zones
+    - Emphasizes meaningful wilderness kills
+
+- **Automated CustomLore Purchases**
+    - Store purchases now automatically grant CustomLore uses in-game
+
+- **New Custom Discord Suggestions Bot**
+    - Replaces Carl-Bot with a cleaner, easier embedded suggestion system
+
+- **Custom 404 Website Page**
+    - Mistyped URLs redirect players to helpful pages like rules, recipes, and FAQ
+
+- **Nation Leader Badge**
+    - Nation leaders now display a Ⓚ badge next to their username
+
+- **Sanctions & Nation Protection Improvements**
+    - Sanctioned players cannot join the nation sanctioning them
+    - Sanctioned towns cannot join the nation sanctioning them
+    - Closes loopholes in the TradeWar system
+
+- **PickupLock Preference Option**
+    - Players can disable pickup lock for their own dropped items using preferences
+
+- **Formatting & List Output Cleanup**
+    - Cleaner, easier-to-read command outputs across multiple systems
+
+---
+
+## Bug Fixes
+
+- Resolved an issue where Markdown formatting would break Discord/Minecraft chat messages.
+- Corrected an issue that allowed non-members to bypass chat restrictions.
+- Fixed a problem where plundering would fail if the server restarted mid-process.
+- Prevented the reload command from accidentally attempting to teleport players.
+- Removed duplicate command registration that could cause conflicts.
+- Corrected improper TownBlock lookup behavior.
+- Fixed a zip error that could occur during server shutdown.
+
+### TownyPorts Bug Fixes
+
+- Resolved errors that occurred when townless players used port commands.
+- Corrected port permission logic to function as intended.
+- Fixed incorrect permission checks for setting port prices.
+- Addressed multiple TownyPorts behavior, completeness, and usability issues.
+
+---
+
+<div style={{ textAlign: 'center' }}>
+  **Follow us on Social Media!**
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<div
+  style={{
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '1rem',
+    marginTop: '1rem',
+    flexWrap: 'wrap',
+  }}
+>
+  <a
+    href="https://discord.gg/bURuFxYqkD"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#5865F2',
+      borderRadius: '6px',
+      width: '40px',
+      height: '40px',
+      boxShadow: '0 2px 6px rgba(88, 101, 242, 0.5)',
+      transition: 'transform 0.2s ease',
+    }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+    onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+  >
+    <i className="fab fa-discord" style={{ color: 'white', fontSize: '20px' }}></i>
+  </a>
+
+  <a
+    href="https://www.youtube.com/@EarthPol?sub_confirmation=1"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#FF0000',
+      borderRadius: '6px',
+      width: '40px',
+      height: '40px',
+      boxShadow: '0 2px 6px rgba(255, 0, 0, 0.5)',
+      transition: 'transform 0.2s ease',
+    }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+    onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+  >
+    <i className="fab fa-youtube" style={{ color: 'white', fontSize: '20px' }}></i>
+  </a>
+
+  <a
+    href="https://www.instagram.com/earthpolmc/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background:
+        'linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%)',
+      borderRadius: '6px',
+      width: '40px',
+      height: '40px',
+      boxShadow: '0 2px 6px rgba(253, 191, 73, 0.5)',
+      transition: 'transform 0.2s ease',
+    }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+    onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+  >
+    <i className="fab fa-instagram" style={{ color: 'white', fontSize: '20px' }}></i>
+  </a>
+
+  <a
+    href="https://www.tiktok.com/@play.earthpol.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background: 'linear-gradient(135deg, #69C9D0 0%, #EE1D52 100%)',
+      borderRadius: '6px',
+      width: '40px',
+      height: '40px',
+      boxShadow: '0 2px 6px rgba(238, 29, 82, 0.5)',
+      transition: 'transform 0.2s ease',
+    }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+    onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+  >
+    <i className="fab fa-tiktok" style={{ color: 'white', fontSize: '20px' }}></i>
+  </a>
+</div>
