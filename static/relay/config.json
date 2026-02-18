@@ -154,6 +154,16 @@
       "channel_id": "1463557715132682271",
       "display_name": "Plain Siberian",
       "avatar_url": "https://i.imgur.com/ZNmVbDR.png"
-    }
+    },
+	{
+      "channel_id": "1473573894538395749",
+      "display_name": "Vox Americae",
+      "avatar_url": "https://i.imgur.com/oE85eSy.jpeg"
+    },
+	{
+      "channel_id": "1473575691537875082",
+      "display_name": "London Times",
+      "avatar_url": "https://i.imgur.com/osFQkAk.png"
+	}
     ]
 }
