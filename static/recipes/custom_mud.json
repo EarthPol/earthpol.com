@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#W#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:dirt",
+    "W": "minecraft:water_bucket"
+  },
+  "result": {
+    "id": "minecraft:mud",
+    "count": 8
+  }
+}
