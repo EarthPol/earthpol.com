@@ -60,13 +60,31 @@ Below is a short starter guide video for new EarthPol players:
       <div>
         <h3 style={{ textAlign: 'center' }}>Starter Kit</h3>
         <p style={{ textAlign: 'center' }}>Receive essential survival items when you join the server.</p>
-        <ul>
-          <li>Stone Pickaxe</li>
-          <li>Stone Axe</li>
-          <li>16 Bread</li>
-          <li>Shield + Leather Armor</li>
-          <li>Campfire</li>
-        </ul>
+          <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            {[
+              { id: 'stone_pickaxe', label: 'Stone Pickaxe' },
+              { id: 'stone_axe', label: 'Stone Axe' },
+              { id: 'bread', label: '16 Bread', count: 16 },
+              { id: 'shield', label: 'Shield + Leather Armor' },
+              { id: 'campfire', label: 'Campfire' },
+            ].map((item) => {
+              const imgSrcPrimary = `https://api.earthpol.com/textures/item/${item.id}.png`;
+              const imgSrcFallback = `https://minecraft-api.vercel.app/images/items/${item.id}.png`;
+          
+              return (
+                <li key={item.id} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <img
+                    src={imgSrcPrimary}
+                    onError={(e) => (e.currentTarget.src = imgSrcFallback)}
+                    alt={item.label}
+                    title={item.label}
+                    style={{ width: '24px', height: '24px' }}
+                  />
+                  <span>{item.label}</span>
+                </li>
+              );
+          })}
+          </ul>
         <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '15px' }}>
           Like EarthPol on NameMC to receive extra rewards!
         </p>
