@@ -1,6 +1,10 @@
 ---
 title: EarthPol Staff
 ---
+<!-- last updated tag -->
+<span style={{ fontSize: '0.7rem', opacity: 0.7 }}>
+*Last updated by [MrTytanic](https://github.com/MrTytanic) on 22 Feb 2026*
+</span>
 
 <style>
 {String.raw`
@@ -212,6 +216,13 @@ title: EarthPol Staff
       <img class="staff-bust" src="https://vzge.me/bust/8238a4d3-b243-4b3d-9942-5368ea9d3961?size=400" alt="Nokss__" />
     </div>
     <div class="staff-name">Nokss__</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/b71b6598-1139-4c32-840c-28f06c85fb51?size=400" alt="jessiesgirl" />
+    </div>
+    <div class="staff-name">jessiesgirl</div>
   </div>
 </div>
 
