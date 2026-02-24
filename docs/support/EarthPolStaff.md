@@ -1,217 +1,286 @@
 ---
 title: EarthPol Staff
 ---
+<!-- last updated tag -->
+<span style={{ fontSize: '0.7rem', opacity: 0.7 }}>
+*Last updated by [MrTytanic](https://github.com/MrTytanic) on 22 Feb 2026*
+</span>
 
-## Our Team
+<style>
+{String.raw`
+.staff-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center; /* centers incomplete rows */
+}
 
-Our staff team is dedicated to fostering a safe environment, growing the server, and creating engaging content to attract new players. They organize events, work closely with the community, and have a deep love for EarthPol and its players.
+.staff-card {
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.15s, box-shadow 0.15s;
 
-### Owner and Developers
+  /* flexible width for responsive grid */
+  flex: 1 1 calc(20% - 1rem); /* default 5 per row minus gap */
+  max-width: calc(20% - 1rem);
+}
 
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+.staff-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
 
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
+/* Responsive widths for different screen sizes */
+@media (max-width: 1200px){ 
+  .staff-card { flex: 1 1 calc(25% - 1rem); max-width: calc(25% - 1rem); } 
+}
+@media (max-width: 900px){ 
+  .staff-card { flex: 1 1 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); } 
+}
+@media (max-width: 600px){ 
+  .staff-card { flex: 1 1 calc(50% - 1rem); max-width: calc(50% - 1rem); } 
+}
+@media (max-width: 400px){ 
+  .staff-card { flex: 1 1 100%; max-width: 100%; } 
+}
 
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/MrTytanic/80" /><br/>
-  <strong><a href="https://wiki.earthpol.com/MrTytanic">MrTytanic</a></strong><br/>
-  <em>Owner</em><br/>
-  <a href="https://github.com/mrtytanic"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" style={{ marginRight: '8px' }} /></a>
-  <a href="https://www.youtube.com/@mrtytanic7587"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="16" height="16" /></a>
+.staff-bust-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.staff-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.staff-bust {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.staff-name {
+  font-weight: 700;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.group-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.75rem;
+  text-align: center;
+}
+`}
+</style>
+
+<!-- Developers -->
+<div class="group-title">Developers</div>
+<div class="staff-grid">
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/d904bb76-412d-4f6a-af9f-13853b5fc614?size=400" alt="MrTytanic" />
+    </div>
+    <div class="staff-name">MrTytanic</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/9e47a89a-c251-4df6-9da2-792f2e3f74d0?size=400" alt="Bustun" />
+    </div>
+    <div class="staff-name">Bustun</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/d550441b-5fcf-448c-a756-5fa391b89a46?size=400" alt="0xBit" />
+    </div>
+    <div class="staff-name">0xBit</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/67dbe22c-f9f8-4f27-a372-3ec9cf7c8ea8?size=400" alt="Kauntar" />
+    </div>
+    <div class="staff-name">Kauntar</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/9a2657ea-e15c-4469-8886-6c101151eff0?size=400" alt="jhjhjh098k" />
+    </div>
+    <div class="staff-name">jhjhjh098k</div>
+  </div>
 </div>
 
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Bustun/80" /><br/>
-  <strong><a href="#">Bustun</a></strong><br/>
-  <em>Lead Developer</em><br/>
-  <a href="https://github.com/bustun01"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
+<!-- Administrators -->
+<div class="group-title">Administrators</div>
+<div class="staff-grid">
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/dfc3c1e5-bd54-4902-85f6-b735a549b7e1?size=400" alt="AkselV" />
+    </div>
+    <div class="staff-name">AkselV</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/59af90c2-9631-4df5-9ac2-f9ea2691a746?size=400" alt="Ellied64" />
+    </div>
+    <div class="staff-name">Ellied64</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/f74fd6f2-2c0d-4965-a1a6-235c9a109777?size=400" alt="GrayIsBalls" />
+    </div>
+    <div class="staff-name">GrayIsBalls</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/514192d9-79da-4ae7-b762-fcdc94f14ec8?size=400" alt="Synistor" />
+    </div>
+    <div class="staff-name">Synistor</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/1e453074-8de5-4194-8d82-70574aad18cf?size=400" alt="Zamings" />
+    </div>
+    <div class="staff-name">Zamings</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/099af2f1-9ed3-4343-b701-7538739c343c?size=400" alt="xTheWardenx" />
+    </div>
+    <div class="staff-name">xTheWardenx</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/a07bcf70-01e2-4a21-807f-a7e278e55479?size=400" alt="Appqle" />
+    </div>
+    <div class="staff-name">Appqle</div>
+  </div>
 </div>
 
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/0xBit/80" /><br/>
-  <strong><a href="#">0xBit</a></strong><br/>
-  <em>Developer</em><br/>
-  <a href="https://github.com/goodrichdev"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
+<!-- Moderators -->
+<div class="group-title">Moderators</div>
+<div class="staff-grid">
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/341b028f-07d8-4dcb-9f17-711d38f713f5?size=400" alt="XLNuggets" />
+    </div>
+    <div class="staff-name">XLNuggets</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/f71d3494-fa39-4f15-a5bd-cd534ca941d5?size=400" alt="XPurple_DiamondX" />
+    </div>
+    <div class="staff-name">XPurple_DiamondX</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/f48d75f3-0d7b-4851-8006-f7008521fb93?size=400" alt="Senpaii_soupp" />
+    </div>
+    <div class="staff-name">Senpaii_soupp</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/8238a4d3-b243-4b3d-9942-5368ea9d3961?size=400" alt="Nokss__" />
+    </div>
+    <div class="staff-name">Nokss__</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/b71b6598-1139-4c32-840c-28f06c85fb51?size=400" alt="jessiesgirl" />
+    </div>
+    <div class="staff-name">jessiesgirl</div>
+  </div>
 </div>
 
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Kauntar/80" /><br/>
-  <strong><a href="https://wiki.earthpol.com/Kauntar">Kauntar</a></strong><br/>
-  <em>Developer</em><br/>
-  <a href="https://github.com/kauntar"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
+<!-- Helpers -->
+<div class="group-title">Helpers</div>
+<div class="staff-grid">
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/3b4fa892-7f4c-423a-92b5-0f30d1fc34f8?size=400" alt="ImSigmaBoy" />
+    </div>
+    <div class="staff-name">ImSigmaBoy</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/243fa96a-81ee-40d9-baa9-c4a65a524059?size=400" alt="aniiwoww" />
+    </div>
+    <div class="staff-name">aniiwoww</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/8a37f95d-472e-45c2-8f06-bb0e59ef9bc7?size=400" alt="Bruno0929" />
+    </div>
+    <div class="staff-name">Bruno0929</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/8bfc9600-be16-44f2-8f70-b9c8f28d2b6b?size=400" alt="RealDanTM" />
+    </div>
+    <div class="staff-name">RealDanTM</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/CharlesonCh?size=400" alt="CharlesonCh" />
+    </div>
+    <div class="staff-name">CharlesonCh</div>
+  </div>
 </div>
 
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/jhjhjh098k/80" /><br/>
-  <strong><a href="#">jhjhjh098k</a></strong><br/>
-  <em>Developer</em><br/>
-  <a href="https://github.com/jhjhjh098k"><img src="/img/Github-mark-white.png" alt="GitHub" width="16" height="16" /> </a>
-</div>
-
-</div>
-
-</div>
-
-### Administrators
-
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/AkselV/80" /><br/>
-  <strong><a href="#">AkselV</a></strong><br/>
-  <em>Administrator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Appqle/80" /><br/>
-  <strong><a href="#">Appqle</a></strong><br/>
-  <em>Administrator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/ellied64/80" /><br/>
-  <strong><a href="#">Ellied64</a></strong><br/>
-  <em>Administrator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/GrayIsBalls/80" /><br/>
-  <strong><a href="#">GrayIsBalls</a></strong><br/>
-  <em>Administrator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Synistor/80" /><br/>
-  <strong><a href="#">Synistor</a></strong><br/>
-  <em>Administrator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Zamings/80" /><br/>
-  <strong><a href="#">Zamings</a></strong><br/>
-  <em>Administrator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/xTheWardenx/80" /><br/>
-  <strong><a href="#">xTheWardenx</a></strong><br/>
-  <em>Administrator</em>
-</div>
-
-
-</div>
-
-### Moderators
-
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/XLNuggets/80" /><br/>
-  <strong><a href="#">XLNuggets</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/XPurple_DiamondX/80" /><br/>
-  <strong><a href="#">XPurple_DiamondX</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Senpaii_soupp/80" /><br/>
-  <strong><a href="#">Senpaii_soupp</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Nokss__/80" /><br/>
-  <strong><a href="#">Nokss__</a></strong><br/>
-  <em>Moderator</em>
-</div>
-
-
-</div>
-
-### Helpers
-
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/ImSigmaBoy/80" /><br/>
-  <strong><a href="#">ImSigmaBoy</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/T3mp0st/80" /><br/>
-  <strong><a href="#">T3mp0st</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/jessiesgirl/80" /><br/>
-  <strong><a href="#">jessiesgirl</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/aniiwoww/80" /><br/>
-  <strong><a href="#">aniiwoww</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Bruno0929/80" /><br/>
-  <strong><a href="#">Bruno0929</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/RealDanTM/80" /><br/>
-  <strong><a href="#">RealDanTM</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/CharlesonCh/80" /><br/>
-  <strong><a href="#">CharlesonCh</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-</div>
-
-### Community Team
-
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/MattIsOff/80" /><br/>
-  <strong><a href="#">MattIsOff</a></strong><br/>
-  <em>Team Leader</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/the0warrior/80" /><br/>
-  <strong><a href="#">The0warrior</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-<div align="center" style={{ width: '150px' }}>
-  <img src="https://minotar.net/avatar/Flnb/80" /><br/>
-  <strong><a href="#">Flnb</a></strong><br/>
-  <em>Helper</em>
-</div>
-
-</div>
-
----
-
-## We want YOU!
-
-We are always seeking dedicated and motivated individuals to join our staff team. New players are welcome, and we encourage anyone with a passion for community building and server development to get involved. To be considered, simply join our Discord server and remain active within the community. When the time comes, we will announce the next round of staff applications there. We look forward to welcoming new members who are eager to contribute to the continued success of EarthPol.
-
-<div style={{ textAlign: "center", margin: "20px 0" }}>
-  <a href="https://discord.gg/bURuFxYqkD" target="_blank" rel="noopener noreferrer" style={{ fontSize: "1.5em", fontWeight: "bold", textDecoration: "none", color: "#5865F2" }}>
-    Join The EarthPol Discord
-  </a>
+<!-- Community Team -->
+<div class="group-title">Community Team</div>
+<div class="staff-grid">
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/f3739447-1999-449f-8e9d-cf0a75f581f6?size=400" alt="MattIsOff" />
+    </div>
+    <div class="staff-name">MattIsOff</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" />
+      <img class="staff-bust" src="https://vzge.me/bust/333c54d7-7fa1-408a-8562-dce3b3358753?size=400" alt="Flnb" />
+    </div>
+    <div class="staff-name">Flnb</div>
+  </div>
 </div>
