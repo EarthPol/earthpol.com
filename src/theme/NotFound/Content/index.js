@@ -1,13 +1,14 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import Head from '@docusaurus/Head';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const POPULAR_GUIDES = [
-  { title: 'Server Rules', to: '/docs/support/ServerRules/' },
-  { title: 'Custom Recipes', to: '/docs/economy-trade/custom-recipes/' },
-  { title: 'McMMO Guide', to: '/docs/McmmoOverview/' },
-  { title: 'SiegeWar Guide', to: '/docs/war-diplomacy/SiegeWar/' },
+  { title: 'Server Rules', to: '/docs/support/ServerRules' },
+  { title: 'Custom Recipes', to: '/docs/economy-trade/custom-recipes' },
+  { title: 'McMMO Guide', to: '/docs/McmmoOverview' },
+  { title: 'SiegeWar Guide', to: '/docs/war-diplomacy/SiegeWar' },
   { title: 'TradeWar Guide', to: '/docs/war-diplomacy/TradeWar' },
   { title: 'Starter Guide', to: '/docs/getting-started/StarterGuide' },
 ];
@@ -15,6 +16,9 @@ const POPULAR_GUIDES = [
 export default function NotFoundContent() {
   return (
     <main className={styles.wrapper}>
+      <Head>
+        <meta name="robots" content="noindex,follow" />
+      </Head>
       <div className={styles.card}>
         <p className={styles.errorCode}>Error 404 · Page Not Found</p>
         <Heading as="h1" className={styles.title}>

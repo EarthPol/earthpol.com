@@ -1,5 +1,6 @@
 ---
 title: Map
+description: "Guide to Map on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 6
 ---
 

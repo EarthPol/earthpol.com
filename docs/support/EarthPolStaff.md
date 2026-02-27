@@ -1,5 +1,6 @@
 ---
 title: EarthPol Staff
+description: "Guide to EarthPol Staff on EarthPol, including key mechanics, commands, and tips."
 ---
 <!-- last updated tag -->
 <span style={{ fontSize: '0.7rem', opacity: 0.7 }}>

@@ -7,7 +7,7 @@ import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     title: 'QuickShop',
-    link: '/docs/Economy & Trade/QuickShopOverView',
+    link: '/docs/economy-trade/QuickShopOverView',
     Svg: () => <img src="/img/chest.webp" alt="Chest" style={{ height: 100 }} />,
     description: (
       <>
@@ -17,7 +17,7 @@ const FeatureList = [
   },
   {
     title: 'Towny',
-    link: '/docs/Towny/TownyOverview',
+    link: '/docs/towny/TownyOverview',
     Svg: () => <img src="/img/compassitem.webp" alt="Map" style={{ height: 100 }} />,
     description: (
       <>
@@ -37,7 +37,7 @@ const FeatureList = [
   },
   {
     title: 'Custom Plugins',
-    link: 'docs/War & Diplomacy/TradeWar',
+    link: '/docs/war-diplomacy/TradeWar',
     Svg: () => <img src="/img/goldingotitem.webp" alt="Gold Ingot" style={{ height: 100 }} />,
     description: (
       <>
@@ -144,9 +144,15 @@ function Testimonials() {
 
 // ✅ Existing Feature & Screenshot components
 function Feature({ Svg, title, description, link }) {
+  const isExternalLink = /^https?:\/\//.test(link);
+
   return (
     <div className={clsx('col col--3', 'feature-item')}>
-      <a href={link} style={{ textDecoration: 'none', color: 'inherit' }}>
+      <Link
+        to={link}
+        style={{ textDecoration: 'none', color: 'inherit' }}
+        {...(isExternalLink ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      >
         <div className="text--center">
           <Svg className={styles.featureSvg} role="img" />
         </div>
@@ -154,7 +160,7 @@ function Feature({ Svg, title, description, link }) {
           <Heading as="h2">{title}</Heading>
           <p>{description}</p>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

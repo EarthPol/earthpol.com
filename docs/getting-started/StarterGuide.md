@@ -1,5 +1,6 @@
 ---
 title: Starter Guide
+description: "Guide to Starter Guide on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 3
 ---
 

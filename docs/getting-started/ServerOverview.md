@@ -1,5 +1,6 @@
 ---
 title: Server Overview
+description: "Guide to Server Overview on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 1
 ---
 

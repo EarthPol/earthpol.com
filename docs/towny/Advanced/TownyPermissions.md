@@ -1,5 +1,6 @@
 ---
 title: Ranks & Permissions
+description: "Guide to Ranks & Permissions on EarthPol, including key mechanics, commands, and tips."
 ---
 
 # Towny Ranks and Permissions

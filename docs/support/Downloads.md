@@ -1,5 +1,6 @@
 ---
 title: Downloads
+description: "Guide to Downloads on EarthPol, including key mechanics, commands, and tips."
 ---
 
 # 🌍 Archived EarthPol Maps

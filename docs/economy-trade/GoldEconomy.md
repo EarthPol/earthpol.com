@@ -1,5 +1,6 @@
 ---
 title: Economy
+description: "Guide to Economy on EarthPol, including key mechanics, commands, and tips."
 ---
 
 # Economy

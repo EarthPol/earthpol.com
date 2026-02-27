@@ -1,5 +1,6 @@
 ---
 title: Optimizations
+description: "Guide to Optimizations on EarthPol, including key mechanics, commands, and tips."
 ---
 
 ## Server Optimizations

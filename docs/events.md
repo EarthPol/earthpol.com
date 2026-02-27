@@ -1,5 +1,6 @@
 ---
 title: Events
+description: "Official EarthPol events guide with schedules, activities, and participation details for the community."
 ---
 
 import CalendarEmbed from '@site/src/components/CalendarEmbed';

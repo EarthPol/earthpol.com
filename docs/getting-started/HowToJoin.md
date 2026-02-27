@@ -1,5 +1,6 @@
 ---
 title: How to Join
+description: "Guide to How to Join on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 2
 ---
 

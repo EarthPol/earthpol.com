@@ -1,5 +1,6 @@
 ---
 title: FAQ
+description: "Guide to FAQ on EarthPol, including key mechanics, commands, and tips."
 ---
 
 # Frequently Asked Questions (FAQ)

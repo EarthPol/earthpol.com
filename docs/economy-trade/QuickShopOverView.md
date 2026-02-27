@@ -1,5 +1,6 @@
 ---
 title: QuickShop
+description: "Guide to QuickShop on EarthPol, including key mechanics, commands, and tips."
 ---
 
 # QuickShop Guide

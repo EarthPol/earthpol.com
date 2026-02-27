@@ -1,5 +1,6 @@
 ---
 title: EarthPol Premium
+description: "Guide to EarthPol Premium on EarthPol, including key mechanics, commands, and tips."
 ---
 # 💎 EarthPol Premium
 

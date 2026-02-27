@@ -1,5 +1,6 @@
 ---
 title: SiegeWar
+description: "Guide to SiegeWar on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 3
 ---
 
@@ -205,7 +206,7 @@ The optimal width for a gank is 2 blocks wide, stretching along the border of yo
 
 :::tip
 
-**[Don't forget to grant permissions!](https://earthpol.com/docs/War%20&%20Diplomacy/SiegeWar/#-grant-access-to-your-gank)** Any fortification you build is useless if your allies and soldiers don't have access to it.
+**[Don't forget to grant permissions!](/docs/war-diplomacy/SiegeWar#-grant-access-to-your-gank)** Any fortification you build is useless if your allies and soldiers don't have access to it.
 If your soldiers do not have permissions to access your fortifications, they will be **unable to open/close doors and break/place blocks, which will leave allied players exposed and vulnerable to being killed in the battle area.**
 :::
 

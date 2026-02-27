@@ -1,5 +1,6 @@
 ---
 title: Recommended Mods
+description: "Guide to Recommended Mods on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 4
 ---
 

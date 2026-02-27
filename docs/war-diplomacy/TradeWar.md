@@ -1,5 +1,6 @@
 ---
 title: TradeWar
+description: "Guide to TradeWar on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 2
 ---
 
