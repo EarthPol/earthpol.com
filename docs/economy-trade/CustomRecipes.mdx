@@ -29,23 +29,16 @@ Storing your XP has never been easier! With a simple *Glass Bottle* and any *Enc
 
 <div style={{ textAlign: 'center' }}>
     <picture>
-        {/* 1) If data-saver mode is on, always low-res */}
         <source
-            media="(prefers-reduced-data: reduce)"
-            srcSet={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
+            srcSet={useBaseUrl('img/enchantmenttablebottles-lowres.webp')}
+            type="image/webp"
         />
 
-        {/* 2) Use low-res fallback on all other viewports to avoid very large GIF payloads */}
-        <source
-            media="(min-width: 1024px)"
-            srcSet={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
-        />
-
-        {/* 3) Fallback for everything else */}
         <img
             src={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
             alt="Enchantment Table Bottles animation"
             loading="lazy"
+            decoding="async"
             style={{ display: 'inline-block', maxWidth: '100%', height: 'auto' }}
         />
     </picture>
