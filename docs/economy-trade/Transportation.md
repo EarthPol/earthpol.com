@@ -1,6 +1,6 @@
 ---
 title: Transportation
-description: "Guide to Transportation on EarthPol, including key mechanics, commands, and tips."
+description: "EarthPol transportation guide to rails, ice roads, portals, and efficient long-distance travel routes."
 ---
 
 # Transportation Guide
@@ -22,7 +22,7 @@ Check out this Nether to Overworld coordinates calculator if you need to make co
 Rails is a neat plugin that makes minecart travel fast and practical by introducing a high-speed rail system. With this plugin, minecarts can travel up to 4x faster than vanilla powered rails, reaching speeds of 32 m/s (115 km/h)—comparable to rocket elytra flight.
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/EarthPolRails.gif" alt="Rails" style={{ maxWidth: '100%', height: 'auto' }} />
+  <img src="/img/Rails.avif" alt="Rails" style={{ maxWidth: '100%', height: 'auto' }} />
   <p><em>Example of a high-speed rail in action</em></p>
 </div>
 

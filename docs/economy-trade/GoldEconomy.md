@@ -1,6 +1,6 @@
 ---
 title: Economy
-description: "Guide to Economy on EarthPol, including key mechanics, commands, and tips."
+description: "EarthPol gold economy guide covering currency flow, mining value, trade, and wealth-building strategies."
 ---
 
 # Economy

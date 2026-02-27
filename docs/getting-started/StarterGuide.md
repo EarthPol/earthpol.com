@@ -1,6 +1,6 @@
 ---
 title: Starter Guide
-description: "Guide to Starter Guide on EarthPol, including key mechanics, commands, and tips."
+description: "New-player starter guide for EarthPol with early progression steps, survival setup, and essential commands."
 sidebar_position: 3
 ---
 
@@ -18,7 +18,7 @@ This Earth SMP combines survival gameplay, diplomacy, politics, and the popular 
 Below is a short starter guide video for new EarthPol players:
 
 <div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
-  <iframe 
+  <iframe loading="lazy" 
     width="840"
     height="472" 
     src="https://www.youtube.com/embed/p0vT7763j4E?si=wlCrjyyBSsAw2nZC" 
@@ -325,7 +325,7 @@ html[data-theme='dark'] {
 
 {/* RIGHT SIDE — DISCORD EMBED */}
   <div style={{ flex: "1 1 420px", display: "flex", justifyContent: "center" }}>
-    <iframe
+    <iframe loading="lazy"
       src="https://discord.com/widget?id=1204204837483446353&theme=dark"
       width="100%"
       height="500"

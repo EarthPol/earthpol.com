@@ -20,42 +20,42 @@ To view the map, click [here](https://earthpol.com/map).
 
 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '40px' }}>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/clay_clumps.avif" width="450" /><br />
+    <img src="/img/clay_clumps.avif" width="450" alt="Clay clumps ore hotspot distribution map" loading="lazy" decoding="async" /><br />
     <strong>Clay Clumps</strong><br />
     Y 48 to Y 319
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/coal_ore.avif" width="450" /><br />
+    <img src="/img/coal_ore.avif" width="450" alt="Coal ore hotspot distribution map" loading="lazy" decoding="async" /><br />
     <strong>Coal Ore</strong><br />
     Y 0 to Y 319
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/copper_ore.avif" width="450" /><br />
+    <img src="/img/copper_ore.avif" width="450" alt="Copper ore hotspot distribution map" loading="lazy" decoding="async" /><br />
     <strong>Copper Ore</strong><br />
     Y 0 to Y 112
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/diamond_ore.avif" width="450" /><br />
+    <img src="/img/diamond_ore.avif" width="450" alt="Diamond ore hotspot distribution map" loading="lazy" decoding="async" /><br />
     <strong>Diamond Ore</strong><br />
     Y 0 to Y 16
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/gold_ore.avif" width="450" /><br />
+    <img src="/img/gold_ore.avif" width="450" alt="Gold ore hotspot distribution map" loading="lazy" decoding="async" /><br />
     <strong>Gold Ore</strong><br />
     Y 0 to Y 112
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/iron_ore.avif" width="450" /><br />
+    <img src="/img/iron_ore.avif" width="450" alt="Iron ore hotspot distribution map" loading="lazy" decoding="async" /><br />
     <strong>Iron Ore</strong><br />
     Y 0 to Y 64
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/quartz_ore.avif" width="450" /><br />
+    <img src="/img/quartz_ore.avif" width="450" alt="Quartz ore hotspot distribution map" loading="lazy" decoding="async" /><br />
     <strong>Quartz Ore</strong><br />
     Y 0 to Y 32
   </div>
   <div style={{ textAlign: 'center', width: '450px' }}>
-    <img src="/img/redstone_ore.avif" width="450" /><br />
+    <img src="/img/redstone_ore.avif" width="450" alt="Redstone ore hotspot distribution map" loading="lazy" decoding="async" /><br />
     <strong>Redstone Ore</strong><br />
     Y 0 to Y 16
   </div>
@@ -68,7 +68,7 @@ To view the map, click [here](https://earthpol.com/map).
 Since June 2024, the Nether has been enabled on our server, opening up a dangerous yet highly rewarding frontier for players. This fiery, chaotic dimension is currently the only way to obtain netherite, making it an essential destination for those seeking the most powerful gear. There are no safe zones and no places to hide. Every journey into the Nether is a gamble, where survival depends on skill, strategy, and sheer luck. Those brave enough to venture into its depths must be prepared for constant danger and fierce competition over its rare treasures...
 
 <div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
-  <iframe 
+  <iframe loading="lazy" 
     width="840"
     height="472"
     src="https://www.youtube.com/embed/9Qg2bEEoZ5w?si=iaHPQmW3pXtdINwn" 

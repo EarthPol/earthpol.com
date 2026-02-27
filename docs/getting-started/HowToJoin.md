@@ -1,6 +1,6 @@
 ---
 title: How to Join
-description: "Guide to How to Join on EarthPol, including key mechanics, commands, and tips."
+description: "Step-by-step guide for joining EarthPol, including setup, server IP, troubleshooting, and first actions."
 sidebar_position: 2
 ---
 
@@ -15,7 +15,7 @@ Welcome to **EarthPol**, a geopolitical Minecraft Earth SMP! Follow these steps 
 
 Below is our video guide to joining EarthPol:
 <div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}> 
-  <iframe width="840" height="472" src="https://www.youtube.com/embed/eTTNoybXN5g?si=cfoe8ZBcQVzGrIL-" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen ></iframe> 
+  <iframe loading="lazy" width="840" height="472" src="https://www.youtube.com/embed/eTTNoybXN5g?si=cfoe8ZBcQVzGrIL-" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen ></iframe> 
 </div>
 
 ---
@@ -109,8 +109,8 @@ Below is our video guide to joining EarthPol:
   <div className="kpi-card" style={{ flex: '1 1 220px', textAlign: 'center' }}>
     <h4>📘 Starter Guide</h4>
     <p>Learn the basics and get your first Towny Camp!</p>
-    <a href="/starter-guide" style={{ display: 'inline-block', marginTop: '10px' }}>
-      <img src="/img/icons/book.png" alt="Starter Guide" width="48" />
+    <a href="/docs/getting-started/StarterGuide" style={{ display: 'inline-block', marginTop: '10px', fontWeight: 'bold' }}>
+      Open Guide
     </a>
   </div>
 
@@ -118,8 +118,8 @@ Below is our video guide to joining EarthPol:
   <div className="kpi-card" style={{ flex: '1 1 220px', textAlign: 'center' }}>
     <h4>📜 Read the Rules</h4>
     <p>Know the dos and don'ts on EarthPol.</p>
-    <a href="/rules" style={{ display: 'inline-block', marginTop: '10px' }}>
-      <img src="/img/icons/rules.png" alt="Rules" width="48" />
+    <a href="/docs/support/ServerRules" style={{ display: 'inline-block', marginTop: '10px', fontWeight: 'bold' }}>
+      View Rules
     </a>
   </div>
 
@@ -127,8 +127,8 @@ Below is our video guide to joining EarthPol:
   <div className="kpi-card" style={{ flex: '1 1 220px', textAlign: 'center' }}>
     <h4>💬 Join Discord</h4>
     <p>Meet the community and get help instantly.</p>
-    <a href="https://discord.gg/bURuFxYqkD" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', marginTop: '10px' }}>
-      <img src="/img/icons/discord.png" alt="Discord" width="48" />
+    <a href="https://discord.gg/bURuFxYqkD" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', marginTop: '10px', fontWeight: 'bold' }}>
+      Join Discord
     </a>
   </div>
 
@@ -137,9 +137,9 @@ Below is our video guide to joining EarthPol:
     <h4>📱 Follow Us</h4>
     <p>Stay updated on social media.</p>
     <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '10px' }}>
-      <a href="https://www.instagram.com/earthpolmc/" target="_blank" rel="noopener noreferrer"><img src="/img/icons/instagram.png" alt="Instagram" width="32" /></a>
-      <a href="https://www.youtube.com/@EarthPol?sub_confirmation=1" target="_blank" rel="noopener noreferrer"><img src="/img/icons/youtube.png" alt="YouTube" width="32" /></a>
-      <a href="https://www.tiktok.com/@play.earthpol.com" target="_blank" rel="noopener noreferrer"><img src="/img/icons/tiktok.png" alt="TikTok" width="32" /></a>
+      <a href="https://www.instagram.com/earthpolmc/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.youtube.com/@EarthPol?sub_confirmation=1" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.tiktok.com/@play.earthpol.com" target="_blank" rel="noopener noreferrer">TikTok</a>
     </div>
   </div>
 

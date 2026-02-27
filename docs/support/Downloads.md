@@ -1,6 +1,6 @@
 ---
 title: Downloads
-description: "Guide to Downloads on EarthPol, including key mechanics, commands, and tips."
+description: "Official EarthPol downloads for recommended mods, clients, tools, and related setup resources."
 ---
 
 # 🌍 Archived EarthPol Maps

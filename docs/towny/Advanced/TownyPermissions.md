@@ -1,6 +1,6 @@
 ---
 title: Ranks & Permissions
-description: "Guide to Ranks & Permissions on EarthPol, including key mechanics, commands, and tips."
+description: "Towny ranks and permissions guide for EarthPol, including role responsibilities and honor point requirements."
 ---
 
 # Towny Ranks and Permissions
@@ -10,7 +10,7 @@ description: "Guide to Ranks & Permissions on EarthPol, including key mechanics,
 Towny allows town and nation leaders to delegate responsibilities using a rank system. Each rank comes with specific permissions tailored to the role’s duties.
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/waterhouse.png" alt="A small rural town" style={{ maxWidth: '100%', height: 'auto' }} />
+  <img src="/img/waterhouse.avif" alt="A small rural town" style={{ maxWidth: '100%', height: 'auto' }} />
   <p><em></em></p>
 </div>
 

@@ -35,10 +35,10 @@ Storing your XP has never been easier! With a simple *Glass Bottle* and any *Enc
             srcSet={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
         />
 
-        {/* 2) On desktop‐sized viewports, load high-res */}
+        {/* 2) Use low-res fallback on all other viewports to avoid very large GIF payloads */}
         <source
             media="(min-width: 1024px)"
-            srcSet={useBaseUrl('img/enchantmenttablebottles.gif')}
+            srcSet={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
         />
 
         {/* 3) Fallback for everything else */}

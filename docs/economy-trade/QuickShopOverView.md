@@ -1,6 +1,6 @@
 ---
 title: QuickShop
-description: "Guide to QuickShop on EarthPol, including key mechanics, commands, and tips."
+description: "EarthPol QuickShop guide for creating chest shops, pricing, permissions, and player-to-player trading."
 ---
 
 # QuickShop Guide

@@ -1,6 +1,6 @@
 ---
 title: FAQ
-description: "Guide to FAQ on EarthPol, including key mechanics, commands, and tips."
+description: "Frequently asked questions about EarthPol gameplay, account issues, policies, and common troubleshooting."
 ---
 
 # Frequently Asked Questions (FAQ)

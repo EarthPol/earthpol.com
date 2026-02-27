@@ -1,6 +1,6 @@
 ---
 title: TradeWar
-description: "Guide to TradeWar on EarthPol, including key mechanics, commands, and tips."
+description: "EarthPol TradeWar guide for tariffs, sanctions, embargoes, and economic conflict between nations."
 sidebar_position: 2
 ---
 
