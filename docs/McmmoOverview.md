@@ -1,5 +1,6 @@
 ---
 title: McMMO Guide
+description: "Guide to McMMO Guide on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 8
 ---
 

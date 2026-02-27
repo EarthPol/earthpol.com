@@ -1,5 +1,6 @@
 ---
 title: Nation Guide
+description: "Guide to Nation Guide on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 3
 ---
 

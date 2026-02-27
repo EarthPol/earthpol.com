@@ -1,3 +1,8 @@
+---
+title: Aerarium
+description: "Guide to Aerarium on EarthPol, including shared town vaults, upgrades, and commands."
+---
+
 # Aerarium
 
 Aerarium is a **town wide shared vault system** that lets your town store items safely in multiple upgradeable vaults that can be accessed from anywhere.  

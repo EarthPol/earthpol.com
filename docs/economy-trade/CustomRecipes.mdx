@@ -1,6 +1,7 @@
 ---
 id: economy-trade-custom-recipes
 title: Custom Recipes
+description: "Guide to Custom Recipes on EarthPol, including key mechanics, commands, and tips."
 sidebar_label: Custom Recipes
 slug: /economy-trade/custom-recipes
 redirects:
@@ -12,7 +13,7 @@ import RecipeDigester from '@site/src/components/RecipeDigester';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 
-# Custom Recipes
+## Custom Recipes
 
 <RecipeDigester />
 
@@ -28,23 +29,16 @@ Storing your XP has never been easier! With a simple *Glass Bottle* and any *Enc
 
 <div style={{ textAlign: 'center' }}>
     <picture>
-        {/* 1) If data-saver mode is on, always low-res */}
         <source
-            media="(prefers-reduced-data: reduce)"
-            srcSet={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
+            srcSet={useBaseUrl('img/enchantmenttablebottles-lowres.webp')}
+            type="image/webp"
         />
 
-        {/* 2) On desktop‐sized viewports, load high-res */}
-        <source
-            media="(min-width: 1024px)"
-            srcSet={useBaseUrl('img/enchantmenttablebottles.gif')}
-        />
-
-        {/* 3) Fallback for everything else */}
         <img
             src={useBaseUrl('img/enchantmenttablebottles-lowres.gif')}
             alt="Enchantment Table Bottles animation"
             loading="lazy"
+            decoding="async"
             style={{ display: 'inline-block', maxWidth: '100%', height: 'auto' }}
         />
     </picture>

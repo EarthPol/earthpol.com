@@ -1,5 +1,6 @@
 ---
 title: Diplomacy
+description: "Guide to Diplomacy on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 4
 ---
 

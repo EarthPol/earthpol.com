@@ -1,5 +1,6 @@
 ---
 title: SiegeWar
+description: "EarthPol SiegeWar guide covering battle sessions, mechanics, strategy, and commands for competitive warfare."
 sidebar_position: 3
 ---
 
@@ -14,7 +15,7 @@ import BattleTimesAM_PM from '@site/src/components/BattleTimesAM_PM';
 SiegeWar is EarthPol’s structured warfare system, simulating the breakdown of diplomacy when peaceful options fail. It offers a strategic and immersive experience where nations engage in direct conflict with real consequences. Within 200 blocks of the siege banner, Keep Inventory is enabled, but deaths result in a 5% durability loss to armor and tools. Siege Camps and Assemblies are disabled, only placing a banner is required to initiate a siege. Each nation is limited to two active siege attacks, encouraging thoughtful target selection. Attackers cannot abandon a siege once it begins, while defenders retain the option to surrender. To gain control, players must stay within 16 blocks of the banner during a 6-minute Banner Control Session to accumulate points. 
 
 <div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '20px' }}>
-  <iframe 
+  <iframe loading="lazy" 
     width="840"
     height="472"
     src="https://www.youtube.com/embed/wtStxV12mDM?si=H8Fn7RVfHPLHFlbH" 
@@ -196,16 +197,16 @@ The optimal width for a gank is 2 blocks wide, stretching along the border of yo
   textAlign: 'center'
 }}>
   <div style={{ flex: '1 1 400px', maxWidth: '400px' }}>
-    <img src="/img/gank1.png" alt="Basic gank design" style={{ width: '100%', height: 'auto' }} />
+    <img src="/img/gank1.avif" alt="Basic gank design" style={{ width: '100%', height: 'auto' }} />
   </div>
   <div style={{ flex: '1 1 400px', maxWidth: '400px' }}>
-    <img src="/img/gank2.png" alt="Basic gank design" style={{ width: '100%', height: 'auto' }} />
+    <img src="/img/gank2.avif" alt="Basic gank design" style={{ width: '100%', height: 'auto' }} />
   </div>
 </div>
 
 :::tip
 
-**[Don't forget to grant permissions!](https://earthpol.com/docs/War%20&%20Diplomacy/SiegeWar/#-grant-access-to-your-gank)** Any fortification you build is useless if your allies and soldiers don't have access to it.
+**[Don't forget to grant permissions!](/docs/war-diplomacy/SiegeWar#-grant-access-to-your-gank)** Any fortification you build is useless if your allies and soldiers don't have access to it.
 If your soldiers do not have permissions to access your fortifications, they will be **unable to open/close doors and break/place blocks, which will leave allied players exposed and vulnerable to being killed in the battle area.**
 :::
 
@@ -253,7 +254,7 @@ Any fortification you build is useless if your allies and soldiers **don't have 
 ## 🎒 EarthPol SiegeWar Kit
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/siegekit.png" alt="SiegeWar Kit" style={{ maxWidth: '100%', height: 'auto' }} />
+  <img src="/img/siegekit.avif" alt="SiegeWar Kit" style={{ maxWidth: '100%', height: 'auto' }} />
   <p><em>An example of a kit a soldier could bring to a siege. Bring what works best for you.</em></p>
 </div>
 

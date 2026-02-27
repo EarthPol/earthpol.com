@@ -1,5 +1,6 @@
 ---
 title: Server Overview
+description: "Overview of EarthPol's core gameplay, map scale, plugins, infrastructure, and server philosophy."
 sidebar_position: 1
 ---
 
@@ -33,7 +34,7 @@ EarthPol is **truly unique** because of its **five years of continuous developme
 Unlike many other servers, EarthPol is backed by developers with expertise in both **computer science** and **international relations**, offering a balanced, realistic gameplay experience. Our dedicated staff team listens to player feedback and prioritizes transparency.
 
 <div style={{ display: 'flex', justifyContent: 'center', margin: '2rem 0' }}>
-  <iframe
+  <iframe loading="lazy"
     width="840"
     height="472"
     src="https://www.youtube.com/embed/AdMpIVTJ1fU?si=7X-HostU0xQBlk9q"

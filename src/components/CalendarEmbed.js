@@ -14,6 +14,7 @@ export default function CalendarEmbed() {
   return (
     <div style={{ textAlign: 'center', marginTop: '1rem' }}>
       <iframe
+        loading="lazy"
         src={calendarSrc}
         style={{ border: 0 }}
         width="800"

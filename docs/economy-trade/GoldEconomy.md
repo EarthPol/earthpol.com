@@ -1,5 +1,6 @@
 ---
 title: Economy
+description: "EarthPol gold economy guide covering currency flow, mining value, trade, and wealth-building strategies."
 ---
 
 # Economy

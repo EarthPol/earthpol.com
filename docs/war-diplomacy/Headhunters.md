@@ -1,5 +1,6 @@
 ---
 title: Bounty System
+description: "Guide to Bounty System on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 5
 ---
 # 🏹 Bounty System

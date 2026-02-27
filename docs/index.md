@@ -1,6 +1,7 @@
 ---
 id: index
 title: EarthPol Guide
+description: "Official EarthPol documentation hub covering getting started, Towny, economy, warfare, support, and server guides."
 slug: /
 sidebar_position: 1
 ---
@@ -41,10 +42,10 @@ export function SearchGuides() {
     { title: "Nations", url: "/docs/towny/Basic/Nations" },
     { title: "Nomads", url: "/docs/towny/Basic/Nomads" },
     { title: "Towny Commands", url: "/docs/towny/townycommands" },
-    { title: "Plot Permissions", url: "/docs/Towny/Advanced/PlotPerms" },
-    { title: "Quarters", url: "/docs/Towny/Advanced/Quarters" },
-    { title: "Towny Permissions", url: "/docs/Towny/Advanced/TownyPermissions" },
-    { title: "Custom Recipes", url: "/docs/economy-trade/CustomRecipes" },
+    { title: "Plot Permissions", url: "/docs/towny/Advanced/PlotPerms" },
+    { title: "Quarters", url: "/docs/towny/Advanced/Quarters" },
+    { title: "Towny Permissions", url: "/docs/towny/Advanced/TownyPermissions" },
+    { title: "Custom Recipes", url: "/docs/economy-trade/custom-recipes" },
     { title: "Gold Economy", url: "/docs/economy-trade/GoldEconomy" },
     { title: "QuickShop Overview", url: "/docs/economy-trade/QuickShopOverView" },
     { title: "Towny Ports", url: "/docs/economy-trade/TownyPorts" },
@@ -186,7 +187,7 @@ export function SearchGuides() {
   <div style={{ background: 'transparent', padding: '1rem', borderRadius: '12px', boxShadow: 'none' }}>
     <h2>🎥 Video Guide Playlist</h2>
     <div style={{ position: 'relative', paddingBottom: '70%', height: 0, marginTop: '1rem' }}>
-      <iframe
+      <iframe loading="lazy"
         src="https://www.youtube.com/embed/videoseries?list=PLBeJyhIH7rhG86T224CAR5P9lQ6JOMevF"
         title="EarthPol Video Guides"
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0, borderRadius: '8px' }}

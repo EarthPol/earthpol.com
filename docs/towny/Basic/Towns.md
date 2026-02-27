@@ -1,5 +1,6 @@
 ---
 title: Town Guide
+description: "Guide to Town Guide on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 2
 ---
 

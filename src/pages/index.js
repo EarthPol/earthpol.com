@@ -15,7 +15,13 @@ function HomepageHeader() {
       <>
         {/* Preload primary desktop hero to speed LCP */}
         <Head>
-          <link rel="preload" as="image" href="/img/day_desktop.webp" />
+          <link
+            rel="preload"
+            as="image"
+            href="/img/day_desktop.webp"
+            imageSrcSet="/img/day_mobile.webp 768w, /img/day_tablet.webp 1280w, /img/day_desktop.webp 1920w, /img/day_large.webp 2560w, /img/day_ultra.webp 3840w"
+            imageSizes="100vw"
+          />
         </Head>
 
         <header className={styles.heroBanner}>
@@ -48,7 +54,7 @@ function HomepageHeader() {
             <div className={styles.buttons}>
               <Link
                   className={clsx('button', 'button--secondary', 'button--lg')}
-                  to="/docs/Getting Started/HowToJoin"
+                  to="/docs/getting-started/HowToJoin"
               >
                 IP: PLAY.EARTHPOL.COM
               </Link>
@@ -67,7 +73,7 @@ export default function Home() {
   return (
       <Layout
           title={`Welcome to ${siteConfig.title}`}
-          description="The Ultimate Geopolitical Minecraft Server"
+          description="Join EarthPol, a geopolitical Minecraft server with Towny, SiegeWar, TradeWar, and an active player-driven world."
       >
         <HomepageHeader />
         <main>

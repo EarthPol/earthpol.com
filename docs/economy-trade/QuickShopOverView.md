@@ -1,5 +1,6 @@
 ---
 title: QuickShop
+description: "EarthPol QuickShop guide for creating chest shops, pricing, permissions, and player-to-player trading."
 ---
 
 # QuickShop Guide
@@ -50,7 +51,16 @@ If you instead wish to buy items from players rather than sell to players, simpl
 If you wish to change the price of the item(s) you are selling/buying, open the QuickShop GUI by left-click and press the `[Change]` button next to "Price:", this will allow you to input a new buy/sell price. 
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/chestshops.gif" alt="Rails" style={{ maxWidth: '100%', height: 'auto' }} />
+  <picture>
+    <source srcSet="/img/chestshops.webp" type="image/webp" />
+    <img
+      src="/img/chestshops.gif"
+      alt="ChestShop setup demonstration"
+      loading="lazy"
+      decoding="async"
+      style={{ maxWidth: '100%', height: 'auto' }}
+    />
+  </picture>
   <p><em>Demonstration of how to create a ChestShop</em></p>
 </div>
 

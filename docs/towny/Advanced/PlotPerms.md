@@ -1,5 +1,6 @@
 ---
 title: Plots
+description: "Guide to Plots on EarthPol, including key mechanics, commands, and tips."
 ---
 
 # Plots

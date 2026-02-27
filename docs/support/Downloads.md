@@ -1,5 +1,6 @@
 ---
 title: Downloads
+description: "Official EarthPol downloads for recommended mods, clients, tools, and related setup resources."
 ---
 
 # 🌍 Archived EarthPol Maps

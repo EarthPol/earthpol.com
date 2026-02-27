@@ -9,6 +9,11 @@ const config = {
   baseUrl: '/',
   organizationName: 'EarthPol',
   projectName: 'earthpol.com',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   headTags: [
     {
       tagName: 'style',
@@ -26,6 +31,37 @@ const config = {
       }
     `,
     },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'EarthPol',
+        url: 'https://earthpol.com',
+        logo: 'https://earthpol.com/img/logo-512x512.webp',
+        sameAs: [
+          'https://discord.gg/bURuFxYqkD',
+          'https://www.youtube.com/@EarthPol',
+          'https://www.instagram.com/earthpolmc/',
+          'https://www.tiktok.com/@play.earthpol.com',
+        ],
+      }),
+    },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'EarthPol',
+        url: 'https://earthpol.com',
+      }),
+    },
   ],
   scripts: [
     {
@@ -33,18 +69,9 @@ const config = {
       defer: true,
       'data-website-id': 'd293e0ae-dcc5-4af8-adee-aa437c652be2',
     },
-    {
-      src: 'https://www.googletagmanager.com/gtag/js?id=AW-17761889667',
-      async: true,
-    },
-    {
-      // Google Analytics tracking code
-      src: '/js/gtag.js',
-    },
   ],
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -57,11 +84,18 @@ const config = {
           sidebarPath: './sidebars.js',
         },
         blog: {
+          blogTitle: 'EarthPol Blog',
+          blogDescription: 'EarthPol news, updates, patch notes, and community announcements from the geopolitical Minecraft server.',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/404.html', '/markdown-page'],
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -73,7 +107,7 @@ const config = {
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: 'G-R4GEM4H142',
+        trackingID: ['G-R4GEM4H142', 'AW-17761889667'],
         anonymizeIP: true,
       },
     ],
@@ -205,6 +239,12 @@ const config = {
     ],
   ],
   themeConfig: {
+    metadata: [
+      {
+        name: 'keywords',
+        content: 'EarthPol, Minecraft server, geopolitical Minecraft, Towny, SiegeWar, TradeWar, Earth SMP',
+      },
+    ],
     colorMode: {
       defaultMode: 'dark', // Forces dark mode
       disableSwitch: false,  // Prevents users from changing it

@@ -1,5 +1,6 @@
 ---
 title: Quarters
+description: "Guide to Quarters on EarthPol, including key mechanics, commands, and tips."
 ---
 # Quarters Plugin Guide
 

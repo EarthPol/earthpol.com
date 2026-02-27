@@ -1,5 +1,6 @@
 ---
 title: FAQ
+description: "Frequently asked questions about EarthPol gameplay, account issues, policies, and common troubleshooting."
 ---
 
 # Frequently Asked Questions (FAQ)

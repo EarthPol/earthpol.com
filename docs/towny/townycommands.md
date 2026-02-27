@@ -1,5 +1,6 @@
 ---
 title: Towny Commands
+description: "Guide to Towny Commands on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 4
 ---
 

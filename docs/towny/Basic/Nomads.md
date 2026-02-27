@@ -1,5 +1,6 @@
 ---
 title: Nomad Guide
+description: "Guide to Nomad Guide on EarthPol, including key mechanics, commands, and tips."
 sidebar_position: 4
 ---
 # 🧭 Nomad Guide
