@@ -84,6 +84,8 @@ const config = {
           sidebarPath: './sidebars.js',
         },
         blog: {
+          blogTitle: 'EarthPol Blog',
+          blogDescription: 'EarthPol news, updates, patch notes, and community announcements from the geopolitical Minecraft server.',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],

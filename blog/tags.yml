@@ -1,9 +1,9 @@
 Update:
   label: Update
   permalink: /updates
-  description: All Update Posts
+  description: Monthly EarthPol updates covering gameplay changes, releases, fixes, and major server improvements.
 
 Announcement:
   label: Announcement
   permalink: /announcements
-  description: All Announcement Posts
+  description: Official EarthPol announcements including major news, policy changes, and important community notices.

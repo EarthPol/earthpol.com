@@ -18,7 +18,7 @@ const FeatureList = [
   {
     title: 'Towny',
     link: '/docs/towny/TownyOverview',
-    Svg: () => <img src="/img/compassitem.webp" alt="Map" style={{ height: 100 }} />,
+    Svg: () => <img src="/img/compassitem.webp" alt="Compass" style={{ height: 100 }} />,
     description: (
       <>
         With Towny, players can create their own towns, nations, and simulate diplomacy.
@@ -28,7 +28,7 @@ const FeatureList = [
   {
     title: 'BlueMap',
     link: 'https://earthpol.com/map/#world:0:0:0:32172:0:0:0:1:flat',
-    Svg: () => <img src="/img/mapitem.webp" alt="Compass" style={{ height: 100 }} />,
+    Svg: () => <img src="/img/mapitem.webp" alt="Map" style={{ height: 100 }} />,
     description: (
       <>
         A 3D-fully interactive map that allows players to view their town from above.
@@ -50,25 +50,25 @@ const FeatureList = [
 const ScreenshotList = [
   {
     title: '1:326 Map',
-    image: require('@site/static/img/epolmap-frontpage.avif').default,
+    image: '/img/epolmap-frontpage.avif',
     description: 'Explore our custom-made EarthPol map, crafted with real-world geography at a detailed 1:326 scale. Natural features, rivers, and landscapes mirror reality, delivering a truly immersive geopolitical Minecraft experience.',
     imageFirst: true,
   },
   {
     title: 'Building',
-    image: require('@site/static/img/building-frontpage.avif').default,
+    image: '/img/building-frontpage.avif',
     description: 'Build with confidence on EarthPol. Our robust preservation system, featuring hourly backups and CoreProtect logs, guarantees your creations, from small towns to skyscrapers, are safe and secure.',
     imageFirst: false,
   },
   {
     title: 'Diplomacy',
-    image: require('@site/static/img/diplomacy-frontpage.avif').default,
+    image: '/img/diplomacy-frontpage.avif',
     description: 'Master the art of diplomacy with plugins like Towny and TradeWar, engaging in economic battles, alliances, and statecraft. Join our community on Discord to negotiate treaties and shape the dynamic political landscape of EarthPol.',
     imageFirst: true,
   },
   {
     title: 'War & Combat',
-    image: require('@site/static/img/siegecover-frontpage.avif').default,
+    image: '/img/siegecover-frontpage.avif',
     description: 'Experience strategic, balanced combat powered by SiegeWar. Coordinate epic sieges, defend territories, and lead your nation to victory in fair, team-focused PvP warfare designed for all skill levels. Alternatively, place bounties on your political enemies with our custom bounty plugin.',
     imageFirst: false,
   },
@@ -103,7 +103,7 @@ function Testimonials() {
         <div className="row">
           {/* Left Blurb */}
           <div className="col col--6">
-            <Heading as="h1">Committed to Player Satisfaction</Heading>
+            <Heading as="h2">Committed to Player Satisfaction</Heading>
             <p className={styles.testimonialBlurb}>
               See what our players have to say about their EarthPol adventures. From first-time settlers to veteran nation leaders, players shape this world with cities, wars, and alliances while our dedicated team works behind the scenes to keep every journey immersive and fair. Read their stories and see why EarthPol is the trusted home for builders, diplomats, and conquerors alike.
             </p>
@@ -175,6 +175,8 @@ function Screenshot({ image, title, description, imageFirst }) {
               src={image}
               alt={title}
               className={styles.screenshotImage}
+              loading="lazy"
+              decoding="async"
               style={{ borderRadius: '25px' }}
             />
           </div>
@@ -194,6 +196,8 @@ function Screenshot({ image, title, description, imageFirst }) {
               src={image}
               alt={title}
               className={styles.screenshotImage}
+              loading="lazy"
+              decoding="async"
               style={{ borderRadius: '25px' }}
             />
           </div>

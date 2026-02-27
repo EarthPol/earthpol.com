@@ -859,7 +859,7 @@ const RecipeDigester: React.FC = () => {
             <header>
                 <div className="header-top">
                     <div className="header-text">
-                        <h1>Custom Recipes</h1>
+                        <h2>Custom Recipes</h2>
                         <p>
                             Explore our recipes exclusive to EarthPol. Use the searchbar below to find a specific recipe.
                         </p>

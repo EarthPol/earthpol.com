@@ -7,7 +7,7 @@ import CalendarEmbed from '@site/src/components/CalendarEmbed';
 
 
 
-# EarthPol Events
+## EarthPol Events
 
 ## Overview
 
@@ -17,7 +17,7 @@ Our calendar is packed with exciting events to keep the community engaged all ye
 
 ---
 
-# Event Registration
+## Event Registration
 
 ## Guidelines
 
