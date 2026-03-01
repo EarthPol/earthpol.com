@@ -4,9 +4,16 @@ description: "Guide to Custom Features on EarthPol, including key mechanics, com
 sidebar_position: 1
 ---
 
-Compilation of all of EarthPol's custom features
-
 # Custom Features
+
+<!-- last updatedtag -->
+<span style={{ fontSize: '0.7rem', opacity: 0.7 }}>
+*Last updated by [MrTytanic](https://github.com/MrTytanic) on 1 Mar 2026*
+</span>
+
+EarthPol features fully custom, in-house systems built exclusively by our developers, many of them the first of their kind. These original mechanics are unique to EarthPol and cannot be found on any other server.
+
+---
 
 ## Geopolitical & Roleplaying
 
@@ -20,6 +27,8 @@ When crafting items such as Tools and Armor, historical lore will be added to th
 
 ### EarthPol Wiki
 EarthPol has a lot of history being a server that started in 2020, and it is very much worth reading up on. [Check out the wiki](https://wiki.earthpol.com/)
+
+---
 
 ## SiegeWar & Combat
 Our version of SiegeWar is custom specifically to EarthPol and has various changes that are not available on any other server. These are capable through addon plugins we develop on our own.
@@ -61,6 +70,8 @@ You can not switch from a Peaceful Town to a Non-Peaceful Town in the same natio
 - No Totems of Undying in Siege Zones
 - Keep Inventory enabled EVERYWHERE during Battle Sessions
 
+---
+
 ## TradeWar & Economy
 
 EarthPol has a lot of custom plugins but some of it's best innovations are in it's economy. Take for example, TradeWar, a unique plugin that enables nations to exercise economic strength.
@@ -76,6 +87,8 @@ EarthPol has a lot of custom plugins but some of it's best innovations are in it
 TownyPorts unlocks the economic and geopolitical power of waterways by letting non-capital towns set port plots that visitors can teleport to—for a configurable fee. Perfect for boosting trade, tourism, and strategic depth in your Towny world.
 
 [Read more about it here](/docs/economy-trade/TownyPorts)
+
+---
 
 ## Quality of Life improvements & Enjoyment
 
@@ -196,3 +209,23 @@ You can do `/res <player>` and at the bottom you will see a Green [+] and Red [-
 
 ### Passports
 When visiting a nation (any town in that nation) for the first time, you will get a passport stamp. You can view them via /passports
+
+---
+
+## Server Optimizations
+- In order to accomodate as many players as reasonably possible while still ensuring a smooth experience, we must perform optimizations in order to boost server performance.
+- The following are the currently applied optimizations that affect players.
+
+### Farms
+
+#### Animal farms
+Animal farm optimizations apply within a 5 block radius. Optimizations are not applied to animals currently being leashed by a player or named animals.
+- Greater than 15 animals: Removal of mob AI.
+- 20 animals: Breeding is disabled.
+- Over 20 animals: Animalls will be culled and killed by the server.
+- **Sparse animal farm optimization**: Limit of 50 animals of the same type within a 160 block radius; excess mobs are culled and killed by the server.
+
+### Redstone
+Redstone is being optimized and may work slightly differently than vanilla.
+- PaperMC redstone setting: `redstone-implementation: ALTERNATE_CURRENT`
+- If you would like to test redstone builds in a separate world for use in the server, you can host a Paper or Folia server and set the `redstone-implementation` setting to `ALTERNATE_CURRENT` in your `paper-world-defaults.yml`. Staff will not provide support for how to do this; this information is simply being provided for your convenience.
