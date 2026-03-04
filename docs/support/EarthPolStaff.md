@@ -4,7 +4,7 @@ description: "Meet the EarthPol staff team, including leadership, moderators, an
 ---
 <!-- last updated tag -->
 <span style={{ fontSize: '0.7rem', opacity: 0.7 }}>
-*Last updated by [MrTytanic](https://github.com/MrTytanic) on 22 Feb 2026*
+*Last updated by [MrTytanic](https://github.com/MrTytanic) on 3 Mar 2026*
 </span>
 
 <style>
@@ -139,23 +139,9 @@ description: "Meet the EarthPol staff team, including leadership, moderators, an
   <div class="staff-card">
     <div class="staff-bust-wrapper">
       <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/dfc3c1e5-bd54-4902-85f6-b735a549b7e1?size=400" alt="AkselV" />
-    </div>
-    <div class="staff-name">AkselV</div>
-  </div>
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
       <img class="staff-bust" src="https://vzge.me/bust/59af90c2-9631-4df5-9ac2-f9ea2691a746?size=400" alt="Ellied64" />
     </div>
     <div class="staff-name">Ellied64</div>
-  </div>
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/f74fd6f2-2c0d-4965-a1a6-235c9a109777?size=400" alt="GrayIsBalls" />
-    </div>
-    <div class="staff-name">GrayIsBalls</div>
   </div>
   <div class="staff-card">
     <div class="staff-bust-wrapper">
@@ -164,12 +150,24 @@ description: "Meet the EarthPol staff team, including leadership, moderators, an
     </div>
     <div class="staff-name">Synistor</div>
   </div>
+</div>
+
+<!-- Moderators -->
+<div class="group-title">Moderators</div>
+<div class="staff-grid">
+    <div class="staff-card">
+        <div class="staff-bust-wrapper">
+          <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
+          <img class="staff-bust" src="https://vzge.me/bust/dfc3c1e5-bd54-4902-85f6-b735a549b7e1?size=400" alt="AkselV" />
+        </div>
+        <div class="staff-name">AkselV</div>
+    </div>
   <div class="staff-card">
     <div class="staff-bust-wrapper">
       <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/1e453074-8de5-4194-8d82-70574aad18cf?size=400" alt="Zamings" />
+      <img class="staff-bust" src="https://vzge.me/bust/f74fd6f2-2c0d-4965-a1a6-235c9a109777?size=400" alt="GrayIsBalls" />
     </div>
-    <div class="staff-name">Zamings</div>
+    <div class="staff-name">GrayIsBalls</div>
   </div>
   <div class="staff-card">
     <div class="staff-bust-wrapper">
@@ -181,35 +179,16 @@ description: "Meet the EarthPol staff team, including leadership, moderators, an
   <div class="staff-card">
     <div class="staff-bust-wrapper">
       <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/a07bcf70-01e2-4a21-807f-a7e278e55479?size=400" alt="Appqle" />
-    </div>
-    <div class="staff-name">Appqle</div>
-  </div>
-</div>
-
-<!-- Moderators -->
-<div class="group-title">Moderators</div>
-<div class="staff-grid">
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/341b028f-07d8-4dcb-9f17-711d38f713f5?size=400" alt="XLNuggets" />
-    </div>
-    <div class="staff-name">XLNuggets</div>
-  </div>
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/f71d3494-fa39-4f15-a5bd-cd534ca941d5?size=400" alt="XPurple_DiamondX" />
-    </div>
-    <div class="staff-name">XPurple_DiamondX</div>
-  </div>
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
       <img class="staff-bust" src="https://vzge.me/bust/f48d75f3-0d7b-4851-8006-f7008521fb93?size=400" alt="Senpaii_soupp" />
     </div>
     <div class="staff-name">Senpaii_soupp</div>
+  </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
+      <img class="staff-bust" src="https://vzge.me/bust/1e453074-8de5-4194-8d82-70574aad18cf?size=400" alt="Zamings" />
+    </div>
+    <div class="staff-name">Zamings</div>
   </div>
   <div class="staff-card">
     <div class="staff-bust-wrapper">
@@ -225,25 +204,18 @@ description: "Meet the EarthPol staff team, including leadership, moderators, an
     </div>
     <div class="staff-name">jessiesgirl</div>
   </div>
+  <div class="staff-card">
+    <div class="staff-bust-wrapper">
+      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
+      <img class="staff-bust" src="https://vzge.me/bust/8bfc9600-be16-44f2-8f70-b9c8f28d2b6b?size=400" alt="RealDanTM" />
+    </div>
+    <div class="staff-name">RealDanTM</div>
+  </div>
 </div>
 
 <!-- Helpers -->
 <div class="group-title">Helpers</div>
 <div class="staff-grid">
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/3b4fa892-7f4c-423a-92b5-0f30d1fc34f8?size=400" alt="ImSigmaBoy" />
-    </div>
-    <div class="staff-name">ImSigmaBoy</div>
-  </div>
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/243fa96a-81ee-40d9-baa9-c4a65a524059?size=400" alt="aniiwoww" />
-    </div>
-    <div class="staff-name">aniiwoww</div>
-  </div>
   <div class="staff-card">
     <div class="staff-bust-wrapper">
       <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
@@ -254,28 +226,9 @@ description: "Meet the EarthPol staff team, including leadership, moderators, an
   <div class="staff-card">
     <div class="staff-bust-wrapper">
       <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/8bfc9600-be16-44f2-8f70-b9c8f28d2b6b?size=400" alt="RealDanTM" />
-    </div>
-    <div class="staff-name">RealDanTM</div>
-  </div>
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
       <img class="staff-bust" src="https://vzge.me/bust/CharlesonCh?size=400" alt="CharlesonCh" />
     </div>
     <div class="staff-name">CharlesonCh</div>
-  </div>
-</div>
-
-<!-- Community Team -->
-<div class="group-title">Community Team</div>
-<div class="staff-grid">
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/f3739447-1999-449f-8e9d-cf0a75f581f6?size=400" alt="MattIsOff" />
-    </div>
-    <div class="staff-name">MattIsOff</div>
   </div>
   <div class="staff-card">
     <div class="staff-bust-wrapper">
