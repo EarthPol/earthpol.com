@@ -10,7 +10,7 @@ redirects:
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
-
+import React, { useState } from 'react';
 
 ---
 
@@ -22,7 +22,134 @@ For more technical details or to view the source, you can check out the [Brewery
 
 ---
 
+## Brewery Guide
+
+To brew drinks:
+- Place a cauldron on a heat source (Lava, magma, fire, any fire or campfire) and fill it with water
+- Add the ingredients defined in the recipes section (Messing this up can ruin your drink)
+- Leave it for the time specified (You can check this by clicking the cauldron with a clock)
+- When it has boiled for long enough, collect it with a bottle.
+- If your recipe requires aging, place it in a barrel of the correct wood type. (Refer to the image below)
+- If your recipe requires distillation, place it in a brewery stand with glowstone.
+
+<div style={{ textAlign: 'left' }}>
+    <picture>
+        <source
+            srcSet={useBaseUrl('img/Brewery/barrel.avif')}
+            type="image/avif"
+        />
+
+        <img
+            src={useBaseUrl('img/Brewery/barrel.avif')}
+            alt="Brewery Barrel"
+            loading="lazy"
+            decoding="async"
+            style={{ display: 'inline-block', maxWidth: '50%', height: 'auto' }}
+        />
+    </picture>
+</div>
+
+---
+
 ## Brewery Recipes
+
+export const RecipeGrid = ({ recipes, initiallyVisible = recipes.length }) => {
+  const [visibleCount, setVisibleCount] = useState(initiallyVisible);
+
+  const showMore = () => {
+    setVisibleCount(recipes.length);
+  };
+
+  return (
+    <div>
+      <div className="kpi-grid">
+        {recipes.slice(0, visibleCount).map((recipe, index) => (
+          <div className="kpi-card" key={index}>
+            <div className="kpi-value">{recipe.name}</div>
+            <div className="kpi-label">{recipe.quality}</div>
+            <div className="kpi-label"><strong>Ingredients:</strong> {recipe.ingredients}</div>
+            <div className="kpi-label"><strong>Cook:</strong> {recipe.cook}</div>
+            <div className="kpi-label"><strong>Age:</strong> {recipe.age}</div>
+            <div className={recipe.alcohol > 25 ? "kpi-percent kpi-percent-red" : "kpi-percent"}>
+              Difficulty {recipe.difficulty} · Alcohol {recipe.alcohol}%
+            </div>
+          </div>
+        ))}
+      </div>
+      {visibleCount < recipes.length && (
+        <button onClick={showMore} className="show-more-button">
+          Show More
+        </button>
+      )}
+    </div>
+  );
+};
+
+export const allRecipes = [
+  { name: 'Wheatbeer', quality: 'Fine Wheatbeer', ingredients: 'Wheat ×3', cook: '8 min', age: '2 (Birch)', difficulty: 1, alcohol: 5 },
+  { name: 'Beer', quality: 'Fine Beer', ingredients: 'Wheat ×6', cook: '2 min', age: '3 (Oak)', difficulty: 1, alcohol: 6 },
+  { name: 'Darkbeer', quality: 'Fine Darkbeer', ingredients: 'Wheat ×12', cook: '8 min', age: '8 (Dark Oak)', difficulty: 2, alcohol: 7 },
+  { name: 'Apple Cider', quality: 'Great Apple Cider', ingredients: 'Apple ×14, Sugar Cane ×6', cook: '7 min', age: '3 (Oak)', difficulty: 4, alcohol: 8 },
+  { name: 'Apple Mead', quality: 'Sweet Golden Apple Mead', ingredients: 'Apple ×2, Sugar Cane ×6', cook: '4 min', age: '4 (Spruce)', difficulty: 4, alcohol: 11 },
+  { name: 'Apple Liquor', quality: 'Calvados', ingredients: 'Apple ×12, Sugar Cane ×8', cook: '16 min · Distill ×3', age: '6 (Dark Oak)', difficulty: 5, alcohol: 14 },
+  { name: 'Red Wine', quality: 'Full-Bodied', ingredients: 'Grapes ×10, Sugar Cane ×5', cook: '5 min', age: '20 (Oak)', difficulty: 4, alcohol: 12 },
+  { name: 'Mead', quality: 'Golden Mead', ingredients: 'Sugar Cane ×6, Honey Bottle ×2', cook: '3 min', age: '4 (Jungle)', difficulty: 2, alcohol: 9 },
+  { name: 'Berry Mead', quality: 'Rich Berry Mead', ingredients: 'Sugar Cane ×6, Berry ×4', cook: '4 min', age: '6 (Spruce)', difficulty: 4, alcohol: 11 },
+  { name: 'Blueberry Spirit', quality: 'Golden Blueberry Spirit', ingredients: 'Blueberry ×10, Sugar Cane ×6', cook: '6 min · Distill ×2', age: '8 (Oak)', difficulty: 5, alcohol: 15 },
+  { name: 'Cranberry Spirit', quality: 'Sweet Cranberry Spirit', ingredients: 'Cranberry ×10, Sugar Cane ×6', cook: '6 min · Distill ×2', age: '8 (Spruce)', difficulty: 5, alcohol: 15 },
+  { name: 'Lemon Liquor', quality: 'Golden Lemon Spirit', ingredients: 'Lemon ×8, Sugar Cane ×5', cook: '5 min · Distill ×2', age: '6 (Birch)', difficulty: 5, alcohol: 14 },
+  { name: 'Lime Liquor', quality: 'Golden Lime Spirit', ingredients: 'Lime ×8, Sugar Cane ×5', cook: '5 min · Distill ×2', age: '6 (Birch)', difficulty: 5, alcohol: 14 },
+  { name: 'Orange Liquor', quality: 'Sweet Orange Spirit', ingredients: 'Orange ×8, Sugar Cane ×5', cook: '5 min · Distill ×2', age: '6 (Oak)', difficulty: 5, alcohol: 14 },
+  { name: 'Peach Liquor', quality: 'Golden Peach Spirit', ingredients: 'Peach ×8, Sugar Cane ×5', cook: '5 min · Distill ×2', age: '6 (Oak)', difficulty: 5, alcohol: 14 },
+  { name: 'Strawberry Liquor', quality: 'Sweet Strawberry Spirit', ingredients: 'Strawberry ×8, Sugar Cane ×5', cook: '5 min · Distill ×2', age: '6 (Oak)', difficulty: 5, alcohol: 14 },
+  { name: 'Whiskey', quality: 'Scotch Whiskey', ingredients: 'Wheat ×10', cook: '10 min · Distill ×2', age: '18 (Oak)', difficulty: 7, alcohol: 26 },
+  { name: 'Rum', quality: 'Golden Rum', ingredients: 'Sugar Cane ×18', cook: '6 min · Distill ×2', age: '14 (Jungle)', difficulty: 6, alcohol: 30 },
+  { name: 'Vodka', quality: 'Russian Vodka', ingredients: 'Potato ×10', cook: '15 min · Distill ×3', age: 'None', difficulty: 4, alcohol: 20 },
+  { name: 'Apple Wine', quality: 'Great Apple Wine', ingredients: 'Apple ×6', cook: '6 min', age: '12 (Oak)', difficulty: 4, alcohol: 9 },
+  { name: 'Berry Wine', quality: 'Rich Berry Wine', ingredients: 'Berry ×6', cook: '6 min', age: '12 (Oak)', difficulty: 4, alcohol: 9 },
+  { name: 'Blueberry Wine', quality: 'Sweet Blueberry Wine', ingredients: 'Blueberry ×6', cook: '6 min', age: '12 (Oak)', difficulty: 4, alcohol: 10 },
+  { name: 'Cherry Wine', quality: 'Sweet Cherry Wine', ingredients: 'Cherry ×6', cook: '6 min', age: '12 (Oak)', difficulty: 4, alcohol: 10 },
+  { name: 'Cranberry Wine', quality: 'Sweet Cranberry Wine', ingredients: 'Cranberry ×6', cook: '6 min', age: '12 (Oak)', difficulty: 4, alcohol: 10 },
+  { name: 'Lemon Wine', quality: 'Sweet Lemon Wine', ingredients: 'Lemon ×6', cook: '6 min', age: '12 (Oak)', difficulty: 4, alcohol: 9 },
+  { name: 'Lime Wine', quality: 'Sweet Lime Wine', ingredients: 'Lime ×6', cook: '6 min', age: '12 (Oak)', difficulty: 4, alcohol: 9 },
+  { name: 'Orange Wine', quality: 'Sweet Orange Wine', ingredients: 'Orange ×6', cook: '6 min', age: '12 (Oak)', difficulty: 4, alcohol: 9 },
+  { name: 'Peach Wine', quality: 'Sweet Peach Wine', ingredients: 'Peach ×6', cook: '6 min', age: '12 (Oak)', difficulty: 4, alcohol: 10 },
+  { name: 'Strawberry Wine', quality: 'Sweet Strawberry Wine', ingredients: 'Strawberry ×6', cook: '6 min', age: '12 (Oak)', difficulty: 4, alcohol: 10 },
+  { name: 'Pure Ethanol', quality: '97% Industrial', ingredients: 'Beetroot ×32', cook: '30 min · Distill ×10', age: 'None', difficulty: 10, alcohol: 97 },
+  { name: 'Soju', quality: 'Hwayo Soju', ingredients: 'Wheat ×12, Potato ×2', cook: '18 min · Distill ×4', age: '2 (Oak)', difficulty: 6, alcohol: 10 },
+  { name: 'Apple Soju', quality: 'Golden Apple Soju', ingredients: 'Soju ×1, Apple ×6', cook: '2 min', age: 'None', difficulty: 3, alcohol: 10 },
+  { name: 'Berry Ethanol', quality: 'Ruby Berry Elixir', ingredients: 'Ethanol ×1, Berry ×6, Cranberry ×4', cook: '2 min', age: 'None', difficulty: 6, alcohol: 40 },
+  { name: 'Blueberry Vodka', quality: 'Velvet Blue Vodka', ingredients: 'Vodka ×1, Blueberry ×6', cook: '2 min', age: 'None', difficulty: 4, alcohol: 20 },
+  { name: 'Cherry Soju', quality: 'Garnet Orchard Soju', ingredients: 'Soju ×1, Cherry ×6', cook: '2 min', age: 'None', difficulty: 3, alcohol: 10 },
+  { name: 'Cranberry Vodka', quality: 'Scarlet Berry Vodka', ingredients: 'Vodka ×1, Cranberry ×6', cook: '2 min', age: 'None', difficulty: 3, alcohol: 20 },
+  { name: 'Grape Ethanol', quality: 'Amethyst Grape Elixir', ingredients: 'Ethanol ×1, Grape ×6', cook: '2 min', age: 'None', difficulty: 5, alcohol: 40 },
+  { name: 'Lemon Vodka', quality: 'Zesty Golden Vodka', ingredients: 'Vodka ×1, Lemon ×5', cook: '2 min', age: 'None', difficulty: 3, alcohol: 20 },
+  { name: 'Lime Soju', quality: 'Jade Citrus Soju', ingredients: 'Soju ×1, Lime ×5', cook: '2 min', age: 'None', difficulty: 3, alcohol: 10 },
+  { name: 'Orange Vodka', quality: 'Amber Sun Vodka', ingredients: 'Vodka ×1, Orange ×5', cook: '2 min', age: 'None', difficulty: 3, alcohol: 20 },
+  { name: 'Peach Ethanol', quality: 'Sunset Peach Elixir', ingredients: 'Ethanol ×1, Peach ×6', cook: '2 min', age: 'None', difficulty: 5, alcohol: 40 },
+  { name: 'Strawberry Soju', quality: 'Sweet Strawberry Soju', ingredients: 'Soju ×1, Strawberry ×4', cook: '3 min', age: 'None', difficulty: 1, alcohol: 15 },
+  { name: 'Iced Coffee', quality: 'Iced Coffee', ingredients: 'Cocoa Beans ×2, Ice ×1, Sugar ×1', cook: '3 min', age: 'None', difficulty: 1, alcohol: -4 },
+  { name: 'Energy Drink', quality: 'Energy Drink', ingredients: 'Sugar ×3, Glowstone Dust ×1, Water Bucket ×1', cook: '3 min', age: 'None', difficulty: 1, alcohol: -5 },
+  { name: 'Coffee', quality: 'Coffee', ingredients: 'Cocoa Beans ×3, Milk Bucket ×1', cook: '3 min', age: 'None', difficulty: 1, alcohol: -5 },
+  { name: 'Potato Soup', quality: 'Potato Soup', ingredients: 'Potato ×3, Milk Bucket ×1, Bowl ×1', cook: '3 min', age: 'None', difficulty: 1, alcohol: -3 },
+  { name: 'Haste Potion', quality: 'Energising Haste Potion', ingredients: 'Stone Pickaxe ×1, Golden Carrot ×1, Sugar ×3', cook: '30 min', age: 'None', difficulty: 5, alcohol: -6 },
+  { name: 'Sprite Cranberry', quality: 'Refreshing Sprite Cranberry', ingredients: 'Cranberry ×3, Sugar ×5', cook: '3 min · Distill ×3', age: 'None', difficulty: 3, alcohol: 0 },
+  { name: 'Tequila', quality: 'Tequila Anejo', ingredients: 'Cactus ×8', cook: '15 min · Distill ×2', age: '12 (Spruce)', difficulty: 5, alcohol: 20 },
+  { name: 'Honey Rum', quality: 'Golden Honey Rum', ingredients: 'Sugar Cane ×12, Honey Bottle ×3', cook: '8 min · Distill ×2', age: '10 (Birch)', difficulty: 6, alcohol: 28 },
+  { name: 'Absinthe', quality: 'Strong Absinthe', ingredients: 'Short Grass ×15', cook: '3 min · Distill ×6', age: 'None', difficulty: 8, alcohol: 42 },
+  { name: 'Eggnog', quality: 'Advocaat', ingredients: 'Egg ×5, Sugar ×2, Milk Bucket ×1', cook: '2 min', age: '3 (Oak)', difficulty: 4, alcohol: 10 },
+  { name: 'Fire Whiskey', quality: 'Blazing Whiskey', ingredients: 'Wheat ×10, Blaze Powder ×2', cook: '12 min · Distill ×3', age: '18 (Acacia)', difficulty: 7, alcohol: 28 },
+  { name: 'Frostbite Vodka', quality: 'Ice-Clear Frostbite Vodka', ingredients: 'Potato ×10, Snowball ×3', cook: '16 min · Distill ×3', age: 'None', difficulty: 5, alcohol: 22 },
+  { name: 'Golden Vodka', quality: 'Shimmering Golden Vodka', ingredients: 'Potato ×10, Gold Nugget ×2', cook: '18 min · Distill ×3', age: 'None', difficulty: 6, alcohol: 20 },
+  { name: 'Gin', quality: 'Old Tom Gin', ingredients: 'Wheat ×9, Blue Flowers ×6, Apple ×1', cook: '6 min · Distill ×2', age: 'None', difficulty: 6, alcohol: 20 },
+  { name: 'Green Absinthe', quality: 'Bright Green Absinthe', ingredients: 'Short Grass ×17, Poisonous Potato ×2', cook: '5 min · Distill ×6', age: 'None', difficulty: 9, alcohol: 46 },
+  { name: 'Hot Chocolate', quality: 'Hot Chocolate', ingredients: 'Cookie ×3', cook: '2 min', age: 'None', difficulty: 2, alcohol: 0 },
+  { name: 'Pumpkin Ale', quality: 'Spiced Pumpkin Ale', ingredients: 'Pumpkin ×3, Wheat ×4, Sugar ×2', cook: '5 min', age: '5 (Birch)', difficulty: 3, alcohol: 6 },
+  { name: 'Mushroom Vodka', quality: 'Glowing Mushroom Vodka', ingredients: 'Potato ×10, Red Mushroom ×3, Brown Mushroom ×3', cook: '18 min · Distill ×5', age: 'None', difficulty: 7, alcohol: 18 },
+];
+
+<RecipeGrid recipes={allRecipes} initiallyVisible={3} />
+
 {/* --- BEGIN KPI STYLE --- */}
 <style>
 {String.raw`
@@ -58,7 +185,7 @@ html[data-theme='dark'] {
   display: grid;
   grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 1rem;
-  margin-bottom: 2rem; /* added spacing below grid */
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 900px){
@@ -113,551 +240,34 @@ html[data-theme='dark'] {
   align-items: center;
   gap: 4px;
 }
+
+.show-more-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--kpi-bg);
+  border: 1px solid var(--kpi-border);
+  border-radius: var(--kpi-radius);
+  color: var(--kpi-text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  margin-bottom: 2rem;
+}
+
+.show-more-button:hover {
+  background-color: var(--kpi-border);
+}
 `}
 </style>
 
 {/* --- END KPI STYLE --- */}
 
-<div className="kpi-grid">
+---
 
-  <div className="kpi-card">
-    <div className="kpi-value">Wheatbeer</div>
-    <div className="kpi-label">Fine Wheatbeer</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Wheat ×3</div>
-    <div className="kpi-label"><strong>Cook:</strong> 8 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 2 (Birch)</div>
-    <div className="kpi-percent">Difficulty 1 · Alcohol 5%</div>
-  </div>
+## Garden Plugin
 
-  <div className="kpi-card">
-    <div className="kpi-value">Beer</div>
-    <div className="kpi-label">Fine Beer</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Wheat ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 3 (Oak)</div>
-    <div className="kpi-percent">Difficulty 1 · Alcohol 6%</div>
-  </div>
+The Garden plugin is a companion to Brewery, adding a variety of new crops and ingredients that can be used in brewing recipes. Many of the drinks listed above, such as those requiring berries, grapes, or various fruits, depend on the Garden plugin.
 
-  <div className="kpi-card">
-    <div className="kpi-value">Darkbeer</div>
-    <div className="kpi-label">Fine Darkbeer</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Wheat ×12</div>
-    <div className="kpi-label"><strong>Cook:</strong> 8 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 8 (Dark Oak)</div>
-    <div className="kpi-percent">Difficulty 2 · Alcohol 7%</div>
-  </div>
+This plugin expands the agricultural side of the server, allowing players to cultivate a wider range of plants and create more complex and unique brews.
 
-  <div className="kpi-card">
-    <div className="kpi-value">Apple Cider</div>
-    <div className="kpi-label">Great Apple Cider</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Apple ×14, Sugar Cane ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 7 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 3 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 8%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Apple Mead</div>
-    <div className="kpi-label">Sweet Golden Apple Mead</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Apple ×2, Sugar Cane ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 4 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 4 (Spruce)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 11%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Apple Liquor</div>
-    <div className="kpi-label">Calvados</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Apple ×12, Sugar Cane ×8</div>
-    <div className="kpi-label"><strong>Cook:</strong> 16 min · Distill ×3</div>
-    <div className="kpi-label"><strong>Age:</strong> 6 (Dark Oak)</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol 14%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Red Wine</div>
-    <div className="kpi-label">Full-Bodied</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Grapes ×10, Sugar Cane ×5</div>
-    <div className="kpi-label"><strong>Cook:</strong> 5 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 20 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 12%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Mead</div>
-    <div className="kpi-label">Golden Mead</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Sugar Cane ×6, Honey Bottle ×2</div>
-    <div className="kpi-label"><strong>Cook:</strong> 3 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 4 (Jungle)</div>
-    <div className="kpi-percent">Difficulty 2 · Alcohol 9%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Berry Mead</div>
-    <div className="kpi-label">Rich Berry Mead</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Sugar Cane ×6, Berry ×4</div>
-    <div className="kpi-label"><strong>Cook:</strong> 4 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 6 (Spruce)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 11%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Blueberry Spirit</div>
-    <div className="kpi-label">Golden Blueberry Spirit</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Blueberry ×10, Sugar Cane ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 8 (Oak)</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol 15%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Cranberry Spirit</div>
-    <div className="kpi-label">Sweet Cranberry Spirit</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Cranberry ×10, Sugar Cane ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 8 (Spruce)</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol 15%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Lemon Liquor</div>
-    <div className="kpi-label">Golden Lemon Spirit</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Lemon ×8, Sugar Cane ×5</div>
-    <div className="kpi-label"><strong>Cook:</strong> 5 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 6 (Birch)</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol 14%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Lime Liquor</div>
-    <div className="kpi-label">Golden Lime Spirit</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Lime ×8, Sugar Cane ×5</div>
-    <div className="kpi-label"><strong>Cook:</strong> 5 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 6 (Birch)</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol 14%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Orange Liquor</div>
-    <div className="kpi-label">Sweet Orange Spirit</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Orange ×8, Sugar Cane ×5</div>
-    <div className="kpi-label"><strong>Cook:</strong> 5 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 6 (Oak)</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol 14%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Peach Liquor</div>
-    <div className="kpi-label">Golden Peach Spirit</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Peach ×8, Sugar Cane ×5</div>
-    <div className="kpi-label"><strong>Cook:</strong> 5 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 6 (Oak)</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol 14%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Strawberry Liquor</div>
-    <div className="kpi-label">Sweet Strawberry Spirit</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Strawberry ×8, Sugar Cane ×5</div>
-    <div className="kpi-label"><strong>Cook:</strong> 5 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 6 (Oak)</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol 14%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Whiskey</div>
-    <div className="kpi-label">Scotch Whiskey</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Wheat ×10</div>
-    <div className="kpi-label"><strong>Cook:</strong> 10 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 18 (Oak)</div>
-    <div className="kpi-percent kpi-percent-red">Difficulty 7 · Alcohol 26%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Rum</div>
-    <div className="kpi-label">Golden Rum</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Sugar Cane ×18</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 14 (Jungle)</div>
-    <div className="kpi-percent kpi-percent-red">Difficulty 6 · Alcohol 30%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Vodka</div>
-    <div className="kpi-label">Russian Vodka</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Potato ×10</div>
-    <div className="kpi-label"><strong>Cook:</strong> 15 min · Distill ×3</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 20%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Apple Wine</div>
-    <div className="kpi-label">Great Apple Wine</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Apple ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 9%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Berry Wine</div>
-    <div className="kpi-label">Rich Berry Wine</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Berry ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 9%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Blueberry Wine</div>
-    <div className="kpi-label">Sweet Blueberry Wine</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Blueberry ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 10%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Cherry Wine</div>
-    <div className="kpi-label">Sweet Cherry Wine</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Cherry ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 10%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Cranberry Wine</div>
-    <div className="kpi-label">Sweet Cranberry Wine</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Cranberry ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 10%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Lemon Wine</div>
-    <div className="kpi-label">Sweet Lemon Wine</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Lemon ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 9%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Lime Wine</div>
-    <div className="kpi-label">Sweet Lime Wine</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Lime ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 9%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Orange Wine</div>
-    <div className="kpi-label">Sweet Orange Wine</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Orange ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 9%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Peach Wine</div>
-    <div className="kpi-label">Sweet Peach Wine</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Peach ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 10%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Strawberry Wine</div>
-    <div className="kpi-label">Sweet Strawberry Wine</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Strawberry ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 10%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Pure Ethanol</div>
-    <div className="kpi-label">97% Industrial</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Beetroot ×32</div>
-    <div className="kpi-label"><strong>Cook:</strong> 30 min · Distill ×10</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent kpi-percent-red">Difficulty 10 · Alcohol 97%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Soju</div>
-    <div className="kpi-label">Hwayo Soju</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Wheat ×12, Potato ×2</div>
-    <div className="kpi-label"><strong>Cook:</strong> 18 min · Distill ×4</div>
-    <div className="kpi-label"><strong>Age:</strong> 2 (Oak)</div>
-    <div className="kpi-percent">Difficulty 6 · Alcohol 10%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Apple Soju</div>
-    <div className="kpi-label">Golden Apple Soju</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Soju ×1, Apple ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 3 · Alcohol 10%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Berry Ethanol</div>
-    <div className="kpi-label">Ruby Berry Elixir</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Ethanol ×1, Berry ×6, Cranberry ×4</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent kpi-percent-red">Difficulty 6 · Alcohol 40%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Blueberry Vodka</div>
-    <div className="kpi-label">Velvet Blue Vodka</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Vodka ×1, Blueberry ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 20%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Cherry Soju</div>
-    <div className="kpi-label">Garnet Orchard Soju</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Soju ×1, Cherry ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 3 · Alcohol 10%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Cranberry Vodka</div>
-    <div className="kpi-label">Scarlet Berry Vodka</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Vodka ×1, Cranberry ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 3 · Alcohol 20%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Grape Ethanol</div>
-    <div className="kpi-label">Amethyst Grape Elixir</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Ethanol ×1, Grape ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent kpi-percent-red">Difficulty 5 · Alcohol 40%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Lemon Vodka</div>
-    <div className="kpi-label">Zesty Golden Vodka</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Vodka ×1, Lemon ×5</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 3 · Alcohol 20%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Lime Soju</div>
-    <div className="kpi-label">Jade Citrus Soju</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Soju ×1, Lime ×5</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 3 · Alcohol 10%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Orange Vodka</div>
-    <div className="kpi-label">Amber Sun Vodka</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Vodka ×1, Orange ×5</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 3 · Alcohol 20%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Peach Ethanol</div>
-    <div className="kpi-label">Sunset Peach Elixir</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Ethanol ×1, Peach ×6</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent kpi-percent-red">Difficulty 5 · Alcohol 40%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Strawberry Soju</div>
-    <div className="kpi-label">Sweet Strawberry Soju</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Soju ×1, Strawberry ×4</div>
-    <div className="kpi-label"><strong>Cook:</strong> 3 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 1 · Alcohol 15%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Iced Coffee</div>
-    <div className="kpi-label">Iced Coffee</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Cocoa Beans ×2, Ice ×1, Sugar ×1</div>
-    <div className="kpi-label"><strong>Cook:</strong> 3 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 1 · Alcohol -4%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Energy Drink</div>
-    <div className="kpi-label">Energy Drink</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Sugar ×3, Glowstone Dust ×1, Water Bucket ×1</div>
-    <div className="kpi-label"><strong>Cook:</strong> 3 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 1 · Alcohol -5%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Coffee</div>
-    <div className="kpi-label">Coffee</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Cocoa Beans ×3, Milk Bucket ×1</div>
-    <div className="kpi-label"><strong>Cook:</strong> 3 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 1 · Alcohol -5%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Potato Soup</div>
-    <div className="kpi-label">Potato Soup</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Potato ×3, Milk Bucket ×1, Bowl ×1</div>
-    <div className="kpi-label"><strong>Cook:</strong> 3 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 1 · Alcohol -3%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Haste Potion</div>
-    <div className="kpi-label">Energising Haste Potion</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Stone Pickaxe ×1, Golden Carrot ×1, Sugar ×3</div>
-    <div className="kpi-label"><strong>Cook:</strong> 30 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol -6%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Sprite Cranberry</div>
-    <div className="kpi-label">Refreshing Sprite Cranberry</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Cranberry ×3, Sugar ×5</div>
-    <div className="kpi-label"><strong>Cook:</strong> 3 min · Distill ×3</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 3 · Alcohol 0%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Tequila</div>
-    <div className="kpi-label">Tequila Anejo</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Cactus ×8</div>
-    <div className="kpi-label"><strong>Cook:</strong> 15 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 12 (Spruce)</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol 20%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Honey Rum</div>
-    <div className="kpi-label">Golden Honey Rum</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Sugar Cane ×12, Honey Bottle ×3</div>
-    <div className="kpi-label"><strong>Cook:</strong> 8 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> 10 (Birch)</div>
-    <div className="kpi-percent kpi-percent-red">Difficulty 6 · Alcohol 28%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Absinthe</div>
-    <div className="kpi-label">Strong Absinthe</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Short Grass ×15</div>
-    <div className="kpi-label"><strong>Cook:</strong> 3 min · Distill ×6</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent kpi-percent-red">Difficulty 8 · Alcohol 42%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Eggnog</div>
-    <div className="kpi-label">Advocaat</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Egg ×5, Sugar ×2, Milk Bucket ×1</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 3 (Oak)</div>
-    <div className="kpi-percent">Difficulty 4 · Alcohol 10%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Fire Whiskey</div>
-    <div className="kpi-label">Blazing Whiskey</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Wheat ×10, Blaze Powder ×2</div>
-    <div className="kpi-label"><strong>Cook:</strong> 12 min · Distill ×3</div>
-    <div className="kpi-label"><strong>Age:</strong> 18 (Acacia)</div>
-    <div className="kpi-percent kpi-percent-red">Difficulty 7 · Alcohol 28%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Frostbite Vodka</div>
-    <div className="kpi-label">Ice-Clear Frostbite Vodka</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Potato ×10, Snowball ×3</div>
-    <div className="kpi-label"><strong>Cook:</strong> 16 min · Distill ×3</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 5 · Alcohol 22%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Golden Vodka</div>
-    <div className="kpi-label">Shimmering Golden Vodka</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Potato ×10, Gold Nugget ×2</div>
-    <div className="kpi-label"><strong>Cook:</strong> 18 min · Distill ×3</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 6 · Alcohol 20%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Gin</div>
-    <div className="kpi-label">Old Tom Gin</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Wheat ×9, Blue Flowers ×6, Apple ×1</div>
-    <div className="kpi-label"><strong>Cook:</strong> 6 min · Distill ×2</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 6 · Alcohol 20%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Green Absinthe</div>
-    <div className="kpi-label">Bright Green Absinthe</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Short Grass ×17, Poisonous Potato ×2</div>
-    <div className="kpi-label"><strong>Cook:</strong> 5 min · Distill ×6</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent kpi-percent-red">Difficulty 9 · Alcohol 46%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Hot Chocolate</div>
-    <div className="kpi-label">Hot Chocolate</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Cookie ×3</div>
-    <div className="kpi-label"><strong>Cook:</strong> 2 min</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 2 · Alcohol 0%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Pumpkin Ale</div>
-    <div className="kpi-label">Spiced Pumpkin Ale</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Pumpkin ×3, Wheat ×4, Sugar ×2</div>
-    <div className="kpi-label"><strong>Cook:</strong> 5 min</div>
-    <div className="kpi-label"><strong>Age:</strong> 5 (Birch)</div>
-    <div className="kpi-percent">Difficulty 3 · Alcohol 6%</div>
-  </div>
-
-  <div className="kpi-card">
-    <div className="kpi-value">Mushroom Vodka</div>
-    <div className="kpi-label">Glowing Mushroom Vodka</div>
-    <div className="kpi-label"><strong>Ingredients:</strong> Potato ×10, Red Mushroom ×3, Brown Mushroom ×3</div>
-    <div className="kpi-label"><strong>Cook:</strong> 18 min · Distill ×5</div>
-    <div className="kpi-label"><strong>Age:</strong> None</div>
-    <div className="kpi-percent">Difficulty 7 · Alcohol 18%</div>
-  </div>
-
-</div>
+For more information on the crops and mechanics of the Garden plugin, you can visit its official page on [Hangar](httpss://hangar.papermc.io/BreweryTeam/Garden).
