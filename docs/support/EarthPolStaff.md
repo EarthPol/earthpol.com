@@ -4,7 +4,7 @@ description: "Meet the EarthPol staff team, including leadership, moderators, an
 ---
 <!-- last updated tag -->
 <span style={{ fontSize: '0.7rem', opacity: 0.7 }}>
-*Last updated by [MrTytanic](https://github.com/MrTytanic) on 3 Mar 2026*
+*Last updated by [MrTytanic](https://github.com/MrTytanic) on 23 Mar 2026*
 </span>
 
 <style>
@@ -172,20 +172,6 @@ description: "Meet the EarthPol staff team, including leadership, moderators, an
   <div class="staff-card">
     <div class="staff-bust-wrapper">
       <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/099af2f1-9ed3-4343-b701-7538739c343c?size=400" alt="xTheWardenx" />
-    </div>
-    <div class="staff-name">xTheWardenx</div>
-  </div>
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/f48d75f3-0d7b-4851-8006-f7008521fb93?size=400" alt="Senpaii_soupp" />
-    </div>
-    <div class="staff-name">Senpaii_soupp</div>
-  </div>
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
       <img class="staff-bust" src="https://vzge.me/bust/1e453074-8de5-4194-8d82-70574aad18cf?size=400" alt="Zamings" />
     </div>
     <div class="staff-name">Zamings</div>
@@ -196,13 +182,6 @@ description: "Meet the EarthPol staff team, including leadership, moderators, an
       <img class="staff-bust" src="https://vzge.me/bust/8238a4d3-b243-4b3d-9942-5368ea9d3961?size=400" alt="Nokss__" />
     </div>
     <div class="staff-name">Nokss__</div>
-  </div>
-  <div class="staff-card">
-    <div class="staff-bust-wrapper">
-      <img class="staff-background" src="/img/staff-background.avif" alt="" loading="lazy" decoding="async" />
-      <img class="staff-bust" src="https://vzge.me/bust/b71b6598-1139-4c32-840c-28f06c85fb51?size=400" alt="jessiesgirl" />
-    </div>
-    <div class="staff-name">jessiesgirl</div>
   </div>
   <div class="staff-card">
     <div class="staff-bust-wrapper">

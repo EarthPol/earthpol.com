@@ -305,7 +305,6 @@ const config = {
           items: [
             { label: 'Blog', to: '/blog' },
             { label: 'GitHub', href: 'https://github.com/EarthPol/earthpol.com' },
-            { label: 'Bans', href: 'https://bans.earthpol.com' },
             { label: 'Status', href: 'https://status.earthpol.com' },
             { label: 'Contact Us', href: 'mailto:info@earthpol.com' },
           ],
