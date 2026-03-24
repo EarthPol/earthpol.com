@@ -58,7 +58,7 @@ export function SearchGuides() {
     { title: "API", url: "/docs/api" },
     { title: "EarthPol Premium", url: "/docs/EarthPolPremium" },
     { title: "FlagsH", url: "/docs/plugins-custom-features/FlagsH" },
-    { title: "Optimizations", url: "/docs/plugins-custom-features/Optimizations" },
+    { title: "Optimizations", url: "/docs/plugins-custom-features/custom-features" },
     { title: "Server Rules", url: "/docs/support/ServerRules/" },
     { title: "Vote", url: "/docs/vote" },
     { title: "Bug Bounty", url: "/docs/bug-bounty" },

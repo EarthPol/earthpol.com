@@ -214,7 +214,7 @@ const config = {
           },
           {
             from: '/docs/Plugins and Custom Features/Optimizations',
-            to: '/docs/plugins-custom-features/Optimizations',
+            to: '/docs/plugins-custom-features/custom-features',
           },
 
           // Support -> support

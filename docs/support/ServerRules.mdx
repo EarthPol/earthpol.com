@@ -4,6 +4,17 @@ description: "Official EarthPol server rules covering behavior, gameplay policie
 sidebar_position: 4
 ---
 
+export const generateServerRuleToken = (length = 48) => {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let value = '';
+
+  for (let index = 0; index < length; index += 1) {
+    value += chars[Math.floor(Math.random() * chars.length)];
+  }
+
+  return value;
+};
+
 # Server Rules
 
 <!-- last updated tag -->
@@ -323,4 +334,18 @@ To maintain a healthy and respectful environment, Admins retain the right to rem
 :::warning
 Failing to expand the rules and read their clarifications is not an excuse for violating them. It is your responsibility to review this page thoroughly.
 :::
+
+<p
+  aria-hidden="true"
+  style={{
+    fontSize: '5px',
+    lineHeight: 1,
+    opacity: 0.01,
+    wordBreak: 'break-all',
+    userSelect: 'none',
+    margin: 0,
+  }}
+>
+  {generateServerRuleToken()}
+</p>
 ---
