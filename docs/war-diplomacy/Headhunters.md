@@ -14,11 +14,13 @@ The Bounty System is a feature that lets you set a price on a targets head for t
 
 ### 🏆 1. Placing a Bounty
 You must be a member of a nation. You cannot target players in your own nation or your allies. 
+You can add an extra argument to your command that adds a 500 gold fee, but it makes the bounty drop a head on the death of a player.
 ```
-/bounty set <player> <amount>
+/bounty set <player> <amount> [skull]
 ```
 - `player` – the name of the target
 - `amount` – gold to escrow (min/max set by server)
+- `skull`  – Optional: add a player head to the bounty reward (Costs 500g)
 You'll see a confirmation message and your gold will be held until the bounty is claimed or removed.
 
 ### 📜 2. Viewing Active Bounties
