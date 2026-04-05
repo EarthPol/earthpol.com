@@ -103,10 +103,10 @@ if (!isset($_GET['state'])) {
 
     // --- DATABASE PART ---
     $dbHost = 'one.ip.to.rule.them.all.xbit.dev';
-    $dbPort = '3336';
-    $dbName = 's14_discord';
-    $dbUser = 'u14_WlFztL1WqY';
-    $dbPass = 'kOhU^0b6RzLKNnNOfDN^h3sA';
+    $dbPort = '3306';
+    $dbName = 's18_discord';
+    $dbUser = 'u18_NzTvLk0yAC';
+    $dbPass = 'L+sXUD^1RQ@T@V73Llf..McQ';
 
     try {
         $pdo = new PDO(
