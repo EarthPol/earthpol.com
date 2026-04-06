@@ -88,7 +88,9 @@ This is the primary endpoint which provides basic server information. The "endpo
     "location": "https://api.earthpol.com/astra/location",
     "discord": "https://api.earthpol.com/astra/discord",
     "quarters": "https://api.earthpol.com/astra/quarters",
-    "chat": "https://api.earthpol.com/astra/chat"
+    "chat": "https://api.earthpol.com/astra/chat",
+    "voting": "https://api.earthpol.com/astra/voting",
+    "sieges": "https://api.earthpol.com/astra/sieges"
   }
 }
 ```
@@ -886,36 +888,113 @@ Response:
 **Endpoint:** `https://api.earthpol.com/astra/sieges`
 This endpoint only supports `GET` requests.
 
+`battleSessionTimeTill` and `battleSessionTimeRemaining` are returned as millisecond values. Each siege object may also include `uuid`, `sessionBalance`, `startedAtMillis`, `endedAtMillis`, and a `battleSessions` array with per-session kill and banner-control history when SiegeStats data is available.
+
 Response:
-```
+```JSON
 {
-    "activeSiegeCount": 0,
-    "battleSessionTimeTill": "1.4 hours",
-    "battleSessionTimeRemaining": 0,
-      "sieges": [
+  "activeSiegeCount": 1,
+  "battleSessionTimeTill": 5023012,
+  "battleSessionTimeRemaining": 0,
+  "sieges": [
+    {
+      "uuid": "4f6320fa-2f46-4c2a-a4f4-1fa0dfbcb2d4",
+      "name": "Aiacciu",
+      "type": "CONQUEST",
+      "status": "In Progress",
+      "isActive": true,
+      "startedAtMillis": 1738812000000,
+      "endedAtMillis": 0,
+      "attacker": "Nation_A",
+      "defender": "Aiacciu",
+      "attackerPoints": 1860,
+      "defenderPoints": 400,
+      "sessionBalance": 1460,
+      "balance": 1460,
+      "sessionsCompleted": 3,
+      "sessionsLeft": 9,
+      "bannerLocation": {
+        "world": "world",
+        "x": -123,
+        "y": 75,
+        "z": 420
+      },
+      "battleSessions": [
         {
-          "name": "Aiacciu",
-          "type": "CONQUEST",
-          "status": "In Progress",
-          "isActive": true,
-          "allowsInvading": false,
-          "allowsPlundering": true,
-          "attackersWon": false,
-          "defendersWon": false,
-          "attacker": "Nation_A",
-          "defender": "Aiacciu",
-          "attackerPoints": 1860,
-          "defenderPoints": 400,
-          "balance": 1460,
-          "sessionsCompleted": 3,
-          "sessionsLeft": 9,
-          "bannerLocation": {
-            "world": "world",
-            "x": -123,
-            "y": 75,
-            "z": 420
-          }
+          "sessionNumber": 1,
+          "startedAtMillis": 1738812600000,
+          "endedAtMillis": 1738816200000,
+          "kills": [
+            {
+              "timestamp": 1738812800000,
+              "points": 30,
+              "reason": "PLAYER_KILL",
+              "killer": {
+                "id": 52,
+                "uuid": "11111111-1111-1111-1111-111111111111",
+                "name": "AttackerPlayer",
+                "side": "ATTACKERS"
+              },
+              "victim": {
+                "id": 87,
+                "uuid": "22222222-2222-2222-2222-222222222222",
+                "name": "DefenderPlayer",
+                "side": "DEFENDERS"
+              }
+            }
+          ],
+          "bannerControl": [
+            {
+              "timestamp": 1738813000000,
+              "awardingSide": "ATTACKERS",
+              "controllersCount": 4,
+              "points": 80
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
+}
+```
+
+### KitPvP Leaderboard
+EarthPol also exposes a public KitPvP leaderboard through EarthPol Observatory rather than through EPMCAPI.
+
+**Endpoint:** `https://earthpol.org/api/kitpvp/leaderboard`
+
+This endpoint currently supports `GET` requests with query parameters such as `sort`, `order`, `limit`, and `offset`.
+
+Example:
+`GET`: `https://earthpol.org/api/kitpvp/leaderboard?sort=kills&order=desc&limit=1&offset=0`
+
+Response:
+```JSON
+{
+  "sort": "kills",
+  "order": "desc",
+  "limit": 1,
+  "items": [
+    {
+      "uuid": "6d0f06c1-f12f-48fb-816f-e9863b4b1d61",
+      "username": "JimplayzMC",
+      "kills": 824,
+      "deaths": 354,
+      "assists": 140,
+      "damage": 29117.253477492388,
+      "damage_taken": 18686.507021899524,
+      "bow_shots": 150,
+      "bow_hits": 26,
+      "current_killstreak": 24,
+      "best_killstreak": 100,
+      "updated_at": "2026-02-27T10:22:16.000Z",
+      "source_updated_at": "2026-02-27T10:22:16.000Z",
+      "fetched_at": "2026-04-06T19:00:00.000Z"
+    }
+  ],
+  "nextCursor": {
+    "cursorValue": 824,
+    "cursorUuid": "6d0f06c1-f12f-48fb-816f-e9863b4b1d61"
+  }
 }
 ```
