@@ -34,11 +34,11 @@ SiegeWar is EarthPol’s structured warfare system, simulating the breakdown of 
 ### 🕒 Battle Sessions
 
 Sieges occur during battle sessions.
-- Sieges are **13 battle sessions** in length.
-- A battle session starts at the designated time and **lasts for 1 hour and 15 minutes.** 
+- Sieges are **10 battle sessions** in length.
+- A battle session starts at the designated time and **lasts for 1 hour.**
 - During this time, players will be able to score points towards the siege balance. 
-- After the session, there is a **1 hour break** in between for rest and resupply.
-- Sieges weekends will occur **once a week** on weekends.
+- Battle sessions currently occur on **Fridays, Saturdays, and Sundays**.
+- Sessions are spaced out through the weekend to allow time for rest and resupply between fights.
 - These battle sessions only occur on certain days of the week which are listed below and are automatically adjusted to your timezone (**{Intl.DateTimeFormat().resolvedOptions().timeZone}**):
 
  Siege times are in both 12-hour and 24-hour format. 
@@ -53,7 +53,7 @@ Sieges occur during battle sessions.
 ### 🏳️ Starting a Siege
 
 To initiate a siege: 
-- Qttackers must place a non-white banner outside the target town. (White banners are reserved for surrender and cannot be used to start a siege.)
+- Attackers must place a non-white banner outside the target town. (White banners are reserved for surrender and cannot be used to start a siege.)
 - The banner can be placed from 0 to 2 chunks away from the target town. 
 - Once the banner is placed, the siege begins, and players can earn points by killing enemies or maintaining control of the banner area. 
 - Use the command `/sw nextsession` to check when the next battle session begins.
