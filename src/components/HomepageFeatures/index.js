@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -11,7 +11,7 @@ const FeatureList = [
     Svg: () => <img src="/img/chest.webp" alt="Chest" style={{ height: 100 }} />,
     description: (
       <>
-        QuickShop allows for players to create their own shops to sell and buy items, creating a player-driven economy.
+        QuickShop helped players build markets, trade routes, and local economies throughout Astra.
       </>
     ),
   },
@@ -21,7 +21,7 @@ const FeatureList = [
     Svg: () => <img src="/img/compassitem.webp" alt="Compass" style={{ height: 100 }} />,
     description: (
       <>
-        With Towny, players can create their own towns, nations, and simulate diplomacy.
+        Towny shaped the towns, nations, borders, and diplomacy that defined Version 7.
       </>
     ),
   },
@@ -31,7 +31,7 @@ const FeatureList = [
     Svg: () => <img src="/img/mapitem.webp" alt="Map" style={{ height: 100 }} />,
     description: (
       <>
-        A 3D-fully interactive map that allows players to view their town from above.
+        Explore Astra from above and revisit the geography behind its final political landscape.
       </>
     ),
   },
@@ -41,7 +41,7 @@ const FeatureList = [
     Svg: () => <img src="/img/goldingotitem.webp" alt="Gold Ingot" style={{ height: 100 }} />,
     description: (
       <>
-        With custom innovative plugins like TradeWar, our server is setting higher standards with new gameplay mechanics.
+        Systems like TradeWar helped define V7's economy, conflict, and player-driven history.
       </>
     ),
   },
@@ -51,88 +51,63 @@ const ScreenshotList = [
   {
     title: '1:326 Map',
     image: '/img/epolmap-frontpage.avif',
-    description: 'Explore our custom-made EarthPol map, crafted with real-world geography at a detailed 1:326 scale. Natural features, rivers, and landscapes mirror reality, delivering a truly immersive geopolitical Minecraft experience.',
+    description: 'Astra used EarthPol\'s custom-made 1:326 Earth map, with real-world geography, rivers, and landscapes serving as the foundation for a year of geopolitical history.',
     imageFirst: true,
   },
   {
     title: 'Building',
     image: '/img/building-frontpage.avif',
-    description: 'Build with confidence on EarthPol. Our robust preservation system, featuring hourly backups and CoreProtect logs, guarantees your creations, from small towns to skyscrapers, are safe and secure.',
+    description: 'From small towns to major capitals, Version 7 was defined by the builders who turned the map into a lived-in world. The archive exists so those creations can continue to be preserved.',
     imageFirst: false,
   },
   {
     title: 'Diplomacy',
     image: '/img/diplomacy-frontpage.avif',
-    description: 'Master the art of diplomacy with plugins like Towny and TradeWar, engaging in economic battles, alliances, and statecraft. Join our community on Discord to negotiate treaties and shape the dynamic political landscape of EarthPol.',
+    description: 'Treaties, alliances, sanctions, trade disputes, and statecraft shaped Astra\'s political landscape from launch through its final days.',
     imageFirst: true,
   },
   {
     title: 'War & Combat',
     image: '/img/siegecover-frontpage.avif',
-    description: 'Experience strategic, balanced combat powered by SiegeWar. Coordinate epic sieges, defend territories, and lead your nation to victory in fair, team-focused PvP warfare designed for all skill levels. Alternatively, place bounties on your political enemies with our custom bounty plugin.',
+    description: 'SiegeWar, bounties, and organized PvP created many of V7\'s defining conflicts. Those battles now stand as part of the Astra record.',
     imageFirst: false,
   },
 ];
 
-// ✅ Testimonials Component
-const testimonials = [
+const stewards = [
   {
-    text: "Earthpol is one of the few geopolitical servers that genuinely puts the player experience first [...] with an active community and a staff team that listens, players can easily request changes to the server and vote on other propositions to help form an experience that meets the needs of all.",
-    author: "8set, Mayor of Ramsar",
+    name: 'Synistor',
+    role: 'Staff and server management',
   },
   {
-    text: "The most immersive minecraft experience I’ve ever been part of, to play on earth and for it to be so accurate is unparalleled. Actual competent staff, REAL WARS, and events make the server even more compelling. Quit your job to play earthpol full-time and you’ll hold zero regrets",
-    author: "ConsulAugustus, Leader of the Roman Republic",
+    name: 'Bustun',
+    role: 'Development and server architecture',
   },
   {
-    text: "A great Minecraft server and experience to try, its got some fun interesting sieges and large battles battles with lots of people and communities to interact with. A genuinely fun experience you should try, especially with a couple of friends.",
-    author: "Noks__, Prime Minister of Australia",
+    name: 'MrTytanic',
+    role: 'Content creation and public relations',
   },
 ];
 
-function Testimonials() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handleClick = (index) => {
-    setActiveIndex(index);
-  };
-
+function Stewardship() {
   return (
     <section className={styles.testimonialsSection}>
       <div className="container">
         <div className="row">
-          {/* Left Blurb */}
           <div className="col col--6">
-            <Heading as="h2">Committed to Player Satisfaction</Heading>
+            <Heading as="h2">Continued Stewardship</Heading>
             <p className={styles.testimonialBlurb}>
-              See what our players have to say about their EarthPol adventures. From first-time settlers to veteran nation leaders, players shape this world with cities, wars, and alliances while our dedicated team works behind the scenes to keep every journey immersive and fair. Read their stories and see why EarthPol is the trusted home for builders, diplomats, and conquerors alike.
+              As EarthPol moves toward Version 8, stewardship of the project will be shared across server management, development, architecture, public relations, and community communication. More details will come as the 2027 version takes shape.
             </p>
           </div>
 
-          {/* Right Carousel */}
           <div className="col col--6">
-            <div className={styles.carouselContainer}>
-              <div
-                className={styles.carouselTrack}
-                style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-              >
-                {testimonials.map((testimonial, index) => (
-                  <div key={index} className={styles.testimonialSlide}>
-                    <p>"{testimonial.text}"</p>
-                    <p><strong>- {testimonial.author}</strong></p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className={styles.carouselButtons}>
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleClick(index)}
-                  className={activeIndex === index ? styles.active : ''}
-                >
-                  ●
-                </button>
+            <div className={styles.stewardshipGrid}>
+              {stewards.map((steward) => (
+                <div key={steward.name} className={styles.stewardshipCard}>
+                  <Heading as="h3">{steward.name}</Heading>
+                  <p>{steward.role}</p>
+                </div>
               ))}
             </div>
           </div>
@@ -239,8 +214,7 @@ export default function HomepageFeatures() {
 
       <hr className="horizontalLine" />
 
-      {/* ✅ Testimonials Section */}
-      <Testimonials />
+      <Stewardship />
 
       <hr className="horizontalLine" />
     </>

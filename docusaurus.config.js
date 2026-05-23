@@ -105,7 +105,7 @@ const config = {
   ],
   plugins: [
     [
-      '@docusaurus/plugin-google-gtag',
+      './plugins/safe-gtag',
       {
         trackingID: ['G-R4GEM4H142', 'AW-17761889667'],
         anonymizeIP: true,

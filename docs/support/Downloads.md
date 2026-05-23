@@ -69,6 +69,17 @@ A 1:326 scale Earth map used in Version 6, marking the start of a new era for Ea
 
 🖼️ **V6 Map Art**: https://goodrich.dev/map-art/v6/
 
+---
+
+### 🗺️ Version 7 (Astra) Map
+*V7 closing archive*
+
+Version 7, also known as Astra, is closing its doors after a year of player-built history, infrastructure, diplomacy, and conflict. This full world archive is available so players can revisit their builds, preserve schematics, document the map, or keep a copy of the era before EarthPol returns with Version 8 in 2027.
+
+👉 **Download**: https://cdn.earthpol.com/downloads/world-v7.zip (224.4GB)
+
+---
+
 ### 🗺️ Version 7 (Astra) Voxy File
 *🗓 December 18th, 2025*
 

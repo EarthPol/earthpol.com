@@ -44,6 +44,27 @@
   line-height: 1.8;
 }
 
+.stewardshipGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.stewardshipCard {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.stewardshipCard h3 {
+  margin: 0 0 0.25rem;
+}
+
+.stewardshipCard p {
+  margin: 0;
+  line-height: 1.6;
+}
+
 .carouselContainer {
   overflow: hidden;
   width: 100%;
@@ -84,4 +105,3 @@
 .carouselButtons .active {
   color: #333;
 }
-
