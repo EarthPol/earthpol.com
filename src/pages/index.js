@@ -1,157 +1,145 @@
-import React from 'react';
+import React, {useState} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import ServerStatus from '@site/src/components/ServerStatus';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Head from '@docusaurus/Head';
 import styles from './index.module.css';
 
 const V7_WORLD_DOWNLOAD_URL = 'https://cdn.earthpol.com/downloads/world-v7.zip';
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+const serverOptions = [
+  {
+    title: 'EarthMC',
+    tags: ['Toxic', 'Pay-To-Win', 'Doxxers', 'Harassment'],
+    image: '/img/background-image-of-minecraft-earth-8447d0442bc3c638b614681f412e6c74.webp',
+    href: 'https://discord.com/invite/HyKnfFDTPD',
+    description:
+      'EarthMC opened with a two-week Premium-only window, allowing paying players to claim towns before the wider community had access. Now they sell a Premium Egg that can be traded for gold, turning real-money purchases into direct in-game advantage. What does the EULA even mean anymore?',
+  },
+  {
+    title: 'Crusalis',
+    tags: ['Geopol', 'Custom Nodes', 'Historical Iterations', 'Feature Rich'],
+    image: '/img/f10d9866fbbdf69a01e48c078180aca691b426efheaderbg.webp',
+    href: 'https://discord.com/invite/crusalis',
+    description:
+      'Crusalis is a feature-rich geopolitical server built around a custom nodes system instead of Towny. Its iterations usually run for one to three months, moving through historical settings like Greek history, World War II, and now Rome.',
+  },
+  {
+    title: 'Borderra',
+    tags: ['New Geopol', 'EarthPol Inspired', 'Independent', 'Fresh Start'],
+    image: '/img/v3image.avif',
+    href: 'https://discord.gg/JhfCXhhFz',
+    description:
+      'Borderra is a new geopolitical server aiming to carry forward the kind of player-driven worldbuilding EarthPol was known for. It is not another direct clone, and appears to be led by a capable owner who explored acquiring EarthPol before being encouraged to build an independent server instead.',
+  },
+  {
+    title: 'Stoneworks',
+    tags: ['Roleplay Rich', 'Long Standing', 'Deep Lore', 'High Commitment'],
+    image: '/img/lmfoyn.png',
+    href: 'https://discord.com/invite/QhdhgbrF7F',
+    description:
+      'Stoneworks is a long-running roleplay server with a massive community and years of worldbuilding behind it. It can be difficult to get into, but it is a strong recommendation for players who want the deepest roleplay commitment.',
+  },
+];
+
+function VersionClosureModal() {
+  const [isOpen, setIsOpen] = useState(true);
+
+  if (!isOpen) {
+    return null;
+  }
 
   return (
-      <>
-        {/* Preload primary desktop hero to speed LCP */}
-        <Head>
-          <link
-            rel="preload"
-            as="image"
-            href="/img/day_desktop.webp"
-            imageSrcSet="/img/day_mobile.webp 768w, /img/day_tablet.webp 1280w, /img/day_desktop.webp 1920w, /img/day_large.webp 2560w, /img/day_ultra.webp 3840w"
-            imageSizes="100vw"
-          />
-        </Head>
-
-        <header className={styles.heroBanner}>
-          {/* Background image as real <img> so it becomes LCP and is trackable */}
-          <picture>
-            <source media="(max-width: 768px)" srcSet="/img/day_mobile.webp" />
-            <source media="(max-width: 1280px)" srcSet="/img/day_tablet.webp" />
-            <source media="(max-width: 1920px)" srcSet="/img/day_desktop.webp" />
-            <source media="(max-width: 2560px)" srcSet="/img/day_large.webp" />
-            {/* Fallback to ultra for very large screens */}
-            <img
-                className={styles.heroBgImg}
-                src="/img/day_ultra.webp"
-                alt=""
-                role="presentation"
-                decoding="async"
-                loading="eager"
-                fetchpriority="high"
-            />
-          </picture>
-
-          {/* Optional soft overlay to improve text contrast */}
-          <div className={styles.heroOverlay} />
-
-          <div className={clsx(styles.mainHero, styles.mainHeroVisible)}>
-            <p className={styles.heroEyebrow}>End of an Era</p>
-            <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
-            <div className={styles.subtitleWrapper}>
-              <p className="hero__subtitle">{siteConfig.tagline}</p>
-            </div>
-            <p className={styles.heroMessage}>
-              Version 7, Astra, is closing its doors. The world is entering its final spectator period so players can revisit what they built, preserve schematics, and download the map before EarthPol returns with Version 8 in 2027.
-            </p>
-            <div className={styles.heroMeta}>
-              <span>V7 Astra archive</span>
-              <span>Version 8 planned for 2027</span>
-            </div>
-            <div className={styles.buttons}>
-              <Link
-                  className={clsx('button', 'button--primary', 'button--lg')}
-                  to="/docs/support/Downloads"
-              >
-                V7 Downloads
-              </Link>
-              <Link
-                  className={clsx('button', 'button--secondary', 'button--lg')}
-                  to={V7_WORLD_DOWNLOAD_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-              >
-                Download World
-              </Link>
-              <div className={styles.serverStatusWrapper}>
-                <span className={styles.spectatorIp}>Spectator IP: PLAY.EARTHPOL.COM</span>
-                <ServerStatus />
-              </div>
-            </div>
-          </div>
-        </header>
-      </>
+    <div className={styles.modalLayer} role="presentation">
+      <div
+        className={styles.modalBackdrop}
+        aria-hidden="true"
+        onClick={() => setIsOpen(false)}
+      />
+      <section
+        className={styles.closureModal}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="v7-closure-title"
+      >
+        <p className={styles.modalEyebrow}>End of an Era</p>
+        <h1 id="v7-closure-title">Version 7 Has Ended</h1>
+        <p>
+          Version 7, Astra, has closed its doors. The world is entering its final archive period so players can revisit what they built, preserve schematics, and download the map before EarthPol returns with Version 8 in 2027.
+        </p>
+        <div className={styles.modalActions}>
+          <Link
+            className={clsx('button', 'button--primary', 'button--lg')}
+            to="/docs/support/Downloads"
+          >
+            V7 Downloads
+          </Link>
+          <Link
+            className={clsx('button', 'button--secondary', 'button--lg')}
+            to={V7_WORLD_DOWNLOAD_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download World
+          </Link>
+          <button
+            className={clsx('button', 'button--outline', 'button--lg', styles.closeAction)}
+            type="button"
+            onClick={() => setIsOpen(false)}
+          >
+            View Servers
+          </button>
+        </div>
+      </section>
+    </div>
   );
 }
 
-function V7ClosureAnnouncement() {
+function ServerSelector() {
   return (
-      <section className={styles.announcementSection}>
-        <div className="container">
-          <div className={styles.announcementHeader}>
-            <p className={styles.sectionEyebrow}>Version 7 Closure</p>
-            <h2>Thank you for building Astra</h2>
-            <p>
-              Version 7 was built by many people who cared deeply about what they were creating. We are proud of what was accomplished over the past year, and we especially thank 0xBit for the immense amount of work he contributed throughout this era of EarthPol.
-            </p>
-          </div>
-
-          <div className={styles.announcementGrid}>
-            <article className={styles.announcementCard}>
-              <h3>Final V7 Access</h3>
-              <p>
-                Astra will remain available in spectator mode during the closing period so players can explore the world one final time, preserve schematics, and revisit the history built there.
-              </p>
-              <p>
-                <strong>IP:</strong> <code>play.earthpol.com</code>
-              </p>
-            </article>
-
-            <article className={styles.announcementCard}>
-              <h3>Map Archive</h3>
-              <p>
-                The full V7 world download is available now for players who want to keep a copy of Astra.
-              </p>
-              <Link
-                  className={styles.textLink}
-                  to={V7_WORLD_DOWNLOAD_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-              >
-                Download world-v7.zip
-              </Link>
-              <span className={styles.downloadSize}>224.4GB</span>
-            </article>
-
-            <article className={styles.announcementCard}>
-              <h3>Version 8</h3>
-              <p>
-                EarthPol will return in 2027. There is no scheduled release date yet, and development will take the time needed to build something lasting.
-              </p>
-              <p>
-                Expect regular updates, roadmaps, surveys, Q&As, and more community involvement as the next version takes shape.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
+    <main className={styles.serverSelection} aria-label="Server selection">
+      {serverOptions.map((server) => (
+        <a
+          className={styles.serverPanel}
+          href={server.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          key={server.title}
+        >
+          <img className={styles.serverImage} src={server.image} alt="" />
+          <span className={styles.panelShade} aria-hidden="true" />
+          <span className={styles.serverContent}>
+            <span className={styles.serverTitle}>{server.title}</span>
+            <span className={styles.serverTags}>
+              {server.tags.map((tag) => (
+                <span className={styles.serverTag} key={tag}>
+                  {tag}
+                </span>
+              ))}
+            </span>
+            <span className={styles.serverDescription}>{server.description}</span>
+            <span className={styles.serverCta}>Open Discord</span>
+          </span>
+        </a>
+      ))}
+    </main>
   );
 }
 
 export default function Home() {
   return (
-      <Layout
-          title="Version 7 Closure"
-          description="EarthPol Version 7, Astra, is closing its doors. Download the V7 world archive and follow development toward Version 8 in 2027."
-      >
-        <HomepageHeader />
-        <main>
-          <V7ClosureAnnouncement />
-          <HomepageFeatures />
-        </main>
-      </Layout>
+    <Layout
+      title="Choose Another Server"
+      description="Version 7 has ended. Choose another server community to visit while EarthPol prepares Version 8."
+      noFooter
+    >
+      <Head>
+        {serverOptions.map((server) => (
+          <link rel="preload" as="image" href={server.image} key={server.image} />
+        ))}
+      </Head>
+      <ServerSelector />
+      <VersionClosureModal />
+    </Layout>
   );
 }
